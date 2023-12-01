@@ -1,0 +1,43 @@
+.navbar {
+  background-color: rgba(161, 177, 185, 0.73);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 70px;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbar-right, .searchbar {
+  margin-right: 20px;
+}
+
+.menu-section, .logo, .searchbar, .language-section {
+  float: left;
+  list-style: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: .2s;
+  transform: scale(1.1);
+}
+
+.menu-section {
+  display: flex;
+  
+}
+
+.logo:hover, .menu-section:hover, .searchbar:hover, .language-section:hover {
+  transform: scale(1.15);
+}
+
+.logo-img {
+height: 7.5rem;
+width: 7.5rem;
+}
+
