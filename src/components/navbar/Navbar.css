@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   height: 70px;
+  border-bottom: 1px solid rgba(161, 177, 185, 1);
 }
 
 .navbar-left, .navbar-right {
@@ -32,12 +33,19 @@
   
 }
 
-.logo:hover, .menu-section:hover, .searchbar:hover, .language-section:hover {
+.menu-section:hover, .searchbar:hover, .language-section:hover {
   transform: scale(1.15);
 }
 
 .logo-img {
-height: 7.5rem;
 width: 7.5rem;
 }
 
+.logo {
+  cursor: default; 
+  z-index: 0;
+}
+
+.menu-section {
+  z-index: 1;
+}

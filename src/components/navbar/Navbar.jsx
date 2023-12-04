@@ -4,12 +4,11 @@ import LanguageIcon from '@mui/icons-material/Language';
 import SearchIcon from '@mui/icons-material/Search';
 import "./Navbar.css"
 import logo from "../../assets/beko.svg"
-import { connect } from "react-redux";
 
 import { useDispatch } from 'react-redux'
 import { toggle } from '../../redux/menuSlice'
 
-function Navbar() {
+export default function Navbar() {
   const dispatch = useDispatch()
 
   return (
@@ -35,11 +34,3 @@ function Navbar() {
     </div>   
   );
 }
-
-function mapStateToProps(state) {
-  return {
-    is_menu_active: state.toggleMenuReducer
-  }
-}
-
-export default connect(mapStateToProps)(Navbar)
