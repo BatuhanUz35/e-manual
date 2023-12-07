@@ -38,7 +38,7 @@ export const MenuItems = [
       },
       {
         title: "Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği",
-        url: "güvenlik-talimatları/çocuk-güvenliği",
+        url: "güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği",
       },
       {
         title: "Bakım ve Temizlik Güvenliği",

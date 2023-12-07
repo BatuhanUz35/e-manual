@@ -1,14 +1,46 @@
-.App {
-  width: 100vw;
-  height: 100vh;
-}
-
 body {
   margin: 0;
   padding: 0;
   font-size: 1rem;
+  overflow: hidden;
 }
 
-.container {
+.navbar {
+  height: 10vh;
+}
+
+.main-container {
   display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.pages {
+  display: block;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width:100%;
+  overflow-y: auto;
+}
+
+footer {
+  font-size: 14px;
+  color: gray;
+  margin: 15px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
 }

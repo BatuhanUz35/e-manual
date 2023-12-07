@@ -1,10 +1,13 @@
 .menu {
-  height: auto;
   width: 20%;
   min-width: 250px;
   background-color: rgba(20, 100, 180, 0.85);
   border-top: 0.1px solid rgba(20, 20, 20, 0.5); 
   border-right: 1px solid rgba(20, 20, 20, 0.5);
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 .item-list {
@@ -19,7 +22,7 @@
 
 .item {
   width: auto;
-  height: 2rem;
+  height: 2em;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -37,13 +40,15 @@
   flex: 90%;
 }
 
-.item:hover, .subitem:hover, #selected {
+.item:hover, .subitem:hover {
   cursor: pointer;
-  background-color: rgba(20, 20, 20, 0.85);
+  background-color: rgba(50, 50, 50, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-#selected {
-  border-right: 10px solid rgba(161, 177, 185, 0.73);;
+#selected{
+  border-right: 10px solid rgba(161, 177, 185, 0.73);
+  background-color: rgba(20, 20, 20, 0.85);
 }
 
 .subitem {
