@@ -10,6 +10,7 @@ export default function Menu() {
   const selected_item = useSelector((state) => state.menu.selected_item);
   const selected_subitem = useSelector((state) => state.menu.selected_subitem);
   const dispatch = useDispatch();
+
   return (
     <div className="menu" style={is_menu_active ? {} : { display: "none" }}>
       <div className="item-list">

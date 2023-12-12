@@ -45,10 +45,10 @@ export default function GüvenlikTalımatları() {
           <LinkIcon /> <Link to="/güvenlik-talimatları/kurulum-güvenliği" className="link">Kurulum Güvenliği</Link>
         </div>
         <div className="link-container">
-          <LinkIcon /> <Link to="/güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği" className="link"><div>Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği</div></Link>
+          <LinkIcon /> <Link to="/güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği" className="link">Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği</Link>
         </div>
         <div className="link-container">
-          <LinkIcon /> <Link to="/güvenlik-talimatları/bakım-ve-temizlik-güvenliği" className="link"><div>Bakım ve Temizlik Güvenliği</div></Link>
+          <LinkIcon /> <Link to="/güvenlik-talimatları/bakım-ve-temizlik-güvenliği" className="link">Bakım ve Temizlik Güvenliği</Link>
         </div>
       </div>
     </div>

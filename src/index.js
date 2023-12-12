@@ -5,6 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './redux/store';
 import { BrowserRouter } from 'react-router-dom';
+import "./index.css";
+import './assets/fonts/roboto/Roboto-Medium.ttf';
+import './assets/fonts/roboto/Roboto-BlackItalic.ttf';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

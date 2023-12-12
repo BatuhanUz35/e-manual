@@ -8,7 +8,7 @@ export default function ElektrikGüvenliği() {
       <p>Anasayfa / Güvenlik Talimatları / Elektrik Güvenliği</p>
       <div className="container">
         <h1>Elektrik Güvenliği</h1>
-        <div className="uyarı-başlık">UYARI</div>
+        <div className="uyarı-başlık kırmızı">UYARI</div>
         <div className="uyarı-container">
           <img src={electric} alt="electric" className="icon"></img>
           <div>
@@ -16,14 +16,14 @@ export default function ElektrikGüvenliği() {
               ÖNEMLİ GÜVENLİK TALİMATLARI. TALİMATLARI İLERİDE BAŞVURMAK ÜZERE
               SAKLAYIN
             </p>
-            <p>
+            <p className="uyarı-içerik">
               Hemen ardından: Bu cihaz ile birlikte verilen tüm güvenlik
               uyarılarını, talimatları, çizimler ve teknik özellikleri dikkate
               alın.
             </p>
           </div>
         </div>
-        <hr />
+        <hr className="uyarı-bitiş kırmızı"/>
       </div>
       <ul>
         <li>Kurulum, bakım, temizlik, tamir ve taşıma işlemleri sırasında ürünün fişi prize

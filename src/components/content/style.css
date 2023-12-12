@@ -3,6 +3,12 @@
   display: block;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 table{
   border-collapse: collapse;
   width: 100%;
@@ -40,17 +46,31 @@ li {
 }
 
 .uyarı-başlık{
-  background-color: rgb(200, 0, 0);
   height: 2.5rem;
   font-size: 2.25rem;
   font-weight: bold;
   padding: 5px;
+  color: white;
+}
+
+.uyarı-bitiş {
+  height: 0.25rem;
+  border: none;
+  margin-bottom: 2.5rem;
+}
+
+.mavi {
+  background-color: rgba(20, 100, 180, 0.85);
+}
+
+.kırmızı {
+  background-color: rgb(200,0,0);
 }
 
 .uyarı-container {
   display: flex;
   padding-top: 15px;
-  
+  align-items: center;
 }
 
 .uyarı-container .icon {

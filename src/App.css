@@ -1,3 +1,11 @@
+.font-face-rbt-md {
+  font-family: "Roboto-md";
+}
+
+.font-face-rbt-bl {
+  font-family: "Roboto-bl";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -31,16 +39,21 @@ footer {
 
 h1 {
   font-size: 2.5rem;
+  font-family: "Roboto-md";
 }
 
 h2 {
   font-size: 2rem;
+  margin-top: 5rem;
+  font-family: "Roboto-md";
 }
 
 h3 {
   font-size: 1.5rem;
+  font-family: "Roboto-md";
 }
 
 h4 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-family: "Roboto-md";
 }

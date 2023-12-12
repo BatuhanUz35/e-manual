@@ -7,7 +7,7 @@ export const MenuItems = [
     url: "/",
   },
   {
-    title: "Lütfen önce bu kılavuzu okuyunuz",
+    title: "Lütfen önce bu kılavuzu okuyun!",
     url: "kılavuz",
   },
   {
@@ -77,11 +77,11 @@ export const MenuItems = [
         url: "çevre-talimatları-ve-genel-bilgiler/enerji-tasarrufu",
       },
       {
-        title: "Durağan Resimiler ile İlgili Bilgiler",
+        title: "Durağan Resimler ile İlgili Bilgiler",
         url: "çevre-talimatları-ve-genel-bilgiler/durağan-resimler",
       },
       {
-        title: "Yazılım GÜncellemesi ile İlgili Bilgiler",
+        title: "Yazılım Güncellemesi ile İlgili Bilgiler",
         url: "çevre-talimatları-ve-genel-bilgiler/yazılım-güncelleme",
       },
       {
@@ -115,7 +115,7 @@ export const MenuItems = [
       },
       {
         title: "Bluetooth(*) Modülü Spesifikasyonu",
-        url: "çevre-talimatları-ve-genel-bilgiler/blueetoth",
+        url: "çevre-talimatları-ve-genel-bilgiler/bluetooth",
       },
       {
         title: "Yetkili Satıcılar İçin Servis Bilgileri",
@@ -159,7 +159,7 @@ export const MenuItems = [
       },
       {
         title:"Ürün Tanıtımı",
-        url:"ürün/ürün-tanıtım",
+        url:"ürün/ürün-tanıtımı",
       },
       {
         title:"Tuş Takımı",
