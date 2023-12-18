@@ -11,7 +11,7 @@ export default function YönetmelikVeAtık() {
         <p>Bu ürün, T.C. Çevre ve Şehircilik Bakanlığı tarafından yayımlanan "Atık Elektrikli ve Elektronik Eşyaların Kontrolü
           Yönetmeliğinde belirtilen zararlı ve yasaklı maddeleri içermez. AEEE Yönetmeliğine uygundur.
         </p>
-        <div className="uyarı-başlık mavi">DUYURU</div>
+        <div className="uyarı-başlık blue-bg">DUYURU</div>
         <div className="uyarı-container">
           <img src={waste} alt="waste" className="icon"></img>
           <div>
@@ -25,7 +25,7 @@ export default function YönetmelikVeAtık() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
+        <hr className="uyarı-bitiş blue-bg"/>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import "../style.css";
-import HDMI from "../../../assets/images/HDMI.png";
+import hdmi from "../../../assets/images/png/hdmi.png";
 
 export default function Lisanslar() {
   return (
@@ -10,7 +10,7 @@ export default function Lisanslar() {
       </p>
       <div className="container">
         <h1>Lisanslar İle İlgili Bilgiler</h1>
-        <img src={HDMI} alt="hdmi"></img>
+        <img src={hdmi} alt="hdmi"></img>
         <ul>
           <li>HDMI, the HDMI logo and High-Definition Multimedia Interface are
             trademarks or registered trademarks of HDMI Licensing LLC.

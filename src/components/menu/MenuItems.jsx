@@ -241,7 +241,7 @@ export const MenuItems = [
           },
           {
             title:"Favori Listesinde Kanal Taşıma",
-            url:"ayarlar/dijital-kanalları-düzenleme/favor-listesinde-kanal-taşıma",
+            url:"ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-taşıma",
           },
           {
             title:"Favori Listesinde Kanal Yeri Değiştirme",

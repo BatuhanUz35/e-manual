@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 import caution from "../../assets/images/safety/Caution-Icon.png"
-import info from "../../assets/images/Info.png"
-import electric from "../../assets/images/safety/voltage_voltage_new.png"
-import book from "../../assets/images/Book.png"
+import info from "../../assets/images/png/info.png"
+import elektrik from "../../assets/images/safety/voltage_voltage_new.png"
+import guide from "../../assets/images/png/guide.png"
 
 export default function Anasayfa() {
   return (
@@ -35,20 +35,20 @@ export default function Anasayfa() {
         </h4>
         <table>
           <tr class="row">
-            <td class="column-1"><img src={caution} alt="Caution" className="icon"/></td>
-            <td class="column-2">Ölüm veya yaralanmalarda sonuçlanabilecek tehlike.</td>
+            <td class="column-sm"><img src={caution} alt="Caution" className="icon"/></td>
+            <td class="column-l">Ölüm veya yaralanmalarda sonuçlanabilecek tehlike.</td>
           </tr>
           <tr class="row">
-            <td class="column-1"><img src={info} alt="Info" className="icon"/></td>
-            <td class="column-2">Önemli bilgiler veya kullanımla igili faydalı ipuçları.</td>
+            <td class="column-sm"><img src={info} alt="Info" className="icon"/></td>
+            <td class="column-l">Önemli bilgiler veya kullanımla igili faydalı ipuçları.</td>
           </tr>
           <tr class="row">
-            <td class="column-1"><img src={electric} alt="Electric" className="icon"/></td>
-            <td class="column-2">Elektrik çarpmasına karşı uyarı.</td>
+            <td class="column-sm"><img src={elektrik} alt="Electric" className="icon"/></td>
+            <td class="column-l">Elektrik çarpmasına karşı uyarı.</td>
           </tr>
           <tr class="row">
-            <td class="column-1"><img src={book} alt="Book" className="icon"/></td>
-            <td class="column-2">Kullanma kılavuzunu okuyun.</td>
+            <td class="column-sm"><img src={guide} alt="kılavuz" className="icon"/></td>
+            <td class="column-l">Kullanma kılavuzunu okuyun.</td>
           </tr>
         </table>
       </div>

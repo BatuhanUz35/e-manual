@@ -8,7 +8,7 @@ export default function PilAtıkları() {
       <p>Anasayfa / Çevre Talimatları ve Genel Bilgiler / Pil Atıkları ile İlgili Bilgiler</p>
       <div className="container">
         <h1>Pil Atıkları ile İlgili Bilgiler</h1>
-        <div className="uyarı-başlık mavi">DUYURU</div>
+        <div className="uyarı-başlık blue-bg">DUYURU</div>
         <div className="uyarı-container">
           <img src={battery} alt="battery" className="icon"></img>
           <div>
@@ -26,7 +26,7 @@ export default function PilAtıkları() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
+        <hr className="uyarı-bitiş blue-bg"/>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ export default function ArkaKapakİşaretler() {
         <h1>
           Cihazın Arka Kapağında Bulunabilecek İşaretler ile İlgili Bilgiler
         </h1>
-        <div className="uyarı-başlık mavi">
+        <div className="uyarı-başlık blue-bg">
           DUYURU
         </div>
         <div className="uyarı-container">
@@ -29,8 +29,8 @@ export default function ArkaKapakİşaretler() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
-        <div className="uyarı-başlık mavi">
+        <hr className="uyarı-bitiş blue-bg"/>
+        <div className="uyarı-başlık blue-bg">
           DUYURU
         </div>
         <div className="uyarı-container">
@@ -44,8 +44,8 @@ export default function ArkaKapakİşaretler() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
-        <div className="uyarı-başlık mavi">
+        <hr className="uyarı-bitiş blue-bg"/>
+        <div className="uyarı-başlık blue-bg">
           DUYURU
         </div>
         <div className="uyarı-container">
@@ -59,7 +59,7 @@ export default function ArkaKapakİşaretler() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
+        <hr className="uyarı-bitiş blue-bg"/>
       </div>
     </div>
   );

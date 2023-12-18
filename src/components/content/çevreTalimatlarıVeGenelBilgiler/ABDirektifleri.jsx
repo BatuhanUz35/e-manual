@@ -20,7 +20,7 @@ export default function ElektrikGüvenliği() {
           kullanma kılavuzu kapağnda belirtilen model numarasını yazarak televizyon modelini
           aratıp uygunluk beyanına ulaşabilirsiniz.
         </p>
-        <div className="uyarı-başlık mavi">DUYURU</div>
+        <div className="uyarı-başlık blue-bg">DUYURU</div>
         <div className="uyarı-container" >
           <img src={electric} alt="electric" className="icon"></img>
           <div>
@@ -37,7 +37,7 @@ export default function ElektrikGüvenliği() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş mavi"/>
+        <hr className="uyarı-bitiş blue-bg"/>
       </div>
     </div>
   );

@@ -1,3 +1,49 @@
+.blue-bg {
+  background-color: rgba(20, 100, 180, 0.85);
+}
+
+.red-bg {
+  background-color: rgb(200,0,0);
+}
+
+.gray-bg {
+  background-color: rgb(120, 120, 120);
+}
+
+.red{
+  color: rgb(200,0,0);
+ }
+
+ .blue{
+  color: rgba(20, 100, 180, 0.85);
+ }
+
+.button-red {
+  color: rgb(224,60,49)
+}
+
+ .button-blue{
+  color: rgb(0,132,213);
+ }
+
+ .button-green{
+  color: rgb(0,173,80)
+ }
+
+ .button-yellow{
+  color: rgb(255,181,0)
+ }
+
+ .button {
+  background-color: gray;
+  border-radius: 50%;
+  border: solid 1px gray;
+ }
+
+ .rotate-180 {
+  transform: rotate(180deg);
+ }
+
 .container {
   padding-top: 1.5rem;
   display: block;
@@ -20,8 +66,7 @@ td {
   text-align: left;
 }
 
-.column-1 {
-  width: 10%;
+.column-sm {
   text-align: center;
 }
 
@@ -59,14 +104,6 @@ li {
   margin-bottom: 2.5rem;
 }
 
-.mavi {
-  background-color: rgba(20, 100, 180, 0.85);
-}
-
-.kırmızı {
-  background-color: rgb(200,0,0);
-}
-
 .uyarı-container {
   display: flex;
   padding-top: 15px;
@@ -77,4 +114,26 @@ li {
   height: 5rem;
   width: auto;
   padding: 15px;
+}
+
+.in-page-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  min-width: 25rem;
+}
+
+.inline-icon {
+vertical-align: middle;
+margin: 0.25rem;
+height: 1.5rem;
+}
+
+.sm {
+  height: 1rem;
+}
+
+.xs {
+  transform: scale(0.75);
 }

@@ -8,7 +8,7 @@ export default function YangınGüvenliği() {
       <p>Anasayfa / Güvenlik Talimatları / Yangın Güvenliği</p>
       <div className="container">
         <h1>Yangın Güvenliği</h1>
-        <div className="uyarı-başlık kırmızı">DİKKAT</div>
+        <div className="uyarı-başlık red-bg">DİKKAT</div>
         <div className="uyarı-container">
           <img src={fire} alt="electric" className="icon"></img>
           <div>
@@ -23,7 +23,7 @@ export default function YangınGüvenliği() {
             </p>
           </div>
         </div>
-        <hr className="uyarı-bitiş kırmızı"/>
+        <hr className="uyarı-bitiş red-bg"/>
         <ul>
           <li>Ürün üzerindeki havalandıma açıklıklarını kapatmayın.</li>
           <li>
