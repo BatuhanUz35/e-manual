@@ -2,8 +2,9 @@ import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
 import back from "../../../../assets/images/png/back.png"
+import check from "../../../../assets/images/png/check.png"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CheckIcon from '@mui/icons-material/Check';
+
 
 export default function KanalTaşıma() {
   return (
@@ -17,7 +18,7 @@ export default function KanalTaşıma() {
           <li>
           <b>Kanal Düzenleyici</b> menüsünde taşımak istediğiniz kanal/kanlları
           seçip <Circle className="inline-icon button"/> düğmesine basın.
-          <div><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar <CheckIcon className="inline-icon"/> ile işaretlenir.</div>
+          <div><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar <img src={check} className="inline-icon sm" alt="Check"/> ile işaretlenir.</div>
           </li>
           <li>
           <Circle className="inline-icon button-green button"/> (yeşil) düğmesine basın.

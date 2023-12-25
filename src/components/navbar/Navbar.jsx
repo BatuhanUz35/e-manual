@@ -1,12 +1,12 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import LanguageIcon from '@mui/icons-material/Language';
-import SearchIcon from '@mui/icons-material/Search';
 import "./Navbar.css"
 import logo from "../../assets/beko.svg"
 
 import { useDispatch } from 'react-redux'
 import { toggle } from '../../redux/menuSlice'
+import SearchBar from "../searchbar/SearchBar";
 
 export default function Navbar() {
   const dispatch = useDispatch()
@@ -15,8 +15,7 @@ export default function Navbar() {
     <div className="navbar">
       <ul className="navbar-left">
         <li className="menu-section" onClick={() => dispatch(toggle())}>
-         <div><MenuIcon/></div> 
-          <div>Menu</div> 
+         <div className="menu-wrapper"><MenuIcon/>Menu</div> 
         </li>
         <li className="logo">
           <img className="logo-img" src={logo} alt="logo"/>
@@ -24,8 +23,7 @@ export default function Navbar() {
       </ul>
       <ul className="navbar-right">
         <li className="searchbar">
-          searchbar
-          <SearchIcon/>
+          <SearchBar/>
         </li>
         <li className="language-section">
           <LanguageIcon className="language-icon"/>

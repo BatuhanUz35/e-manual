@@ -18,10 +18,10 @@ export default function KanalListesiniSilme() {
         <h1>Kanal Listesini Silme</h1>
         <ol>
           <li>
-            Tv moduna geçmek için <img src={tv_icon} alt="tv ikonu" className="inline-icon"/> düğmesine basın.
+            Tv moduna geçmek için <img src={tv_icon} alt="TV" className="inline-icon"/> düğmesine basın.
           </li>
           <li>
-            <img src={options} alt="ayarlar" className="inline-icon"/> ardından <img src={right} alt="sağ" className="inline-icon"/> düğmesiyle
+            <img src={options} alt="seçenekler" className="inline-icon"/> ardından <img src={right} alt="sağ" className="inline-icon"/> düğmesiyle
             <b>Ayarlar</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
           <li>
@@ -40,7 +40,7 @@ export default function KanalListesiniSilme() {
           <li>
             Önceki menüye dönmek için <img src={back} alt="geri" className="inline-icon"/>, Home menüsüne
             dönmek için <img src={home} alt="home" className="inline-icon"/>, veya
-            TV yayınına dönmek için <img src={tv_icon} alt="tv ikonu" className="inline-icon"/> düğmesine basın.
+            TV yayınına dönmek için <img src={tv_icon} alt="TV" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
       </div>

@@ -86,6 +86,11 @@ td {
   color: rgba(0, 125, 225, 1);
 }
 
+ol {
+  padding-left: 1rem;
+  max-width: 50%;
+}
+
 li {
   padding: 0.5rem;
 }
@@ -131,7 +136,7 @@ height: 1.5rem;
 }
 
 .sm {
-  height: 1rem;
+  height: 0.75rem;
 }
 
 .xs {

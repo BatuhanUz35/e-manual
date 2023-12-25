@@ -57,3 +57,17 @@ h4 {
   font-size: 1.25rem;
   font-family: "Roboto-md";
 }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(100, 100, 100, 0.71);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(202,202,202);
+}

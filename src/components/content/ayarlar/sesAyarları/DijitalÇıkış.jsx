@@ -2,24 +2,22 @@ import React from "react";
 import "../../style.css";
 import home from "../../../../assets/images/png/home.png"
 import back from "../../../../assets/images/png/back.png";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import right from "../../../../assets/images/png/right.png";
-import left from "../../../../assets/images/png/left.png";
 import tv_icon from "../../../../assets/images/png/tv_icon.png"
+import { Circle } from "@mui/icons-material";
 
-export default function HoparlörGecikmesi() {
+export default function DijitalÇıkış() {
   return (
     <div className="page">
-      <p>Anasayfa / Ayarlar / Ses Ayarları / Hoparlör Gecikmesi</p>
+      <p>Anasayfa / Ayarlar / Ses Ayarları / Dijital Çıkış</p>
       <div className="container">
-        <h1>Hoparlör Gecikmesi</h1>
+        <h1>Dijital Çıkış</h1>
         <ol>
           <li>
-            Ses menüsünden<b>Hoparlör Gecikmesi</b>'ni seçin.
-            <div>
-              <ArrowForwardIcon className="inline-icon xs"/> 
-              <img src={left} alt="sol" className="inline-icon sm"/> veya <img src={right} alt="sağ" className="inline-icon sm"/> düğmesiyle değeri seçin.
-            </div>
+            Ses menüsünden <b>Dijital Çıkış</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
+          </li>
+          <li>
+            <b>Otomatik</b>, <b>Direkt Geçiş</b>, <b>PCM</b>, <b>Dolby Digital Plus</b> veya <b>Dolby Digital</b>'i
+             seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
           <li>
             Önceki menüye dönmek için <img src={back} alt="geri" className="inline-icon"/>, Home menüsüne dönmek

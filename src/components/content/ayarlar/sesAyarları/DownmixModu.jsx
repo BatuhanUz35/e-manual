@@ -2,24 +2,21 @@ import React from "react";
 import "../../style.css";
 import home from "../../../../assets/images/png/home.png"
 import back from "../../../../assets/images/png/back.png";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import right from "../../../../assets/images/png/right.png";
-import left from "../../../../assets/images/png/left.png";
 import tv_icon from "../../../../assets/images/png/tv_icon.png"
+import { Circle } from "@mui/icons-material";
 
-export default function HoparlörGecikmesi() {
+export default function DownmixModu() {
   return (
     <div className="page">
-      <p>Anasayfa / Ayarlar / Ses Ayarları / Hoparlör Gecikmesi</p>
+      <p>Anasayfa / Ayarlar / Ses Ayarları / Downmix Modu</p>
       <div className="container">
-        <h1>Hoparlör Gecikmesi</h1>
+        <h1>Downmix Modu</h1>
         <ol>
           <li>
-            Ses menüsünden<b>Hoparlör Gecikmesi</b>'ni seçin.
-            <div>
-              <ArrowForwardIcon className="inline-icon xs"/> 
-              <img src={left} alt="sol" className="inline-icon sm"/> veya <img src={right} alt="sağ" className="inline-icon sm"/> düğmesiyle değeri seçin.
-            </div>
+            Ses menüsünden <b>Downmix Modu</b>'nu seçip <Circle className="inline-icon button"/> düğmesine basın. 
+          </li>
+          <li>
+            <b>Stereo</b> veya <b>Surround Ses</b>'i seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
           </li>
           <li>
             Önceki menüye dönmek için <img src={back} alt="geri" className="inline-icon"/>, Home menüsüne dönmek

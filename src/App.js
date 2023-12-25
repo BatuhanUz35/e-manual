@@ -74,6 +74,60 @@ import Tiz from "./components/content/ayarlar/sesAyarları/Tiz";
 import SurroundSes from "./components/content/ayarlar/sesAyarları/SurroundSes";
 import Ekolayzer from "./components/content/ayarlar/sesAyarları/Ekolayzer";
 import HoparlörGecikmesi from "./components/content/ayarlar/sesAyarları/HoparlörGecikmesi";
+import Earc from "./components/content/ayarlar/sesAyarları/Earc";
+import DijitalGiriş from "./components/content/ayarlar/sesAyarları/DijitalGiriş";
+import DijitalÇıkış from "./components/content/ayarlar/sesAyarları/DijitalÇıkış";
+import SpdifGecikmesi from "./components/content/ayarlar/sesAyarları/SpdifGecikmesi";
+import DijitalÇıkışGecikmesi from "./components/content/ayarlar/sesAyarları/DijitalÇıkışGecikmesi";
+import OtomatikSes from "./components/content/ayarlar/sesAyarları/OtomatikSes";
+import DownmixModu from "./components/content/ayarlar/sesAyarları/DownmixModu";
+import DtsDrc from "./components/content/ayarlar/sesAyarları/DtsDrc";
+import SesAyarlarınıFabrikaAyarlarınaDöndürme from "./components/content/ayarlar/sesAyarları/SesAyarlarınıFabrikaAyarlarınaDöndürme";
+import TemelFonksiyonlar from "./components/content/temelFonksiyonlar/TemelFonksiyonlar";
+import AçmaVeKapatma from "./components/content/temelFonksiyonlar/AçmaVeKapatma";
+import TvModunuSeçme from "./components/content/temelFonksiyonlar/TvModunuSeçme";
+import SinyalKaynağıVeAntenTipiniSeçme from "./components/content/temelFonksiyonlar/SinyalKaynağıVeAntenTipiniSeçme";
+import KanallarıSeçme from "./components/content/temelFonksiyonlar/KanallarıSeçme";
+import SesSeviyesiniAyarlama from "./components/content/temelFonksiyonlar/SesSeviyesiniAyarlama";
+import SesiKapatma from "./components/content/temelFonksiyonlar/SesiKapatma";
+import SesStili from "./components/content/temelFonksiyonlar/SesStili";
+import ResimModu from "./components/content/temelFonksiyonlar/ResimModu";
+import GörüntüFormatınıDeğiştirme from "./components/content/temelFonksiyonlar/GörüntüFormatınıDeğiştirme";
+import GüçAyarları from "./components/content/temelFonksiyonlar/güçAyarları/GüçAyarları";
+import UykuZamanlayıcısı from "./components/content/temelFonksiyonlar/güçAyarları/UykuZamanlayıcısı";
+import KapanmaZamanlayıcısı from "./components/content/temelFonksiyonlar/güçAyarları/KapanmaZamanlayıcısı";
+import GörüntüyüKapatma from "./components/content/temelFonksiyonlar/güçAyarları/GörüntüyüKapatma";
+import SinyalOlmadığındaOtomatikKapanma from "./components/content/temelFonksiyonlar/güçAyarları/SinyalOlmadığındaOtomatikKapanma";
+import ElektronikTvRehberi from "./components/content/temelFonksiyonlar/ElektronikTvRehberi";
+import GelişmişFonksiyonlar from "./components/content/gelişmişFonksiyonlar/GelişmişFonksiyonlar";
+import SesDilininDeğiştirilmesi from "./components/content/gelişmişFonksiyonlar/SesDilininDeğiştirilmesi";
+import SesDili from "./components/content/gelişmişFonksiyonlar/SesDili";
+import MaviEkran from "./components/content/gelişmişFonksiyonlar/MaviEkran";
+import VarsayılanKanal from "./components/content/gelişmişFonksiyonlar/VarsayılanKanal";
+import EtkileşimKanalı from "./components/content/gelişmişFonksiyonlar/EtkileşimKanalı";
+import MhegPinKoruması from "./components/content/gelişmişFonksiyonlar/MhegPinKoruması";
+import Altyazılar from "./components/content/gelişmişFonksiyonlar/altyazılar/Altyazılar";
+import AnalogAltyazı from "./components/content/gelişmişFonksiyonlar/altyazılar/AnalogAltyazı";
+import DijitalAltyazı from "./components/content/gelişmişFonksiyonlar/altyazılar/DijitalAltyazı";
+import DijitalAltyazıDili from "./components/content/gelişmişFonksiyonlar/altyazılar/DijitalAltyazıDili";
+import İkinciDijitalAltyazıDili from "./components/content/gelişmişFonksiyonlar/altyazılar/İkinciDijitalAltyazıDili";
+import AltyazıTürü from "./components/content/gelişmişFonksiyonlar/altyazılar/AltyazıTürü";
+import TeleteksDilSeçimi from "./components/content/gelişmişFonksiyonlar/teleteksDilSeçimi/TeleteksDilSeçimi";
+import DijitalTeleteksDili from "./components/content/gelişmişFonksiyonlar/teleteksDilSeçimi/DijitalTeleteksDili";
+import SayfaDeşifreEtmeDili from "./components/content/gelişmişFonksiyonlar/teleteksDilSeçimi/SayfaDeşifreEtmeDili";
+import BissAnahtarı from "./components/content/gelişmişFonksiyonlar/BissAnahtarı";
+import TkgsAyarları from "./components/content/gelişmişFonksiyonlar/tkgsAyarları/TkgsAyarları";
+import ÇalışmaŞekli from "./components/content/gelişmişFonksiyonlar/tkgsAyarları/ÇalışmaŞekli";
+import TkgsKonumListesi from "./components/content/gelişmişFonksiyonlar/tkgsAyarları/TkgsKonumListesi";
+import TabloVersiyonunuSıfırlama from "./components/content/gelişmişFonksiyonlar/tkgsAyarları/TabloVersiyonuSıfırlama";
+import TercihEdilenListe from "./components/content/gelişmişFonksiyonlar/tkgsAyarları/TercihEdilenListe";
+import SinyalBilgileri from "./components/content/gelişmişFonksiyonlar/SinyalBilgileri";
+import HbbTv from "./components/content/hbbTv/HbbTv";
+import HbbTvNedir from "./components/content/hbbTv/HbbTvNedir";
+import HbbTvKullanımı from "./components/content/hbbTv/HbbTvKullanımı";
+import VideoDizinleri from "./components/content/hbbTv/VideoDizinleri";
+import HbbTvAyarları from "./components/content/hbbTv/hbbTvAyarları/HbbTvAyarları";
+import HbbTvDesteği from "./components/content/hbbTv/hbbTvAyarları/HbbTvDesteği";
 
 function App() {
   const year = new Date().getFullYear();
@@ -157,6 +211,60 @@ function App() {
             <Route path="/ayarlar/ses-ayarları/surround-ses" element={<SurroundSes />} />
             <Route path="/ayarlar/ses-ayarları/ekolayzer" element={<Ekolayzer />} />
             <Route path="/ayarlar/ses-ayarları/hoparlör-gecikmesi" element={<HoparlörGecikmesi />} />
+            <Route path="/ayarlar/ses-ayarları/earc" element={<Earc />} />
+            <Route path="/ayarlar/ses-ayarları/dijital-giriş" element={<DijitalGiriş />} />
+            <Route path="/ayarlar/ses-ayarları/dijital-çıkış" element={<DijitalÇıkış />} />
+            <Route path="/ayarlar/ses-ayarları/spdif-gecikmesi" element={<SpdifGecikmesi />} />
+            <Route path="/ayarlar/ses-ayarları/dijital-çıkış-gecikmesi" element={<DijitalÇıkışGecikmesi />} />
+            <Route path="/ayarlar/ses-ayarları/otomatik-ses" element={<OtomatikSes />} />
+            <Route path="/ayarlar/ses-ayarları/downmix-modu" element={<DownmixModu />} />
+            <Route path="/ayarlar/ses-ayarları/dts-drc" element={<DtsDrc />} />
+            <Route path="/ayarlar/ses-ayarları/ses-ayarlarını-fabrika-ayarlarına-döndürme" element={<SesAyarlarınıFabrikaAyarlarınaDöndürme />} />
+            <Route path="/temel-fonksiyonlar" element={<TemelFonksiyonlar />} />
+            <Route path="/temel-fonksiyonlar/açma-ve-kapatma" element={<AçmaVeKapatma />} />
+            <Route path="/temel-fonksiyonlar/tv-modunu-seçme" element={<TvModunuSeçme />} />
+            <Route path="/temel-fonksiyonlar/sinyal-kaynağı-ve-anten-tipini-seçme" element={<SinyalKaynağıVeAntenTipiniSeçme />} />
+            <Route path="/temel-fonksiyonlar/kanalları-seçme" element={<KanallarıSeçme />} />
+            <Route path="/temel-fonksiyonlar/ses-seviyesini-ayarlama" element={<SesSeviyesiniAyarlama />} />
+            <Route path="/temel-fonksiyonlar/sesi-kapatma" element={<SesiKapatma />} />
+            <Route path="/temel-fonksiyonlar/ses-stili" element={<SesStili />} />
+            <Route path="/temel-fonksiyonlar/resim-modu" element={<ResimModu />} />
+            <Route path="/temel-fonksiyonlar/görüntü-formatını-değiştirme" element={<GörüntüFormatınıDeğiştirme />} />
+            <Route path="/temel-fonksiyonlar/güç-ayarları" element={<GüçAyarları />} />
+            <Route path="/temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı" element={<UykuZamanlayıcısı />} />
+            <Route path="/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcısı" element={<KapanmaZamanlayıcısı />} />
+            <Route path="/temel-fonksiyonlar/güç-ayarları/görüntüyü-kapatma" element={<GörüntüyüKapatma />} />
+            <Route path="/temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma" element={<SinyalOlmadığındaOtomatikKapanma />} />
+            <Route path="/temel-fonksiyonlar/elektronik-tv-rehberi" element={<ElektronikTvRehberi />} />
+            <Route path="/gelişmiş-fonksiyonlar" element={<GelişmişFonksiyonlar />} />
+            <Route path="/gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi" element={<SesDilininDeğiştirilmesi />} />
+            <Route path="/gelişmiş-fonksiyonlar/ses-dili" element={<SesDili />} />
+            <Route path="/gelişmiş-fonksiyonlar/mavi-ekran" element={<MaviEkran />} />
+            <Route path="/gelişmiş-fonksiyonlar/varsayılan-kanal" element={<VarsayılanKanal />} />
+            <Route path="/gelişmiş-fonksiyonlar/etkileşim-kanalı" element={<EtkileşimKanalı />} />
+            <Route path="/gelişmiş-fonksiyonlar/mheg-pin-koruması" element={<MhegPinKoruması />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar" element={<Altyazılar />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar/analog-altyazı" element={<AnalogAltyazı />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı" element={<DijitalAltyazı />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı-dili" element={<DijitalAltyazıDili />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar/ikinci-dijital-altyazı-dili" element={<İkinciDijitalAltyazıDili />} />
+            <Route path="/gelişmiş-fonksiyonlar/altyazılar/altyazı-türü" element={<AltyazıTürü />} />
+            <Route path="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi" element={<TeleteksDilSeçimi />} />
+            <Route path="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili" element={<DijitalTeleteksDili />} />
+            <Route path="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/sayfa-deşifre-etme-dili" element={<SayfaDeşifreEtmeDili />} />
+            <Route path="/gelişmiş-fonksiyonlar/biss-anahtarı" element={<BissAnahtarı />} />
+            <Route path="/gelişmiş-fonksiyonlar/tkgs-ayarları" element={<TkgsAyarları />} />
+            <Route path="/gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli" element={<ÇalışmaŞekli />} />
+            <Route path="/gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi" element={<TkgsKonumListesi />} />
+            <Route path="/gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama" element={<TabloVersiyonunuSıfırlama />} />
+            <Route path="/gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste" element={<TercihEdilenListe />} />
+            <Route path="/gelişmiş-fonksiyonlar/sinyal-bilgileri" element={<SinyalBilgileri />} />
+            <Route path="/hbbtv" element={<HbbTv />} />
+            <Route path="/hbbtv/hbbtv-nedir" element={<HbbTvNedir />} />
+            <Route path="/hbbtv/hbbtv-kullanımı" element={<HbbTvKullanımı />} />
+            <Route path="/hbbtv/video-dizinleri-için-ek-fonksiyonlar" element={<VideoDizinleri />} />
+            <Route path="/hbbtv/hbbtv-ayarları" element={<HbbTvAyarları />} />
+            <Route path="/hbbtv/hbbtv-ayarları/hbbtv-desteği" element={<HbbTvDesteği />} />
           </Routes>
           <footer><hr />&copy; BEKO {year}</footer>
           </div>

@@ -28,9 +28,10 @@
   transform: scale(1.1);
 }
 
-.menu-section {
+.menu-wrapper {
   display: flex;
-  
+  align-items: center;
+  text-align: center;
 }
 
 .menu-section:hover, .searchbar:hover, .language-section:hover {
@@ -50,4 +51,11 @@ width: 7.5rem;
 
 .menu-section {
   z-index: 1;
+}
+
+.searchbar {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
 }

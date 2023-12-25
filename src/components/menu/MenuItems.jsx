@@ -436,7 +436,7 @@ export const MenuItems = [
       },
       {
         title: "Elektronik TV Rehberi",
-        url: "güç-ayarları/Elektronik TV Rehberi",
+        url: "temel-fonksiyonlar/elektronik-tv-rehberi",
       },
     ]
   },
@@ -447,7 +447,7 @@ export const MenuItems = [
     iconActive: <ExpandMoreIcon/>,
     submenu: [
       {
-        title: "Ses Dilinin Değiştirilmes",
+        title: "Ses Dilinin Değiştirilmesi",
         url: "gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi",
       },
       {
