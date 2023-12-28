@@ -1,13 +1,13 @@
 import React from "react";
 import "../../style.css";
-import { texts, ol } from "./HbbTvDesteği_";
+import { ol, texts } from "./ÇerezAyarları_";
 
-export default function HbbTvDesteği() {
+export default function ÇerezAyarları() {
   return (
     <div className="page">
-      <p>Anasayfa / HBBTV / HBBTV Ayarları / HBBTV Desteği</p>
+      <p>Anasayfa / HBBTV / HBBTV Ayarları / Çerez Ayarları</p>
       <div className="container">
-        <h1>HBBTV Desteği</h1>
+        <h1>Çerez Ayarları</h1>
         {texts.map((text) => {
           return ( 
             <p>{text}</p>

@@ -630,7 +630,7 @@ export const MenuItems = [
       },
       {
         title: "Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar",
-        url: "usb-kayıt/harici-veri-kullanımında-muhtemel-kısıtlamalar"
+        url: "usb-kayıt/harici-veri-ortamı-kullanımında-muhtemel-kısıtlamalar"
       },
       {
         title: "Harici Veri Ortamının Bağlanması",

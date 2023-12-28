@@ -1,13 +1,13 @@
 import React from "react";
 import "../../style.css";
-import { texts, ol } from "./HbbTvDesteği_";
+import { texts, ol } from "./İzlemeSiteleriniEngelle_";
 
-export default function HbbTvDesteği() {
+export default function İzlemeSiteleriniEngelle() {
   return (
     <div className="page">
-      <p>Anasayfa / HBBTV / HBBTV Ayarları / HBBTV Desteği</p>
+      <p>Anasayfa / HBBTV / HBBTV Ayarları / İzleme Sitelerini Engelle</p>
       <div className="container">
-        <h1>HBBTV Desteği</h1>
+        <h1>İzleme Sitelerini Engelle</h1>
         {texts.map((text) => {
           return ( 
             <p>{text}</p>
