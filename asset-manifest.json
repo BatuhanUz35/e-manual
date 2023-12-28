@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff27fe1a.css",
+    "main.js": "/static/js/main.59014aee.js",
+    "static/js/787.b826631b.chunk.js": "/static/js/787.b826631b.chunk.js",
+    "static/media/Roboto-BlackItalic.ttf": "/static/media/Roboto-BlackItalic.fd62a10743bd89a3d97c.ttf",
+    "static/media/Roboto-Medium.ttf": "/static/media/Roboto-Medium.7c8d04cd831df3033c8a.ttf",
+    "static/media/WEEE_WEEE_Symbol.png": "/static/media/WEEE_WEEE_Symbol.265709fc58afa562703b.png",
+    "static/media/tuş_takımı.png": "/static/media/tuş_takımı.ed80ea42cac4e2aaa148.png",
+    "static/media/TV_icons_WEEE_battery.png": "/static/media/TV_icons_WEEE_battery.96e19182d238d7e8682a.png",
+    "static/media/beko.svg": "/static/media/beko.0a9e709a21e39fd73f56303da49e4a79.svg",
+    "index.html": "/index.html",
+    "main.ff27fe1a.css.map": "/static/css/main.ff27fe1a.css.map",
+    "main.59014aee.js.map": "/static/js/main.59014aee.js.map",
+    "787.b826631b.chunk.js.map": "/static/js/787.b826631b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff27fe1a.css",
+    "static/js/main.59014aee.js"
+  ]
+}
