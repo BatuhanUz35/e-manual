@@ -3,6 +3,7 @@ import "./style.css";
 import tv from "../../assets/images/png/tv.png";
 
 export default function Anasayfa() {
+ 
   return (
     <div className="page">
       <p>Anasayfa</p>

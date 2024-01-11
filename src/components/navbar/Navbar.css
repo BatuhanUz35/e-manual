@@ -5,7 +5,6 @@
   align-items: center;
   margin: 0;
   padding: 0;
-  height: 70px;
   border-bottom: 1px solid rgba(161, 177, 185, 1);
 }
 
@@ -42,6 +41,7 @@
 
 .logo-img {
 width: 7.5rem;
+padding-top: 0.5rem;
 }
 
 .logo {

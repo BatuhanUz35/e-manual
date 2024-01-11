@@ -9,9 +9,9 @@ import { Circle } from "@mui/icons-material";
 export default function SesStili() {
   return (
     <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Sesi Stili</p>
+      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Ses Stili</p>
       <div className="container">
-        <h1>Sesi Stili</h1>
+        <h1>Ses Stili</h1>
         <ol>
           <li>
             <img src={tv_icon} alt="TV" className="inline-icon"/> ardından <img src={options} alt="Seçenekler" className="inline-icon"/>

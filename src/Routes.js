@@ -146,7 +146,8 @@ export const routes = [
   },
   { 
     path: "/kılavuz",
-    element: Kılavuz
+    element: Kılavuz,
+    id: "1"
   },
   { 
     path: "/güvenlik-talimatları",

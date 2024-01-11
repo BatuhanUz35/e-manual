@@ -29,7 +29,7 @@
   color: white;
   align-items: center;
   text-decoration: none;
-  padding: 5px 0;
+  padding: 0.5rem 0;
 }
 
 .item .icon {
@@ -38,17 +38,14 @@
 
 .item .title {
   flex: 90%;
+  padding-right: 1rem;
 }
 
 .item:hover, .subitem:hover {
   cursor: pointer;
   background-color: rgba(50, 50, 50, 0.85);
-  border: 2px solid rgba(255, 255, 255, 0.5);
-}
-
-#selected{
-  border-right: 10px solid rgba(161, 177, 185, 0.73);
-  background-color: rgba(20, 20, 20, 0.85);
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+  padding-right: 0.4rem;
 }
 
 .subitem {
@@ -61,7 +58,7 @@
   color: white;
   align-items: center;
   text-decoration: none;
-  padding: 5px 5px 5px 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .subitem-icon {
@@ -71,4 +68,34 @@
 
 .subitem-title {
   flex: 80%;
+  padding-right: 1rem;
+}
+
+.subsubitem {
+  width: auto;
+  height: auto;
+  min-height: 2.5rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.subsubitem-icon {
+  flex: 20%;
+  margin-left: 1rem;
+}
+
+.subsubitem-title {
+  flex: 80%;
+  padding-right: 1rem;
+}
+
+.selected{
+  border-right: 0.5rem solid rgba(161, 177, 185, 0.73);
+  background-color: rgba(20, 20, 20, 0.85);
+  padding-right: 0.5rem;
 }

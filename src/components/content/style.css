@@ -142,3 +142,7 @@ height: 1.5rem;
 .xs {
   transform: scale(0.75);
 }
+
+img {
+  max-width: 100%;
+}

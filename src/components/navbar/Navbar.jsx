@@ -3,12 +3,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LanguageIcon from '@mui/icons-material/Language';
 import "./Navbar.css"
 import logo from "../../assets/beko.svg"
-
 import { useDispatch } from 'react-redux'
 import { toggle } from '../../redux/menuSlice'
 import SearchBar from "../searchbar/SearchBar";
+import { withFocusable } from '@noriginmedia/react-spatial-navigation';
 
-export default function Navbar() {
+function Navbar() {
   const dispatch = useDispatch()
 
   return (
@@ -32,3 +32,5 @@ export default function Navbar() {
     </div>   
   );
 }
+
+export default withFocusable()(Navbar);

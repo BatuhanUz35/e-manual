@@ -8,9 +8,21 @@ import { BrowserRouter } from 'react-router-dom';
 import "./index.css";
 import './assets/fonts/roboto/Roboto-Medium.ttf';
 import './assets/fonts/roboto/Roboto-BlackItalic.ttf';
+import { initNavigation, setKeyMap } from '@noriginmedia/react-spatial-navigation';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+initNavigation();
+
+setKeyMap({
+  'left': 9001,
+  'up': 9002,
+  'right': 9003,
+  'down': 9004,
+  'enter': 9005
+});
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
