@@ -1,0 +1,25 @@
+.pages {
+  display: block;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width:100%;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgb(100, 100, 100, 0.71);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(202,202,202);
+}
+
+.pages {
+  scroll-behavior: smooth;
+}

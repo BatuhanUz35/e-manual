@@ -4,8 +4,8 @@ export const menuSlice = createSlice({
   name: 'menu',
   initialState: {
     toggle: true,
-    open_submenu: "",
-    open_subsubmenu: "",
+    active_l1_subcategory: null,
+    active_l2_subcategory: null,
     selected_item_id: 3,
     
   },
@@ -15,12 +15,14 @@ export const menuSlice = createSlice({
     },
     select_item: (state, action) => {
       state.selected_item_id = action.payload;
+      state.active_l1_subcategory = null
+      state.active_l2_subcategory = null
     },
-    open_submenu: (state, action) => {
-      state.open_submenu = action.payload;
+    activate_l1_subcategory: (state, action) => {
+      state.active_l1_subcategory = action.payload;
     },
-    open_subsubmenu: (state, action) => {
-      state.open_subsubmenu = action.payload;
+    activate_l2_subcategory: (state, action) => {
+      state.active_l2_subcategory = action.payload;
     },
     increment_id: (state) => {
       state.selected_item_id += 1;
@@ -28,9 +30,12 @@ export const menuSlice = createSlice({
     decrement_id: (state) => {
       state.selected_item_id -= 1;
     },
+    set_id: (state, action) => {
+      state.selected_item_id = action.payload
+    }
   }
 })
 
-export const {toggle, select_item, open_submenu, open_subsubmenu, increment_id, decrement_id} = menuSlice.actions
+export const {toggle, select_item, activate_l1_subcategory, activate_l2_subcategory, increment_id, decrement_id, set_id} = menuSlice.actions
 
 export default menuSlice.reducer

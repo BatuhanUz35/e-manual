@@ -7,7 +7,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .item-list {
@@ -38,17 +38,17 @@
 
 .item .title {
   flex: 90%;
-  padding-right: 1rem;
+  padding-right: 0.4rem;
 }
 
-.item:hover, .subitem:hover {
+.item:focus, .l1_subcategory_item:focus, .l2_subcategory_item:focus {
   cursor: pointer;
   background-color: rgba(50, 50, 50, 0.85);
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
   padding-right: 0.4rem;
 }
 
-.subitem {
+.l1_subcategory_item {
   width: auto;
   height: auto;
   min-height: 2.5rem;
@@ -61,17 +61,17 @@
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
-.subitem-icon {
+.l1_subcategory_item-icon {
   flex: 10%;
   margin-left: 1rem;
 }
 
-.subitem-title {
+.l1_subcategory_item-title {
   flex: 80%;
-  padding-right: 1rem;
+  padding-right: 0.4rem;
 }
 
-.subsubitem {
+.l2_subcategory_item {
   width: auto;
   height: auto;
   min-height: 2.5rem;
@@ -84,18 +84,21 @@
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
-.subsubitem-icon {
+.l2_subcategory_item-icon {
   flex: 20%;
   margin-left: 1rem;
 }
 
-.subsubitem-title {
+.l2_subcategory_item-title {
   flex: 80%;
-  padding-right: 1rem;
+  padding-right: 0.4rem;
 }
 
 .selected{
-  border-right: 0.5rem solid rgba(161, 177, 185, 0.73);
+  border-right: 0.4rem solid rgba(161, 177, 185, 0.73);
   background-color: rgba(20, 20, 20, 0.85);
-  padding-right: 0.5rem;
+}
+
+.hidden {
+  display: none;
 }

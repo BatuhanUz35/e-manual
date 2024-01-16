@@ -18,7 +18,7 @@ export const MenuItems = [
     id: 5,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "Kullanım Amacı",
         url: "güvenlik-talimatları/kullanım-amacı",
@@ -62,7 +62,7 @@ export const MenuItems = [
     id: 6,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması",
         url: "çevre-talimatları-ve-genel-bilgiler/yönetmelik-ve-atık",
@@ -162,7 +162,7 @@ export const MenuItems = [
     id: 7,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "Paketin İçindekiler",
         url: "ürün/paketin-içindekiler",
@@ -174,7 +174,7 @@ export const MenuItems = [
         id: 701,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Ayaklı Kurulum",
             url: "ürün/kurulum-veya-asma/ayaklı-kurulum",
@@ -203,7 +203,7 @@ export const MenuItems = [
         id: 704,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title:"Cihazın Bekleme Konumundan Açılması",
             url:"ürün/tuş-takımı/bekleme-konumu-açılma",
@@ -227,7 +227,7 @@ export const MenuItems = [
         id: 705,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title:"DVB-S Uydu Anten Bağlantısı",
             url:"ürün/anten-ve-elektrik-kablosu/dvbs-anten-bağlantısı",
@@ -258,7 +258,7 @@ export const MenuItems = [
     id: 8,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title:"Hazırlık",
         url:"ayarlar/hazırlık",
@@ -275,7 +275,7 @@ export const MenuItems = [
         id: 802,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title:"Kanal Düzenleyici Uygulamasını Başlatma",
             url:"ayarlar/dijital-kanalları-düzenleme/kanal-düzenleyici",
@@ -344,7 +344,7 @@ export const MenuItems = [
         id: 803,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title:"Arttırılmış Görüntü Ayarları",
             url:"ayarlar/görüntü-ayarları/arttırılmış-görüntü-ayarları",
@@ -363,7 +363,7 @@ export const MenuItems = [
         id: 804,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Sistem Sesleri",
             url: "ayarlar/ses-ayarları/sistem-sesleri",
@@ -454,7 +454,7 @@ export const MenuItems = [
     id: 9,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "Açma ve Kapatma",
         url: "temel-fonksiyonlar/açma-ve-kapatma",
@@ -506,7 +506,7 @@ export const MenuItems = [
         id: 909,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Uyku Zamanlayıcısı",
             url: "temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı",
@@ -543,7 +543,7 @@ export const MenuItems = [
     id: 10,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "Ses Dilinin Değiştirilmesi",
         url: "gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi",
@@ -580,7 +580,7 @@ export const MenuItems = [
         id: 1006,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Analog Altyazı",
             url: "gelişmiş-fonksiyonlar/altyazılar/analog-altyazı",
@@ -614,7 +614,7 @@ export const MenuItems = [
         id: 1007,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Dijital Teletesk Dili",
             url:"gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili",
@@ -638,7 +638,7 @@ export const MenuItems = [
         id: 1009,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Çalışma Şekli",
             url: "gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli",
@@ -674,7 +674,7 @@ export const MenuItems = [
     id: 11,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "HbbTV Nedir?",
         url: "hbbtv/hbbtv-nedir",
@@ -694,7 +694,7 @@ export const MenuItems = [
         title: "HBBTV Ayarları",
         url: "hbbtv/hbbtv-ayarları",
         id: 1103,
-        submenu: [
+        subcategory: [
           {
             title: "HBBTV Desteği",
             url: "hbbtv/hbbtv-ayarları/hbbtv-desteği",
@@ -740,7 +740,7 @@ export const MenuItems = [
     id: 12,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "TOP Tekst veya FLOF Tekst Modu",
         url: "teleteks/top-tekst-veya-flof-tekst-modu",
@@ -759,7 +759,7 @@ export const MenuItems = [
     id: 13,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon/>,
-    submenu: [
+    subcategory: [
       {
         title: "Televizyon Programlarının Kaydedilmesi ve Oynatılmasıyla İlgili Bilgiler",
         url: "usb-kayıt/televizyon-programlarının-kaydedilmesi-ve-oynatılmasıyla-ilgili-bilgiler",
@@ -781,7 +781,7 @@ export const MenuItems = [
         id: 1303,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Veri Ortamının Biçimlendirilmesi",
             url: "usb-kayıt/usb-kayıt-ayarları/veri-ortamının-biçimlendirilmesi",
@@ -810,7 +810,7 @@ export const MenuItems = [
         id: 1305,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Otomatik Kurulum",
             url: "usb-kayıt/zaman-kaydırma-disk-kurulumu/otomatik-kurulum",
@@ -834,7 +834,7 @@ export const MenuItems = [
         id: 1307,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması",
             url: "usb-kayıt/programları-kaydetme/kayıt-sırasında-televizyonun-bekleme-konumuna-alınması",
@@ -853,7 +853,7 @@ export const MenuItems = [
         id: 1308,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi",
             url: "usb-kayıt/programları-kayıt-zamanlayıcısı/elektronik-program-rehberi-kullan-kayıt-zamanlayıcı-eklenmesi",
@@ -882,7 +882,7 @@ export const MenuItems = [
         id: 1309,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon/>,
-        submenu: [
+        subcategory: [
           {
             title: "Kayıtlı Dosyalar Listesinden Bir Kayıt Oynatma",
             url: "usb-kayıt/oynatma/kayıtlı-dosyalar-listesinden-bir-kayıt-oynatma",

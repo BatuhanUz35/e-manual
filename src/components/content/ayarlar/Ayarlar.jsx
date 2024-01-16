@@ -12,13 +12,13 @@ export default function Ayarlar() {
         <h2>Ek bilgiler</h2>
         <div className="link-container">
           <LinkIcon />
-          <Link to="ayarlar/hazırlık" className="link">
+          <Link to="/ayarlar/hazırlık" className="link">
             Hazırlık
           </Link>
         </div>
         <div className="link-container">
           <LinkIcon />
-          <Link to="ayarlar/kurulum" className="link">
+          <Link to="/ayarlar/kurulum" className="link">
             İlk Kurulum ve Televizyonu Ayarlama
           </Link>
         </div>
@@ -30,13 +30,13 @@ export default function Ayarlar() {
         </div>
         <div className="link-container">
           <LinkIcon />
-          <Link to="ayarlar/görüntü-ayarları" className="link">
+          <Link to="/ayarlar/görüntü-ayarları" className="link">
             Görüntü Ayarları
           </Link>
         </div>
         <div className="link-container">
           <LinkIcon />
-          <Link to="ayarlar/ses-ayarları" className="link">
+          <Link to="/ayarlar/ses-ayarları" className="link">
             Ses Ayarları
           </Link>
         </div>

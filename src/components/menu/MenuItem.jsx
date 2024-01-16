@@ -1,80 +1,85 @@
-import { MenuItems } from "./MenuItems";
+import { MenuItems } from "./MenuItems_";
 import "./Menu.css";
 import { useSelector, useDispatch } from "react-redux";
-import { select_item, open_submenu, open_subsubmenu } from "../../redux/menuSlice";
+import { select_item, activate_l1_subcategory, activate_l2_subcategory } from "../../redux/menuSlice";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { withFocusable } from '@noriginmedia/react-spatial-navigation';
 import React from "react"
 
 const MenuItem = () => {
-  const opened_submenu = useSelector((state) => state.menu.open_submenu);
-  const opened_subsubmenu = useSelector((state) => state.menu.open_subsubmenu);
+  const active_l1_subcategory = useSelector((state) => state.menu.active_l1_subcategory);
+  const active_l2_subcategory = useSelector((state) => state.menu.active_l2_subcategory);
   const selected_item_id = useSelector((state) => state.menu.selected_item_id);
   const dispatch = useDispatch();
 
+  function handleKeyDown(event) {
+    switch (event.key){
+      case 'ArrowRight':
+        document.getElementById(999).focus();
+        break;
+      default:
+        break;
+    }
+  }
+  
   return (
-      <Box>
-      {MenuItems.map((item) => {
+      MenuItems.map((item) => {
       return (
         <Box>
-          <Box onClick={() => dispatch(open_submenu(item.id))}>
+          <Box onKeyDown={handleKeyDown} onClick={() => dispatch(activate_l1_subcategory(item.id))}>
             <Link
               to={item.url}
               className={
                 selected_item_id === item.id ? "selected item" : "item"
               }
               id={item.id}
-              focusKey="MenuItem"
-              onClick={() => { dispatch(select_item(item.id));}}
+              focusKey={item.id}
+              onClick={() => dispatch(select_item(item.id))}
             >
               <Box className="icon">
-                {opened_submenu === item.id ? item.iconActive : item.icon}
+                {active_l1_subcategory === item.id ? item.iconActive : item.icon}
               </Box>
               <p className="title">{item.title}</p>
             </Link>
-            {item.submenu && opened_submenu === item.id
-              ? item.submenu.map((subitem) => {
+            {item.subcategory 
+              ? item.subcategory.map((l1_subcategory_item) => {
                   return (
-                    <Box div onClick={() => dispatch(open_subsubmenu(subitem.id))}>
+                    <Box div onClick={() => dispatch(activate_l2_subcategory(l1_subcategory_item.id))}>
                       <Link
-                        to={subitem.url}
+                        to={l1_subcategory_item.url}
                         className={
-                          selected_item_id === subitem.id
-                            ? "selected subitem"
-                            : "subitem"
-                        }
-                        id={subitem.id}
-                        focusKey="MenuItem"
-                        onClick={() => { dispatch(select_item(subitem.id));}}
+                          `${selected_item_id === l1_subcategory_item.id ? "selected l1_subcategory_item" : "l1_subcategory_item"} 
+                          ${active_l1_subcategory === item.id ? "" : "hidden"}`}
+                        id={l1_subcategory_item.id}
+                        focusKey={l1_subcategory_item.id}
+                        onClick={() => dispatch(select_item(l1_subcategory_item.id))}
                       >
-                        <Box className="subitem-icon">
-                        {opened_subsubmenu === subitem.id ? subitem.iconActive : subitem.icon}
+                        <Box className="l1_subcategory_item-icon">
+                        {active_l2_subcategory === l1_subcategory_item.id ? l1_subcategory_item.iconActive : l1_subcategory_item.icon}
                         </Box>
-                        <Box className="subitem-title">{subitem.title}</Box>
+                        <Box className="l1_subcategory_item-title">{l1_subcategory_item.title}</Box>
                       </Link>
-                      {subitem.submenu && opened_subsubmenu === subitem.id
-                        ? subitem.submenu.map((subsubitem) => {
+                      {l1_subcategory_item.subcategory
+                        ? l1_subcategory_item.subcategory.map((l2_subcategory_item) => {
                             return (
                               <div>
                                 <Link
-                                  to={subsubitem.url}
+                                  to={l2_subcategory_item.url}
                                   className={
-                                    selected_item_id === subsubitem.id
-                                      ? "selected subsubitem"
-                                      : "subsubitem"
-                                  }
-                                  id={subsubitem.id}
-                                  focusKey="MenuItem"
-                                  onClick={() => { dispatch(select_item(subsubitem.id));}}
+                                    `${selected_item_id === l2_subcategory_item.id ? "selected l2_subcategory_item" : "l2_subcategory_item"}
+                                    ${active_l2_subcategory === l1_subcategory_item.id ? "" : "hidden"}`}
+                                  id={l2_subcategory_item.id}
+                                  focusKey={l2_subcategory_item.id}
+                                  onClick={() => dispatch(select_item(l2_subcategory_item.id))}
                                 >
-                                  <Box className="subsubitem-icon">
-                                    {selected_item_id === subsubitem.id
-                                      ? subsubitem.iconActive
-                                      : subsubitem.icon}
+                                  <Box className="l2_subcategory_item-icon">
+                                    {selected_item_id === l2_subcategory_item.id
+                                      ? l2_subcategory_item.iconActive
+                                      : l2_subcategory_item.icon}
                                   </Box>
-                                  <Box className="subsubitem-title">
-                                    {subsubitem.title}
+                                  <Box className="l2_subcategory_item-title">
+                                    {l2_subcategory_item.title}
                                   </Box>
                                 </Link>
                               </div>
@@ -87,10 +92,8 @@ const MenuItem = () => {
               : null}
           </Box>
         </Box>
-        
       );
-    })}
-    </Box>
+    })
   );
 }
 
