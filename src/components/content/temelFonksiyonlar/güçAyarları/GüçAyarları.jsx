@@ -2,39 +2,40 @@ import React from "react";
 import "../../style.css";
 import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 
 export default function GüçAyarları() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları</p>
+      <Box className="container">
         <h1>Güç Ayarları</h1>
         <h2>Ek bilgiler</h2>
-        <div className="link-container">
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı" className="link">
             Uyku Zamanlayıcısı
           </Link>      
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/temel-fonksiyonlar/güç-ayarları/görüntüyü-kapatma" className="link">
             Görüntüyü Kapatma
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcısı" className="link">
             Kapanma Zamanlayıcısı
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma" className="link">
             Sinyal Olmadığında Otomatik Kapanma
           </Link>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }

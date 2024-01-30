@@ -1,17 +1,18 @@
 import React from "react";
 import "../../style.css";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import back from "../../../../assets/images/png/back.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import back from "../../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function AltyazıTürü() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Altyazılar /
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Altyazılar /
         Altyazı Türü
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Altyazı Türü</h1>
         <ol>
           <li>
@@ -38,7 +39,7 @@ export default function AltyazıTürü() {
             düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

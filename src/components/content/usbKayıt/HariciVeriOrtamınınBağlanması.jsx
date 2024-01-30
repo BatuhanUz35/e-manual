@@ -1,12 +1,13 @@
 import React from "react";
 import "../style.css";
 import { ul, ol, notlar } from "./HariciVeriOrtamınınBağlanması_";
+import { Box } from "@mui/material";
 
 export default function HariciVeriOrtamınınBağlanması() {
   return (
-    <div className="page">
-      <p>Anasayfa / USB Kayıt / Harici Veri Ortamının Bağlanması</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / USB Kayıt / Harici Veri Ortamının Bağlanması</p>
+      <Box className="container">
         <h1>Harici Veri Ortamının Bağlanması</h1>
         <ul>
         {ul.map((li) => {
@@ -31,7 +32,7 @@ export default function HariciVeriOrtamınınBağlanması() {
           );
         })}
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

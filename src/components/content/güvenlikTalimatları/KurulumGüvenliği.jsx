@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function KurulumGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Kurulum Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Kurulum Güvenliği</p>
+      <Box className="container">
         <h1>Kurulum Güvenliği</h1>
         <ul>
           <li>
@@ -49,7 +50,7 @@ export default function KurulumGüvenliği() {
             bulundurunuz.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

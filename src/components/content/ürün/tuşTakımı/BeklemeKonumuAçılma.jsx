@@ -1,12 +1,13 @@
 import React from "react";
 import "../../style.css";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import { Box } from "@mui/material";
 
 export default function BeklemeKonumuAçılma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumundan Açılması</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumundan Açılması</p>
+      <Box className="container">
         <h1>Cihazın Bekleme Konumundan Açılması</h1>
         <ol>
           <li>
@@ -14,7 +15,7 @@ export default function BeklemeKonumuAçılma() {
             düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import "../../style.css";
+import { Box } from "@mui/material";
 
 export default function DvbsAntenBağlantııs() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-S Uydu Anten Bağlantısı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-S Uydu Anten Bağlantısı</p>
+      <Box className="container">
       <h1>DVB-S Uydu Anten Bağlantısı</h1>
       <h2>img gelcek</h2>
       <ol>
@@ -14,7 +15,7 @@ export default function DvbsAntenBağlantııs() {
           anten girişine takın.
         </li>
       </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

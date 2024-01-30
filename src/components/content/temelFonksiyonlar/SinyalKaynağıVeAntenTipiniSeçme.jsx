@@ -1,17 +1,18 @@
 import React from "react";
 import "../style.css";
-import options from "../../../assets/images/png/options.png"
-import entries from "../../../assets/images/png/entries.png"
+import options from "../../../assets/images/icons/options.png"
+import entries from "../../../assets/images/icons/entries.png"
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 
 export default function SinyalKaynağıVeAntenTipiniSeçme() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Sinyal Kaynağı ve Anten Tipini Seçme</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Sinyal Kaynağı ve Anten Tipini Seçme</p>
+      <Box className="container">
         <h1>Sinyal Kaynağı ve Anten Tipini Seçme</h1>
-        <p>
+        <p classname="text">
           Üç farklı yöntem ile seçim yapabilirsiniz.
         </p>
         <ol>
@@ -30,8 +31,8 @@ export default function SinyalKaynağıVeAntenTipiniSeçme() {
             {" "}<Circle className="inline-icon button"/> düğmesine basın
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

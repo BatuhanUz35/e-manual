@@ -1,17 +1,18 @@
 import React from "react";
 import "../style.css";
-import tv_icon from "../../../assets/images/png/tv_icon.png";
-import back from "../../../assets/images/png/back.png";
-import sound_language from "../../../assets/images/png/sound_language.png";
+import tv_icon from "../../../assets/images/icons/tv_icon.png";
+import back from "../../../assets/images/icons/back.png";
+import sound_language from "../../../assets/images/icons/sound_language.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function SesDili() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Ses Dili</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Ses Dili</p>
+      <Box className="container">
         <h1>Ses Dili</h1>
-        <p>
+        <p classname="text">
           Dijital kanalları seyrederken çeşitli dilleri seçebilirsiniz. Bu, yayınlanan programa bağlıdır.
         </p>
         <ol>
@@ -33,8 +34,8 @@ export default function SesDili() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

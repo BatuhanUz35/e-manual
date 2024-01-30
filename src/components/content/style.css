@@ -37,7 +37,8 @@
  .button {
   background-color: gray;
   border-radius: 50%;
-  border: solid 1px gray;
+  border: solid 0.1rem gray;
+  transform: scale(0.85);
  }
 
  .rotate-180 {
@@ -92,7 +93,7 @@ ol {
 }
 
 li {
-  padding: 0.5rem;
+  padding: 0.2rem;
 }
 
 .uyarı-başlık{
@@ -123,15 +124,14 @@ li {
 
 .in-page-img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
   min-width: 25rem;
+  padding-bottom: 1rem;
 }
 
 .inline-icon {
 vertical-align: middle;
-margin: 0.25rem;
+margin: 0.15rem;
 height: 1.5rem;
 }
 
@@ -145,4 +145,8 @@ height: 1.5rem;
 
 img {
   max-width: 100%;
+}
+
+.padding-1 {
+  padding: 1rem;
 }

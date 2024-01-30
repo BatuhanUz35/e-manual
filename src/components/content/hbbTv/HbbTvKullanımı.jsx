@@ -1,15 +1,16 @@
 import React from "react";
 import "../style.css";
 import { texts, not_1, notlar, not_2 } from "./HbbTvKullanımı_";
+import { Box } from "@mui/material";
 
 export default function HbbTvKullanımı() {
   return (
-    <div className="page">
-      <p>Anasayfa / HBBTV / HbbTV'nin Kullanımı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / HBBTV / HbbTV'nin Kullanımı</p>
+      <Box className="container">
         <h1>HbbTV'nin Kullanımı</h1>
         {texts.map((text) => {
-          return <p>{text}</p>;
+          return <p classname="text">{text}</p>;
         })}
         <h2>Not:</h2>
         <ul>
@@ -49,7 +50,7 @@ export default function HbbTvKullanımı() {
           );
         })}
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

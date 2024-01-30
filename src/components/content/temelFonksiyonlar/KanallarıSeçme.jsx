@@ -1,17 +1,18 @@
 import React from "react";
 import "../style.css";
-import one from "../../../assets/images/png/one.png"
-import zero from "../../../assets/images/png/zero.png"
+import one from "../../../assets/images/icons/one.png"
+import zero from "../../../assets/images/icons/zero.png"
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 
 export default function KanallarıSeçme() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Kanalları Seçme</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Kanalları Seçme</p>
+      <Box className="container">
         <h1>Kanalları Seçme</h1>
-        <p>
+        <p classname="text">
           Üç farklı yöntem ile seçim yapabilirsiniz.
         </p>
         <ol>
@@ -27,8 +28,8 @@ export default function KanallarıSeçme() {
             menüsünden kanal seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,15 +1,16 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png";
-import home from "../../../../assets/images/png/home.png"
-import tv_icon from "../../../../assets/images/png/tv_icon.png"
+import back from "../../../../assets/images/icons/back.png";
+import home from "../../../../assets/images/icons/home.png"
+import tv_icon from "../../../../assets/images/icons/tv_icon.png"
+import { Box } from "@mui/material";
 
 export default function GörüntüAyarlarınıFabrikaAyarlarınaDöndürme() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ayarlar / Görüntü Ayarları / Görüntü Ayarlarını Fabrika Ayarlarına Döndürme</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ayarlar / Görüntü Ayarları / Görüntü Ayarlarını Fabrika Ayarlarına Döndürme</p>
+      <Box className="container">
         <h1>Görüntü Ayarlarını Fabrika Ayarlarına Döndürme</h1>
         <ol>
           <li>
@@ -26,7 +27,7 @@ export default function GörüntüAyarlarınıFabrikaAyarlarınaDöndürme() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

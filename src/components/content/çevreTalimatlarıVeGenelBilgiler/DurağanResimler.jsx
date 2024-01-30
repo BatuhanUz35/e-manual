@@ -1,14 +1,15 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function DurağanResimler() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Durağan Resimler
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Durağan Resimler
         İle İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Durağan Resimler İle İlgili Bilgiler</h1>
         <ul>
           <li>
@@ -33,7 +34,7 @@ export default function DurağanResimler() {
            neden olacağından, TV'nizi memnun olacağınız en düşük parlaklık ve kontrast seviyesinde izlemeniz önerilir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function UzaktanKumandaPil() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Uzaktan Kumandaya Pillerin Takılması</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Uzaktan Kumandaya Pillerin Takılması</p>
+      <Box className="container">
         <h1>Uzaktan Kumandaya Pillerin Takılması</h1>
         <ol>
           <li>Pil bölmesini açın.</li>
           <li>Pil bölmesinin alt kısmındaki işaretlere göre pilleri takın (2 x Alkalin/LR03/AAA).</li>
           <li>Pil bölmesini kapatın.</li>
         </ol>
-        <p>img gelcek</p>
+        <p classname="text">img gelcek</p>
         <h4>Notlar:</h4>
         <ul>
           <li>
@@ -28,7 +29,7 @@ export default function UzaktanKumandaPil() {
             yönetmelikleri öğrenin.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

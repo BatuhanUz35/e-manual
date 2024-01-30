@@ -1,17 +1,18 @@
 import React from "react";
 import "../style.css";
 import fire from "../../../assets/images/safety/TV_icons_Fire_danger.png";
+import { Box } from "@mui/material";
 
 export default function YangınGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Yangın Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Yangın Güvenliği</p>
+      <Box className="container">
         <h1>Yangın Güvenliği</h1>
-        <div className="uyarı-başlık red-bg">DİKKAT</div>
-        <div className="uyarı-container">
+        <Box className="uyarı-başlık red-bg">DİKKAT</Box>
+        <Box className="uyarı-container">
           <img src={fire} alt="electric" className="icon"></img>
-          <div>
+          <Box>
             <p className="uyarı-içerik">
               ÖNEMLİ GÜVENLİK TALİMATLARI. TALİMATLARI İLERİDE BAŞVURMAK ÜZERE
               SAKLAYIN
@@ -21,8 +22,8 @@ export default function YangınGüvenliği() {
               uyarılarını, talimatları, çizimler ve teknik özellikleri dikkate
               alın.
             </p>
-          </div>
-        </div>
+          </Box>
+        </Box>
         <hr className="uyarı-bitiş red-bg"/>
         <ul>
           <li>Ürün üzerindeki havalandıma açıklıklarını kapatmayın.</li>
@@ -44,7 +45,7 @@ export default function YangınGüvenliği() {
             koymayın.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

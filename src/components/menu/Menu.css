@@ -16,13 +16,8 @@
   width: 100%;
 }
 
-.item-list * {
-  text-decoration: none;
-}
-
 .item {
-  width: auto;
-  height: auto;
+  height: 3rem;
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -45,7 +40,7 @@
   cursor: pointer;
   background-color: rgba(50, 50, 50, 0.85);
   border: 0.1rem solid rgba(255, 255, 255, 0.5);
-  padding-right: 0.4rem;
+  padding-right: 0.3rem;
 }
 
 .l1_subcategory_item {
@@ -97,6 +92,7 @@
 .selected{
   border-right: 0.4rem solid rgba(161, 177, 185, 0.73);
   background-color: rgba(20, 20, 20, 0.85);
+  padding-right: 0.1rem;
 }
 
 .hidden {

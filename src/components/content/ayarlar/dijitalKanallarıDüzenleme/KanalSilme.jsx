@@ -1,16 +1,17 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
+import back from "../../../../assets/images/icons/back.png"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function KanalYeriniDeğiştirme() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Silme
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Silme
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Kanal Silme</h1>
         <ol>
           <li>
@@ -19,7 +20,7 @@ export default function KanalYeriniDeğiştirme() {
           </li>
           <li>
           <Circle className="inline-icon button-blue button"/> (mavi) düğmesine basın.
-          <div><ArrowForwardIcon className="inline-icon xs"/>Kanal/kanallar silinmiştir</div>
+          <Box><ArrowForwardIcon className="inline-icon xs"/>Kanal/kanallar silinmiştir</Box>
           </li>
           <li>
             <b>
@@ -27,7 +28,7 @@ export default function KanalYeriniDeğiştirme() {
               seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

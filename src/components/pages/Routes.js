@@ -137,7 +137,88 @@ import UsbKayıt from "../content/usbKayıt/UsbKayıt";
 import TelevizyonProgramlarınınKaydedilmesiVeOynatılması from "../content/usbKayıt/TelevizyonProgramlarınınKaydedilmesiVeOynatılması";
 import HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar from "../content/usbKayıt/HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar";
 import HariciVeriOrtamınınBağlanması from "../content/usbKayıt/HariciVeriOrtamınınBağlanması";
-
+import UsbKayıtAyarları from "../content/usbKayıt/usbKayıtAyarları/UsbKayıtAyarları";
+import VeriOrtamınınBiçimlendirilmesi from "../content/usbKayıt/usbKayıtAyarları/VeriOrtamnınınBiçimlendirilmesi";
+import KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi from "../content/usbKayıt/usbKayıtAyarları/KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi";
+import VeriOrtamıTesti from "../content/usbKayıt/usbKayıtAyarları/VeriOrtamıTesti";
+import ZamanKaydırmaFonksiyonununAçılıpKapatılması from "../content/usbKayıt/ZamanKaydırmaFonksiyonununAçılıpKapatılması";
+import ZamanKaydırmaDiskKurulumu from "../content/usbKayıt/zamanKaydırmaDiskKurulumu/ZamanKaydırmaDiskKurulumu";
+import OtomatikKurulum from "../content/usbKayıt/zamanKaydırmaDiskKurulumu/OtomatikKurulum";
+import ManuelKurulum from "../content/usbKayıt/zamanKaydırmaDiskKurulumu/ManuelKurulum";
+import ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması from "../content/usbKayıt/ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması";
+import ProgramlarıKaydetme from "../content/usbKayıt/programlarıKaydetme/ProgramlarıKaydetme";
+import KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması from "../content/usbKayıt/programlarıKaydetme/KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması";
+import KanalListesindenBirProgramıKaydetme from "../content/usbKayıt/programlarıKaydetme/KanalListesindenBirProgramıKaydetme";
+import KayıtZamanlayıcısı from "../content/usbKayıt/kayıtZamanlayıcısı/KayıtZamanlayıcısı";
+import ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi from "../content/usbKayıt/kayıtZamanlayıcısı/ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi";
+import BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi from "../content/usbKayıt/kayıtZamanlayıcısı/BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi";
+import KayıtZamanlayıcısınınDüzenlenmesi from "../content/usbKayıt/kayıtZamanlayıcısı/KayıtZamanlayıcısınınDüzenlenmesi";
+import KayıtZamanlayıcısınınSilinmes from "../content/usbKayıt/kayıtZamanlayıcısı/KayıtZamanlayıcısınınSilinmesi";
+import Oynatma from "../content/usbKayıt/oynatma/Oynatma";
+import KayıtlıDosyalarListesindenBirKayıtOynatma from "../content/usbKayıt/oynatma/KayıtlıDosyalarListesindenBirKayıtOynatma";
+import İleriGeriGörüntüArama from "../content/usbKayıt/oynatma/İleriGeriGörüntüOynatma";
+import KaydedilenlerListesindenKaydedilmişYayınlarınSilinmesi from "../content/usbKayıt/KaydedilenlerListesindenKaydedilmişYayınlarınSilinmesi";
+import UsbOynatıcı from "../content/usbOynatıcı/UsbOynatıcı";
+import DosyaFormatları from "../content/usbOynatıcı/dosyaFormatları/DosyaFormatları";
+import VideoVerileri from "../content/usbOynatıcı/dosyaFormatları/VideoVerileri";
+import SesVerileri from "../content/usbOynatıcı/dosyaFormatları/SesVerileri";
+import GörüntüVerileri from "../content/usbOynatıcı/dosyaFormatları/GörüntüVerileri";
+import HariciVeriOrtamınınBağlanması_2 from "../content/usbOynatıcı/HariciVeriOrtamınınBağlanması";
+import HariciVeriOrtamınınÇıkarılması_2 from "../content/usbOynatıcı/HariciVeriOrtamınınÇıkartılması";
+import MultiMedyaPlayerMenüsü from "../content/usbOynatıcı/MultiMedyaPlayerMenüsü"
+import OynatmaÇalmaTemelFonksiyonlar from "../content/usbOynatıcı/OynatmaÇalmaTemelFonksiyonlar";
+import İlaveOynatmaFonksiyonları from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/İlaveOynatmaFonksiyonları";
+import TümDosyaFormatındaBilgileriGörüntüleme from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/TümDosyaFormatındaBilgileriGörüntüleme";
+import İleriGeriGörüntüArama_2 from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/İleriGeriGörüntüArama";
+import VideoDosyalarındaİstenilenSüreyeGitme from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/VideoDosyalarındaİstenilenSüreyeGitme";
+import TekrarlamaFonksiyonu from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/TekrarlamaFonksiyonu";
+import VideoDosyalarındaGörüntüAyarları from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/VideoDosyalarındaGörüntüAyarları";
+import VideoVeSesDosyalarındaSesAyarları from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/VideoVeSesDosyalarındaSesAyarları";
+import SesDosyalarınıKarışıkÇalma from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/SesDosyalarınıKarışıkÇalma";
+import SesDosyalarınıEkranKapalıÇalma from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/SesDosyalarınıEkranKapalıÇalma";
+import ResimGörüntüsünüDöndürme from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/ResimGörüntüsünüDöndürme";
+import ResimGörüntüsünüBüyütme from "../content/usbOynatıcı/ilaveOynatmaFonksiyonları/ResimGörüntüsünüBüyütme";
+import AndroidTv from "../content/androidTv/AndroidTv";
+import ŞartlarKoşullarVeGizlilik from "../content/androidTv/ŞartlarKoşullarVeGizlilik";
+import GoogleHesabıylaOturumAçma from "../content/androidTv/GoogleHesabıylaOturumAçma";
+import HomeMenü from "../content/androidTv/HomeMenü";
+import HomeMenüsünüAçma from "../content/androidTv/HomeMenüsünüAçma";
+import HomeMenüsüAyarları from "../content/androidTv/homeMenüsüAyarları/HomeMenüsüAyarları";
+import HomeMenüsündeKanallarıÖzelleştirme from "../content/androidTv/homeMenüsüAyarları/HomeMenüsündeKanallarıÖzelleştirme";
+import HomeMenüsüKanallarındaVideoSesÖnİzlemesi from "../content/androidTv/homeMenüsüAyarları/HomeMenüsüKanallarındaVideoSesÖnİzlemesi";
+import HomeMenüUygulamalarSekmesindekiUygulamalarınSıralanması from "../content/androidTv/homeMenüsüAyarları/HomeMenüUygulamalarSekmesindekiUygulamalarınSıralanması";
+import HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması from "../content/androidTv/homeMenüsüAyarları/HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması";
+import HomeMenüAçıkKaynakLisansları from "../content/androidTv/homeMenüsüAyarları/HomeMenüAçıkKaynakLisansları";
+import GooglePlayStoredanUygulamaYükleme from "../content/androidTv/GooglePlayStoredanUygulamaYükleme";
+import YüklüBirUygulamanınBaşlatılması from "../content/androidTv/YüklüBirUygulamanınBaşlatılması";
+import HomeMenüsüUygulamalarSekmesineFavoriUygulamalarınEklenmesi from "../content/androidTv/HomeMenüsüUygulamalarSekmesineFavoriUygulamalarınEklenmesi";
+import HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması from "../content/androidTv/HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması";
+import UygulamalarSekmesindekiUygulamalarınSıralanması from "../content/androidTv/UygulamalarSekmesindekiUygulamalarınSıralanması";
+import UygulamaAyarları from "../content/androidTv/uygulamaAyarları/UygulamaAyarları";
+import UygulamalarınKaldırılması from "../content/androidTv/uygulamaAyarları/UygulamalarınKaldırılması";
+import UygulamalarınZorlaDurdurulması from "../content/androidTv/uygulamaAyarları/UygulamalarınZorlaDurdurulması";
+import UygulamaVerileriniTemizleme from "../content/androidTv/uygulamaAyarları/UygulamaVerileriniTemizleme";
+import UygulamaÖnBelleğininTemizlenmesi from "../content/androidTv/uygulamaAyarları/UygulamaÖnbelleğininTemizlenmesi";
+import UygulamaVarsayılanAyarları from "../content/androidTv/uygulamaAyarları/UygulamaVarsayılanAyarları";
+import UygulamaBildirimleri from "../content/androidTv/uygulamaAyarları/UygulamaBildirimleri";
+import Uygulamaİzinleri from "../content/androidTv/uygulamaAyarları/Uygulamaİzinleri";
+import ÖzelUygulamaErişimi from "../content/androidTv/uygulamaAyarları/ÖzelUygulamaErişimi";
+import UygulamaGüvenlikVeKısıtlamaları from "../content/androidTv/uygulamaAyarları/UygulamaGüvenlikVeKısıtlamaları";
+import Chromecast from "../content/chromecast/Chromecast";
+import ChromecastİleTvyiAçma from "../content/chromecast/ChromecastİleTvyiAçma";
+import ChromecastiAndroidVeyaIosMobilCihazdaKullanma from "../content/chromecast/ChromecastiAndroidVeyaIosMobilCihazdaKullanma";
+import PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama from "../content/chromecast/PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama";
+import BilgisayarEkranınıTvdeYayınlama from "../content/chromecast/BilgisayarEkranınıTvdeYayınlama";
+import BilgisayardanMüzikVeyaVideoDosyalarınıTvdeYayınlama from "../content/chromecast/BilgisayardanMüzikVeyaVideoDosyalarınıTvdeYayınlama";
+import CihazTercihleri from "../content/cihazTercihleri/CihazTercihleri";
+import Hakkında from "../content/cihazTercihleri/hakkında/Hakkında";
+import SistemGüncellemesi from "../content/cihazTercihleri/hakkında/SistemGüncellemesi";
+import CihazAdıDeğiştirme from "../content/cihazTercihleri/hakkında/CihazAdıDeğiştirme";
+import FabrikaAyarlarınaSıfırlama from "../content/cihazTercihleri/hakkında/FabrikaAyarlarınaSıfırlama";
+import DurumBilgisiGörüntüleme from "../content/cihazTercihleri/hakkında/DurumBilgisiGörüntüleme";
+import YasalBilgileriGörüntüleme from "../content/cihazTercihleri/hakkında/YasalBilgileriGörüntüleme";
+import DiğerBilgileriGörüntüleme from "../content/cihazTercihleri/hakkında/DiğerBilgileriGörüntüleme";
+import TarihVeSaatAyarları from "../content/cihazTercihleri/tarihVeSaatAyarları/TarihVeSaatAyarları";
 
 export const routes = [
   { 
@@ -696,5 +777,333 @@ export const routes = [
   {
     path: "/usb-kayıt/harici-veri-ortamının-bağlanması",
     element: HariciVeriOrtamınınBağlanması
+  },   
+  {
+    path: "/usb-kayıt/usb-kayıt-ayarları",
+    element: UsbKayıtAyarları
+  },     
+  {
+    path: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamının-biçimlendirilmesi",
+    element: VeriOrtamınınBiçimlendirilmesi
+  },     
+  {
+    path: "/usb-kayıt/usb-kayıt-ayarları/kayıt-zaman-kaydırma-için-veri-ortamın-seçilmesi",
+    element: KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi
   },    
+  {
+    path: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamı-testi",
+    element: VeriOrtamıTesti
+  },  
+  {
+    path: "/usb-kayıt/zaman-kaydırma-fonksiyonunun-açılıp-kapatılması",
+    element: ZamanKaydırmaFonksiyonununAçılıpKapatılması
+  },  
+  {
+    path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu",
+    element: ZamanKaydırmaDiskKurulumu
+  },  
+  {
+    path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/otomatik-kurulum",
+    element: OtomatikKurulum
+  },  
+  {
+    path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/manuel-kurulum",
+    element: ManuelKurulum
+  },  
+  {
+    path: "/usb-kayıt/zaman-kaydırma-ve-sürekli-kayıt-ile-programların-duraklatılması",
+    element: ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması
+  },  
+  {
+    path: "/usb-kayıt/programları-kaydetme",
+    element: ProgramlarıKaydetme
+  },  
+  {
+    path: "/usb-kayıt/programları-kaydetme/kayıt-sırasında-televizyonun-bekleme-konumuna-alınması",
+    element: KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması
+  },  
+  {
+    path: "/usb-kayıt/programları-kaydetme/kanal-listesinden-bir-programı-kaydetme",
+    element: KanalListesindenBirProgramıKaydetme
+  },  
+  {
+    path: "/usb-kayıt/kayıt-zamanlayıcısı",
+    element: KayıtZamanlayıcısı
+  },  
+  {
+    path: "/usb-kayıt/programları-kayıt-zamanlayıcısı/elektronik-program-rehberi-kullan-kayıt-zamanlayıcı-eklenmesi",
+    element: ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi
+  },  
+  {
+    path: "/usb-kayıt/kayıt-zamanlayıcısı/bilgileri-manuel-girerek-kayıt-zamanlayıcı-eklenmmesi",
+    element: BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi
+  },  
+  {
+    path: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-düzenlenmesi",
+    element: KayıtZamanlayıcısınınDüzenlenmesi
+  },  
+  {
+    path: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-silinmesi",
+    element: KayıtZamanlayıcısınınSilinmes
+  },  
+  {
+    path: "/usb-kayıt/oynatma",
+    element: Oynatma
+  },  
+  {
+    path: "/usb-kayıt/oynatma/kayıtlı-dosyalar-listesinden-bir-kayıt-oynatma",
+    element: KayıtlıDosyalarListesindenBirKayıtOynatma
+  },  
+  {
+    path: "/usb-kayıt/oynatma/ileri-geri-görüntü-arama",
+    element: İleriGeriGörüntüArama
+  },  
+  {
+    path: "/usb-kayıt/kaydedilenler-listesinden-kaydedilmiş-yayınların-silinmesi",
+    element: KaydedilenlerListesindenKaydedilmişYayınlarınSilinmesi
+  },  
+  {
+    path: "/usb-oynatıcı",
+    element: UsbOynatıcı
+  },  
+  {
+    path: "/usb-oynatıcı/dosya-formatları",
+    element: DosyaFormatları
+  },  
+  {
+    path: "/usb-oynatıcı/dosya-formatları/video-verileri",
+    element: VideoVerileri
+  },  
+  {
+    path: "/usb-oynatıcı/dosya-formatları/ses-verileri",
+    element: SesVerileri
+  },  
+  {
+    path: "/usb-oynatıcı/dosya-formatları/görüntü-verileri",
+    element: GörüntüVerileri
+  },  
+  {
+    path: "/usb-oynatıcı/harici-veri-ortamının-bağlanması",
+    element: HariciVeriOrtamınınBağlanması_2
+  },  
+  {
+    path: "/usb-oynatıcı/harici-veri-ortamının-çıkartılması",
+    element: HariciVeriOrtamınınÇıkarılması_2
+  },  
+  {
+    path: "/usb-oynatıcı/multi-medya-player-menüsü",
+    element: MultiMedyaPlayerMenüsü
+  },  
+  {
+    path: "/usb-oynatıcı/oynatma-çalma-temel-fonksiyonlar",
+    element: OynatmaÇalmaTemelFonksiyonlar
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları",
+    element: İlaveOynatmaFonksiyonları
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/tüm-dosya-formatında-bilgileri-görüntüleme",
+    element: TümDosyaFormatındaBilgileriGörüntüleme
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ileri-geri-görüntü-arama",
+    element: İleriGeriGörüntüArama_2
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-dosyalarında-istenilen-süreye-gitme",
+    element: VideoDosyalarındaİstenilenSüreyeGitme
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/tekrarlama-fonksiyonu",
+    element: TekrarlamaFonksiyonu
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-dosyalarında-görüntü-ayarları",
+    element: VideoDosyalarındaGörüntüAyarları
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-ve-ses-dosyalarında-ses-ayarları",
+    element: VideoVeSesDosyalarındaSesAyarları
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ses-dosyalarını-karışık-çalma",
+    element: SesDosyalarınıKarışıkÇalma
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ses-dosyalarını-ekran-kapalı-çalma",
+    element: SesDosyalarınıEkranKapalıÇalma
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/resim-görüntüsünü-döndürme",
+    element: ResimGörüntüsünüDöndürme
+  },  
+  {
+    path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/resim-görüntüsünü-büyütme",
+    element: ResimGörüntüsünüBüyütme
+  },  
+  {
+    path: "/android-tv",
+    element: AndroidTv
+  },  
+  {
+    path: "/android-tv/şartlar-koşullar-ve-gizlilik",
+    element: ŞartlarKoşullarVeGizlilik
+  },  
+  {
+    path: "/android-tv/google-hesabıyla-oturum-açma",
+    element: GoogleHesabıylaOturumAçma
+  },  
+  {
+    path: "/android-tv/home-menü",
+    element: HomeMenü
+  },  
+  {
+    path: "/android-tv/home-menüsünü-açma",
+    element: HomeMenüsünüAçma
+  },  
+  {
+    path: "/android-tv/home-menüsü-ayarları",
+    element: HomeMenüsüAyarları
+  },  
+  {
+    path: "/android-tv/home-menüsü-ayarları/home-menüsünde-kanalları-özelleştirme",
+    element: HomeMenüsündeKanallarıÖzelleştirme
+  },  
+  {
+    path: "/android-tv/home-menüsü-ayarları/home-menüsü-kanallarında-video-ses-ön-izlemesi",
+    element: HomeMenüsüKanallarındaVideoSesÖnİzlemesi
+  },  
+  {
+    path: "/android-tv/home-menüsü-ayarları/home-menü-uygulamalar-sekmesindeki-uygulamaların-sıralanması",
+    element: HomeMenüUygulamalarSekmesindekiUygulamalarınSıralanması
+  },  
+  {
+    path: "/android-tv/home-menüsü-ayarları/home-menü-oyunlar-sekmesindeki-uygulamaların-sıralanması",
+    element: HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması
+  },
+  {
+    path: "/android-tv/home-menüsü-ayarları/home-menü-açık-kaynak-lisansları",
+    element: HomeMenüAçıkKaynakLisansları
+  },
+  {
+    path: "/android-tv/google-play-storedan-uygulama-yükleme",
+    element: GooglePlayStoredanUygulamaYükleme
+  },
+  {
+    path: "/android-tv/yüklü-bir-uygulamanın-başlatılması",
+    element: YüklüBirUygulamanınBaşlatılması
+  },
+  {
+    path: "/android-tv/home-menüsü-uygulamalar-sekmesine-favori-uygulamaların-eklenmesi",
+    element: HomeMenüsüUygulamalarSekmesineFavoriUygulamalarınEklenmesi
+  },
+  {
+    path: "/android-tv/home-menüsü-uygulamalar-sekmesinden-favori-uygulamaların-kaldırılması",
+    element: HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması
+  },
+  {
+    path: "/android-tv/uygulamalar-sekmesindeki-uygulamaların-sıralanması",
+    element: UygulamalarSekmesindekiUygulamalarınSıralanması
+  },
+  {
+    path: "/android-tv/uygulama-ayarları",
+    element: UygulamaAyarları
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulamaların-kaldırılması",
+    element: UygulamalarınKaldırılması
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulamaların-zorla-durdurulması",
+    element: UygulamalarınZorlaDurdurulması
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-verilerini-temizleme",
+    element: UygulamaVerileriniTemizleme
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-önbelleğinin-temizlenmesi",
+    element: UygulamaÖnBelleğininTemizlenmesi
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-varsayılan-ayarları",
+    element: UygulamaVarsayılanAyarları
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-bildirimleri",
+    element: UygulamaBildirimleri
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-izinleri",
+    element: Uygulamaİzinleri
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/özel-uygulama-erişimi",
+    element: ÖzelUygulamaErişimi
+  },
+  {
+    path: "/android-tv/uygulama-ayarları/uygulama-güvenlik-ve-kısıtlamaları",
+    element: UygulamaGüvenlikVeKısıtlamaları
+  },
+  {
+    path: "/chromecast-built-in",
+    element: Chromecast
+  },
+  {
+    path: "/chromecast-built-in/chromecast-ile-tvyi-açma",
+    element: ChromecastİleTvyiAçma
+  },
+  {
+    path: "/chromecast-built-in/chromecasti-android-veya-ios-mobil-cihazda-kullanma",
+    element: ChromecastiAndroidVeyaIosMobilCihazdaKullanma
+  },
+  {
+    path: "/chromecast-built-in/pc-ile-chrome-tarayıcı-sekmesini-tvnizde-yayınlama",
+    element: PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama
+  },
+  {
+    path: "/chromecast-built-in/bilgisayar-ekranını-tvde-yayınlama",
+    element: BilgisayarEkranınıTvdeYayınlama
+  },
+  {
+    path: "/chromecast-built-in/bilgisayardan-müzik-veya-video-dosyalarını-tvde-yayınlama",
+    element: BilgisayardanMüzikVeyaVideoDosyalarınıTvdeYayınlama
+  },
+  {
+    path: "/cihaz-tercihleri",
+    element: CihazTercihleri
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında",
+    element: Hakkında
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/sistem-güncellemesi",
+    element: SistemGüncellemesi
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/cihaz-adı-değiştirme",
+    element: CihazAdıDeğiştirme
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/fabrika-ayarlarına-sıfırlama",
+    element: FabrikaAyarlarınaSıfırlama
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/durum-bilgisi-görüntüleme",
+    element: DurumBilgisiGörüntüleme
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/yasal-bilgileri-görüntüleme",
+    element: YasalBilgileriGörüntüleme
+  },
+  {
+    path: "/cihaz-tercihleri/hakkında/diğer-bilgileri-görüntüleme",
+    element: DiğerBilgileriGörüntüleme
+  },
+  {
+    path: "/cihaz-tercihleri/tarih-ve-saat-ayarları",
+    element: TarihVeSaatAyarları
+  },
 ]

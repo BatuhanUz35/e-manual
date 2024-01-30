@@ -1,16 +1,17 @@
 import React from "react";
 import "../style.css";
-import tv_icon from "../../../assets/images/png/tv_icon.png";
-import back from "../../../assets/images/png/back.png";
+import tv_icon from "../../../assets/images/icons/tv_icon.png";
+import back from "../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function VarsayılanKanal() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Varsayılan Kanal</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Varsayılan Kanal</p>
+      <Box className="container">
         <h1>Varsayılan Kanal</h1>
-        <p>
+        <p classname="text">
           TV'nin açılacağı varsayılan kanalı seçin.
         </p>
         <ol>
@@ -34,8 +35,8 @@ export default function VarsayılanKanal() {
             <b>Kullanıcının Seçimi</b> seçildiğinde <b>Kanlları Göster</b>'den varsayılan kanal seçimi yapılması gerekmektedir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,18 +1,19 @@
 import React from "react";
 import "../../style.css";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import options from "../../../../assets/images/png/options.png";
-import back from "../../../../assets/images/png/back.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import options from "../../../../assets/images/icons/options.png";
+import back from "../../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box } from "@mui/material";
 
 export default function UykuZamanlayıcısı() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Uyku Zamanlayıcısı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Uyku Zamanlayıcısı</p>
+      <Box className="container">
         <h1>Uyku Zamanlayıcısı</h1>
-        <p>
+        <p classname="text">
           Uyku Zamanlayıcısı, televizyonun kapanması için bir süre ayarlayabilirsiniz. Bu süre sona erdikten sonra televizyon
           stand-by moduna geçer.
         </p>
@@ -23,9 +24,9 @@ export default function UykuZamanlayıcısı() {
           </li>
           <li>
             <b>Güç</b>'ü seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> <b>Güç</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Uyku Zamanlayıcısı</b>'nı seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -38,8 +39,8 @@ export default function UykuZamanlayıcısı() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

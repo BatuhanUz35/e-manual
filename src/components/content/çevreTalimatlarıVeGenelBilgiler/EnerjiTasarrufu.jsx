@@ -1,14 +1,15 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function EnerjiTasarrufu() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Enerji Tasarrufu
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Enerji Tasarrufu
         İle İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Enerji Tasarrufu İle İlgili Bilgiler</h1>
         <ul>
           <li>Aşağıda anlatılan işlemler sayesinde, doğal kaynakların tüketimini azaltabilir
@@ -33,7 +34,7 @@ export default function EnerjiTasarrufu() {
             Cihazınız, parlaklık ayarı azaltıldığında daha az enerji harcayacaktır.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

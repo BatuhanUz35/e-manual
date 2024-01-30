@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function ÇocukSavunmasızKişiVeEvcilHayvanGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği</p>
+      <Box className="container">
         <h1>Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği</h1>
         <ul>
           <li>
@@ -27,7 +28,7 @@ export default function ÇocukSavunmasızKişiVeEvcilHayvanGüvenliği() {
             Ürünü atmadan önce çocukların güvenliği için elektrik fişini kesin ve çalışmaz duruma getirin.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

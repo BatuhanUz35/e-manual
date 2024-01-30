@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function ÜrünTanıtımı() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Ürün Tanıtımı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Ürün Tanıtımı</p>
+      <Box className="container">
         <h1>Ürün Tanıtımı</h1>
         <h2>img gelcek</h2>
         <table>
@@ -52,7 +53,7 @@ export default function ÜrünTanıtımı() {
             <td class="column-l"></td>
           </tr>
         </table>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

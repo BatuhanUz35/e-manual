@@ -1,12 +1,13 @@
 import React from "react";
 import "../../style.css";
+import { Box } from "@mui/material";
 
 
 export default function KurulumVeyaAsma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Kurulum veya Asma / Ayaklı Kurulum</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Kurulum veya Asma / Ayaklı Kurulum</p>
+      <Box className="container">
        <h1>Ayaklı Kurulum</h1>
        <ul>
         <li>
@@ -16,7 +17,7 @@ export default function KurulumVeyaAsma() {
           Televizyonu, sert ve dengeli bir yüzeye yerleştirin.
         </li>
        </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

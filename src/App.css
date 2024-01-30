@@ -6,6 +6,18 @@
   font-family: "Roboto-bl";
 }
 
+.font-face-rbt-rg {
+  font-family: "Roboto-rg";
+}
+
+*{
+  font-family: "Roboto-rg";
+}
+
+b{
+  font-family: "Roboto-bd";
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,22 +42,26 @@ footer {
 }
 
 h1 {
+  margin: 0;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
-  font-family: "Roboto-md";
+  font-family: "Roboto-bl";
 }
 
 h2 {
+  margin-bottom: 1rem;
   font-size: 2rem;
-  margin-top: 5rem;
   font-family: "Roboto-md";
 }
 
 h3 {
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   font-family: "Roboto-md";
 }
 
 h4 {
+  margin-bottom: 1rem;
   font-size: 1.25rem;
   font-family: "Roboto-md";
 }

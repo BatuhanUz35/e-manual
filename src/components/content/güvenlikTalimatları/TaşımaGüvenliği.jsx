@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function TaşımaGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Taşıma Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Taşıma Güvenliği</p>
+      <Box className="container">
         <h1>Taşıma Güvenliği</h1>
         <ul>
           <li>Ürünü, taşımadan önce elektrik fişini prizden çekin.</li>
@@ -20,7 +21,7 @@ export default function TaşımaGüvenliği() {
             bir yere çarpmayın ve düşürmeyin
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

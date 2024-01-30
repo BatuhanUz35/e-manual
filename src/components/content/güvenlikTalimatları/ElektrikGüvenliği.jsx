@@ -1,17 +1,18 @@
 import React from "react";
 import "../style.css";
 import electric from "../../../assets/images/safety/voltage_voltage_new.png";
+import { Box } from "@mui/material";
 
 export default function ElektrikGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Elektrik Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Elektrik Güvenliği</p>
+      <Box className="container">
         <h1>Elektrik Güvenliği</h1>
-        <div className="uyarı-başlık red-bg">UYARI</div>
-        <div className="uyarı-container">
+        <Box className="uyarı-başlık red-bg">UYARI</Box>
+        <Box className="uyarı-container">
           <img src={electric} alt="electric" className="icon"></img>
-          <div>
+          <Box>
             <p className="uyarı-içerik">
               ÖNEMLİ GÜVENLİK TALİMATLARI. TALİMATLARI İLERİDE BAŞVURMAK ÜZERE
               SAKLAYIN
@@ -21,10 +22,10 @@ export default function ElektrikGüvenliği() {
               uyarılarını, talimatları, çizimler ve teknik özellikleri dikkate
               alın.
             </p>
-          </div>
-        </div>
+          </Box>
+        </Box>
         <hr className="uyarı-bitiş red-bg"/>
-      </div>
+      </Box>
       <ul>
         <li>Kurulum, bakım, temizlik, tamir ve taşıma işlemleri sırasında ürünün fişi prize
           takılı olmamalıdır.
@@ -78,6 +79,6 @@ export default function ElektrikGüvenliği() {
           Ürünün fişini prizden çıkarırken kablosundan değil, fişten tutarak çekin.
         </li>
       </ul>
-    </div>
+    </Box>
   );
 }

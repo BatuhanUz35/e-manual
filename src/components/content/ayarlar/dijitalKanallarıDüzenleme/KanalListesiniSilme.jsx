@@ -1,20 +1,21 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
-import tv_icon from "../../../../assets/images/png/tv_icon.png"
-import options from "../../../../assets/images/png/options.png"
-import right from "../../../../assets/images/png/right.png"
-import home from "../../../../assets/images/png/home.png"
+import back from "../../../../assets/images/icons/back.png"
+import tv_icon from "../../../../assets/images/icons/tv_icon.png"
+import options from "../../../../assets/images/icons/options.png"
+import right from "../../../../assets/images/icons/right.png"
+import home from "../../../../assets/images/icons/home.png"
+import { Box } from "@mui/material";
 
 
 export default function KanalListesiniSilme() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Listesini Silme
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Listesini Silme
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Kanal Listesini Silme</h1>
         <ol>
           <li>
@@ -43,7 +44,7 @@ export default function KanalListesiniSilme() {
             TV yayınına dönmek için <img src={tv_icon} alt="TV" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

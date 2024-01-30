@@ -1,17 +1,18 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
+import back from "../../../../assets/images/icons/back.png"
+import { Box } from "@mui/material";
 
 export default function FavoriListesiOluşturma() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesi Oluşturma
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesi Oluşturma
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Favori Listesi Oluşturma</h1>
-        <p>Favori Kanallarınızı liste halinde kaydedebilirsiniz.</p>
+        <p classname="text">Favori Kanallarınızı liste halinde kaydedebilirsiniz.</p>
         <h2>Notlar:</h2>
         <ul>
           <li>
@@ -42,7 +43,7 @@ export default function FavoriListesiOluşturma() {
               seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

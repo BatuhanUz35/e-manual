@@ -2,22 +2,23 @@ import React from "react";
 import "../../style.css";
 import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
+import { Box } from "@mui/material";
 
 export default function KurulumVeyaAsma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Kurulum veya Asma</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Kurulum veya Asma</p>
+      <Box className="container">
        <h1>Kurulum veya Asma</h1>
-       <p>Ekrana direkt güneş ışığının yansımayacağı bir yer seçin.</p>
+       <p classname="text">Ekrana direkt güneş ışığının yansımayacağı bir yer seçin.</p>
         <h2>Ek bilgiler</h2>
-        <div className="link-container">
+        <Box className="link-container">
           <LinkIcon /> <Link to="/ürün/kurulum-veya-asma/ayaklı-kurulum" className="link">Ayaklı Kurulum</Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon /> <Link to="/ürün/kurulum-veya-asma/vesa-montaj" className="link">VESA Montaj Kiti ile Montaj Hazırlığı</Link>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }

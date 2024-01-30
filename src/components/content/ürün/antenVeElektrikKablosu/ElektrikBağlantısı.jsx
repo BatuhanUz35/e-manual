@@ -1,15 +1,16 @@
 import React from "react";
 import "../../style.css";
 import elektrik from "../../../../assets/images/safety/voltage_voltage_new.png";
+import { Box } from "@mui/material";
 
 export default function ElektrikBağlantısı() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / Elektrik
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / Elektrik
         Bağlantısı
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Elektrik Bağlantısı</h1>
         <h2>img gelcek</h2>
         <ol>
@@ -20,10 +21,10 @@ export default function ElektrikBağlantısı() {
             Elektrik kablosunu duvardaki prize takın.
           </li>
         </ol>
-        <div className="uyarı-başlık gri-bg">TEHLİKE</div>
-        <div className="uyarı-container">
+        <Box className="uyarı-başlık gri-bg">TEHLİKE</Box>
+        <Box className="uyarı-container">
           <img src={elektrik} alt="electric" className="icon"></img>
-          <div>
+          <Box>
             <p className="uyarı-içerik">
               Cihazı elektrik prizine yalnızca harici cihazları ve anteni bağladıktan sonra takın.
             </p>
@@ -31,10 +32,10 @@ export default function ElektrikBağlantısı() {
               Yürürlükteki güvenlik standartlarını karşılamayan adaptör fişi ya da uzatma kablosu kullanmayın.
               Elektrk kablosunun üzerinde değişiklik yapmayın
             </p>
-          </div>
-        </div>
+          </Box>
+        </Box>
         <hr className="uyarı-bitiş gri-bg"/>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

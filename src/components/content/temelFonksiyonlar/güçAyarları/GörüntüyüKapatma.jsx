@@ -1,18 +1,19 @@
 import React from "react";
 import "../../style.css";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import options from "../../../../assets/images/png/options.png";
-import back from "../../../../assets/images/png/back.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import options from "../../../../assets/images/icons/options.png";
+import back from "../../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box } from "@mui/material";
 
 export default function GörüntüyüKapatma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Görüntüyü Kapatma</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Görüntüyü Kapatma</p>
+      <Box className="container">
         <h1>Görüntüyü Kapatma</h1>
-        <p>
+        <p classname="text">
           Televizyonu stand-by moduna almadan sadece görüntüyü kapatabilirsiniz.
         </p>
         <ol>
@@ -22,15 +23,15 @@ export default function GörüntüyüKapatma() {
           </li>
           <li>
             <b>Güç</b>'ü seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> <b>Güç</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Görüntüyü Kapat</b>'ı seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> Ekran görüntüsü kapatılır.
-            </div>
+            </Box>
           </li>
           <li>
             Görüntüyü tekrar açmak için kumandadan bir düğmeye basın.
@@ -40,8 +41,8 @@ export default function GörüntüyüKapatma() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,16 +1,17 @@
 import React from "react";
 import "../style.css";
-import tv_icon from "../../../assets/images/png/tv_icon.png";
-import back from "../../../assets/images/png/back.png";
+import tv_icon from "../../../assets/images/icons/tv_icon.png";
+import back from "../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function EtkileşimKanalı() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Etkileşim Kanalı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Etkileşim Kanalı</p>
+      <Box className="container">
         <h1>Etkileşim Kanalı</h1>
-        <p>
+        <p classname="text">
           Etkileşim kanalı özelliğini açın veya kapatın.
         </p>
         <ol>
@@ -25,8 +26,8 @@ export default function EtkileşimKanalı() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

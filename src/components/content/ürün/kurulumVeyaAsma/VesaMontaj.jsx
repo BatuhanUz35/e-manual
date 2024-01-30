@@ -1,20 +1,21 @@
 import React from "react";
 import "../../style.css";
+import { Box } from "@mui/material";
 
 export default function VesaMontaj() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Kurulum veya Asma / VESA Montaj Kiti ile Montaj Hazırlığı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Kurulum veya Asma / VESA Montaj Kiti ile Montaj Hazırlığı</p>
+      <Box className="container">
         <h1>VESA Montaj Kiti ile Montaj Hazırlığı</h1>
-        <p>Montaj kiti satın alma bilgisi için yetkili bayii ile görüşün.</p>
-        <p>Şunlara ihtiyacınız olacaktır:</p>
+        <p classname="text">Montaj kiti satın alma bilgisi için yetkili bayii ile görüşün.</p>
+        <p classname="text">Şunlara ihtiyacınız olacaktır:</p>
         <ul>
           <li>Bir makas,</li>
           <li>Bir yıldız başlı tornovida.</li>
         </ul>
         <h2>img gelcek</h2>
-        <p>VESA montaj kiti için montaj talimatlarını izleyin</p>
+        <p classname="text">VESA montaj kiti için montaj talimatlarını izleyin</p>
         <ol>
           <li>
             Televizyonu, üzerindeki filmi çıkartmadan, ekran altta kalacak şekilde düzgün bir yere koyun.
@@ -32,7 +33,7 @@ export default function VesaMontaj() {
             VESA montaj kitini televizyona vidalayın ve montaj talimatlarına göre monte edin.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

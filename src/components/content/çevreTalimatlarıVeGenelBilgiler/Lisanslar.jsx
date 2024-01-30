@@ -1,14 +1,15 @@
 import React from "react";
 import "../style.css";
-import hdmi from "../../../assets/images/png/hdmi.png";
+import hdmi from "../../../assets/images/in-page-images/hdmi.png";
+import { Box } from "@mui/material";
 
 export default function Lisanslar() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Lisanslar ile İlgili Bilgiler
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Lisanslar ile İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Lisanslar İle İlgili Bilgiler</h1>
         <img src={hdmi} alt="hdmi"></img>
         <ul>
@@ -33,7 +34,7 @@ export default function Lisanslar() {
           </li>
         </ul>
         
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

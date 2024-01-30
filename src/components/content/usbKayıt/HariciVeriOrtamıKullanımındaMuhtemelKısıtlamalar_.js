@@ -1,3 +1,5 @@
+import { Box } from "@mui/material";
+
 export const ul = [
   "Yayını yapan istasyona bağlı olarak, bazı televizyon istasyonlarının çeşitli " +
   "kısıtlamalar uyguladığını görebilirsiniz.",
@@ -6,11 +8,11 @@ export const ul = [
 
   "Bir programın harici veri ortamına kaydedilmesi yayıncı kuruluş tarafından engellenebilir.",
 
-  <div><b>URI<sup>*</sup> korumalı! PVR fonksiyonu engellendi</b> görünürse, kayıt veya zaman kaydırma 
+  <Box><b>URI<sup>*</sup> korumalı! PVR fonksiyonu engellendi</b> görünürse, kayıt veya zaman kaydırma 
   özelliği yayıncı tarafından sınırlandırılmıştır (bir kayıt mümkündür) veya devre dışı bırakılmıştır 
-  (kayıt mümkün değildir).</div>,
+  (kayıt mümkün değildir).</Box>,
 
-  <div><b><sup>*</sup>URI</b> = kullanıcı hakları bilgisi.</div>,
+  <Box><b><sup>*</sup>URI</b> = kullanıcı hakları bilgisi.</Box>,
 
   "Bir programı harici veri ortamının arşivine kaydederseniz kayıttan oynatma kısıtlanmış olabilir. " +
   "Yayıncı kuruluş, bu programı bir veya daha fazla kez izlemenize izin verebileceği gibi sadece belirli " +

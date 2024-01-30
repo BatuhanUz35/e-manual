@@ -1,17 +1,18 @@
 import React from "react";
 import "../../style.css";
-import home from "../../../../assets/images/png/home.png"
+import home from "../../../../assets/images/icons/home.png"
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function KanalDüzenleyici() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Düzenleyici
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Düzenleyici
         Uygulamasını Başlatma
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Kanal Düzenleyici Uygulamasını Başlatma</h1>
         <ol>
           <li>
@@ -19,7 +20,7 @@ export default function KanalDüzenleyici() {
           </li>
           <li>
             <b>Uygulamalar</b> sekmesinden <b>Kanal Düzenleyici</b> uygulamasını seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> <b>Kanal Düzenleyici</b> menüsü görüntülenir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> <b>Kanal Düzenleyici</b> menüsü görüntülenir.</Box>
           </li>
         </ol>
         <h2>Not:</h2>
@@ -27,7 +28,7 @@ export default function KanalDüzenleyici() {
           <li>İlave işemler aşağıdaki bölümlerde açıklanmıştır.</li>
         </ul>
         <h2>img gelcek</h2>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

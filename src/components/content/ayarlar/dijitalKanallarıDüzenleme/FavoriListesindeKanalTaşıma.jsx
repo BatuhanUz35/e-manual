@@ -1,17 +1,18 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
+import back from "../../../../assets/images/icons/back.png"
+import { Box } from "@mui/material";
 
 export default function FavoriListesindeKanalTaşıma() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesinde Kanal Taşıma
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesinde Kanal Taşıma
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Favori Listesinde Kanal Taşıma</h1>
-        <p>Favori Kanallarınızı istediğiniz kanal konumuna taşıyıp listeyi düzenleyin.</p>
+        <p classname="text">Favori Kanallarınızı istediğiniz kanal konumuna taşıyıp listeyi düzenleyin.</p>
         <ol>
           <li>
             <b>Kanal Düzenleyici</b> menüsünde düzenlemek istediğiniz favori
@@ -34,7 +35,7 @@ export default function FavoriListesindeKanalTaşıma() {
         </ol>
       
       
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

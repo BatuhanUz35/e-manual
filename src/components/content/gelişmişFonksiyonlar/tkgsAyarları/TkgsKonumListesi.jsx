@@ -1,18 +1,19 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import back from "../../../../assets/images/png/back.png";
-import down from "../../../../assets/images/png/down.png";
-import one from "../../../../assets/images/png/one.png"
-import zero from "../../../../assets/images/png/zero.png"
-import check from "../../../../assets/images/png/check.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import back from "../../../../assets/images/icons/back.png";
+import down from "../../../../assets/images/icons/down.png";
+import one from "../../../../assets/images/icons/one.png"
+import zero from "../../../../assets/images/icons/zero.png"
+import check from "../../../../assets/images/icons/check.png";
+import { Box } from "@mui/material";
 
 export default function TkgsKonumListesi() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları / TKGS Konum Listesi</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları / TKGS Konum Listesi</p>
+      <Box className="container">
         <h1>TKGS Konum Listesi</h1>
         <ol>
           <li>
@@ -69,8 +70,8 @@ export default function TkgsKonumListesi() {
             yayına dönmek için <img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

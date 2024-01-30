@@ -1,12 +1,13 @@
 import React from "react";
 import "../style.css";
 import { ul } from "./HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar_";
+import { Box } from "@mui/material";
 
 export default function HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar() {
   return (
-    <div className="page">
-      <p>Anasayfa / USB Kayıt / Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / USB Kayıt / Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</p>
+      <Box className="container">
         <h1>Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</h1>
         <ul>
         {ul.map((li) => {
@@ -15,7 +16,7 @@ export default function HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar() 
           );
         })}
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

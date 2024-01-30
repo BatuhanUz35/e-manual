@@ -6,8 +6,9 @@ export const menuSlice = createSlice({
     toggle: true,
     active_l1_subcategory: null,
     active_l2_subcategory: null,
-    selected_item_id: 3,
-    
+    selected_item_id: 0,
+    focused_item: 0,
+    scroll_position: 0,
   },
   reducers: {
     toggle: (state) => {
@@ -24,18 +25,16 @@ export const menuSlice = createSlice({
     activate_l2_subcategory: (state, action) => {
       state.active_l2_subcategory = action.payload;
     },
-    increment_id: (state) => {
-      state.selected_item_id += 1;
+    focus_item: (state, action) => {
+      state.focused_item = action.payload;
     },
-    decrement_id: (state) => {
-      state.selected_item_id -= 1;
-    },
-    set_id: (state, action) => {
-      state.selected_item_id = action.payload
+    set_scroll_position: (state, action) => {
+      state.scroll_position = action.payload;
     }
+    
   }
 })
 
-export const {toggle, select_item, activate_l1_subcategory, activate_l2_subcategory, increment_id, decrement_id, set_id} = menuSlice.actions
+export const {toggle, select_item, activate_l1_subcategory, activate_l2_subcategory, focus_item, set_scroll_position} = menuSlice.actions
 
 export default menuSlice.reducer

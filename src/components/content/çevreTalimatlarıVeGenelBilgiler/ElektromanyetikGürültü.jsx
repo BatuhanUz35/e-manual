@@ -1,14 +1,15 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function ElektromanyetikGürültü() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Elektromanyetik Gürültü
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Elektromanyetik Gürültü
         İle İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Elektromanyetik Gürültü İle İlgili Bilgiler</h1>
         <ul>
           <li>
@@ -31,7 +32,7 @@ export default function ElektromanyetikGürültü() {
             müdahale etmesi gerekir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

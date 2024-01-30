@@ -2,20 +2,21 @@ import React from "react";
 import "../../style.css";
 import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
-import home from "../../../../assets/images/png/home.png"
-import settings from "../../../../assets/images/png/settings.png"
-import right from "../../../../assets/images/png/right.png";
-import left from "../../../../assets/images/png/left.png";
-import down from "../../../../assets/images/png/down.png";
-import back from "../../../../assets/images/png/back.png";
+import home from "../../../../assets/images/icons/home.png"
+import settings from "../../../../assets/images/icons/settings.png"
+import right from "../../../../assets/images/icons/right.png";
+import left from "../../../../assets/images/icons/left.png";
+import down from "../../../../assets/images/icons/down.png";
+import back from "../../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function GörüntüAyarları() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ayarlar / Görüntü Ayarları</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ayarlar / Görüntü Ayarları</p>
+      <Box className="container">
         <h1>Görüntü Ayarları</h1>
         <ol>
           <li>
@@ -29,7 +30,7 @@ export default function GörüntüAyarları() {
           </li>
           <li>
             <b>Resim</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> <b>Resim</b> menüsü görüntülenir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> <b>Resim</b> menüsü görüntülenir.</Box>
             <h2>img gelcek</h2>
           </li>
           <li>
@@ -54,19 +55,19 @@ export default function GörüntüAyarları() {
           </li>
         </ol>
         <h2>Ek bilgiler</h2>
-        <div className="link-container">
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/ayarlar/görüntü-ayarları/arttırılmış-görüntü-ayarları" className="link">
             Arttırılmış Görüntü Ayarları
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/ayarlar/görüntü-ayarları/görüntü-ayarlarını-fabrika-ayarlarına-döndürme" className="link">
             Görüntü Ayarlarını Fabrika Ayarlarına Döndürme
           </Link>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }

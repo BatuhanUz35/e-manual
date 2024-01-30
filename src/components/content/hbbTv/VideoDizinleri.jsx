@@ -1,12 +1,13 @@
 import React from "react";
 import "../style.css";
 import {ol} from "./VideoDizinleri_"
+import { Box } from "@mui/material";
 
 export default function HbbTvKullanımı() {
   return (
-    <div className="page">
-      <p>Anasayfa / HBBTV / Video Dizinleri İçin Ek Fonksiyonlar</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / HBBTV / Video Dizinleri İçin Ek Fonksiyonlar</p>
+      <Box className="container">
         <h1>Video Dizinleri İçin Ek Fonksiyonlar</h1>
         <ol>
         {ol.map((text) => {
@@ -14,7 +15,7 @@ export default function HbbTvKullanımı() {
             <li>{text}</li>
           )})}
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

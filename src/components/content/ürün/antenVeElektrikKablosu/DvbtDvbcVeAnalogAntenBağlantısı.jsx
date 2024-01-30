@@ -1,11 +1,12 @@
 import React from "react";
 import "../../style.css";
+import { Box } from "@mui/material";
 
 export default function DvbtDvbcVeAnalogAntenBağlantııs() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-T, DVB-C ve Analog Anten Bağlantısı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-T, DVB-C ve Analog Anten Bağlantısı</p>
+      <Box className="container">
       <h1>DVB-T, DVB-C ve Analog Anten Bağlantısı</h1>
       <h2>img gelcek</h2>
       <ol>
@@ -20,7 +21,7 @@ export default function DvbtDvbcVeAnalogAntenBağlantııs() {
           İç mekan antenini bağlarken, yayını en iyi şekilde alana kadar anteni farklı konumlara çevirmeniz gerekebilir.
         </li>
       </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

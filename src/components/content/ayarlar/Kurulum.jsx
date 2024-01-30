@@ -2,22 +2,23 @@ import React from "react";
 import "../style.css";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import back from "../../../assets/images/png/back.png"
-import home from "../../../assets/images/png/home.png"
-import left from "../../../assets/images/png/left.png"
-import right from "../../../assets/images/png/right.png"
-import down from "../../../assets/images/png/down.png";
-import check from "../../../assets/images/png/check.png";
-import right_arrow from "../../../assets/images/png/right_arrow.png";
-import one from "../../../assets/images/png/one.png";
-import zero from "../../../assets/images/png/zero.png";
+import back from "../../../assets/images/icons/back.png"
+import home from "../../../assets/images/icons/home.png"
+import left from "../../../assets/images/icons/left.png"
+import right from "../../../assets/images/icons/right.png"
+import down from "../../../assets/images/icons/down.png";
+import check from "../../../assets/images/icons/check.png";
+import right_arrow from "../../../assets/images/icons/right_arrow.png";
+import one from "../../../assets/images/icons/one.png";
+import zero from "../../../assets/images/icons/zero.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function Kurulum() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ayarlar / İlk Kurulum ve Televizyonu Ayarlama</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana Sayfa / Ayarlar / İlk Kurulum ve Televizyonu Ayarlama</p>
+      <Box className="container">
         <h1>İlk Kurulum ve Televizyonu Ayarlama</h1>
         <ol>
           <li>Anten ve harici cihaz kablolarını bağlayın.</li>
@@ -25,10 +26,10 @@ export default function Kurulum() {
           <li>
             Televizyonu, uzaktan kumandadaki
             <PowerSettingsNewIcon className="inline-icon" /> düğmesiyle açın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Bir süre sonra ekranda <b>Hoş geldiniz</b> menüsü görüntülenir
-            </div>
+            </Box>
             <h2>img gelcek</h2>
           </li>
           <li>
@@ -41,18 +42,18 @@ export default function Kurulum() {
           <li>
             Bluetooth kumandayı eşleştirmek için {" "}<img src={home} className="inline-icon" alt="Home"/>
             ve {" "}<img src={left} className="inline-icon" alt="Sol"/> düğmelerine aynı anda 5sn basılı tutun.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Kumanda üzerinde beyaz led yanıp sönmeye başlar
-            </div>
+            </Box>
           </li>
           <li>
             Bulunan Bluetooth cihazlar görüntülenir. <b>Android TV Remote Control'u</b> seçip 
             <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Kumanda ile televizyon eşleştirme işlemi tamamlanır.
-            </div>
+            </Box>
           </li>
         </ol>
         <h2>Önemli:</h2>
@@ -94,24 +95,24 @@ export default function Kurulum() {
           </li>
           <li>
             <b>Kabul Et</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Hizmet Şartları</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Google Hizmetleri</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Google Asistan</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Devam</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -155,61 +156,61 @@ export default function Kurulum() {
           <li>
             Kablosuz ağ şifresini ekran klavyesinden girip <img src={check} alt="Check" className="inline-icon sm"/> tuşunu
             seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               ..... <b>ağına bağlanıyor</b> mesajı ardından <b>İnternete Başarıyla Bağlandı</b> mesajı görüntülenir. 
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Ağ Gizlilik Politikası</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Google hesabı Oturum açma menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Oturum Açın</b>'ı seçin.
           </li>
           <li>
             Mail adresinizi ekran klavyesinden girin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Devam etmek için ekrandan <img src={right_arrow} alt="Sağ ok" className="inline-icon"/> tuşunu 
               seçip <Circle className="inline-icon button"/> düğmesine basın.
-            </div>
+            </Box>
           </li>
           <li>
             Hesap şifresini ekran klavyesinden girin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Devam etmek için ekrandan <img src={right_arrow} alt="Sağ ok" className="inline-icon"/> tuşunu 
               seçip <Circle className="inline-icon button"/> düğmesine basın.
-            </div>
+            </Box>
           </li>
           <li>
             Televizyon ve telefonunuzun ekranında görüntülenen yönergeleri izleyin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Ayarlar tamamlandıktan sonra <b>Hizmet Şartları</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Google Hizmetleri</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Google Asistan</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Devam</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -255,14 +256,14 @@ export default function Kurulum() {
           </li>
           <li>
             <b>Ev</b>'i veya <b>Mağaza</b>'yı seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Ev modu:</b> Ev kullanımında enerji verimliliği sağlamak için optimize edilmiştir..
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Mağaza modu:</b> Sabit ayarlarla mağazada demo yapmak için optimize edilmiştir.
-            </div>
+            </Box>
           </li>
           <li>
             Dahili Chromecast özelliğini açmak için <b>Aç</b>'ı seçip <Circle className="inline-icon button"/> düğmesine 
@@ -280,12 +281,12 @@ export default function Kurulum() {
         <ol>
           <li>
             Anten tipi seçimini yapın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Bir sonraki prosedür, seçilen anten tipine göre değişir. Seçtiğiniz anten tipine
               göre <b>Uydu Kanallarını Arama, Kablolu Kanalları Arama</b> veya <b>Karasal Kanalları Arama </b>
               bölümünden devam edin.
-            </div>
+            </Box>
           </li>
         </ol>
         <h2>
@@ -294,18 +295,18 @@ export default function Kurulum() {
         <ol>
           <li>
             <b>Uydu</b>'yu seçin.
-             <div>
+             <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Uydu Anten Tipi</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Tek Kablo</b>'yu seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Operatör Seçin</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
         </ol>
         <h2>Not:</h2>
@@ -319,30 +320,30 @@ export default function Kurulum() {
         <ol>
           <li>
             <b>Standart</b> veya <b>Operatör</b>'ü seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Uydu Seçimi</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             Listede görüntülenen uyduyu seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Uydu Ayarları</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Uydu Durumu</b>'nu <Circle className="inline-icon button"/> düğmesiyle <b>Açık</b> seçin.
           </li>
           <li>
             <b>Uydu Seçimi</b>'ni seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Uydu Seçimi</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             Tarama yapmak istediğiniz uyduyu listeden seçip <Circle className="inline-icon button"/> düğmesine
@@ -350,60 +351,60 @@ export default function Kurulum() {
           </li>
           <li>
             <b>Arama Modu</b>'nu seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Arama Modu</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Ağ</b> veya <b>Tam</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
           <li>
             <b>Arama Tipi</b>'ni seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Arama Türü</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Arama Türü</b>'nü seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Sadeece şifresiz kanallar için <b>Yalnızca Ücretsiz Kanallar</b>,
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Sadeece şifreli kanallar için <b>Yalnızca Şifrelenmiş Kanallar</b>,
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Tüm uydu kanalları için <b>Tümü</b> seçimini yapın.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Hafızaya Alma Türü</b>'nü seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Hafızaya Alma Türü</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Hafızaya Alma Türü</b>'nü seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Sadeece televizyon kanalları için <b>Yalnızca Dijital Kanallar</b>,
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Sadeece radyo kanalları için <b>Yalnızca Radyo Kanalları</b>,
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               Her ikisini aratmak için <b>Tümü</b> seçimini yapın.
-            </div>
+            </Box>
           </li>
         </ol>
         <h2>
@@ -423,28 +424,28 @@ export default function Kurulum() {
           </li>
           <li>
             <b>Sonraki</b>'ni seçin <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Kanal Taraması</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Tara</b>'yı seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Tarama</b> menüsü görüntülenir ve televizyon kanallarının aranmasına başlanır.
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>SON</b> mesajı göründüğünde arama tamamlanır.
-            </div>
+            </Box>
           </li>
           <li>
             Kurulumu tamamlayıp çıkmak için <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Akıllı TV Hizmet koşulları</b> görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Kabul Et</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -456,20 +457,20 @@ export default function Kurulum() {
         <ol>
           <li>
             <b>Kablolu</b>'yu seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Kanal Taraması</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             Kanal taramasını başlatmak için seçiminizi yapın ve <Circle className="inline-icon button"/>
             {" "} düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Kablo Taraması Yapılandırma</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             <b>Arama Modu</b>'nu seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -480,14 +481,14 @@ export default function Kurulum() {
           </li>
           <li>
             Kanal taramasını başlatmak için <img src={right} alt="Sağ" className="inline-icon"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Tarama</b> menüsü görüntülenir ve televizyon kanallarının aranmasına başlanır.
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Son</b> mesajı göründüğünde arama tamamlanır.
-            </div>
+            </Box>
           </li>
           <li>
             Kurulumu tamamlayıp çıkmak için <Circle className="inline-icon button"/> düğmesine basın.
@@ -503,33 +504,33 @@ export default function Kurulum() {
         <ol>
           <li>
             <b>Anten</b>'i seçin.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Anten Kurulumu</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Arama Türü</b> ve <b>Hafızaya Alma Türü</b>'nü seçin.
           </li>
           <li>
             <b>Sonraki</b> seçeneğini seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Kanal Taraması</b> menüsü görüntülenir.
               <h2>img gelcek</h2>
-            </div>
+            </Box>
           </li>
           <li>
             Kanal taramasını başlatmak için seçiminizi yapın ve <Circle className="inline-icon button"/> 
             {" "} düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>Tarama</b> menüsü görüntülenir ve televizyon kanallarının aranmasına başlanır.
-            </div>
-            <div>
+            </Box>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>SON</b> mesajı göründüğünde arama tamamlanır.
-            </div>
+            </Box>
           </li>
           <li>
             Kurulumu tamamlayıp çıkmak için <Circle className="inline-icon button"/> düğmesine basın.
@@ -541,7 +542,7 @@ export default function Kurulum() {
             <b>Kabul Et</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

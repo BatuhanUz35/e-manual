@@ -1,29 +1,30 @@
-import tv_icon from "../../../../assets/images/png/tv_icon.png"
-import options from "../../../../assets/images/png/options.png"
-import right from "../../../../assets/images/png/right.png"
-import left from "../../../../assets/images/png/left.png"
-import down from "../../../../assets/images/png/down.png"
+import tv_icon from "../../../../assets/images/icons/tv_icon.png"
+import options from "../../../../assets/images/icons/options.png"
+import right from "../../../../assets/images/icons/right.png"
+import left from "../../../../assets/images/icons/left.png"
+import down from "../../../../assets/images/icons/down.png"
 import { Circle } from "@mui/icons-material"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material"
 
 export const ol = [
-  <div>
+  <Box>
     TV moduna geçmek için <img src={tv_icon} alt="TV" className="inline-icon" /> düğmesine basın.
-  </div>,
-  <div>
+  </Box>,
+  <Box>
     <img src={options} alt="Seçenekler" className="inline-icon" /> ardından <img src={left} alt="Sol" className="inline-icon sm" />/
     <img src={right} alt="Sağ" className="inline-icon sm" /> düğmesi ile <b>Gelişmiş Seçenekler</b>'i seçip <Circle className="inline-icon button" />
     {" "} düğmesine basın.
-  </div>,
-  <div>
+  </Box>,
+  <Box>
     <img src={down} alt="Yukarı" className="inline-icon rotate-180 sm" />/<img src={down} alt="Yukarı" className="inline-icon sm" /> düğmesiyle <b>HBBTV Ayarları</b>'nı
     seçip <Circle className="inline-icon button" /> düğmesine basın.
-    <div>
+    <Box>
       <ArrowForwardIcon className="inline-icon xs" />
       <b>HBBTV Ayarları</b> menüsü görüntülenir.
       <h2>img gelcek</h2>
-    </div>
-  </div>
+    </Box>
+  </Box>
 
 ]
 

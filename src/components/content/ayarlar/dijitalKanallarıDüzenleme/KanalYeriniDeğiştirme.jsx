@@ -1,18 +1,19 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
+import back from "../../../../assets/images/icons/back.png"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function KanalYeriniDeğiştirme() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Yerini Değiştirme
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Yerini Değiştirme
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Kanal Yerini Değiştirme</h1>
-        <p>
+        <p classname="text">
           Kanalların yerlerini karşılıklı olarak değiştirin. Örneğin; 2 numaralı kanalı 20 numaralı
           kanala, 20 numaralı kanalı 2 numaralı kanala taşıyın.
         </p>
@@ -26,7 +27,7 @@ export default function KanalYeriniDeğiştirme() {
           </li>
           <li>
             Yer değiştirmek istediğiniz ikinci kanalı seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/>İki kanal karşılıklı olarak yer değiştirmiştir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/>İki kanal karşılıklı olarak yer değiştirmiştir.</Box>
           </li>
           <li>
             <b>
@@ -34,7 +35,7 @@ export default function KanalYeriniDeğiştirme() {
               seçip <Circle className="inline-icon button"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

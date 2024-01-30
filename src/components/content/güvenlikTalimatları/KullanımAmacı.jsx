@@ -1,11 +1,12 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function KullanımAmacı() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Kullanım Amacı</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Kullanım Amacı</p>
+      <Box className="container">
         <h1>Kullanım Amacı</h1>
         <ul>
           <li>
@@ -26,7 +27,7 @@ export default function KullanımAmacı() {
             Bu, bir garanti talebinde kullanılabilecek bir kusur değildir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

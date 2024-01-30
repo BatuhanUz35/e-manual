@@ -1,18 +1,19 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function ArayüzKriterleri() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Arayüz Kriterleri ile İlgili Bilgiler
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Arayüz Kriterleri ile İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Arayüz Kriterleri İle İlgili Bilgiler</h1>
         <ul>
           <li>Bu ürün Telekom şebekelerinde kullanıma uygun olarak üretilmiştir.</li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

@@ -1,12 +1,13 @@
 import React from "react";
 import "../../style.css";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
+import { Box } from "@mui/material";
 
 export default function UykuKonumu() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Tuş Takımı / Cihazın Uyku Konumuna Alınması ve Açılması</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Tuş Takımı / Cihazın Uyku Konumuna Alınması ve Açılması</p>
+      <Box className="container">
         <h1>Cihazın Uyku Konumuna Alınması ve Açılması</h1>
         <ol>
           <li>
@@ -18,7 +19,7 @@ export default function UykuKonumu() {
             düğmesine kısa basıldığında uyku konumundan açılır.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

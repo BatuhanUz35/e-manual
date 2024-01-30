@@ -1,16 +1,17 @@
 import React from "react";
 import "../style.css";
-import tv_icon from "../../../assets/images/png/tv_icon.png";
-import options from "../../../assets/images/png/options.png";
-import home from "../../../assets/images/png/home.png"
-import back from "../../../assets/images/png/back.png";
+import tv_icon from "../../../assets/images/icons/tv_icon.png";
+import options from "../../../assets/images/icons/options.png";
+import home from "../../../assets/images/icons/home.png"
+import back from "../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function ResimModu() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Resim Modu</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Resim Modu</p>
+      <Box className="container">
         <h1>Resim Modu</h1>
         <ol>
           <li>
@@ -32,8 +33,8 @@ export default function ResimModu() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,15 +1,16 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import back from "../../../../assets/images/png/back.png";
-import down from "../../../../assets/images/png/down.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import back from "../../../../assets/images/icons/back.png";
+import down from "../../../../assets/images/icons/down.png";
+import { Box } from "@mui/material";
 
 export default function ÇalışmaŞekli() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları / Çalışma Şekli</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları / Çalışma Şekli</p>
+      <Box className="container">
         <h1>Çalışma Şekli</h1>
         <h2>Not:</h2>
         <ol>
@@ -36,8 +37,8 @@ export default function ÇalışmaŞekli() {
             yayına dönmek için <img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

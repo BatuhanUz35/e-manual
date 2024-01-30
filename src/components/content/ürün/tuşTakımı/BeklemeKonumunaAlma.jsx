@@ -3,18 +3,19 @@ import "../../style.css";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function BeklemeKonumunaAlma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumuna Alınması</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumuna Alınması</p>
+      <Box className="container">
         <h1>Cihazın Bekleme Konumuna Alınması</h1>
         <ol>
           <li>
             Chiazı bekleme konumuna almak için <PowerSettingsNewIcon className="inline-icon"/>
             düğmesine 5 sn basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> Kapat menüsü görüntülenir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> Kapat menüsü görüntülenir.</Box>
           </li>
           <li>
             Tamam seçeneğini seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
@@ -23,7 +24,7 @@ export default function BeklemeKonumunaAlma() {
             Televizyon bekleme konumuna geçer.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

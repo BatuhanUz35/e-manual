@@ -1,12 +1,13 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function UzaktanKumanda() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ürününüz / Uzaktan Kumanda</p>
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ürününüz / Uzaktan Kumanda</p>
       <h1>Uzaktan Kumanda</h1>
-      <div className="flex-container">
+      <Box className="flex-container">
         
         <h2>img gelcek</h2>
         <ol>
@@ -31,7 +32,7 @@ export default function UzaktanKumanda() {
           <li>ECO modunu açar / kapatır.</li>
           <li>Altyazı menüsünü açar.</li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

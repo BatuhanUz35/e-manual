@@ -1,24 +1,25 @@
-import txt from "../../../assets/images/png/txt.png"
-import zero from "../../../assets/images/png/zero.png"
-import one from "../../../assets/images/png/one.png"
-import right from "../../../assets/images/png/right.png"
-import left from "../../../assets/images/png/left.png"
+import txt from "../../../assets/images/icons/txt.png"
+import zero from "../../../assets/images/icons/zero.png"
+import one from "../../../assets/images/icons/one.png"
+import right from "../../../assets/images/icons/right.png"
+import left from "../../../assets/images/icons/left.png"
+import { Box } from "@mui/material"
 
 export const ol1 = [
-  <div>
+  <Box>
     Teleteks moduna geçmek için <img src={txt} alt="TXT" className="inline-icon" /> düğmesine
     basın.
-  </div>,
-  <div>
+  </Box>,
+  <Box>
     Teleteks sayfalarını doğrudan <img src={one} alt="1" className="inline-icon xs" />...<img src={zero} alt="0" className="inline-icon xs" />
     {" "} düğmeleri ile seçebilirsiniz.
-  </div>,
-  <div>
+  </Box>,
+  <Box>
     Bir sayfa geri veya ileri gitmek için <b>img gelcek</b> düğmesine basın.
-  </div>,
-  <div>
+  </Box>,
+  <Box>
     Teleteks modundan çıkmak için <img src={txt} alt="TXT" className="inline-icon" /> düğmesine basın.
-  </div>,
+  </Box>,
 ]
 
 export const texts = [
@@ -26,7 +27,7 @@ export const texts = [
 ]
 
 export const ol2 = [
-  <div>
+  <Box>
     Alt sayfa seçmek için <img src={left} className="inline-icon sm" alt="Sol"/>/<img src={right} className="inline-icon sm" alt="Sağ"/> düğmesine basın.
-  </div>
+  </Box>
 ]

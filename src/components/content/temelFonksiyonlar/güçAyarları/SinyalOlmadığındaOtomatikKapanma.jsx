@@ -1,16 +1,17 @@
 import React from "react";
 import "../../style.css";
-import tv_icon from "../../../../assets/images/png/tv_icon.png";
-import options from "../../../../assets/images/png/options.png";
-import back from "../../../../assets/images/png/back.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png";
+import options from "../../../../assets/images/icons/options.png";
+import back from "../../../../assets/images/icons/back.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Box } from "@mui/material";
 
 export default function SinyalOlmadığındaOtomatikKapanma() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Sinyal Olmadığında Otomatik Kapanma</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Güç Ayarları / Sinyal Olmadığında Otomatik Kapanma</p>
+      <Box className="container">
         <h1>Sinyal Olmadığında Otomatik Kapanma</h1>
         <ol>
           <li>
@@ -19,9 +20,9 @@ export default function SinyalOlmadığındaOtomatikKapanma() {
           </li>
           <li>
             <b>Güç</b>'ü seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> <b>Güç</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>Sinyal Olmadığında Otomatik Kapanma</b>'yı seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
@@ -34,8 +35,8 @@ export default function SinyalOlmadığındaOtomatikKapanma() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,31 +1,32 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
-import check from "../../../../assets/images/png/check.png"
+import back from "../../../../assets/images/icons/back.png"
+import check from "../../../../assets/images/icons/check.png"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 
 export default function KanalTaşıma() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Taşıma
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Kanal Taşıma
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Kanal Taşıma</h1>
         <ol>
           <li>
           <b>Kanal Düzenleyici</b> menüsünde taşımak istediğiniz kanal/kanlları
           seçip <Circle className="inline-icon button"/> düğmesine basın.
-          <div><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar <img src={check} className="inline-icon sm" alt="Check"/> ile işaretlenir.</div>
+          <Box><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar <img src={check} className="inline-icon sm" alt="Check"/> ile işaretlenir.</Box>
           </li>
           <li>
           <Circle className="inline-icon button-green button"/> (yeşil) düğmesine basın.
           </li>
           <li>
             Yeni kanal konumunu seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar yeni kanal konumuna taşınmıştır.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> Kanal/kanallar yeni kanal konumuna taşınmıştır.</Box>
           </li>
           <li>
             <b>
@@ -41,7 +42,7 @@ export default function KanalTaşıma() {
             Kanal sırasını değiştirmeniz halinde, yayıncının yollamış olduğu kanal numaraları değişecektir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

@@ -1,18 +1,19 @@
 import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
-import back from "../../../../assets/images/png/back.png"
+import back from "../../../../assets/images/icons/back.png"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function FavoriListesindeKanalYeriDeğiştirme() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesinde Kanal Yeri Değiştirme
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Favori Listesinde Kanal Yeri Değiştirme
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Favori Listesinde Kanal Yeri Değiştirme</h1>
-        <p>
+        <p classname="text">
           Favori listesinde kanalların yerlerini karşılıklı olarak değiştirin. Örneğin; 2 nolu
           kanalı 20 nolu kanala, 20 nolu kanalı 2 nolu kanala taşıyın.
         </p>
@@ -20,7 +21,7 @@ export default function FavoriListesindeKanalYeriDeğiştirme() {
           <li>
             <b>Kanal Düzenleyici</b> menüsünde düzenlemek istediğiniz favori
             listesini seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> Seçilen favori listesi kanalları görüntülenir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> Seçilen favori listesi kanalları görüntülenir.</Box>
           </li>
           <li>
             Karşılıklı yerini değiştirmek istediğiniz ilk kanalı 
@@ -31,7 +32,7 @@ export default function FavoriListesindeKanalYeriDeğiştirme() {
           </li>
           <li>
             Yer değiştirmek istediğiniz ikinci kanalı seçip  <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> İki kanal karşılıklı olarak yer değiştirmiştir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> İki kanal karşılıklı olarak yer değiştirmiştir.</Box>
           </li>
           <li>
             <b>Kanal Düzenleyici</b> menüsünden çıkmak için <img src={back} className="inline-icon"/> ardından, 
@@ -40,7 +41,7 @@ export default function FavoriListesindeKanalYeriDeğiştirme() {
         </ol>
       
       
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

@@ -4,13 +4,14 @@ import { Circle } from "@mui/icons-material";
 import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import down from "../../../../assets/images/png/down.png";
+import down from "../../../../assets/images/icons/down.png";
+import { Box } from "@mui/material";
 
 export default function TkgsAyarları() {
   return (
-    <div className="page">
-      <p>Anasayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları</p>
+      <Box className="container">
         <h1>TKGS Ayarları</h1>
         <h2>Not:</h2>
         <ul>
@@ -23,39 +24,39 @@ export default function TkgsAyarları() {
             <b>Gelişmiş Seçenekler</b> menüsünden <img src={down} alt="yukarı" className="inline-icon rotate-180 sm"/>/<img src={down} alt="aşağı" className="inline-icon sm"/> düğmesiyle
             <b> TKGS</b>'yi seçip <Circle className="inline-icon button"/>
             {" "} düğmesine basın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/>
               <b>TKGS Ayarı</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
         </ol>
         <h2>Ek bilgiler</h2>
-        <div className="link-container">
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli" className="link">
             Çalışma Şekli
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi" className="link">
             TKGS Konum Listesi
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama" className="link">
             Tablo Versiyonu Sıfırlama
           </Link>
-        </div>
-        <div className="link-container">
+        </Box>
+        <Box className="link-container">
           <LinkIcon />
           <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste" className="link">
             Tercih Edilen Liste
           </Link>
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

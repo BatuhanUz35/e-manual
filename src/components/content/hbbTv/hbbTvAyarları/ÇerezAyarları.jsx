@@ -1,16 +1,17 @@
 import React from "react";
 import "../../style.css";
 import { ol, texts } from "./ÇerezAyarları_";
+import { Box } from "@mui/material";
 
 export default function ÇerezAyarları() {
   return (
-    <div className="page">
-      <p>Anasayfa / HBBTV / HBBTV Ayarları / Çerez Ayarları</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları / Çerez Ayarları</p>
+      <Box className="container">
         <h1>Çerez Ayarları</h1>
         {texts.map((text) => {
           return ( 
-            <p>{text}</p>
+            <p classname="text">{text}</p>
           )})}
           <ol>
           {ol.map((li) => {
@@ -18,7 +19,7 @@ export default function ÇerezAyarları() {
             <li>{li}</li>
           )})}  
           </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

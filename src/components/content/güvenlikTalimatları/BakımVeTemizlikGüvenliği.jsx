@@ -1,19 +1,16 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function BakımVeTemizlikGüvenliği() {
   return (
-    <div className="page">
-      <p>Anasayfa / Güvenlik Talimatları / Bakım Ve Temizlik Güvenliği</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Güvenlik Talimatları / Bakım Ve Temizlik Güvenliği</p>
+      <Box className="container">
         <h1> Bakım Ve Temizlik Güvenliği</h1>
-        <div className="flex-container">
-          <h4>UYARI:&nbsp;</h4>
-          <p>
-            Kurulum, bakım, temizlik ve tamir işlemleri sırasında ürünün fişini
-            prizden çıkarın
-          </p>
-        </div>
+        <Box>
+          <b>UYARI:</b> Kurulum, bakım, temizlik ve tamir işlemleri sırasında ürünün fişini prizden çıkarın.
+        </Box>
         <ul>
           <li>
             Ürün kabinini kuru veya hafif nemlendirilmiş yumuşak bir bezle temizleyin.
@@ -31,7 +28,7 @@ export default function BakımVeTemizlikGüvenliği() {
               madde içeren deterjanlar kullanmayın.
             </li>
             </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

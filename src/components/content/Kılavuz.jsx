@@ -1,18 +1,19 @@
 import React from "react";
 import "./style.css";
 import caution from "../../assets/images/safety/Caution-Icon.png"
-import info from "../../assets/images/png/info.png"
+import info from "../../assets/images/icons/info.png"
 import elektrik from "../../assets/images/safety/voltage_voltage_new.png"
-import guide from "../../assets/images/png/guide.png"
+import guide from "../../assets/images/icons/guide.png"
+import { Box } from "@mui/material";
 
-export default function Anasayfa() {
+export default function kılavuz() {
   return (
-    <div className="page">
-      <p>Anasayfa / Lütfen önce bu kılavuzu okuyun!</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Lütfen önce bu kılavuzu okuyun!</p>
+      <Box className="container">
         <h1>Lütfen önce bu kılavuzu okuyun!</h1>
-        <p>Değerli Müşterimiz,</p>
-        <p>
+        <p classname="text">Değerli Müşterimiz,</p>
+        <p classname="text">
           Bu ürünü tercih ettiğniz için teşekkür ederiz. Yüksek kalite ve
           teknoloji ile üretilmiş olan ürününüzün size en iyi verimi sunmasını
           istiyoruz. Bunun için, bu kılavuzun tamamını ve verilen diğer
@@ -21,11 +22,11 @@ export default function Anasayfa() {
           kılavuzunu da birlikte verin. Kullanma kılavuzunda belirtilen tüm
           bilgi ve uyarıları dikkate alarak talimatlara uyun.
         </p>
-        <p>
+        <p classname="text">
           Bu kullanma kılavuzunun başka modeller için de geçerli olabileceğini
           unutmayın.
         </p>
-        <p>
+        <p classname="text">
           Kullanma kılavuzu birden fazla model içeriyorsa, modeller arasındaki
           farklar kılavuzda açık bir şekilde belirtilmiştir.
         </p>
@@ -51,7 +52,7 @@ export default function Anasayfa() {
             <td class="column-l">Kullanma kılavuzunu okuyun.</td>
           </tr>
         </table>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

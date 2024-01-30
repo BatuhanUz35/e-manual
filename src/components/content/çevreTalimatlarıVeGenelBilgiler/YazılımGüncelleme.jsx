@@ -1,14 +1,15 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function YazılımGüncelleme() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Yazılım Güncelleme
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Yazılım Güncelleme
         İle İlgili Bilgiler
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Yazılım Güncelleme İle İlgili Bilgiler</h1>
         <ul>
           <li>
@@ -16,7 +17,7 @@ export default function YazılımGüncelleme() {
             güncellenmesiyle değişebilir.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

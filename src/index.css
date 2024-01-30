@@ -5,5 +5,20 @@
 
 @font-face {
   font-family: "Roboto-bl";
-  src: local("Roboto"), url('./assets/fonts/roboto/Roboto-BlackItalic.ttf') format("truetype");
+  src: local("Roboto"), url('./assets/fonts/roboto/Roboto-Black.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-rg";
+  src: local("Roboto"), url('./assets/fonts/roboto/Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-bd";
+  src: local("Roboto"), url('./assets/fonts/roboto/Roboto-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-bdi";
+  src: local("Roboto"), url('./assets/fonts/roboto/Roboto-BoldItalic.ttf') format("truetype");
 }

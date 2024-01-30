@@ -3,7 +3,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import "./Navbar.css"
 import logo from "../../assets/beko.svg"
 import { useDispatch, useSelector } from 'react-redux'
-import { toggle } from '../../redux/menuSlice'
+import { toggle, focus_item } from '../../redux/menuSlice'
 import SearchBar from "../searchbar/SearchBar";
 import { withFocusable } from '@noriginmedia/react-spatial-navigation';
 import { Box } from "@mui/material";
@@ -12,14 +12,15 @@ import MenuButton from "./MenuButton";
 function Navbar() {
   const dispatch = useDispatch()
   const is_menu_active = useSelector((state) => state.menu.toggle);
-  const menu_id = 2
+  const menu_id = 9999
 
   function handleKeyDown(event) {
-    event.preventDefault();
     switch (event.key){
       case 'ArrowDown':
         if(is_menu_active){
-          document.getElementById(3).focus();
+          event.preventDefault();
+          dispatch(focus_item(0))
+          document.getElementById(0).focus();
         }
         break;
       default:

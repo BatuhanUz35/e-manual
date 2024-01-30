@@ -1,7 +1,7 @@
 import { MenuItems } from "./MenuItems_";
 import "./Menu.css";
 import { useSelector, useDispatch } from "react-redux";
-import { select_item, activate_l1_subcategory, activate_l2_subcategory } from "../../redux/menuSlice";
+import { select_item, activate_l1_subcategory, activate_l2_subcategory, focus_item } from "../../redux/menuSlice";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { withFocusable } from '@noriginmedia/react-spatial-navigation';
@@ -16,7 +16,8 @@ const MenuItem = () => {
   function handleKeyDown(event) {
     switch (event.key){
       case 'ArrowRight':
-        document.getElementById(999).focus();
+        focus_item(999);
+        document.getElementById(999).focus(); // Focus to the content
         break;
       default:
         break;
@@ -24,10 +25,14 @@ const MenuItem = () => {
   }
   
   return (
-      MenuItems.map((item) => {
+      MenuItems.map((item) => { // Main items
       return (
         <Box>
-          <Box onKeyDown={handleKeyDown} onClick={() => dispatch(activate_l1_subcategory(item.id))}>
+          <Box onKeyDown={handleKeyDown} onClick={() => {
+            console.log('Before state change:', active_l1_subcategory);
+            dispatch(activate_l1_subcategory(item.id));
+            focus_item(item.id)
+            }}>
             <Link
               to={item.url}
               className={
@@ -35,7 +40,8 @@ const MenuItem = () => {
               }
               id={item.id}
               focusKey={item.id}
-              onClick={() => dispatch(select_item(item.id))}
+              onClick={() => {dispatch(select_item(item.id))
+              }}
             >
               <Box className="icon">
                 {active_l1_subcategory === item.id ? item.iconActive : item.icon}
@@ -43,7 +49,7 @@ const MenuItem = () => {
               <p className="title">{item.title}</p>
             </Link>
             {item.subcategory 
-              ? item.subcategory.map((l1_subcategory_item) => {
+              ? item.subcategory.map((l1_subcategory_item) => { // Level 1 subcategory of selected main item
                   return (
                     <Box div onClick={() => dispatch(activate_l2_subcategory(l1_subcategory_item.id))}>
                       <Link
@@ -53,7 +59,10 @@ const MenuItem = () => {
                           ${active_l1_subcategory === item.id ? "" : "hidden"}`}
                         id={l1_subcategory_item.id}
                         focusKey={l1_subcategory_item.id}
-                        onClick={() => dispatch(select_item(l1_subcategory_item.id))}
+                        onClick={() => {
+                          dispatch(select_item(l1_subcategory_item.id));
+                          dispatch(focus_item(selected_item_id));
+                        }}
                       >
                         <Box className="l1_subcategory_item-icon">
                         {active_l2_subcategory === l1_subcategory_item.id ? l1_subcategory_item.iconActive : l1_subcategory_item.icon}
@@ -61,9 +70,9 @@ const MenuItem = () => {
                         <Box className="l1_subcategory_item-title">{l1_subcategory_item.title}</Box>
                       </Link>
                       {l1_subcategory_item.subcategory
-                        ? l1_subcategory_item.subcategory.map((l2_subcategory_item) => {
+                        ? l1_subcategory_item.subcategory.map((l2_subcategory_item) => { // Level 2 subcategory of selected level 1 subcategory item
                             return (
-                              <div>
+                              <Box>
                                 <Link
                                   to={l2_subcategory_item.url}
                                   className={
@@ -82,7 +91,7 @@ const MenuItem = () => {
                                     {l2_subcategory_item.title}
                                   </Box>
                                 </Link>
-                              </div>
+                              </Box>
                             );
                           })
                         : null}
@@ -96,6 +105,7 @@ const MenuItem = () => {
     })
   );
 }
+
 
 
 export default withFocusable()(MenuItem);

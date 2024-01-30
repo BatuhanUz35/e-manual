@@ -2,16 +2,17 @@ import React from "react";
 import "../../style.css";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { Box } from "@mui/material";
 
 export default function YayınKaynağıSeçimi() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Ayarlar / Dijital Kanalları Düzenleme / Yayın Kaynağı Seçimi
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Ayarlar / Dijital Kanalları Düzenleme / Yayın Kaynağı Seçimi
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Yayın Kaynağı Seçimi</h1>
-        <p>
+        <p classname="text">
           Tüm kaynaklar için uydu (Standart), uydu (Operatör), kablo ve anten olarak kanal
           tablosu ayrı ayrı saklanmaktadır. Düzenleme yapmak için öncelikle düzenleyeceğiniz 
           yayın kaynağını seçin.
@@ -22,10 +23,10 @@ export default function YayınKaynağıSeçimi() {
           </li>
           <li>
             <b>Uydu</b>, <b> Kablo</b> veya <b>Anten</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
-            <div><ArrowForwardIcon className="inline-icon xs"/> Seçtiğiniz kaynağa ait kanal listesi görüntülenir.</div>
+            <Box><ArrowForwardIcon className="inline-icon xs"/> Seçtiğiniz kaynağa ait kanal listesi görüntülenir.</Box>
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

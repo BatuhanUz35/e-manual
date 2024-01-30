@@ -1,16 +1,17 @@
 import React from "react";
 import "../style.css";
+import { Box } from "@mui/material";
 
 export default function YetkiliSatıcılar() {
   return (
-    <div className="page">
-      <p>
-        Anasayfa / Çevre Talimatları ve Genel Bilgiler / Yetkili Satıcılar İçin
+    <Box className="page">
+      <p classname="text">
+        Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Yetkili Satıcılar İçin
         Servis Bilgileri
       </p>
-      <div className="container">
+      <Box className="container">
         <h1>Yetkili Satıcılar İçin Servis Bilgileri</h1>
-        <p>
+        <p classname="text">
           Bu ürün aşağıdaki Avrupa birliği direktifleri ve regülasyonlarına
           uygundur:
         </p>
@@ -42,7 +43,7 @@ export default function YetkiliSatıcılar() {
             kullanılmasının kısıtlanması direktifi.
           </li>
         </ul>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

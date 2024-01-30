@@ -1,20 +1,21 @@
 import React from "react";
 import "../../style.css";
-import home from "../../../../assets/images/png/home.png"
-import back from "../../../../assets/images/png/back.png";
+import home from "../../../../assets/images/icons/home.png"
+import back from "../../../../assets/images/icons/back.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import right from "../../../../assets/images/png/right.png";
-import left from "../../../../assets/images/png/left.png";
-import tv_icon from "../../../../assets/images/png/tv_icon.png"
+import right from "../../../../assets/images/icons/right.png";
+import left from "../../../../assets/images/icons/left.png";
+import tv_icon from "../../../../assets/images/icons/tv_icon.png"
 import { Circle } from "@mui/icons-material";
+import { Box } from "@mui/material";
 
 export default function Ekolayzer() {
   return (
-    <div className="page">
-      <p>Anasayfa / Ayarlar / Ses Ayarları / Ekolayzer</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / Ayarlar / Ses Ayarları / Ekolayzer</p>
+      <Box className="container">
         <h1>Ekolayzer</h1>
-        <p>Ekolayzer, oluşturabileceğiniz bir ses ayarı sunmaktadır.</p>
+        <p classname="text">Ekolayzer, oluşturabileceğiniz bir ses ayarı sunmaktadır.</p>
         <h2>Not:</h2>
         <ul>
           <li>
@@ -24,16 +25,16 @@ export default function Ekolayzer() {
         <ol>
           <li>
             Ses menüsünden <b>Ekolayzer Ayrıntıları</b>'nı seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> <b>Ekolayzer Ayrıntıları</b> menüsü görüntülenir.
-            </div>
+            </Box>
           </li>
           <li>
             <b>120Hz</b> frekans bandı etkindir.
-            <div>
+            <Box>
               <ArrowForwardIcon className="inline-icon xs"/> 
               <img src={left} alt="sol" className="inline-icon sm"/> veya <img src={right} alt="sağ" className="inline-icon sm"/> tercih edilen değeri ayarlayın.
-            </div>
+            </Box>
           </li>
           <li>
             Sonraki frekans bandını seçip ayar işlemini tekrarlayın.
@@ -44,7 +45,7 @@ export default function Ekolayzer() {
             {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
           </li>
         </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }

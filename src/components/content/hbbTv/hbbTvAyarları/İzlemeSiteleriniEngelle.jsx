@@ -1,16 +1,17 @@
 import React from "react";
 import "../../style.css";
 import { texts, ol } from "./İzlemeSiteleriniEngelle_";
+import { Box } from "@mui/material";
 
 export default function İzlemeSiteleriniEngelle() {
   return (
-    <div className="page">
-      <p>Anasayfa / HBBTV / HBBTV Ayarları / İzleme Sitelerini Engelle</p>
-      <div className="container">
+    <Box className="page">
+      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları / İzleme Sitelerini Engelle</p>
+      <Box className="container">
         <h1>İzleme Sitelerini Engelle</h1>
         {texts.map((text) => {
           return ( 
-            <p>{text}</p>
+            <p classname="text">{text}</p>
           )})}
           <ol>
           {ol.map((li) => {
@@ -18,7 +19,7 @@ export default function İzlemeSiteleriniEngelle() {
             <li>{li}</li>
           )})}  
           </ol>
-      </div>
-    </div>
+      </Box>
+    </Box>
   );
 }
