@@ -10,7 +10,6 @@ import './assets/fonts/roboto/Roboto-Medium.ttf';
 import './assets/fonts/roboto/Roboto-BlackItalic.ttf';
 import { initNavigation, setKeyMap } from '@noriginmedia/react-spatial-navigation';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 initNavigation();

@@ -219,6 +219,14 @@ import DurumBilgisiGörüntüleme from "../content/cihazTercihleri/hakkında/Dur
 import YasalBilgileriGörüntüleme from "../content/cihazTercihleri/hakkında/YasalBilgileriGörüntüleme";
 import DiğerBilgileriGörüntüleme from "../content/cihazTercihleri/hakkında/DiğerBilgileriGörüntüleme";
 import TarihVeSaatAyarları from "../content/cihazTercihleri/tarihVeSaatAyarları/TarihVeSaatAyarları";
+import OtomatikTarihVeSaatAyarı from "../content/cihazTercihleri/tarihVeSaatAyarları/OtomatikTarihVeSaatAyarı";
+import ManuelTarihVeSaatAyarı from "../content/cihazTercihleri/tarihVeSaatAyarları/ManuelTarihVeSaatAyarı";
+import SaatDiliminiAyarlama from "../content/cihazTercihleri/tarihVeSaatAyarları/SaatDiliminiAyarlama";
+import SaatBiçiminiAyarlama from "../content/cihazTercihleri/tarihVeSaatAyarları/SaatBiçiminiAyarlama";
+import ZamanlayıcıAyarları from "../content/cihazTercihleri/zamanlayıcıAyarları/ZamanlayıcıAyarları";
+import OtomatikAçılmaZamanlayıcısı from "../content/cihazTercihleri/zamanlayıcıAyarları/OtomatikAçılmaZamanlayıcısı";
+import OtomatikKapanmaZamanlayıcısı from "../content/cihazTercihleri/zamanlayıcıAyarları/OtomatikKapanmaZamanlayıcısı";
+import DilAyarları from "../content/cihazTercihleri/DilAyarları";
 
 export const routes = [
   { 
@@ -1105,5 +1113,37 @@ export const routes = [
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları",
     element: TarihVeSaatAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/otomatik-tarih-ve-saat-ayarı",
+    element: OtomatikTarihVeSaatAyarı
+  },
+  {
+    path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/manuel-tarih-ve-saat-ayarı",
+    element: ManuelTarihVeSaatAyarı
+  },
+  {
+    path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/saat-dilimini-ayarlama",
+    element: SaatDiliminiAyarlama
+  },
+  {
+    path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/saat-biçimini-ayarlama",
+    element: SaatBiçiminiAyarlama
+  },
+  {
+    path: "/cihaz-tercihleri/zamanlayıcı-ayarları",
+    element: ZamanlayıcıAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-açılma-zamanlayıcısı",
+    element: OtomatikAçılmaZamanlayıcısı
+  },
+  {
+    path: "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-kapanma-zamanlayıcısı",
+    element: OtomatikKapanmaZamanlayıcısı
+  },
+  {
+    path: "/cihaz-tercihleri/dil-ayarları",
+    element: DilAyarları
   },
 ]

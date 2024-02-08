@@ -9,439 +9,438 @@ export const MenuItems = [
   },
   {
     title: "Lütfen önce bu kılavuzu okuyun!",
-    url: "kılavuz",
+    url: "/kılavuz",
     id: 10000
   },
   {
     title: "Güvenlik Talimatları",
-    url: "güvenlik-talimatları",
+    url: "/güvenlik-talimatları",
     id: 20000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Kullanım Amacı",
-        url: "güvenlik-talimatları/kullanım-amacı",
+        url: "/güvenlik-talimatları/kullanım-amacı",
         id: 20100
       },
       {
         title: "Elektrik Güvenliği",
-        url: "güvenlik-talimatları/elektrik-güvenliği",
+        url: "/güvenlik-talimatları/elektrik-güvenliği",
         id: 20200
       },
       {
         title: "Yangın Güvenliği",
-        url: "güvenlik-talimatları/yangın-güvenliği",
+        url: "/güvenlik-talimatları/yangın-güvenliği",
         id: 20300
       },
       {
         title: "Taşıma Güvenliği",
-        url: "güvenlik-talimatları/taşıma-güvenliği",
+        url: "/güvenlik-talimatları/taşıma-güvenliği",
         id: 20400
       },
       {
         title: "Kurulum Güvenliği",
-        url: "güvenlik-talimatları/kurulum-güvenliği",
+        url: "/güvenlik-talimatları/kurulum-güvenliği",
         id: 20500
       },
       {
         title: "Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği",
-        url: "güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği",
+        url: "/güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği",
         id: 20600
       },
       {
         title: "Bakım ve Temizlik Güvenliği",
-        url: "güvenlik-talimatları/bakım-ve-temizlik-güvenliği",
+        url: "/güvenlik-talimatları/bakım-ve-temizlik-güvenliği",
         id: 20700
       },
     ],
   },
   {
     title: "Çevre Talimatları ve Genel Bilgiler",
-    url: "çevre-talimatları-ve-genel-bilgiler",
+    url: "/çevre-talimatları-ve-genel-bilgiler",
     id: 30000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması",
-        url: "çevre-talimatları-ve-genel-bilgiler/yönetmelik-ve-atık",
+        url: "/çevre-talimatları-ve-genel-bilgiler/yönetmelik-ve-atık",
         id: 30100
       },
       {
         title: "Pil Atıkları ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/pil-atıkları",
+        url: "/çevre-talimatları-ve-genel-bilgiler/pil-atıkları",
         id: 30200
       },
       {
         title: "Ambalajın İmha Edilmesi ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/ambalaj-imha",
+        url: "/çevre-talimatları-ve-genel-bilgiler/ambalaj-imha",
         id: 30300
       },
       {
         title: "PCB Uygunluğu ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/pcb-uygunluğu",
+        url: "/çevre-talimatları-ve-genel-bilgiler/pcb-uygunluğu",
         id: 30400
       },
       {
         title: "Arayüz Kriterleri ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/arayüz-kriterleri",
+        url: "/çevre-talimatları-ve-genel-bilgiler/arayüz-kriterleri",
         id: 30500
       },
       {
         title: "Enerji Tasarrufu ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/enerji-tasarrufu",
+        url: "/çevre-talimatları-ve-genel-bilgiler/enerji-tasarrufu",
         id: 30600
       },
       {
         title: "Durağan Resimler ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/durağan-resimler",
+        url: "/çevre-talimatları-ve-genel-bilgiler/durağan-resimler",
         id: 30700
       },
       {
         title: "Yazılım Güncellemesi ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/yazılım-güncelleme",
+        url: "/çevre-talimatları-ve-genel-bilgiler/yazılım-güncelleme",
         id: 30800
       },
       {
         title: "Elektromanyetik Gürültü ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/elektromanyetik-gürültü",
+        url: "/çevre-talimatları-ve-genel-bilgiler/elektromanyetik-gürültü",
         id: 30900
       },
       {
         title: "AB Direktifleri",
-        url: "çevre-talimatları-ve-genel-bilgiler/ab-direktifleri",
+        url: "/çevre-talimatları-ve-genel-bilgiler/ab-direktifleri",
         id: 31000
       },
       {
         title: "Türkiye'deki Müşteriler İçin Not",
-        url: "çevre-talimatları-ve-genel-bilgiler/türkiyedeki-müşteriler",
+        url: "/çevre-talimatları-ve-genel-bilgiler/türkiyedeki-müşteriler",
         id: 31100
       },
       {
-        title:
-          "Cihazın Arka Kapağında Bulunabilecek İşaretler ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/arka-kapak-işaretler",
+        title: "Cihazın Arka Kapağında Bulunabilecek İşaretler ile İlgili Bilgiler",
+        url: "/çevre-talimatları-ve-genel-bilgiler/arka-kapak-işaretler",
         id: 31200
       },
       {
         title: "Lisanslar ile İlgili Bilgiler",
-        url: "çevre-talimatları-ve-genel-bilgiler/lisanslar",
+        url: "/çevre-talimatları-ve-genel-bilgiler/lisanslar",
         id: 31300
       },
       {
         title: "Kablosuz LAN Modülü Spesifikasyonu",
-        url: "çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-1",
-        id: 61400
+        url: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-1",
+        id: 31400
       },
       {
         title: "Kablosuz LAN Modülü Spesifikasyonu",
-        url: "çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-2",
+        url: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-2",
         id: 31500
       },
       {
         title: "Bluetooth(*) Modülü Spesifikasyonu",
-        url: "çevre-talimatları-ve-genel-bilgiler/bluetooth",
+        url: "/çevre-talimatları-ve-genel-bilgiler/bluetooth",
         id: 31600
       },
       {
         title: "Yetkili Satıcılar İçin Servis Bilgileri",
-        url: "çevre-talimatları-ve-genel-bilgiler/yetkili-satıcılar",
+        url: "/çevre-talimatları-ve-genel-bilgiler/yetkili-satıcılar",
         id: 31700
       },
       {
         title: "Kablosuz (WLAN) Bağlantı İçin Notlar",
-        url: "çevre-talimatları-ve-genel-bilgiler/kablosuz-wlan",
+        url: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-wlan",
         id: 31800
       },
     ],
   },
   {
     title: "Ürününüz",
-    url: "ürün",
+    url: "/ürün",
     id: 40000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Paketin İçindekiler",
-        url: "ürün/paketin-içindekiler",
+        url: "/ürün/paketin-içindekiler",
         id: 40100
       },
       {
         title: "Kurulum veya Asma",
-        url: "ürün/kurulum-veya-asma",
+        url: "/ürün/kurulum-veya-asma",
         id: 40200,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Ayaklı Kurulum",
-            url: "ürün/kurulum-veya-asma/ayaklı-kurulum",
+            url: "/ürün/kurulum-veya-asma/ayaklı-kurulum",
             id: 40201
           },
           {
             title: "VESA Montaj Kiti ile Montaj Hazırlığı",
-            url: "ürün/kurulum-veya-asma/vesa-montaj",
+            url: "/ürün/kurulum-veya-asma/vesa-montaj",
             id: 40202
           },
         ],
       },
       {
         title: "Uzaktan Kumandaya Pillerin Takılması",
-        url: "ürün/uzaktan-kumanda-pil",
+        url: "/ürün/uzaktan-kumanda-pil",
         id: 40300
       },
       {
         title: "Ürün Tanıtımı",
-        url: "ürün/ürün-tanıtımı",
+        url: "/ürün/ürün-tanıtımı",
         id: 40400,
       },
       {
         title: "Tuş Takımı",
-        url: "ürün/tuş-takımı",
+        url: "/ürün/tuş-takımı",
         id: 40500,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Cihazın Bekleme Konumundan Açılması",
-            url: "ürün/tuş-takımı/bekleme-konumu-açılma",
+            url: "/ürün/tuş-takımı/bekleme-konumu-açılma",
             id: 40501
           },
           {
             title: "Cihazın Bekleme Konumuna Alınması",
-            url: "ürün/tuş-takımı/bekleme-konumuna-alma",
+            url: "/ürün/tuş-takımı/bekleme-konumuna-alma",
             id: 40502
           },
           {
             title: "Cihazın Uyku Konumuna Alınması ve Açılması",
-            url: "ürün/tuş-takımı/uyku-konumu",
+            url: "/ürün/tuş-takımı/uyku-konumu",
             id: 40503
           },
         ]
       },
       {
         title: "Anten ve Elektrik Kablosunu Bağlama",
-        url: "ürün/anten-ve-elektrik-kablosu",
+        url: "/ürün/anten-ve-elektrik-kablosu",
         id: 40600,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "DVB-S Uydu Anten Bağlantısı",
-            url: "ürün/anten-ve-elektrik-kablosu/dvbs-anten-bağlantısı",
+            url: "/ürün/anten-ve-elektrik-kablosu/dvbs-anten-bağlantısı",
             id: 40601
           },
           {
             title: "DVB-T, DVB-C ve Analog Anten Bağlantısı",
-            url: "ürün/anten-ve-elektrik-kablosu/dvbt-dvbc-ve-analog-anten-bağlantısı",
+            url: "/ürün/anten-ve-elektrik-kablosu/dvbt-dvbc-ve-analog-anten-bağlantısı",
             id: 40602
           },
           {
             title: "Elektrik Bağlantısı",
-            url: "ürün/anten-ve-elektrik-kablosu/elektrik-bağlantısı",
+            url: "/ürün/anten-ve-elektrik-kablosu/elektrik-bağlantısı",
             id: 40603
           },
         ]
       },
       {
         title: "Uzaktan Kumanda",
-        url: "ürün/uzaktan-kumanda",
+        url: "/ürün/uzaktan-kumanda",
         id: 40700
       },
     ],
   },
   {
     title: "Ayarlar",
-    url: "ayarlar",
+    url: "/ayarlar",
     id: 50000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Hazırlık",
-        url: "ayarlar/hazırlık",
+        url: "/ayarlar/hazırlık",
         id: 50100,
       },
       {
         title: "İlk Kurulum ve Televizyonu Ayarlama",
-        url: "ayarlar/kurulum",
+        url: "/ayarlar/kurulum",
         id: 50200,
       },
       {
         title: "Dijital Kanalları Düzenleme",
-        url: "ayarlar/dijital-kanalları-düzenleme",
+        url: "/ayarlar/dijital-kanalları-düzenleme",
         id: 50300,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Kanal Düzenleyici Uygulamasını Başlatma",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-düzenleyici",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-düzenleyici",
             id: 50301
           },
           {
             title: "Yayın Kaynağı Seçimi",
-            url: "ayarlar/dijital-kanalları-düzenleme/yayın-kaynağı-seçimi",
+            url: "/ayarlar/dijital-kanalları-düzenleme/yayın-kaynağı-seçimi",
             id: 50302
           },
           {
             title: "Favori Listesi Oluşturma",
-            url: "ayarlar/dijital-kanalları-düzenleme/favori-listesi-oluşturma",
+            url: "/ayarlar/dijital-kanalları-düzenleme/favori-listesi-oluşturma",
             id: 50303
           },
           {
             title: "Favori Listesinde Kanal Taşıma",
-            url: "ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-taşıma",
+            url: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-taşıma",
             id: 50304
           },
           {
             title: "Favori Listesinde Kanal Yeri Değiştirme",
-            url: "ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-yeri-değiştirme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-yeri-değiştirme",
             id: 50305
           },
           {
             title: "Favori Listesinden Kanal Silme",
-            url: "ayarlar/dijital-kanalları-düzenleme/favori-listesinden-kanal-silme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinden-kanal-silme",
             id: 50306
           },
           {
             title: "Kanal Taşıma",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-taşıma",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-taşıma",
             id: 50307
           },
           {
             title: "Kanal Yerini Değiştirme",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-yerini-değiştirme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-yerini-değiştirme",
             id: 50308
           },
           {
             title: "Kanal Silme",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-silme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-silme",
             id: 50309
           },
           {
             title: "Kanal Listesini Silme",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-listesini-silme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-listesini-silme",
             id: 50310
           },
           {
             title: "Kanal Düzenleme",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-düzenleme",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-düzenleme",
             id: 50311
           },
           {
             title: "Kanal Atlatma",
-            url: "ayarlar/dijital-kanalları-düzenleme/kanal-atlatma",
+            url: "/ayarlar/dijital-kanalları-düzenleme/kanal-atlatma",
             id: 50312
           },
         ]
       },
       {
         title: "Görüntü Ayarları",
-        url: "ayarlar/görüntü-ayarları",
+        url: "/ayarlar/görüntü-ayarları",
         id: 50400,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Arttırılmış Görüntü Ayarları",
-            url: "ayarlar/görüntü-ayarları/arttırılmış-görüntü-ayarları",
+            url: "/ayarlar/görüntü-ayarları/arttırılmış-görüntü-ayarları",
             id: 50401
           },
           {
             title: "Görüntü Ayarlarını Fabrika Ayarlarına Döndürme",
-            url: "ayarlar/görüntü-ayarları/görüntü-ayarlarını-fabrika-ayarlarına-döndürme",
+            url: "/ayarlar/görüntü-ayarları/görüntü-ayarlarını-fabrika-ayarlarına-döndürme",
             id: 50402
           },
         ]
       },
       {
         title: "Ses Ayarları",
-        url: "ayarlar/ses-ayarları",
+        url: "/ayarlar/ses-ayarları",
         id: 50500,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Sistem Sesleri",
-            url: "ayarlar/ses-ayarları/sistem-sesleri",
+            url: "/ayarlar/ses-ayarları/sistem-sesleri",
             id: 50501
           },
           {
             title: "Balans",
-            url: "ayarlar/ses-ayarları/balans",
+            url: "/ayarlar/ses-ayarları/balans",
             id: 50502
           },
           {
             title: "Bas",
-            url: "ayarlar/ses-ayarları/bas",
+            url: "/ayarlar/ses-ayarları/bas",
             id: 50503
           },
           {
             title: "Tiz",
-            url: "ayarlar/ses-ayarları/tiz",
+            url: "/ayarlar/ses-ayarları/tiz",
             id: 50504
           },
           {
             title: "Surround Ses",
-            url: "ayarlar/ses-ayarları/surround-ses",
+            url: "/ayarlar/ses-ayarları/surround-ses",
             id: 50505
           },
           {
             title: "Ekolayzer",
-            url: "ayarlar/ses-ayarları/ekolayzer",
+            url: "/ayarlar/ses-ayarları/ekolayzer",
             id: 50506
           },
           {
             title: "Hoparlör Gecikmesi",
-            url: "ayarlar/ses-ayarları/hoparlör-gecikmesi",
+            url: "/ayarlar/ses-ayarları/hoparlör-gecikmesi",
             id: 50507
           },
           {
             title: "eARC",
-            url: "ayarlar/ses-ayarları/earc",
+            url: "/ayarlar/ses-ayarları/earc",
             id: 50508
           },
           {
             title: "Dijital Giriş",
-            url: "ayarlar/ses-ayarları/dijital-giriş",
+            url: "/ayarlar/ses-ayarları/dijital-giriş",
             id: 50509
           },
           {
             title: "Dijital Çıkış",
-            url: "ayarlar/ses-ayarları/dijital-çıkış",
+            url: "/ayarlar/ses-ayarları/dijital-çıkış",
             id: 50510
           },
           {
             title: "SPDIF Gecikmesi",
-            url: "ayarlar/ses-ayarları/spdif-gecikmesi",
+            url: "/ayarlar/ses-ayarları/spdif-gecikmesi",
             id: 50511
           },
           {
             title: "Dijital Çıkış Gecikmesi",
-            url: "ayarlar/ses-ayarları/dijital-çıkış-gecikmesi",
+            url: "/ayarlar/ses-ayarları/dijital-çıkış-gecikmesi",
             id: 50512
           },
           {
             title: "Otomatik Ses",
-            url: "ayarlar/ses-ayarları/otomatik-ses",
+            url: "/ayarlar/ses-ayarları/otomatik-ses",
             id: 50513
           },
           {
             title: "Downmix Modu",
-            url: "ayarlar/ses-ayarları/downmix-modu",
+            url: "/ayarlar/ses-ayarları/downmix-modu",
             id: 50514
           },
           {
             title: "DTS DRC",
-            url: "ayarlar/ses-ayarları/dts-drc",
+            url: "/ayarlar/ses-ayarları/dts-drc",
             id: 50515
           },
           {
             title: "Ses Ayarlarını Fabrika Ayarlarına Döndürme",
-            url: "ayarlar/ses-ayarları/ses-ayarlarını-fabrika-ayarlarına-döndürme",
+            url: "/ayarlar/ses-ayarları/ses-ayarlarını-fabrika-ayarlarına-döndürme",
             id: 50516
           },
         ]
@@ -450,81 +449,81 @@ export const MenuItems = [
   },
   {
     title: "Televizyonun Çalıştırılması Temel Fonksiyonlar",
-    url: "temel-fonksiyonlar",
-    id: 6000,
+    url: "/temel-fonksiyonlar",
+    id: 60000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Açma ve Kapatma",
-        url: "temel-fonksiyonlar/açma-ve-kapatma",
+        url: "/temel-fonksiyonlar/açma-ve-kapatma",
         id: 60100
       },
       {
         title: "TV Modunu Seçme",
-        url: "temel-fonksiyonlar/tv-modunu-seçme",
+        url: "/temel-fonksiyonlar/tv-modunu-seçme",
         id: 60200
       },
       {
         title: "Sinyal Kaynağı ve Anten Tipini Seçme",
-        url: "temel-fonksiyonlar/sinyal-kaynağı-ve-anten-tipini-seçme",
+        url: "/temel-fonksiyonlar/sinyal-kaynağı-ve-anten-tipini-seçme",
         id: 60300
       },
       {
         title: "Kanalları Seçme",
-        url: "temel-fonksiyonlar/kanalları-seçme",
+        url: "/temel-fonksiyonlar/kanalları-seçme",
         id: 60400
       },
       {
         title: "Ses Seviyesini Ayarlama",
-        url: "temel-fonksiyonlar/ses-seviyesini-ayarlama",
+        url: "/temel-fonksiyonlar/ses-seviyesini-ayarlama",
         id: 60500
       },
       {
         title: "Sesi Kapatma (Mute)",
-        url: "temel-fonksiyonlar/sesi-kapatma",
+        url: "/temel-fonksiyonlar/sesi-kapatma",
         id: 60600
       },
       {
         title: "Ses Stili",
-        url: "temel-fonksiyonlar/ses-stili",
+        url: "/temel-fonksiyonlar/ses-stili",
         id: 60700
       },
       {
         title: "Resim Modu",
-        url: "temel-fonksiyonlar/resim-modu",
+        url: "/temel-fonksiyonlar/resim-modu",
         id: 60800
       },
       {
         title: "Görüntü Formatını Değiştirme",
-        url: "temel-fonksiyonlar/görüntü-formatını-değiştirme",
+        url: "/temel-fonksiyonlar/görüntü-formatını-değiştirme",
         id: 60900
       },
       {
         title: "Güç Ayarları",
-        url: "temel-fonksiyonlar/güç-ayarları",
+        url: "/temel-fonksiyonlar/güç-ayarları",
         id: 61000,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Uyku Zamanlayıcısı",
-            url: "temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı",
+            url: "/temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı",
             id: 61001
           },
           {
             title: "Görüntüyü Kapatma",
-            url: "temel-fonksiyonlar/güç-ayarları/görüntüyü-kapatma",
+            url: "/temel-fonksiyonlar/güç-ayarları/görüntüyü-kapatma",
             id: 61002
           },
           {
             title: "Kapanma Zamanlayıcıs",
-            url: "temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcıs",
+            url: "/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcıs",
             id: 61003
           },
           {
             title: "Sinyal Olmadığında Otomatik Kapanma",
-            url: "temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma",
+            url: "/temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma",
             id: 61004
           },
 
@@ -532,202 +531,204 @@ export const MenuItems = [
       },
       {
         title: "Elektronik TV Rehberi",
-        url: "temel-fonksiyonlar/elektronik-tv-rehberi",
+        url: "/temel-fonksiyonlar/elektronik-tv-rehberi",
         id: 61100
       },
     ]
   },
   {
     title: "Televizyonun Çalıştırılması Gelişmiş Fonksiyonlar",
-    url: "gelişmiş-fonksiyonlar",
+    url: "/gelişmiş-fonksiyonlar",
     id: 70000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Ses Dilinin Değiştirilmesi",
-        url: "gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi",
+        url: "/gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi",
         id: 70100
       },
       {
         title: "Ses Dili",
-        url: "gelişmiş-fonksiyonlar/ses-dili",
+        url: "/gelişmiş-fonksiyonlar/ses-dili",
         id: 70200
       },
       {
         title: "Mavi Ekran",
-        url: "gelişmiş-fonksiyonlar/mavi-ekran",
+        url: "/gelişmiş-fonksiyonlar/mavi-ekran",
         id: 70300
       },
       {
         title: "Varsayılan Kanal",
-        url: "gelişmiş-fonksiyonlar/varsayılan-kanal",
+        url: "/gelişmiş-fonksiyonlar/varsayılan-kanal",
         id: 70400
       },
       {
         title: "Etkileşim Kanalı",
-        url: "gelişmiş-fonksiyonlar/etkileşim-kanalı",
+        url: "/gelişmiş-fonksiyonlar/etkileşim-kanalı",
         id: 70500
       },
       {
         title: "MHEG PIN Koruması",
-        url: "gelişmiş-fonksiyonlar/mheg-pin-koruması",
+        url: "/gelişmiş-fonksiyonlar/mheg-pin-koruması",
         id: 70600
       },
       {
         title: "Altyazılar",
-        url: "gelişmiş-fonksiyonlar/altyazılar",
+        url: "/gelişmiş-fonksiyonlar/altyazılar",
         id: 70700,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Analog Altyazı",
-            url: "gelişmiş-fonksiyonlar/altyazılar/analog-altyazı",
+            url: "/gelişmiş-fonksiyonlar/altyazılar/analog-altyazı",
             id: 70701
           },
           {
             title: "Dijital Altyazı",
-            url: "gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı",
+            url: "/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı",
             id: 70702
           },
           {
             title: "Dijital Altyazı Dili",
-            url: "gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı-dili",
+            url: "/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı-dili",
             id: 70703
           },
           {
             title: "İkinci Dijital Altyazı Dili",
-            url: "gelişmiş-fonksiyonlar/altyazılar/ikinci-dijital-altyazı-dili",
+            url: "/gelişmiş-fonksiyonlar/altyazılar/ikinci-dijital-altyazı-dili",
             id: 70704
           },
           {
             title: "Altyazı Türü",
-            url: "gelişmiş-fonksiyonlar/altyazılar/altyazı-türü",
+            url: "/gelişmiş-fonksiyonlar/altyazılar/altyazı-türü",
             id: 70705
           },
         ]
       },
       {
         title: "Teleteks Dil Seçimi",
-        url: "gelişmiş-fonksiyonlar/teleteks-dil-seçimi",
+        url: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi",
         id: 70800,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Dijital Teletesk Dili",
-            url: "gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili",
+            url: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili",
             id: 70801
           },
           {
             title: "Sayfa Deşifre Etme dili",
-            url: "gelişmiş-fonksiyonlar/teleteks-dil-seçimi/sayfa-deşifre-etme-dili",
+            url: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/sayfa-deşifre-etme-dili",
             id: 70802
           }
         ]
       },
       {
         title: "BISS Anahtarı",
-        url: "gelişmiş-fonksiyonlar/biss-anahtarı",
+        url: "/gelişmiş-fonksiyonlar/biss-anahtarı",
         id: 70900
       },
       {
         title: "TKGS Ayarları",
-        url: "gelişmiş-fonksiyonlar/tkgs-ayarları",
+        url: "/gelişmiş-fonksiyonlar/tkgs-ayarları",
         id: 71000,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Çalışma Şekli",
-            url: "gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli",
+            url: "/gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli",
             id: 71001
           },
           {
             title: "TKGS Konum Listesi",
-            url: "gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi",
+            url: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi",
             id: 71002
           },
           {
             title: "Tablo Versiyonu Sıfırlama",
-            url: "gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama",
+            url: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama",
             id: 71003
           },
           {
             title: "Tercih Edilen Liste",
-            url: "gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste",
+            url: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste",
             id: 71004
           }
         ]
       },
       {
         title: "Sinyal Bilgileri",
-        url: "gelişmiş-fonksiyonlar/sinyal-bilgileri",
+        url: "/gelişmiş-fonksiyonlar/sinyal-bilgileri",
         id: 71100
       }
     ]
   },
   {
     title: "HBBTV",
-    url: "hbbtv",
+    url: "/hbbtv",
     id: 80000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "HbbTV Nedir?",
-        url: "hbbtv/hbbtv-nedir",
+        url: "/hbbtv/hbbtv-nedir",
         id: 80100
       },
       {
         title: "HbbTV'nin Kullanımı",
-        url: "hbbtv/hbbtv-kullanımı",
+        url: "/hbbtv/hbbtv-kullanımı",
         id: 80200
       },
       {
         title: "Video Dizinleri İçin Ek Fonksiyonlar",
-        url: "hbbtv/video-dizinleri-için-ek-fonksiyonlar",
+        url: "/hbbtv/video-dizinleri-için-ek-fonksiyonlar",
         id: 80300
       },
       {
         title: "HBBTV Ayarları",
-        url: "hbbtv/hbbtv-ayarları",
+        url: "/hbbtv/hbbtv-ayarları",
         id: 80400,
+        icon: <ChevronRightIcon />,
+        iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "HBBTV Desteği",
-            url: "hbbtv/hbbtv-ayarları/hbbtv-desteği",
+            url: "/hbbtv/hbbtv-ayarları/hbbtv-desteği",
             id: 80401
           },
           {
             title: "İzleme Tercihi",
-            url: "hbbtv/hbbtv-ayarları/izleme-tercihi",
+            url: "/hbbtv/hbbtv-ayarları/izleme-tercihi",
             id: 80402
           },
           {
             title: "Çerez Ayarları",
-            url: "hbbtv/hbbtv-ayarları/çerez-ayarları",
+            url: "/hbbtv/hbbtv-ayarları/çerez-ayarları",
             id: 80403
           },
           {
             title: "Kalıcı Depolama",
-            url: "hbbtv/hbbtv-ayarları/kalıcı-depolama",
+            url: "/hbbtv/hbbtv-ayarları/kalıcı-depolama",
             id: 80404
           },
           {
             title: "İzleme Sitelerini Engelle",
-            url: "hbbtv/hbbtv-ayarları/izleme-sitelerini-engelle",
+            url: "/hbbtv/hbbtv-ayarları/izleme-sitelerini-engelle",
             id: 80405
           },
           {
             title: "Cihaz Kimliği",
-            url: "hbbtv/hbbtv-ayarları/cihaz-kimliği",
+            url: "/hbbtv/hbbtv-ayarları/cihaz-kimliği",
             id: 80406
           },
           {
             title: "Cihaz Kimliğini Sıfırlama",
-            url: "hbbtv/hbbtv-ayarları/cihaz-kimliğini-sıfırlama",
+            url: "/hbbtv/hbbtv-ayarları/cihaz-kimliğini-sıfırlama",
             id: 80407
           }
         ]
@@ -736,175 +737,175 @@ export const MenuItems = [
   },
   {
     title: "Teleteks",
-    url: "teleteks",
+    url: "/teleteks",
     id: 90000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "TOP Tekst veya FLOF Tekst Modu",
-        url: "teleteks/top-tekst-veya-flof-tekst-modu",
+        url: "/teleteks/top-tekst-veya-flof-tekst-modu",
         id: 90100
       },
       {
         title: "Normal Tekst Modu",
-        url: "teleteks/normal-tekst-modu",
+        url: "/teleteks/normal-tekst-modu",
         id: 90200
       }
     ]
   },
   {
     title: "USB Kayıt",
-    url: "usb-kayıt",
+    url: "/usb-kayıt",
     id: 100000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
     subcategory: [
       {
         title: "Televizyon Programlarının Kaydedilmesi ve Oynatılmasıyla İlgili Bilgiler",
-        url: "usb-kayıt/televizyon-programlarının-kaydedilmesi-ve-oynatılmasıyla-ilgili-bilgiler",
+        url: "/usb-kayıt/televizyon-programlarının-kaydedilmesi-ve-oynatılmasıyla-ilgili-bilgiler",
         id: 100100
       },
       {
         title: "Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar",
-        url: "usb-kayıt/harici-veri-ortamı-kullanımında-muhtemel-kısıtlamalar",
+        url: "/usb-kayıt/harici-veri-ortamı-kullanımında-muhtemel-kısıtlamalar",
         id: 100200
       },
       {
         title: "Harici Veri Ortamının Bağlanması",
-        url: "usb-kayıt/harici-veri-ortamının-bağlanması",
+        url: "/usb-kayıt/harici-veri-ortamının-bağlanması",
         id: 100300
       },
       {
         title: "USB Kayıt Ayarları",
-        url: "usb-kayıt/usb-kayıt-ayarları",
+        url: "/usb-kayıt/usb-kayıt-ayarları",
         id: 100400,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Veri Ortamının Biçimlendirilmesi",
-            url: "usb-kayıt/usb-kayıt-ayarları/veri-ortamının-biçimlendirilmesi",
+            url: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamının-biçimlendirilmesi",
             id: 100401
           },
           {
             title: "Kayıt / Zaman Kaydırma için Veri Ortamnın Seçilmesi",
-            url: "usb-kayıt/usb-kayıt-ayarları/kayıt-zaman-kaydırma-için-veri-ortamın-seçilmesi",
+            url: "/usb-kayıt/usb-kayıt-ayarları/kayıt-zaman-kaydırma-için-veri-ortamın-seçilmesi",
             id: 100402
           },
           {
             title: "Veri Ortamı Testi",
-            url: "usb-kayıt/usb-kayıt-ayarları/veri-ortamı-testi",
+            url: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamı-testi",
             id: 100403
           }
         ]
       },
       {
         title: "Zaman Kaydırma Fonksiyonunun Açılıp / Kapatılması",
-        url: "usb-kayıt/zaman-kaydırma-fonksiyonunun-açılıp-kapatılması",
+        url: "/usb-kayıt/zaman-kaydırma-fonksiyonunun-açılıp-kapatılması",
         id: 100500
       },
       {
         title: "Zaman Kaydırma Disk Kurulumu",
-        url: "usb-kayıt/zaman-kaydırma-disk-kurulumu",
+        url: "/usb-kayıt/zaman-kaydırma-disk-kurulumu",
         id: 100600,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Otomatik Kurulum",
-            url: "usb-kayıt/zaman-kaydırma-disk-kurulumu/otomatik-kurulum",
+            url: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/otomatik-kurulum",
             id: 100601
           },
           {
             title: "Manuel Kurulum",
-            url: "usb-kayıt/zaman-kaydırma-disk-kurulumu/manuel-kurulum",
+            url: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/manuel-kurulum",
             id: 100602
           }
         ]
       },
       {
         title: "Zaman Kaydırma ve Sürekli Kayıt ile Programların Duraklatılması",
-        url: "usb-kayıt/zaman-kaydırma-ve-sürekli-kayıt-ile-programların-duraklatılması",
+        url: "/usb-kayıt/zaman-kaydırma-ve-sürekli-kayıt-ile-programların-duraklatılması",
         id: 100700
       },
       {
         title: "Programları Kaydetme",
-        url: "usb-kayıt/programları-kaydetme",
+        url: "/usb-kayıt/programları-kaydetme",
         id: 100800,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması",
-            url: "usb-kayıt/programları-kaydetme/kayıt-sırasında-televizyonun-bekleme-konumuna-alınması",
+            url: "/usb-kayıt/programları-kaydetme/kayıt-sırasında-televizyonun-bekleme-konumuna-alınması",
             id: 100801
           },
           {
             title: "Kanal Listesinden Bir Programı Kaydetme",
-            url: "usb-kayıt/programları-kaydetme/kanal-listesinden-bir-programı-kaydetme",
+            url: "/usb-kayıt/programları-kaydetme/kanal-listesinden-bir-programı-kaydetme",
             id: 100802
           }
         ]
       },
       {
         title: "Kayıt Zamanlayıcısı",
-        url: "usb-kayıt/kayıt-zamanlayıcısı",
+        url: "/usb-kayıt/kayıt-zamanlayıcısı",
         id: 100900,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi",
-            url: "usb-kayıt/programları-kayıt-zamanlayıcısı/elektronik-program-rehberi-kullan-kayıt-zamanlayıcı-eklenmesi",
+            url: "/usb-kayıt/programları-kayıt-zamanlayıcısı/elektronik-program-rehberi-kullan-kayıt-zamanlayıcı-eklenmesi",
             id: 100901
           },
           {
             title: "Bilgileri Manuel Girerek Kayıt Zamanlayıcı Eklenmesi",
-            url: "usb-kayıt/kayıt-zamanlayıcısı/bilgileri-manuel-girerek-kayıt-zamanlayıcı-eklenmmesi",
+            url: "/usb-kayıt/kayıt-zamanlayıcısı/bilgileri-manuel-girerek-kayıt-zamanlayıcı-eklenmmesi",
             id: 100902
           },
           {
             title: "Kayıt Zamanlayıcısının Düzenlenmesi",
-            url: "usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-düzenlenmesi",
+            url: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-düzenlenmesi",
             id: 100903
           },
           {
             title: "Kayıt Zamanlayıcısının Silinmesi",
-            url: "usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-silinmesi",
+            url: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-silinmesi",
             id: 100904
           }
         ]
       },
       {
         title: "Oynatma",
-        url: "usb-kayıt/oynatma",
+        url: "/usb-kayıt/oynatma",
         id: 101000,
         icon: <ChevronRightIcon />,
         iconActive: <ExpandMoreIcon />,
         subcategory: [
           {
             title: "Kayıtlı Dosyalar Listesinden Bir Kayıt Oynatma",
-            url: "usb-kayıt/oynatma/kayıtlı-dosyalar-listesinden-bir-kayıt-oynatma",
+            url: "/usb-kayıt/oynatma/kayıtlı-dosyalar-listesinden-bir-kayıt-oynatma",
             id: 101001
           },
           {
             title: "İleri / Geri Görüntü Arama",
-            url: "usb-kayıt/oynatma/ileri-geri-görüntü-arama",
+            url: "/usb-kayıt/oynatma/ileri-geri-görüntü-arama",
             id: 101002
           }
         ]
       },
       {
         title: "Kaydedilenler Listesinden Kaydedilmiş Yayınların Silinmesi",
-        url: "usb-kayıt/kaydedilenler-listesinden-kaydedilmiş-yayınların-silinmesi",
+        url: "/usb-kayıt/kaydedilenler-listesinden-kaydedilmiş-yayınların-silinmesi",
         id: 101100
       }
     ]
   },
   {
     title: "USB Oynatıcı",
-    url: "usb-oynatıcı",
+    url: "/usb-oynatıcı",
     id: 110000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
@@ -1017,7 +1018,7 @@ export const MenuItems = [
   },
   {
     title: "Android TV",
-    url: "android-tv",
+    url: "/android-tv",
     id: 120000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
@@ -1159,7 +1160,7 @@ export const MenuItems = [
   },
   {
     title: "Chromecast Built-in™",
-    url: "chromecast-built-in",
+    url: "/chromecast-built-in",
     id: 130000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
@@ -1193,7 +1194,7 @@ export const MenuItems = [
   },
   {
     title: "Cihaz Tercihleri",
-    url: "cihaz-tercihleri",
+    url: "/cihaz-tercihleri",
     id: 140000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
@@ -1275,12 +1276,12 @@ export const MenuItems = [
         subcategory: [
           {
             title: "Otomatik Açılma Zamanlayıcısı",
-            url:  "/cihaz-tercihleri/tarih-ve-saat-ayarları/otomatik-açılma-zamanlayıcısı",
+            url:  "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-açılma-zamanlayıcısı",
             id: 140301,
           },
           {
             title: "Otomatik Kapanma Zamanlayıcısı",
-            url:  "/cihaz-tercihleri/tarih-ve-saat-ayarları/otomatik-kapanma-zamanlayıcısı",
+            url:  "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-kapanma-zamanlayıcısı",
             id: 140302,
           },
         ]
@@ -1426,55 +1427,55 @@ export const MenuItems = [
   },
   {
     title: "Aksesuarlar",
-    url: "aksesuarlar",
+    url: "/aksesuarlar",
     id: 150000,
   },
   {
     title: "Ebeveyn Ayarları",
-    url: "ebeveyn-ayarları",
+    url: "/ebeveyn-ayarları",
     id: 160000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
   },
   {
     title: "Harici Cihaz Kullanma",
-    url: "harici-cihaz-kullanma",
+    url: "/harici-cihaz-kullanma",
     id: 170000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
   },
   {
     title: "Ağ Kurulumu",
-    url: "ağ-kurulumu",
+    url: "/ağ-kurulumu",
     id: 180000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
   },
   {
     title: "Detaylı Kanal Ayarları",
-    url: "detaylı-kanal-ayarları",
+    url: "/detaylı-kanal-ayarları",
     id: 190000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
   },
   {
     title: "Ek bilgiler",
-    url: "ek-bilgiler",
+    url: "/ek-bilgiler",
     id: 200000,
   },
   {
     title: "Sözlük",
-    url: "sözlük",
+    url: "/sözlük",
     id: 210000,
   },
   {
     title: "Sorun Giderme",
-    url: "sorun-giderme",
+    url: "/sorun-giderme",
     id: 220000
   },
   {
     title: "Müşteri Memnuniyeti Politikası",
-    url: "müşteri-memnuniyeti-politikası",
+    url: "/müşteri-memnuniyeti-politikası",
     id: 230000
   },
 ];

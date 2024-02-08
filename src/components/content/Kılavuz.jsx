@@ -7,8 +7,9 @@ import guide from "../../assets/images/icons/guide.png"
 import { Box } from "@mui/material";
 
 export default function kılavuz() {
+ 
   return (
-    <Box className="page">
+    <Box className="page" onScroll={console.log(document.body.scrollTop)}>
       <p classname="text">Ana sayfa / Lütfen önce bu kılavuzu okuyun!</p>
       <Box className="container">
         <h1>Lütfen önce bu kılavuzu okuyun!</h1>

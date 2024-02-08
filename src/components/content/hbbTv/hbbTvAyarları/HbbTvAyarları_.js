@@ -31,30 +31,37 @@ export const ol = [
 export const links = [
   {
     title: "HBBTV Desteği",
-    url: "/hbbtv/hbbtv-ayarları/hbbtv-desteği"
+    url: "/hbbtv/hbbtv-ayarları/hbbtv-desteği",
+    focus_item: 80401
   },
   {
     title: "İzleme Tercihi",
-    url: "/hbbtv/hbbtv-ayarları/izleme-tercihi"
+    url: "/hbbtv/hbbtv-ayarları/izleme-tercihi",
+    focus_item: 80402
   },
   {
     title: "Çerez Ayarları",
-    url: "/hbbtv/hbbtv-ayarları/çerez-ayarları"
+    url: "/hbbtv/hbbtv-ayarları/çerez-ayarları",
+    focus_item: 80403
   },
   {
     title: "Kalıcı Depolama",
     url: "/hbbtv/hbbtv-ayarları/kalıcı-depolama",
+    focus_item: 80404
   },
   {
     title: "İzleme Sitelerini Engelle",
     url: "/hbbtv/hbbtv-ayarları/izleme-sitelerini-engelle",
+    focus_item: 80405
   },
   {
     title: "Cihaz Kimliği",
     url: "/hbbtv/hbbtv-ayarları/cihaz-kimliği",
+    focus_item: 80406
   },
   {
     title: "Cihaz Kimliğini Sıfırlama",
     url: "/hbbtv/hbbtv-ayarları/cihaz-kimliğini-sıfırlama",
+    focus_item: 80407
   },
 ]

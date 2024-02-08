@@ -7,8 +7,17 @@ import options from "../../../assets/images/icons/options.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Box } from "@mui/material";
+import { links } from "./GelişmişFonksiyonlar_";
+import { useDispatch } from "react-redux";
+import {
+  select_item,
+  focus_item,
+  activate_l1_subcategory,
+  activate_l2_subcategory
+} from "../../../redux/menuSlice";
 
 export default function GelişmişFonksiyonlar() {
+  const dispatch = useDispatch();
   return (
     <Box className="page">
       <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Gelişmiş Fonksiyonlar</p>
@@ -37,72 +46,22 @@ export default function GelişmişFonksiyonlar() {
           </li>
         </ul>
         <h2>Ek bilgiler</h2>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi" className="link">
-            Ses Dilinin Değiştirilmesi
-          </Link>      
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/ses-dili" className="link">
-            Ses Dili
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/mavi-ekran" className="link">
-            Mavi Ekran
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/varsayılan-kanal" className="link">
-            Varsayılan Kanal
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/etkileşim-kanalı" className="link">
-            Etkileşim Kanalı
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/mheg-pin-koruması" className="link">
-            MHEG PIN Koruması
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/altyazılar" className="link">
-            Altyazılar
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi" className="link">
-            Teleteks Dil Seçimi
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/biss-anahtarı" className="link">
-            BISS Anahtarı
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/tkgs-anahtarı" className="link">
-            TKGS Anahtarı
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/sinyal-bilgileri" className="link">
-            Sinyal Bilgileri
-          </Link>
-        </Box>
+        {links.map((link) => {
+          return ( 
+            <Box className="link-container">
+            <LinkIcon />
+            <Link to={link.url} className="link"
+             onClick={() => {
+              dispatch(select_item(link.focus_item));
+              dispatch(activate_l1_subcategory(70000));
+              dispatch(activate_l2_subcategory(link.focus_item));
+              dispatch(focus_item(link.focus_item));    
+            }}>
+              {link.title}
+            </Link>
+          </Box>
+          )})}
+        
       </Box>
     </Box>
   );

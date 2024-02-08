@@ -3,23 +3,22 @@ import Navbar from "./components/navbar/Navbar";
 import Page from "./components/pages/Page";
 import "./App.css"
 import { Box } from "@mui/material";
-import React, { useEffect} from "react"
+import React, { useEffect } from "react"
 import { useSelector } from "react-redux";
 
 function App() {
-  const selected_item_id = useSelector((state) => state.menu.selected_item_id);
+  const focused_item = useSelector((state) => state.menu.focused_item);
 
   useEffect(() => {
-    document.getElementById(selected_item_id).focus();
-  }, [selected_item_id]);
-
+    document.getElementById(focused_item).focus();
+  }, [focused_item]);
 
   return (
     <Box>
       <Navbar className="navbar" />
       <Box className="main-container">
-      <Menu className="menu" />
-      <Page id="page"/>
+        <Menu className="menu" />
+        <Page/>
       </Box>
     </Box>
   );

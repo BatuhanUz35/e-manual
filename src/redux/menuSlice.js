@@ -8,7 +8,6 @@ export const menuSlice = createSlice({
     active_l2_subcategory: null,
     selected_item_id: 0,
     focused_item: 0,
-    scroll_position: 0,
   },
   reducers: {
     toggle: (state) => {
@@ -27,14 +26,10 @@ export const menuSlice = createSlice({
     },
     focus_item: (state, action) => {
       state.focused_item = action.payload;
-    },
-    set_scroll_position: (state, action) => {
-      state.scroll_position = action.payload;
-    }
-    
+    },    
   }
 })
 
-export const {toggle, select_item, activate_l1_subcategory, activate_l2_subcategory, focus_item, set_scroll_position} = menuSlice.actions
+export const {toggle, select_item, activate_l1_subcategory, activate_l2_subcategory, focus_item} = menuSlice.actions
 
 export default menuSlice.reducer
