@@ -14,7 +14,7 @@ export default function GoogleHesabıylaOturumAçma() {
           return ( 
             <li>{li}</li>
           )})}
-          </ol>
+        </ol>
       </Box>
     </Box>
   );

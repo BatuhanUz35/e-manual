@@ -3,7 +3,7 @@ import "../../style.css";
 import { ol } from "./FabrikaAyarlarınaSıfırlama_";
 import { Box } from "@mui/material";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   select_item,
   focus_item,
@@ -14,6 +14,7 @@ import {
 
 export default function FabrikaAyarlarınaSıfırlama() {
   const dispatch = useDispatch();
+  const focused_item = useSelector((state) => state.menu.focused_item);
   return (
     <Box className="page">
       <p classname="text">
@@ -36,8 +37,9 @@ export default function FabrikaAyarlarınaSıfırlama() {
                onClick={() => {
                 dispatch(select_item(50200));
                 dispatch(activate_l1_subcategory(50000));
-                focus_item(50200);
+                dispatch(focus_item(50200));
                 dispatch(activate_l2_subcategory(50200));
+                document.getElementById(focused_item).focus();
               }}>
                 İlk Kurulum ve Televizyonu Ayarlama
               </Link>{" "}

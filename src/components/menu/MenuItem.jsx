@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import { withFocusable } from "@noriginmedia/react-spatial-navigation";
-import React, { useEffect } from "react";
+import React from "react";
 
 const MenuItem = () => {
   const active_l1_subcategory = useSelector(

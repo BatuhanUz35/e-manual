@@ -13,6 +13,7 @@ import {
 } from "../../../../redux/menuSlice";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import hakkında_menüsü from "../../../../assets/images/in-page-images/hakkında_menüsü.png"
 
 export default function Hakkında() {
   const dispatch = useDispatch();
@@ -36,7 +37,7 @@ export default function Hakkında() {
               <b>Hakkında</b> menüsü görüntülenir.
             </Box>
           </Box>
-          <h2>img gelcek</h2>
+          <img src={hakkında_menüsü} alt="Hakkında Menüsü"className="in-page-img"/>
           </li>
         </ol>
         <h2>Ek bilgiler</h2>

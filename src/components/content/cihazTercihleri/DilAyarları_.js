@@ -1,7 +1,6 @@
 import { Circle } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import down from "../../../assets/images/icons/down.png";
-import right from "../../../assets/images/icons/right.png"
 import home from "../../../assets/images/icons/home.png";
 import back from "../../../assets/images/icons/back.png";
 import dil from "../../../assets/images/in-page-images/dil.png";

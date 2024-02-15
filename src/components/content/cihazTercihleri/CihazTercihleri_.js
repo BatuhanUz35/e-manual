@@ -6,6 +6,7 @@ import down from "../../../assets/images/icons/down.png"
 import settings from "../../../assets/images/icons/settings.png"
 import { Circle } from "@mui/icons-material"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import cihaz_terichleri_menüsü from "../../../assets/images/in-page-images/cihaz_terichleri_menüsü.png"
 
 export const ol = [
   <Box>
@@ -21,7 +22,7 @@ export const ol = [
     <Box className="flex-container padding-1">
       <ArrowForwardIcon className="inline-icon xs" /><Box><b>Cihaz Tercihleri</b> menüsü görüntülenir.</Box>
     </Box>
-    <h2>img gelcek</h2>
+    <img src={cihaz_terichleri_menüsü} alt="Cihaz Tercihleri Menüsü"className="in-page-img"/>
   </Box>
 ]
 

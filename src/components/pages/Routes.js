@@ -227,6 +227,66 @@ import ZamanlayıcıAyarları from "../content/cihazTercihleri/zamanlayıcıAyar
 import OtomatikAçılmaZamanlayıcısı from "../content/cihazTercihleri/zamanlayıcıAyarları/OtomatikAçılmaZamanlayıcısı";
 import OtomatikKapanmaZamanlayıcısı from "../content/cihazTercihleri/zamanlayıcıAyarları/OtomatikKapanmaZamanlayıcısı";
 import DilAyarları from "../content/cihazTercihleri/DilAyarları";
+import KlavyeAyarları from "../content/cihazTercihleri/klavyeAyarları/KlavyeAyarları";
+import MevcutKlavyeAyarları from "../content/cihazTercihleri/klavyeAyarları/MevcutKlavyeAyarları";
+import GboardAyarları from "../content/cihazTercihleri/klavyeAyarları/GboardAyarları";
+import KlavyeleriYönet from "../content/cihazTercihleri/klavyeAyarları/KlavyeleriYönet";
+import DepolamaAyarları from "../content/cihazTercihleri/depolamaAyarları/DepolamaAyarları";
+import DahiliDepolamaAlanı from "../content/cihazTercihleri/depolamaAyarları/DahiliDepolamaAlanı";
+import ÇıkarılabilirDepolamaAlanı from "../content/cihazTercihleri/depolamaAyarları/ÇıkarılabilirDepolamaAlanı";
+import ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma from "../content/cihazTercihleri/depolamaAyarları/ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma";
+import MağazaModuAyarları from "../content/cihazTercihleri/MağazaModuAyarları";
+import GoogleAsistanAyarları from "../content/cihazTercihleri/GoogleAsistanAyarları";
+import ChromecastBuiltinAyarları from "../content/cihazTercihleri/ChromecastBuiltinAyarları";
+import EkranKoruyucuAyarları from "../content/cihazTercihleri/EkranKoruyucuAyarları";
+import EnerjiTasarrufuAyarları from "../content/cihazTercihleri/EnerjiTasarrufuAyarları";
+import KonumAyarları from "../content/cihazTercihleri/KonumAyarları";
+import KullanımVeTeşhisAyarları from "../content/cihazTercihleri/KullanımVeTeşhisAyarları";
+import ErişilebilirlikAyarları from "../content/cihazTercihleri/erişilebilirlikAyarları/ErişilebilirlikAyarları";
+import GörmeEngellilerİçinSesliTanımlama from "../content/cihazTercihleri/erişilebilirlikAyarları/GörmeEngellilerİçinSesliTanımlama";
+import İşitmeEngellilerSeçeneğininEtkinleştirilmesi from "../content/cihazTercihleri/erişilebilirlikAyarları/İşitmeEngellilerSeçeneğininEtkinleştirilmesi";
+import SeslendirenAltyazıDesteğininEtkinleştirilmesi from "../content/cihazTercihleri/erişilebilirlikAyarları/SeslendirenAltyazıDesteğininEtkinleştirilmesi";
+import Ac4DiyalogGeliştirmeAyarları from "../content/cihazTercihleri/erişilebilirlikAyarları/Ac4DiyalogGeliştirmeAyarları";
+import Altyazılar_Erişilebilirlik from "../content/cihazTercihleri/erişilebilirlikAyarları/Altyazılar";
+import MetinKonuşma from "../content/cihazTercihleri/erişilebilirlikAyarları/MetinKonuşma";
+import YüksekKontrastlıMetin from "../content/cihazTercihleri/erişilebilirlikAyarları/YüksekKontrastlıMetin";
+import YenidenBaşlatma from "../content/cihazTercihleri/YenidenBaşlatma";
+import Aksesuarlar from "../content/Aksesuarlar";
+import EbeveynAyarları from "../content/ebeveynAyarları/EbeveynAyarları";
+import BirTelevizyonaKanalınıEngelleme from "../content/ebeveynAyarları/BirTelevizyonaKanalınıEngelleme";
+import EngellenmişBirTelevizyonKanalınıİzleme from "../content/ebeveynAyarları/EngellenmişBirTelevizyonKanalınıİzleme";
+import ProgramKısıtlamaları from "../content/ebeveynAyarları/ProgramKısıtlamaları";
+import BirHariciKaynağıEngelleme from "../content/ebeveynAyarları/BirHariciKaynağıEngelleme";
+import EngellenmişBirHariciKaynağıİzleme from "../content/ebeveynAyarları/EngellenmişBirHariciKaynağıİzleme";
+import PinKodunuDeğiştirme from "../content/ebeveynAyarları/PinKodunuDeğiştirme";
+import HariciCihazKullanma from "../content/hariciCihazKullanma/HariciCihazKullanma";
+import TüketiciElektroniğiKontrolü from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/TüketiciElektroniğiKontrolü";
+import HariciCihazınBeklemeKonumundanAçılması from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/HariciCihazınBeklemeKonumundanAçılması";
+import HdmiKaynağınınSeçilmesi from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/HdmiKaynağınınSeçilmesi";
+import MenüDilininSeçilmesi from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/MenüDilininSeçilmesi";
+import HariciCihazınBeklemeKonumunaAlınması from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/HariciCihazınBeklemeKonumunaAlınması";
+import HdmiCecCihazKontrolününEtkinleştirilmesi from "../content/hariciCihazKullanma/tüketiciElektroniğiKontrolü/HdmiCecCihazKontrolününEtkinleştirilmesi";
+import BağlantıSeçenekleri from "../content/hariciCihazKullanma/BağlantıSeçenekleri";
+import DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama from "../content/hariciCihazKullanma/DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama";
+import DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı from "../content/hariciCihazKullanma/DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı";
+import DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama from "../content/hariciCihazKullanma/DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama";
+import OrtakArayüz from "../content/hariciCihazKullanma/ortakArayüz/OrtakArayüz";
+import OrtakArayüzNedir from "../content/hariciCihazKullanma/ortakArayüz/OrtakArayüzNedir";
+import CaModülünüTakma from "../content/hariciCihazKullanma/ortakArayüz/CaModülünüTakma";
+import CaModülüVeAkıllıKartlarİçinErişimKontrolü from "../content/hariciCihazKullanma/ortakArayüz/CaModülüVeAkıllıKartlarİçinErişimKontrolü";
+import AğKurulumu from "../content/ağKurulumu/AğKurulumu";
+import KabloluAğBağlantısı from "../content/ağKurulumu/KabloluAğBağlantısı";
+import KabloluAğAyarları from "../content/ağKurulumu/kabloluAğAyarları/KabloluAğAyarları";
+import OtomatikBağlantı from "../content/ağKurulumu/kabloluAğAyarları/OtomatikBağlantı";
+import ManuelBağlantı from "../content/ağKurulumu/kabloluAğAyarları/ManuelBağlantı";
+import KablosuzAğBağlantısı from "../content/ağKurulumu/KablosuzAğBağlantısı";
+import KablosuzAğAyarları from "../content/ağKurulumu/kablosuzAğAyarları/KablosuzAğAyarları";
+import AğŞifresiniGirerekOtomatikBağlantı from "../content/ağKurulumu/kablosuzAğAyarları/AğŞifresiniGirerekOtomatikBağlantı";
+import AğŞifresiniGirerekManuelBağlantı from "../content/ağKurulumu/kablosuzAğAyarları/AğŞifresiniGirerekManuelBağlantı";
+import GizliBirKablosuzAğaBağlantı from "../content/ağKurulumu/kablosuzAğAyarları/GizliBirKablosuzAğaBağlantı";
+import DetaylıKanalAyarları from "../content/detaylıKanalAyarları/DetaylıKanalAyarları";
+import TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması from "../content/detaylıKanalAyarları/TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması";
+import TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması from "../content/detaylıKanalAyarları/TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması";
 
 export const routes = [
   { 
@@ -1145,5 +1205,245 @@ export const routes = [
   {
     path: "/cihaz-tercihleri/dil-ayarları",
     element: DilAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/klavye-ayarları",
+    element: KlavyeAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/klavye-ayarları/mevcut-klavye-ayarları",
+    element: MevcutKlavyeAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/klavye-ayarları/gboard-ayarları",
+    element: GboardAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/klavye-ayarları/klavyeleri-yönet",
+    element: KlavyeleriYönet
+  },
+  {
+    path: "/cihaz-tercihleri/depolama-ayarları",
+    element: DepolamaAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/depolama-ayarları/dahili-depolama-alanı",
+    element: DahiliDepolamaAlanı
+  },
+  {
+    path: "/cihaz-tercihleri/depolama-ayarları/çıkarılabilir-depolama-alanı",
+    element: ÇıkarılabilirDepolamaAlanı
+  },
+  {
+    path: "/cihaz-tercihleri/depolama-ayarları/çıkarılabilir-depolama-alanını-dahili-depolama-alanı-olarak-kullanma",
+    element: ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma
+  },
+  {
+    path: "/cihaz-tercihleri/mağaza-modu-ayarları",
+    element: MağazaModuAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/google-asistan-ayarları",
+    element: GoogleAsistanAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/chromecast-built-in-ayarları",
+    element: ChromecastBuiltinAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/ekran-koruyucu-ayarları",
+    element: EkranKoruyucuAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/enerji-tasarrufu-ayarları",
+    element: EnerjiTasarrufuAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/konum-ayarları",
+    element: KonumAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/kullanım-ve-teşhis-ayarları",
+    element: KullanımVeTeşhisAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları",
+    element: ErişilebilirlikAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/görme-engelliler-için-sesli-tanımlama",
+    element: GörmeEngellilerİçinSesliTanımlama
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/işitme-engelliler-için-sesli-tanımlama",
+    element: İşitmeEngellilerSeçeneğininEtkinleştirilmesi
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/seslendiren-altyazı-desteğinin-etkinleştirilmesi",
+    element: SeslendirenAltyazıDesteğininEtkinleştirilmesi
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/ac4-diyalog-geliştirme-ayarları",
+    element: Ac4DiyalogGeliştirmeAyarları
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/altyazılar",
+    element: Altyazılar_Erişilebilirlik
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/yüksek-kontrastlı-metin",
+    element: YüksekKontrastlıMetin
+  },
+  {
+    path: "/cihaz-tercihleri/erişilebilirlik-ayarları/metin-konuşma",
+    element: MetinKonuşma
+  },
+  {
+    path: "/cihaz-tercihleri/yeniden-başlatma",
+    element: YenidenBaşlatma
+  },
+  {
+    path: "/aksesuarlar",
+    element: Aksesuarlar
+  },
+  {
+    path: "/ebeveyn-ayarları",
+    element: EbeveynAyarları
+  },
+  {
+    path: "/ebeveyn-ayarları/bir-televizyon-kanalını-engelleme",
+    element: BirTelevizyonaKanalınıEngelleme
+  },
+  {
+    path: "/ebeveyn-ayarları/engellenmiş-bir-televizyon-kanalını-izleme",
+    element: EngellenmişBirTelevizyonKanalınıİzleme
+  },
+  {
+    path: "/ebeveyn-ayarları/program-kısıtlamaları",
+    element: ProgramKısıtlamaları
+  },
+  {
+    path: "/ebeveyn-ayarları/bir-harici-kaynağı-engelleme",
+    element: BirHariciKaynağıEngelleme
+  },
+  {
+    path: "/ebeveyn-ayarları/engellenmiş-bir-harici-kaynağı-izleme",
+    element: EngellenmişBirHariciKaynağıİzleme
+  },
+  {
+    path: "/ebeveyn-ayarları/pin-kodunu-değiştirme",
+    element: PinKodunuDeğiştirme
+  },
+  {
+    path: "/harici-cihaz-kullanma",
+    element: HariciCihazKullanma
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü",
+    element: TüketiciElektroniğiKontrolü
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumundan-açılması",
+    element: HariciCihazınBeklemeKonumundanAçılması
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-kaynağının-seçilmesi",
+    element: HdmiKaynağınınSeçilmesi
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/menü-dilinin-seçilmesi",
+    element: MenüDilininSeçilmesi
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumuna-alınması",
+    element: HariciCihazınBeklemeKonumunaAlınması
+  },
+  {
+    path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-cec-cihaz-kontrolünü-etkinleştirme",
+    element: HdmiCecCihazKontrolününEtkinleştirilmesi
+  },
+  {
+    path: "/harici-cihaz-kullanma/bağlantı-seçenekleri",
+    element: BağlantıSeçenekleri
+  },
+  {
+    path: "/harici-cihaz-kullanma/dijital-ses-ve-görüntü-sinyaliyle-harici-cihaz-bağlama",
+    element: DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama
+  },
+  {
+    path: "/harici-cihaz-kullanma/dvd-kayıt-cihazı-dvd-oynatıcı-veya-video-kayıt-cihazı-kullanımı",
+    element: DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı
+  },
+  {
+    path: "/harici-cihaz-kullanma/dijital-çok-kanallı-amplifikatör-av-alıcısı-bağlama",
+    element: DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama
+  },
+  {
+    path: "/harici-cihaz-kullanma/ortak-arayüz",
+    element: OrtakArayüz
+  },
+  {
+    path: "/harici-cihaz-kullanma/ortak-arayüz/ortak-arayüz-nedir",
+    element: OrtakArayüzNedir
+  },
+  {
+    path: "/harici-cihaz-kullanma/ortak-arayüz/ca-modülünü-takma",
+    element: CaModülünüTakma
+  },
+  {
+    path: "/harici-cihaz-kullanma/ortak-arayüz/ca-modülü-ve-akıllı-kartlar-için-erişim-kontrolü",
+    element: CaModülüVeAkıllıKartlarİçinErişimKontrolü
+  },
+  {
+    path: "/ağ-kurulumu",
+    element: AğKurulumu
+  },
+  {
+    path: "/ağ-kurulumu/kablolu-ağ-bağlantısı",
+    element: KabloluAğBağlantısı
+  },
+  {
+    path: "/ağ-kurulumu/kablolu-ağ-ayarları",
+    element: KabloluAğAyarları
+  },
+  {
+    path: "/ağ-kurulumu/kablolu-ağ-ayarları/otomatik-bağlantı",
+    element: OtomatikBağlantı
+  },
+  {
+    path: "/ağ-kurulumu/kablolu-ağ-ayarları/manuel-bağlantı",
+    element: ManuelBağlantı
+  },
+  {
+    path: "/ağ-kurulumu/kablosuz-ağ-bağlantısı",
+    element: KablosuzAğBağlantısı
+  },
+  {
+    path: "/ağ-kurulumu/kablosuz-ağ-ayarları",
+    element: KablosuzAğAyarları
+  },
+  {
+    path: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-otomatik-bağlantı",
+    element: AğŞifresiniGirerekOtomatikBağlantı
+  },
+  {
+    path: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-manuel-bağlantı",
+    element: AğŞifresiniGirerekManuelBağlantı
+  },
+  {
+    path: "/ağ-kurulumu/kablosuz-ağ-ayarları/gizli-bir-kablosuz-ağa-bağlantı",
+    element: GizliBirKablosuzAğaBağlantı
+  },
+  {
+    path: "/detaylı-kanal-ayarları",
+    element: DetaylıKanalAyarları
+  },
+  {
+    path: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
+    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-aranması",
+    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması
   },
 ]

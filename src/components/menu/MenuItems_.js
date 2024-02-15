@@ -1333,8 +1333,8 @@ export const MenuItems = [
             id: 140602,
           },
           {
-            title: "Dahili Depolama Alanını Dahili Depolama Alanı Olarak Kullanma",
-            url:  "/cihaz-tercihleri/depolama-ayarları/dahili-depolama-alanını-dahili-depolama-alanı-olarak-kullanma",
+            title: "Çıkarılabilir Depolama Alanını Dahili Depolama Alanı Olarak Kullanma",
+            url:  "/cihaz-tercihleri/depolama-ayarları/çıkarılabilir-depolama-alanını-dahili-depolama-alanı-olarak-kullanma",
             id: 140603,
           },
         ]
@@ -1387,8 +1387,8 @@ export const MenuItems = [
             id: 141401,
           },
           {
-            title: "İşitme Engelliler için Sesli Tanımlama",
-            url:  "/cihaz-tercihleri/erişilebilirlik-ayarları/işitme-engelliler-için-sesli-tanımlama",
+            title: "İşitme Engelliler Seçeneğinin Etkinleştirilmesi",
+            url:  "/cihaz-tercihleri/erişilebilirlik-ayarları/işitme-engelliler-seçeneğinin-etkinleştirilmesi",
             id: 141402,
           },
           {
@@ -1414,7 +1414,7 @@ export const MenuItems = [
           {
             title: "Metin - Konuşma",
             url:  "/cihaz-tercihleri/erişilebilirlik-ayarları/metin-konuşma",
-            id: 141408,
+            id: 141407,
           },
         ]
       },
@@ -1436,6 +1436,38 @@ export const MenuItems = [
     id: 160000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
+    subcategory: [
+      {
+        title: "Bir Televizyon Kanalını Engelleme",
+        url:  "/ebeveyn-ayarları/bir-televizyon-kanalını-engelleme",
+        id: 160100,
+      },
+      {
+        title: "Engellenmiş Bir Televizyon Kanalını İzleme",
+        url:  "/ebeveyn-ayarları/engellenmiş-bir-televizyon-kanalını-izleme",
+        id: 160200,
+      },
+      {
+        title: "Program Kısıtlamaları",
+        url:  "/ebeveyn-ayarları/program-kısıtlamaları",
+        id: 160300,
+      },
+      {
+        title: "Bir Harici Kaynağı Engelleme",
+        url:  "/ebeveyn-ayarları/bir-harici-kaynağı-engelleme",
+        id: 160400,
+      },
+      {
+        title: "Engellenmiş Bir Harici Kaynağı İzleme",
+        url:  "/ebeveyn-ayarları/engellenmiş-bir-harici-kaynağı-izleme",
+        id: 160500,
+      },
+      {
+        title: "PIN Kodunu Değiştirme",
+        url:  "/ebeveyn-ayarları/pin-kodunu-değiştirme",
+        id: 160600,
+      },
+    ]
   },
   {
     title: "Harici Cihaz Kullanma",
@@ -1443,6 +1475,87 @@ export const MenuItems = [
     id: 170000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
+    subcategory: [
+      {
+        title: "CEC (Tüketici Elektroniği Kontrolü)",
+        url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü",
+        id: 170100,
+        icon: <ChevronRightIcon />,
+        iconActive: <ExpandMoreIcon />,
+        subcategory: [
+          {
+            title: "Harici Cihazın Bekleme Konumundan Açılması",
+            url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumundan-açılması",
+            id: 170101,
+          },
+          {
+            title: "HDMI Kaynağının Seçilmesi",
+            url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-kaynağının-seçilmesi",
+            id: 170102,
+          },
+          {
+            title: "Menü Dilinin Seçilmesi",
+            url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/menü-dilinin-seçilmesi",
+            id: 170103,
+          },
+          {
+            title: "Harici Cihazın Bekleme Konumuna Alınması",
+            url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumuna-alınması",
+            id: 170104,
+          },
+          {
+            title: "HDMI CEC Cihaz Kontrolünü Etkinleştirme",
+            url:  "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-cec-cihaz-kontrolünü-etkinleştirme",
+            id: 170105,
+          },
+        ]
+      },
+      {
+        title: "Bağlantı Seçenekleri",
+        url:  "/harici-cihaz-kullanma/bağlantı-seçenekleri",
+        id: 170200,
+      },
+      {
+        title: "Dijital Ses ve Görüntü Sinyaliyle Harici Cihaz Bağlama",
+        url:  "/harici-cihaz-kullanma/dijital-ses-ve-görüntü-sinyaliyle-harici-cihaz-bağlama",
+        id: 170300,
+      },
+      {
+        title: "DVD Kayıt Cihazı, DVD Oynatıcı, veya Video Kayıt Cihazı Kullanımı",
+        url:  "/harici-cihaz-kullanma/dvd-kayıt-cihazı-dvd-oynatıcı-veya-video-kayıt-cihazı-kullanımı",
+        id: 170400,
+      },
+      {
+        title: "Dijital Çok kanallı Amplifikatör / AV Alıcısı Bağlama",
+        url:  "/harici-cihaz-kullanma/dijital-çok-kanallı-amplifikatör-av-alıcısı-bağlama",
+        id: 170500,
+      },
+      {
+        title: "CI (Ortak Arayüz)",
+        url:  "/harici-cihaz-kullanma/ortak-arayüz",
+        id: 170600,
+        icon: <ChevronRightIcon />,
+        iconActive: <ExpandMoreIcon />,
+        subcategory: [
+          {
+            title: "Ortak Arayüz Nedir?",
+            url:  "/harici-cihaz-kullanma/ortak-arayüz/ortak-arayüz-nedir",
+            id: 170601,
+          },
+          {
+            title: "CA Modülünü Takma",
+            url:  "/harici-cihaz-kullanma/ortak-arayüz/ca-modülünü-takma",
+            id: 170602,
+          },
+          {
+            title: "CA Modülü ve Akıllı Kartlar için Erişim Kontrolü",
+            url:  "/harici-cihaz-kullanma/ortak-arayüz/ca-modülü-ve-akıllı-kartlar-için-erişim-kontrolü",
+            id: 170603,
+          }
+        ]
+        
+      },
+    ]
   },
   {
     title: "Ağ Kurulumu",
@@ -1450,6 +1563,61 @@ export const MenuItems = [
     id: 180000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
+    subcategory: [
+      {
+        title: "Kablolu Ağ Bağlantısı",
+        url: "/ağ-kurulumu/kablolu-ağ-bağlantısı",
+        id: 180100,
+      },
+      {
+        title: "Kablolu Ağ Ayarları",
+        url: "/ağ-kurulumu/kablolu-ağ-ayarları",
+        id: 180200,
+        icon: <ChevronRightIcon />,
+        iconActive: <ExpandMoreIcon />,
+        subcategory: [
+          {
+            title: "Otomatik Bağlantı",
+            url: "/ağ-kurulumu/kablolu-ağ-ayarları/otomatik-bağlantı",
+            id: 180201,
+          },
+          {
+            title: "Manuel Bağlantı",
+            url: "/ağ-kurulumu/kablolu-ağ-ayarları/manuel-bağlantı",
+            id: 180202,
+          },
+        ]
+      },
+      {
+        title: "Kablosuz Ağ Bağlantısı",
+        url: "/ağ-kurulumu/kablosuz-ağ-bağlantısı",
+        id: 180300,
+      },
+      {
+        title: "Kablosuz Ağ Ayarları",
+        url: "/ağ-kurulumu/kablosuz-ağ-ayarları",
+        id: 180400,
+        icon: <ChevronRightIcon />,
+        iconActive: <ExpandMoreIcon />,
+        subcategory: [
+          {
+            title: "Ağ Şifresini Girerek Otomatik Bağlantı",
+            url: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-otomatik-bağlantı",
+            id: 180401,
+          },
+          {
+            title: "Ağ Şifresini Girerek Manuel Bağlantı",
+            url: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-manuel-bağlantı",
+            id: 180402,
+          },
+          {
+            title: "Gizli Bir Kablosuz Ağa Bağlantı",
+            url: "/ağ-kurulumu/kablosuz-ağ-ayarları/gizli-bir-kablosuz-ağa-bağlantı",
+            id: 180403,
+          },
+        ]
+      },
+    ]
   },
   {
     title: "Detaylı Kanal Ayarları",
@@ -1457,6 +1625,78 @@ export const MenuItems = [
     id: 190000,
     icon: <ChevronRightIcon />,
     iconActive: <ExpandMoreIcon />,
+    subcategory: [
+      {
+        title: "Tek Uydu Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Aranması",
+        url: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
+        id: 190100,
+      },
+      {
+        title: "Tek Uydu Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Aranması",
+        url: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-aranması",
+        id: 190200,
+      },
+      {
+        title: "Dijital Uydu Kanalları için Anten Ayarları ve DiSEqC 1.0/1.1 ile Kanalların Otomatik Aranması",
+        url: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-diseqc-ile-kanalların-otomatik-aranması",
+        id: 190300,
+      },
+      {
+        title: "Dijital Uydu Kanalları için Anten Ayarları ve Tek Kanal Yönlendirici (SCR) Sistemi ile Kanalların Otomatik Aranması",
+        url: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-tek-kanal-yönlendirici-sistemi-ile-kanalların-otomatik-aranması",
+        id: 190400,
+      },
+      {
+        title: "Uydu Güncellemesi ile Yeni İlave Olan Dijital Kanalların Aranması",
+        url: "/detaylı-kanal-ayarları/uydu-güncellemesi-ile-yeni-ilave-olan-dijital-kanalların-aranması",
+        id: 190500,
+      },
+      {
+        title: "Motorlu Anten Ayarları",
+        url: "/detaylı-kanal-ayarları/motorlu-anten-ayarları",
+        id: 190600,
+      },
+      {
+        title: "Kablo Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Aranması",
+        url: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
+        id: 190700,
+      },
+      {
+        title: "Kablo Bağlantılı Dijital Televizyon Kanallarının Manuel Aranması",
+        url: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-manuel-aranması",
+        id: 190800,
+      },
+      {
+        title: "Anten Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Ayarlanması",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-ayarlanması",
+        id: 190900,
+      },
+      {
+        title: "Anten Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Güncellenmesi",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
+        id: 191000,
+      },
+      {
+        title: "Anten Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Güncellenmesi",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-güncellenmesi",
+        id: 191100,
+      },
+      {
+        title: "Anten Bağlantılı Analog Televizyon Kanallarının Otomatik Olarak Ayarlanması",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-ayarlanamsı",
+        id: 191200,
+      },
+      {
+        title: "Anten Bağlantılı Analog Televizyon Kanallarının Otomatik Olarak Güncellenmesi",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
+        id: 191300,
+      },
+      {
+        title: "Anten Bağlantılı Analog Televizyon Kanallarının Manuel Olarak Ayarlanması",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-manuel-olarak-ayarlanamsı",
+        id: 191400,
+      },
+    ]
   },
   {
     title: "Ek bilgiler",
