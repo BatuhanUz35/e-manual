@@ -6,7 +6,7 @@ import { ol } from "./SaatBiçiminiAyarlama_";
 export default function SaatBiçiminiAyarlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Tarih ve Saat Ayarları / Saat Biçimini Ayarlama
       </p>
       <Box className="container">

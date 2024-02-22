@@ -17,10 +17,10 @@ export default function ZamanKaydırmaDiskKurulumu() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Zaman Kaydırma Disk Kurulumu</p>
+      <p>Ana sayfa / USB Kayıt / Zaman Kaydırma Disk Kurulumu</p>
       <Box className="container">
         <h1>Zaman Kaydırma Disk Kurulumu</h1>
-        <p classname="text">Bir harici veri ortamını TV'ye ilk defa takıp zaman kaydırma için kullanacaksanız disk kurulumu
+        <p>Bir harici veri ortamını TV'ye ilk defa takıp zaman kaydırma için kullanacaksanız disk kurulumu
           yapılması gerekmektedir.
         </p>
         <h2>Ek bilgiler</h2>

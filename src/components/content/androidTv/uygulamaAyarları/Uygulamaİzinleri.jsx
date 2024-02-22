@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function Uygulamaİzinleri() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Uygulama Ayarları / Uygulama İzinleri
       </p>
       <Box className="container">

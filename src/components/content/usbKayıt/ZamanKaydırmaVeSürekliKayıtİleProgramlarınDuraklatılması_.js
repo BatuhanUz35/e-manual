@@ -16,13 +16,13 @@ export const ol1 = [
   <Box>
     Yayın sırasında <img src={start} alt="Başla/Duraklat" className="inline-icon" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Televizyon görüntüsü durdurulur ve gecikme süresi görüntülenir.</Box>
+      <ArrowForwardIcon className="inline-icon xs start" /><Box>Televizyon görüntüsü durdurulur ve gecikme süresi görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
     Yayına kaldığı yerden devam etmek için <img src={start} alt="Başla/Duraklat" className="inline-icon" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Siz yayını izlerken, sistem de bunu kaydetmeye devam eder.</Box>
+      <ArrowForwardIcon className="inline-icon xs start" /><Box>Siz yayını izlerken, sistem de bunu kaydetmeye devam eder.</Box>
     </Box>
   </Box>,
 ]

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function BeklemeKonumuAçılma() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumundan Açılması</p>
+      <p>Ana sayfa / Ürününüz / Tuş Takımı / Cihazın Bekleme Konumundan Açılması</p>
       <Box className="container">
         <h1>Cihazın Bekleme Konumundan Açılması</h1>
         <ol>

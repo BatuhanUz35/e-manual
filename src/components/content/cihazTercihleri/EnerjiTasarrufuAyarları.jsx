@@ -6,7 +6,7 @@ import { ol } from "./EnerjiTasarrufuAyarları_";
 export default function EnerjiTasarrufuAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Enerji Tasarrufu Ayarları
       </p>
       <Box className="container">

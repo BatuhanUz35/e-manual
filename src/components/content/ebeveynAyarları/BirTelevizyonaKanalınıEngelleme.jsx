@@ -6,7 +6,7 @@ import { ol } from "./BirTelevizyonaKanalınıEngelleme_";
 export default function BirTelevizyonaKanalınıEngelleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Ebeveyn Ayarları / Bir Televizyon Kanalını Engelleme
       </p>
       <Box className="container">

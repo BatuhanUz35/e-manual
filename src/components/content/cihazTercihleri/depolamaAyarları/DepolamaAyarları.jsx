@@ -19,7 +19,7 @@ export default function DepolamaAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Depolama Ayarları</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Depolama Ayarları</p>
       <Box className="container">
         <h1>Depolama Ayarları</h1>
         <p>

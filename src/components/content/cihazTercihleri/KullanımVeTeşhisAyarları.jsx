@@ -6,7 +6,7 @@ import { ol } from "./KullanımVeTeşhisAyarları_";
 export default function KullanımVeTeşhisAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Kullanım ve Teşhis Ayarları
       </p>
       <Box className="container">

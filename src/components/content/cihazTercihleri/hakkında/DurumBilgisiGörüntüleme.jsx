@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function DurumBilgisiGörüntüleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Hakkında / Durum Bilgisi Görüntüleme
       </p>
       <Box className="container">

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function ChromecastiAndroidVeyaIosMobilCihazdaKullanma() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Chromecast Built-in™ / Chromecast'i Android veya iOS Mobil Cihazda Kullanma
       </p>
       <Box className="container">

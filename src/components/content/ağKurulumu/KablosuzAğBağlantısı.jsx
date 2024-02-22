@@ -7,7 +7,7 @@ import kablosuz_ağ_bağlantısı from "../../../assets/images/in-page-images/ka
 export default function KablosuzAğBağlantısı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Bağlantısı</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Bağlantısı</p>
       <Box className="container">
         <h1>Kablosuz Ağ Bağlantısı</h1>
         <img src={kablosuz_ağ_bağlantısı} alt="Kablolu Ağ Bağlantısı" className="in-page-img"/>

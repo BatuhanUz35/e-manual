@@ -6,7 +6,7 @@ import { ol } from "./İşitmeEngellilerSeçeneğininEtkinleştirilmesi_";
 export default function İşitmeEngellilerSeçeneğininEtkinleştirilmesi() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları / İşitme Engelliler Seçeneğinin Etkinleştirilmesi
       </p>
       <Box className="container">

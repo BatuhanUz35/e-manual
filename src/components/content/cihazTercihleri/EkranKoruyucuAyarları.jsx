@@ -8,7 +8,7 @@ import back from "../../../assets/images/icons/back.png";
 export default function EkranKoruyucuAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Ekran Koruyucu Ayarları
       </p>
       <Box className="container">

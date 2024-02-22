@@ -18,9 +18,8 @@ export const ol = [
   <Box>
     <img src={right} alt="Sağ" className="inline-icon sm" /> düğmesiyle <b>Zaman kaydırma Modu</b>'nu seçip <Circle className="inline-icon button" /> düğmesine
     basın.
-    <Box>
-      <ArrowForwardIcon className="inline-icon xs" />
-      <b>Zaman Kaydırma Modu</b> menüsü görüntülenir.
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs" /><Box><b>Zaman Kaydırma Modu</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>

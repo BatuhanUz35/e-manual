@@ -6,7 +6,7 @@ import {  ul } from "./DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama_";
 export default function DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Harici Cihaz Kullanma / Dijital Ses ve Görüntü Sinyaliyle Harici Cihaz Bağlama
       </p>
       <Box className="container">

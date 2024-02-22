@@ -6,11 +6,20 @@ import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import down from "../../../../assets/images/icons/down.png";
 import { Box } from "@mui/material";
+import { links } from "./TkgsAyarları_";
+import { useDispatch } from "react-redux";
+import {
+  select_item,
+  focus_item,
+  activate_l1_subcategory,
+  activate_l2_subcategory,
+} from "../../../../redux/menuSlice";
 
 export default function TkgsAyarları() {
+  const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları</p>
+      <p>Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / TKGS Ayarları</p>
       <Box className="container">
         <h1>TKGS Ayarları</h1>
         <h2>Not:</h2>
@@ -31,30 +40,33 @@ export default function TkgsAyarları() {
           </li>
         </ol>
         <h2>Ek bilgiler</h2>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli" className="link">
-            Çalışma Şekli
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi" className="link">
-            TKGS Konum Listesi
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama" className="link">
-            Tablo Versiyonu Sıfırlama
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste" className="link">
-            Tercih Edilen Liste
-          </Link>
-        </Box>
+        {links.map((link) => {
+          return (
+            <Box className="link-container">
+              <LinkIcon />
+              <Link
+                to={link.url}
+                className="link"
+                onClick={() => {
+                  dispatch(select_item(link.focus_item));
+                  dispatch(
+                    activate_l1_subcategory(
+                      link.focus_item - (link.focus_item % 10000)
+                    )
+                  );
+                  dispatch(
+                    activate_l2_subcategory(
+                      link.focus_item - (link.focus_item % 100)
+                    )
+                  );
+                  dispatch(focus_item(link.focus_item));
+                }}
+              >
+                {link.title}
+              </Link>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );

@@ -7,7 +7,7 @@ export default function SesDosyalarınıKarışıkÇalma() {
 
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Ses Dosyalarını Karışık Çalma
       </p>
       <Box className="container">

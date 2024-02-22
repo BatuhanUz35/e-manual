@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HomeMenüsüKanallarındaVideoSesÖnİzlemesi() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Home Menüsü Ayarları / Home Menüsü Kanallarında Video Ses Ön İzlemesi
       </p>
       <Box className="container">

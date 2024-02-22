@@ -6,10 +6,10 @@ import { Box } from "@mui/material";
 export default function YönetmelikVeAtık() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Çevre Talimatları ve Genel Bilgiler / AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması</p>
+      <p>Ana sayfa / Çevre Talimatları ve Genel Bilgiler / AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması</p>
       <Box className="container">
         <h1>AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması</h1>
-        <p classname="text">Bu ürün, T.C. Çevre ve Şehircilik Bakanlığı tarafından yayımlanan "Atık Elektrikli ve Elektronik Eşyaların Kontrolü
+        <p>Bu ürün, T.C. Çevre ve Şehircilik Bakanlığı tarafından yayımlanan "Atık Elektrikli ve Elektronik Eşyaların Kontrolü
           Yönetmeliğinde belirtilen zararlı ve yasaklı maddeleri içermez. AEEE Yönetmeliğine uygundur.
         </p>
         <Box className="uyarı-başlık blue-bg">DUYURU</Box>

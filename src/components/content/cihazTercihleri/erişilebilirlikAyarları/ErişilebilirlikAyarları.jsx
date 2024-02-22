@@ -19,7 +19,7 @@ export default function ErişilebilirlikAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları</p>
       <Box className="container">
         <h1>Erişilebilirlik Ayarları</h1>
         <p>

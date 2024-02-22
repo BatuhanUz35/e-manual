@@ -7,10 +7,10 @@ import { Box } from "@mui/material";
 export default function ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi</p>
+      <p>Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi</p>
       <Box className="container">
         <h1>Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi</h1>
-        <p classname="text">
+        <p>
           Kayıt için elektronik program rehberi bilgileri kullanılabilir.
         </p>
         <ol>

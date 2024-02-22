@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function MenüDilininSeçilmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / Menü Dilinin Seçilmesi</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / Menü Dilinin Seçilmesi</p>
       <Box className="container">
         <h1>Menü Dilinin Seçilmesi</h1>
         <p>

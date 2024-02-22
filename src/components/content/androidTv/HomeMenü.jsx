@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HomeMenü() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV / Home Menü (Ana Ekran)</p>
+      <p>Ana sayfa / Android TV / Home Menü (Ana Ekran)</p>
       <Box className="container">
         <h1>Home Menü (Ana Ekran)</h1>
         {texts.map((li) => {

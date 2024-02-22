@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function YüklüBirUygulamanınBaşlatılması() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Yüklü Bir Uygulamanın Başlatılması
       </p>
       <Box className="container">

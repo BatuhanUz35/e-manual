@@ -1,33 +1,26 @@
 import React from "react";
 import "../style.css";
 import { Box } from "@mui/material";
+import { ol, notlar } from "./UzaktanKumandaPil_";
+import uzaktan_kumandaya_pillerin_takılması from "../../../assets/images/in-page-images/uzaktan_kumandaya_pillerin_takılması.png"
 
 export default function UzaktanKumandaPil() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ürününüz / Uzaktan Kumandaya Pillerin Takılması</p>
+      <p>Ana sayfa / Ürününüz / Uzaktan Kumandaya Pillerin Takılması</p>
       <Box className="container">
         <h1>Uzaktan Kumandaya Pillerin Takılması</h1>
         <ol>
-          <li>Pil bölmesini açın.</li>
-          <li>Pil bölmesinin alt kısmındaki işaretlere göre pilleri takın (2 x Alkalin/LR03/AAA).</li>
-          <li>Pil bölmesini kapatın.</li>
+        {ol.map((li) => {
+            return <li>{li}</li>;
+          })}
         </ol>
-        <p classname="text">img gelcek</p>
+        <img src={uzaktan_kumandaya_pillerin_takılması} alt="Uzaktan Kumandaya Pillerin Takılması" className="in-page-img" />
         <h4>Notlar:</h4>
         <ul>
-          <li>
-            Televizyon cihazınız uzaktan kumandanın komutlarına artık tam olarak reaksiyon göstermiyorsa
-            piller bitmiş olabilir. Bitmiş piller, kesinlikle pil yuvasında bırakılmamalıdır.
-          </li>
-          <li>
-            Kullanılmış pillerden kaynaklanan zararlardan dolayı üretici sorumluluk kabul etmemektedir.
-          </li>
-          <li>
-            Ağır metal ihtiva etmeyenler de dahil olmak üzere, piller evsel atıklarla birlikte atılmamalıdır.
-            Lütfen kullanılmış pilleri çevreye zarar vermeyecek şekilde imha edin. Bulunduğunuz bölgedeki yasal
-            yönetmelikleri öğrenin.
-          </li>
+        {notlar.map((li) => {
+            return <li>{li}</li>;
+          })}
         </ul>
       </Box>
     </Box>

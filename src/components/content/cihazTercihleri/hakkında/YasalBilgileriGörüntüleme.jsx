@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function YasalBilgileriGörüntüleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Hakkında / Yasal Bilgileri Görüntüleme
       </p>
       <Box className="container">

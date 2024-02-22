@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Programları Kaydetme / Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması</p>
+      <p>Ana sayfa / USB Kayıt / Programları Kaydetme / Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması</p>
       <Box className="container">
         <h1>Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması</h1>
         <ol>

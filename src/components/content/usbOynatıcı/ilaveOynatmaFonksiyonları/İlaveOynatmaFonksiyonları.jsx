@@ -17,7 +17,7 @@ export default function İlaveOynatmaFonksiyonları() {
   
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları</p>
+      <p>Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları</p>
       <Box className="container">
         <h1>İlave Oynatma Fonksiyonları</h1>
         <p>Kullanılan dosya biçimlerine bağlı olarak, aşağıdaki ilave fonksiyonları kullanmak mümkündür.</p>

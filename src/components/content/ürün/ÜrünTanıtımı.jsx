@@ -1,58 +1,59 @@
 import React from "react";
 import "../style.css";
-import { Box } from "@mui/material";
+import { Box, Table, TableCell, TableRow } from "@mui/material";
+import ürün_tanıtımı from "../../../assets/images/in-page-images/ürün_tanıtımı.png"
 
 export default function ÜrünTanıtımı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ürününüz / Ürün Tanıtımı</p>
+      <p>Ana sayfa / Ürününüz / Ürün Tanıtımı</p>
       <Box className="container">
         <h1>Ürün Tanıtımı</h1>
-        <h2>img gelcek</h2>
-        <table>
-          <tr class="row">
-            <td class="column-sm">1</td>
-            <td class="column-l">Şebeke kablosu girişi.</td>
-            <td class="column-sm">2</td>
-            <td class="column-l">Servis amaçlıdır.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">3</td>
-            <td class="column-l">Ağ bağlantısı.</td>
-            <td class="column-sm">4</td>
-            <td class="column-l">Optik ses çıkışı.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">5</td>
-            <td class="column-l">Harici veri ortamı için USB girişi.</td>
-            <td class="column-sm">6</td>
-            <td class="column-l">Dijital ses ve görüntü verileri için HDMI giriş.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">7</td>
-            <td class="column-l">Dijital ses ve görüntü verileri için HDMI girişi.</td>
-            <td class="column-sm">8</td>
-            <td class="column-l">Uydu anteni sinyal girişi. Tek kablolu SCR sistemi için uygundur.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">9</td>
-            <td class="column-l">Anten kablosu girişi (karasal anten veya kablo bağlantısı).</td>
-            <td class="column-sm">10</td>
-            <td class="column-l">Kulaklık çıkışı.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">11</td>
-            <td class="column-l">Veri ortamı ve klavye için USB girişi..</td>
-            <td class="column-sm">12</td>
-            <td class="column-l">Dijital ses ve görüntü verileri için HDMI girişi.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">13</td>
-            <td class="column-l">Şifreli kanalları alma amaçlı CA modül girişi.</td>
-            <td class="column-sm"></td>
-            <td class="column-l"></td>
-          </tr>
-        </table>
+        <img src={ürün_tanıtımı} alt="Ürün Tanıtımı" className="in-page-img" />
+        <Table>
+          <TableRow>
+            <TableCell class="column-sm table-cell">1</TableCell>
+            <TableCell class="table-cell">Şebeke kablosu girişi.</TableCell>
+            <TableCell class="column-sm table-cell">2</TableCell>
+            <TableCell class="table-cell">Servis amaçlıdır.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">3</TableCell>
+            <TableCell class="table-cell">Ağ bağlantısı.</TableCell>
+            <TableCell class="column-sm table-cell">4</TableCell>
+            <TableCell class="table-cell">Optik ses çıkışı.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">5</TableCell>
+            <TableCell class="table-cell">Harici veri ortamı için USB girişi.</TableCell>
+            <TableCell class="column-sm table-cell">6</TableCell>
+            <TableCell class="table-cell">Dijital ses ve görüntü verileri için HDMI giriş.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">7</TableCell>
+            <TableCell class="table-cell">Dijital ses ve görüntü verileri için HDMI girişi.</TableCell>
+            <TableCell class="column-sm table-cell">8</TableCell>
+            <TableCell class="table-cell">Uydu anteni sinyal girişi. Tek kablolu SCR sistemi için uygundur.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">9</TableCell>
+            <TableCell class="table-cell">Anten kablosu girişi (karasal anten veya kablo bağlantısı).</TableCell>
+            <TableCell class="column-sm table-cell">10</TableCell>
+            <TableCell class="table-cell">Kulaklık çıkışı.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">11</TableCell>
+            <TableCell class="table-cell">Veri ortamı ve klavye için USB girişi..</TableCell>
+            <TableCell class="column-sm table-cell">12</TableCell>
+            <TableCell class="table-cell">Dijital ses ve görüntü verileri için HDMI girişi.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">13</TableCell>
+            <TableCell class="table-cell">Şifreli kanalları alma amaçlı CA modül girişi.</TableCell>
+            <TableCell class="column-sm table-cell"></TableCell>
+            <TableCell class="table-cell"></TableCell>
+          </TableRow>
+        </Table>
       </Box>
     </Box>
   );

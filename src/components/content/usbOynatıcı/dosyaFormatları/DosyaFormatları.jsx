@@ -16,7 +16,7 @@ export default function DosyaFormatları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Oynatıcı / Dosya Formatları</p>
+      <p>Ana sayfa / USB Oynatıcı / Dosya Formatları</p>
       <Box className="container">
         <h1>Dosya Formatları</h1>
         <p>Televizyonunuzu aşağıdaki dosya formatlarıyla USB girişi üzerinden kullanabilirsiniz:</p>

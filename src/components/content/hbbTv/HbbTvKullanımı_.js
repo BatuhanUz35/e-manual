@@ -19,10 +19,11 @@ export const not_1 = {
   ol: [
   <Box>
     <Circle className="inline-icon button-red button" /> (kırmızı) düğmesi ile HbbTV'yi açın.
-    <Box>
-      <ArrowForwardIcon className="inline-icon xs" />
-      Hizmet hakkindaki bilgiler ekranda görüntülenir. Buna ek olarak, menülerde gezinme için gerekli olan renkli
-      düğmeler de görüntülenir.
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs start" /><Box>
+        Hizmet hakkindaki bilgiler ekranda görüntülenir. Buna ek olarak, menülerde gezinme için gerekli olan renkli
+        düğmeler de görüntülenir.
+      </Box>
     </Box>
   </Box>
   ]

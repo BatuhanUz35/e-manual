@@ -6,7 +6,7 @@ import { ol } from "./ÇıkarılabilirDepolamaAlanı_";
 export default function ÇıkarılabilirDepolamaAlanı() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Depolama Ayarları / Çıkarılabilir Depolama Alanı
       </p>
       <Box className="container">

@@ -6,12 +6,12 @@ import { Box } from "@mui/material";
 export default function İzlemeSiteleriniEngelle() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları / İzleme Sitelerini Engelle</p>
+      <p>Ana sayfa / HBBTV / HBBTV Ayarları / İzleme Sitelerini Engelle</p>
       <Box className="container">
         <h1>İzleme Sitelerini Engelle</h1>
         {texts.map((text) => {
           return ( 
-            <p classname="text">{text}</p>
+            <p>{text}</p>
           )})}
           <ol>
           {ol.map((li) => {

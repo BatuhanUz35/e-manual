@@ -20,14 +20,14 @@ export const not = [
 export const ol2 = [
   <Box>
     <img src={start} alt="Başla/Duraklat" className="inline-icon" /> düğmesine basın.
-    <Box className="padding-1">
-    <ArrowForwardIcon className="inline-icon xs"/> <b>Disk Kurulumu</b> menüsü görüntülenir.
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs" /><Box><b>Disk Kurulumu</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
     <b>Otomatik</b> seçeneğini seçip <Circle className="inline-icon button"/> düğmesine basın.
-    <Box className="padding-1">
-    <ArrowForwardIcon className="inline-icon xs"/> Harici veri ortamı otomatik olarak yapılandırılıp <b>Disk Kurulumu Tamamlandı</b> mesajı görüntülenir.
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs" /><Box>Harici veri ortamı otomatik olarak yapılandırılıp <b>Disk Kurulumu Tamamlandı</b> mesajı görüntülenir.</Box>
     </Box>
   </Box>
 ]

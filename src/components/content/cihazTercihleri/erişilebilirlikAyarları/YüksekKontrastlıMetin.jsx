@@ -6,7 +6,7 @@ import { ol } from "./YüksekKontrastlıMetin_";
 export default function YüksekKontrastlıMetin() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları / Yüksek Kontrastlı Metin
       </p>
       <Box className="container">

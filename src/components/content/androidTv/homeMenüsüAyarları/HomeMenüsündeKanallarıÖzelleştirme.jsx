@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HomeMenüsündeKanallarıÖzelleştirme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Home Menüsü Ayarları / Home Menüsünde Kanalları
         Özelleştirme
       </p>

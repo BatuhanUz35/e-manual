@@ -6,7 +6,7 @@ import { ol } from "./KlavyeleriYönet_";
 export default function KlavyeleriYönet() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Klavye Ayarları / Klavyeleri Yönet
       </p>
       <Box className="container">

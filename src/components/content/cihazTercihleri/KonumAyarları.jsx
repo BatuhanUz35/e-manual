@@ -8,7 +8,7 @@ import back from "../../../assets/images/icons/back.png";
 export default function KonumAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Konum Ayarları
       </p>
       <Box className="container">

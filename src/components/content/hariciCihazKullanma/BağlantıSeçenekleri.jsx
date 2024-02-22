@@ -7,7 +7,7 @@ import bağlantı from "../../../assets/images/in-page-images/bağlantı.png";
 export default function BağlantıSeçenekleri() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Harici Cihaz Kullanma / Bağlantı Seçenekleri
       </p>
       <Box className="container">

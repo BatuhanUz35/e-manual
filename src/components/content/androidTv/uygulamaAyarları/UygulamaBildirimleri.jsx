@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function UygulamaBildirimleri() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Uygulama Ayarları / Uygulama Bildirimleri
       </p>
       <Box className="container">

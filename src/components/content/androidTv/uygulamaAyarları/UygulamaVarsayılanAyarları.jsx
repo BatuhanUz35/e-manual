@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function UygulamaVarsayılanAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Uygulama Ayarları / Uygulama Varsayılan Ayarları
       </p>
       <Box className="container">

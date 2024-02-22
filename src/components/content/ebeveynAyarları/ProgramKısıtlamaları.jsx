@@ -6,7 +6,7 @@ import { ol } from "./ProgramKısıtlamaları_";
 export default function ProgramKısıtlamaları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Ebeveyn Ayarları / Program Kısıtlamaları
       </p>
       <Box className="container">

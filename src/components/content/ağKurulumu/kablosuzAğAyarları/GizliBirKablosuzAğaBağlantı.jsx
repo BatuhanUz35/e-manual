@@ -6,7 +6,7 @@ import { ol } from "./GizliBirKablosuzAğaBağlantı_";
 export default function GizliBirKablosuzAğaBağlantı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Ayarları / Gizli Bir Kablosuz Ağa Bağlantı</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Ayarları / Gizli Bir Kablosuz Ağa Bağlantı</p>
       <Box className="container">
         <h1>Gizli Bir Kablosuz Ağa Bağlantı</h1>
         <p>

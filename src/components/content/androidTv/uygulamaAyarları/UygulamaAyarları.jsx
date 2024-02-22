@@ -17,7 +17,7 @@ export default function UygulamaAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV / Uygulama Ayarları</p>
+      <p>Ana sayfa / Android TV / Uygulama Ayarları</p>
       <Box className="container">
         <h1>Uygulama Ayarları</h1>
         <ol>

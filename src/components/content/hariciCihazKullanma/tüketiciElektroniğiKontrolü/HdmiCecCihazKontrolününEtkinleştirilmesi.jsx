@@ -6,7 +6,7 @@ import { ol } from "./HdmiCecCihazKontrolünüEtkinleştirme_";
 export default function HdmiCecCihazKontrolünüEtkinleştirme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / HDMI CEC Cihaz Kontrolünü Etkinleştirme
       </p>
       <Box className="container">

@@ -6,7 +6,7 @@ import { ol } from "./DilAyarları_";
 export default function DilAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Dil Ayarları
       </p>
       <Box className="container">

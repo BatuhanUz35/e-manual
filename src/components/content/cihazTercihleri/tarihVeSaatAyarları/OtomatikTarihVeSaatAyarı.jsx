@@ -8,7 +8,7 @@ import back from "../../../../assets/images/icons/back.png";
 export default function OtomatikTarihVeSaatAyarı() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Tarih ve Saat Ayarları / Otomatik Tarih ve Saat Ayarı
       </p>
       <Box className="container">

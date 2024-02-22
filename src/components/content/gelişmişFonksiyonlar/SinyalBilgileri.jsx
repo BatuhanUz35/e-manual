@@ -6,11 +6,12 @@ import back from "../../../assets/images/icons/back.png";
 import down from "../../../assets/images/icons/down.png";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Box } from "@mui/material";
+import { notlar } from "./SinyalBilgileri_"
 
 export default function SinyalBilgileri() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Sinyal Bilgileri</p>
+      <p>Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Sinyal Bilgileri</p>
       <Box className="container">
         <h1>Sinyal Bilgileri</h1>
         <ol>
@@ -18,21 +19,16 @@ export default function SinyalBilgileri() {
             <b>Gelişmiş Seçenekler</b> menüsünden <img src={down} alt="yukarı" className="inline-icon rotate-180 sm"/>/
             <img src={down} alt="aşağı" className="inline-icon sm"/> düğmesiyle <b>Sistem Bilgileri</b>'ni seçip
             {" "}<Circle className="inline-icon button"/> düğmesine basın.
-            <Box>
-              <ArrowForwardIcon className="inline-icon xs"/>
-              Bir süre sonra ekranda <b>Hoş geldiniz</b> menüsü görüntülenir
+            <Box className="flex-container padding-1">
+              <ArrowForwardIcon className="inline-icon xs" /><Box>Bir süre sonra ekranda <b>Hoş geldiniz</b> menüsü görüntülenir</Box>
             </Box>
           </li>
         </ol>
         <h2>Notlar:</h2>
         <ul>
-          <li>
-            Bulunduğunuz kaynağa göre sinyal bilgileri değişmektedir.
-          </li>
-          <li>
-            Sinyal düzeyi yalnızca alıcı sisteminizde değil, halihazırda aktif olan kanala da bağlıdır. Sinyal düzeyi
-            ekranını kullanarak anteninizi ayarlarken bunu unutmayın.
-          </li>
+        {notlar.map((li) => {
+            return <li>{li}</li>;
+          })}
         </ul>
         <ol start="2">
           <li>

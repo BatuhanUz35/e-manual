@@ -7,7 +7,7 @@ import home_menu from "../../../assets/images/in-page-images/home_menu.png";
 export default function HomeMenüsünüAçma() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV / Home Menüsünü Açma</p>
+      <p>Ana sayfa / Android TV / Home Menüsünü Açma</p>
       <Box className="container">
         <h1>Home Menüsünü Açma</h1>
         <ol>

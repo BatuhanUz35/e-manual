@@ -7,10 +7,10 @@ import { Box } from "@mui/material";
 export default function KayıtZamanlayıcısınınSilinmes() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Kayıt Zamanlayıcısının Silinmesi</p>
+      <p>Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Kayıt Zamanlayıcısının Silinmesi</p>
       <Box className="container">
         <h1>Kayıt Zamanlayıcısının Silinmesi</h1>
-        <p classname="text">Programlanmış zamanlayıcıları silebilirsiniz.</p>
+        <p>Programlanmış zamanlayıcıları silebilirsiniz.</p>
         <ol>
           {ol.map((li) => {
             return <li>{li}</li>;

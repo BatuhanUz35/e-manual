@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Home Menüsü Uygulamalar Sekmesinden Favori Uygulamaların Kaldırılması
       </p>
       <Box className="container">

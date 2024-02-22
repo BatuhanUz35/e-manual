@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function HariciVeriOrtamınınBağlanması() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / Harici Veri Ortamının Bağlanması
       </p>
       <Box className="container">

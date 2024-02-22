@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function KanalListesindenBirProgramıKaydetme() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Programları Kaydetme / Kanal Listesinden Bir Programı Kaydetme</p>
+      <p>Ana sayfa / USB Kayıt / Programları Kaydetme / Kanal Listesinden Bir Programı Kaydetme</p>
       <Box className="container">
         <h1>Kanal Listesinden Bir Programı Kaydetme</h1>
         <ol>

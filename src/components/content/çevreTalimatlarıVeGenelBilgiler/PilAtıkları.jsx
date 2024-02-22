@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function PilAtıkları() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Pil Atıkları ile İlgili Bilgiler</p>
+      <p>Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Pil Atıkları ile İlgili Bilgiler</p>
       <Box className="container">
         <h1>Pil Atıkları ile İlgili Bilgiler</h1>
         <Box className="uyarı-başlık blue-bg">DUYURU</Box>

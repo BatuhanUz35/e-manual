@@ -24,7 +24,7 @@ export const ol = [
   <Box>
     <b>Kanal</b>'ı seçip <Circle className="inline-icon button" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Kanal menüsü görüntülenir.</Box>
+      <ArrowForwardIcon className="inline-icon xs" /><Box><b>Kanal</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
@@ -36,24 +36,24 @@ export const ol = [
   <Box>
     <b>Kanallar</b>'ı seçip <Circle className="inline-icon button" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Kanal menüsü görüntülenir.</Box>
+      <ArrowForwardIcon className="inline-icon xs" /><Box><b>Kanal</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
     <b>Otomatik Kanal Arama</b>'yı seçip <Circle className="inline-icon button" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Otomatik Kanal Arama menüsü görüntülenir.</Box>
+      <ArrowForwardIcon className="inline-icon xs" /><Box><b>Otomatik Kanal Arama</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
     <b>Anten Tipi</b>'ni seçip <Circle className="inline-icon button" /> düğmesine basın.
-    <Box className="flex-container">
+    <Box className="flex-container padding-1">
       <img src={anten_tipi} alt="Anten tipi" className="" />
     </Box>
   </Box>,
   <Box>
     <b>Tek</b>'i seçip <Circle className="inline-icon button" /> düğmesine basın.
-    <Box className="flex-container">
+    <Box className="flex-container padding-1">
       <img src={tek} alt="Tek" className="" />
     </Box>
   </Box>,
@@ -70,10 +70,10 @@ export const ol = [
       <ArrowForwardIcon className="inline-icon xs" /><Box>Sadece şifresiz kanallar için <b>Yanlızca Ücretsiz Kanallar</b>.</Box>
     </Box>
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Sadece radyo kanalları için <b>Yanlızca Radyo Kanallar</b>.</Box>
+      <ArrowForwardIcon className="inline-icon xs" /><Box>Sadece şifreli kanallar için <b>Yanlızca Şifrelenmiş Kanallar</b>.</Box>
     </Box>
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" /><Box>Her ikisini aratmak için <b>Tümü</b> seçimini yapın.</Box>
+      <ArrowForwardIcon className="inline-icon xs" /><Box>Tüm uydu kanalları için <b>Tümü</b> seçimini yapın.</Box>
     </Box>
   </Box>,
   <Box>

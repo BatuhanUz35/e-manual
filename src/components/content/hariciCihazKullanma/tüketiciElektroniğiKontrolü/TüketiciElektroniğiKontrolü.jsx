@@ -16,7 +16,7 @@ export default function TüketiciElektroniğiKontrolü() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü)</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü)</p>
       <Box className="container">
         <h1>CEC (Tüketici Elektroniği Kontrolü)</h1>
         <p>

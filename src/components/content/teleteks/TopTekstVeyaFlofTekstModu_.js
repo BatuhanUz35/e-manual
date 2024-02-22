@@ -1,6 +1,7 @@
 import txt from "../../../assets/images/icons/txt.png"
 import zero from "../../../assets/images/icons/zero.png"
 import one from "../../../assets/images/icons/one.png"
+import channel_direction from "../../../assets/images/icons/channel_direction.png"
 import { Circle } from "@mui/icons-material"
 import { Box } from "@mui/material"
 
@@ -11,7 +12,7 @@ export const ol1 = [
   </Box>,
   <Box>
     Teleteks sayfalarını doğrudan <img src={one} alt="1" className="inline-icon xs" />...<img src={zero} alt="0" className="inline-icon xs" />
-    {" "} düğmeleri ile veya aşamalı olarak <b>img gelcek</b> düğmeleri ile seçebilirsiniz.
+    {" "} düğmeleri ile veya aşamalı olarak <img src={channel_direction} alt="Kanal Yön Tuşu" className="inline-icon" /> düğmeleri ile seçebilirsiniz.
   </Box>,
 ]
 

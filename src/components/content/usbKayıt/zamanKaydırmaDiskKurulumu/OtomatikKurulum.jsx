@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function OtomatikKurulum() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Zaman Kaydırma Disk Kurulumu / Otomatik Kurulum</p>
+      <p>Ana sayfa / USB Kayıt / Zaman Kaydırma Disk Kurulumu / Otomatik Kurulum</p>
       <Box className="container">
         <h1>Otomatik Kurulum</h1>
         <ol>

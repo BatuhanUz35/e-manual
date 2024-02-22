@@ -6,7 +6,7 @@ import { ol } from "./DahiliDepolamaAlanı_";
 export default function DahiliDepolamaAlanı() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Depolama Ayarları / Dahili Depolama Alanı
       </p>
       <Box className="container">

@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 export default function DijitalAltyazıDili() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Altyazılar / Dijital Altyazı Dili</p>
+      <p>Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Altyazılar / Dijital Altyazı Dili</p>
       <Box className="container">
         <h1>Dijital Altyazı Dili</h1>
         <ol>

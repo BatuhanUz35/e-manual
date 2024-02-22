@@ -1,14 +1,15 @@
 import React from "react";
 import "../../style.css";
 import { Box } from "@mui/material";
+import dvbt_dvbc_ve_analog_anten_bağlantısı from "../../../../assets/images/in-page-images/dvbt_dvbc_ve_analog_anten_bağlantısı.png"
 
 export default function DvbtDvbcVeAnalogAntenBağlantııs() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-T, DVB-C ve Analog Anten Bağlantısı</p>
+      <p>Ana sayfa / Ürününüz / Anten ve Elektrik Kablosunu Bağlama / DVB-T, DVB-C ve Analog Anten Bağlantısı</p>
       <Box className="container">
       <h1>DVB-T, DVB-C ve Analog Anten Bağlantısı</h1>
-      <h2>img gelcek</h2>
+      <img src={dvbt_dvbc_ve_analog_anten_bağlantısı} alt="DVB-T, DVB-C ve Analog Anten Bağlantısı" className="in-page-img" />
       <ol>
         <li>
           Karasal dijital kanalları (DVB-T), Kablolu dijital kanalları (DVB-C) veya Analog yayın

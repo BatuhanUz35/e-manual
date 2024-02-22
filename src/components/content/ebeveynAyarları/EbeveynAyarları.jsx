@@ -20,7 +20,7 @@ export default function EbeveynAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ebeveyn Ayarları</p>
+      <p>Ana sayfa / Ebeveyn Ayarları</p>
       <Box className="container">
         <h1>Ebeveyn Ayarları</h1>
         {texts.map((text) => {

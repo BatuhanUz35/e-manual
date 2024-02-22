@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function OtomatikBağlantı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları / Otomatik Bağlantı</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları / Otomatik Bağlantı</p>
       <Box className="container">
         <h1>Otomatik Bağlantı</h1>
         <p>

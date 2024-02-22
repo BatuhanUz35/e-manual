@@ -10,7 +10,7 @@ import tv_icon from "../../../assets/images/icons/tv_icon.png";
 export default function TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Detaylı Kanal Ayarları / Tek Uydu Bağlantılı Dijital
         Televizyon Kanallarının Otomatik Olarak Aranması
       </p>

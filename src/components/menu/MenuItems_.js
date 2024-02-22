@@ -517,8 +517,8 @@ export const MenuItems = [
             id: 61002
           },
           {
-            title: "Kapanma Zamanlayıcıs",
-            url: "/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcıs",
+            title: "Kapanma Zamanlayıcısı",
+            url: "/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcısı",
             id: 61003
           },
           {
@@ -526,7 +526,6 @@ export const MenuItems = [
             url: "/temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma",
             id: 61004
           },
-
         ]
       },
       {
@@ -1677,13 +1676,13 @@ export const MenuItems = [
         id: 191000,
       },
       {
-        title: "Anten Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Güncellenmesi",
-        url: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-güncellenmesi",
+        title: "Anten Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Ayarlanması",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-ayarlanması",
         id: 191100,
       },
       {
         title: "Anten Bağlantılı Analog Televizyon Kanallarının Otomatik Olarak Ayarlanması",
-        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-ayarlanamsı",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-ayarlanması",
         id: 191200,
       },
       {
@@ -1693,7 +1692,7 @@ export const MenuItems = [
       },
       {
         title: "Anten Bağlantılı Analog Televizyon Kanallarının Manuel Olarak Ayarlanması",
-        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-manuel-olarak-ayarlanamsı",
+        url: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-manuel-olarak-ayarlanması",
         id: 191400,
       },
     ]

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Chromecast Built-in™ / PC ile Chrome Tarayıcı Sekmesini TV'nizde Yayınlama
       </p>
       <Box className="container">

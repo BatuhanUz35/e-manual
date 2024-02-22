@@ -3,44 +3,42 @@ import "../style.css";
 import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
+import { links } from "./Ayarlar_";
+import { useDispatch } from "react-redux";
+import {
+  select_item,
+  focus_item,
+  activate_l1_subcategory,
+  activate_l2_subcategory,
+} from "../../../redux/menuSlice";
 
 export default function Ayarlar() {
+  const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ayarlar</p>
+      <p>Ana sayfa / Ayarlar</p>
       <Box className="container">
         <h1>Ayarlar</h1>
         <h2>Ek bilgiler</h2>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/ayarlar/hazırlık" className="link">
-            Hazırlık
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/ayarlar/kurulum" className="link">
-            İlk Kurulum ve Televizyonu Ayarlama
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/ayarlar/dijital-kanalları-düzenleme" className="link">
-            Dijital Kanalları Düzenleme
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/ayarlar/görüntü-ayarları" className="link">
-            Görüntü Ayarları
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/ayarlar/ses-ayarları" className="link">
-            Ses Ayarları
-          </Link>
-        </Box>
+        {links.map((link) => {
+          return (
+            <Box className="link-container">
+              <LinkIcon />
+              <Link
+                to={link.url}
+                className="link"
+                onClick={() => {
+                  dispatch(select_item(link.focus_item));
+                  dispatch(activate_l1_subcategory(link.focus_item - link.focus_item % 10000));
+                  dispatch(activate_l2_subcategory(link.focus_item - link.focus_item % 100));
+                  dispatch(focus_item(link.focus_item));
+                }}
+              >
+                {link.title}
+              </Link>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );

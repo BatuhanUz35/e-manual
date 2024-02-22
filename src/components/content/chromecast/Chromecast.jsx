@@ -16,7 +16,7 @@ export default function Chromecast() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Chromecast Built-in™</p>
+      <p>Ana sayfa / Chromecast Built-in™</p>
       <Box className="container">
         <h1>Chromecast Built-in™</h1>
         {texts.map((text) => {

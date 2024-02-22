@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function MultiMedyaPlayerMenüsü() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / Multi Medya Player Menüsü
       </p>
       <Box className="container">

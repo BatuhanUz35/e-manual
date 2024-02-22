@@ -6,7 +6,7 @@ import { ol1, ol2 } from "./OtomatikKapanmaZamanlayıcısı_";
 export default function OtomatikKapanmaZamanlayıcısı() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Zamanlayıcı Ayarları / Otomatik Kapanma Zamanlayıcısı
       </p>
       <Box className="container">

@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function YazılımGüncelleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Yazılım Güncelleme
         İle İlgili Bilgiler
       </p>

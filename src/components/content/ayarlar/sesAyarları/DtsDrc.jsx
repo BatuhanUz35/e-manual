@@ -1,27 +1,19 @@
 import React from "react";
 import "../../style.css";
-import home from "../../../../assets/images/icons/home.png"
-import back from "../../../../assets/images/icons/back.png";
-import tv_icon from "../../../../assets/images/icons/tv_icon.png"
-import { Circle } from "@mui/icons-material";
 import { Box } from "@mui/material";
+import { ol } from "./DtsDrc_";
 
 export default function DtsDrc() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ayarlar / Ses Ayarları / DTS DRC</p>
+      <p>Ana sayfa / Ayarlar / Ses Ayarları / DTS DRC</p>
       <Box className="container">
         <h1>DTS DRC</h1>
+        En yüksek ses ile en alçak ses arasındaki aralığı ayarlar.
         <ol>
-          <li>
-            Ses menüsünden <b>DTS DRC</b>'yi seçip <Circle className="inline-icon button"/> düğmesiyle
-            <b> Açık</b> veya <b>Kapalı</b> konumu seçin. 
-          </li>
-          <li>
-            Önceki menüye dönmek için <img src={back} alt="geri" className="inline-icon"/>, Home menüsüne dönmek
-            için <img src={home} alt="home" className="inline-icon"/> veya TV yayınına dönmek için
-            {" "}<img src={tv_icon} alt="tv" className="inline-icon"/> düğmesine basın.
-          </li>
+        {ol.map((li) => {
+            return <li>{li}</li>;
+          })}
         </ol>
       </Box>
     </Box>

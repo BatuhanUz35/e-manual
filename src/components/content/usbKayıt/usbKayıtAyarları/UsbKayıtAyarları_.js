@@ -5,6 +5,7 @@ import down from "../../../../assets/images/icons/down.png";
 import right from "../../../../assets/images/icons/right.png";
 import { Circle } from "@mui/icons-material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import usb_kayıt_ayarları from "../../../../assets/images/in-page-images/usb_kayıt_ayarları.png"
 
 export const ol = [
   <Box>
@@ -20,10 +21,11 @@ export const ol = [
   </Box>,
   <Box>
     Televizyona takılı olan harici veri ortamını seçip  <Circle className="inline-icon button" /> düğmesine basın.
-    <Box>
-      <ArrowForwardIcon className="inline-icon xs" />
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs start" /><Box>
       <b>Cihaz Bilgileri Ayarı</b> menüsü görüntülenir.
-      <h2>img gelcek</h2>
+      <img src={usb_kayıt_ayarları} alt="Cihaz Bilgileri Ayarı Menüsü" />
+      </Box>
     </Box>
   </Box>,
 ]

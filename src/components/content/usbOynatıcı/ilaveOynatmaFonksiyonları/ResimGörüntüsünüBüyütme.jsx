@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function ResimGörüntüsünüBüyütme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Resim Görüntüsünü Büyütme (Zoom)
       </p>
       <Box className="container">

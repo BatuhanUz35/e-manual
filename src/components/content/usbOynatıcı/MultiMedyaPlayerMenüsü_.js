@@ -4,6 +4,7 @@ import left from "../../../assets/images/icons/left.png"
 import right from "../../../assets/images/icons/right.png"
 import { Circle } from "@mui/icons-material"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import multimedya_player_menüsü from "../../../assets/images/in-page-images/multimedya_player_menüsü.png"
 
 export const texts = [
   <Box>
@@ -30,11 +31,10 @@ export const ol = [
     <img src={left} alt="Sol" className="inline-icon sm" />/<img src={right} alt="Sağ" className="inline-icon sm" /> düğmesiyle oynatmak istediğiniz dosya formatını
     <b> Video, Fotoğraf, Müzik</b> seçimini yapıp <Circle className="inline-icon button" /> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" />
-      <Box>Seçtiğiniz dosya formatına ait dosya tarayıcısı menüsü görüntülenir.</Box>
-    </Box>
-    <Box>
-        <h2>img gelcek</h2>
+      <ArrowForwardIcon className="inline-icon xs start" />
+      <Box>Seçtiğiniz dosya formatına ait dosya tarayıcısı menüsü görüntülenir.
+      <img src={multimedya_player_menüsü} alt="Hizmet Talebinin Değerlendirilmesi" />
+      </Box>
     </Box>
   </Box>
 ]

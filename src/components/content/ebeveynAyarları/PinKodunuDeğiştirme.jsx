@@ -6,7 +6,7 @@ import { ol } from "./PinKodunuDeğiştirme_";
 export default function PinKodunuDeğiştirme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Ebeveyn Ayarları / PIN Kodunu Değiştirme
       </p>
       <Box className="container">

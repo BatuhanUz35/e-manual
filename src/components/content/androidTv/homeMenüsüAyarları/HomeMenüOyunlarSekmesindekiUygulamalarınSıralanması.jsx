@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Home Menüsü Ayarları / Home Menü Oyunlar Sekmesindeki Uygulamaların Sıralanması
       </p>
       <Box className="container">

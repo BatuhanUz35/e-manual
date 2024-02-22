@@ -6,7 +6,7 @@ import { ol } from "./SaatDiliminiAyarlama_";
 export default function SaatDiliminiAyarlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Tarih ve Saat Ayarları / Saat Dilimini Ayarlama
       </p>
       <Box className="container">

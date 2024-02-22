@@ -6,7 +6,7 @@ import { ol } from "./GörmeEngellilerİçinSesliTanımlama_";
 export default function GörmeEngellilerİçinSesliTanımlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları / Görme Engelliler için Sesli Tanımlama
       </p>
       <Box className="container">

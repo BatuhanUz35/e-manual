@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function İleriGeriGörüntüArama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / İleri Geri Görüntü Arama
       </p>
       <Box className="container">

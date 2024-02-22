@@ -6,7 +6,7 @@ import { ol } from "./ManuelBağlantı_";
 export default function ManuelBağlantı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları / Manuel Bağlantı</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları / Manuel Bağlantı</p>
       <Box className="container">
         <h1>Manuel Bağlantı</h1>
         <p>

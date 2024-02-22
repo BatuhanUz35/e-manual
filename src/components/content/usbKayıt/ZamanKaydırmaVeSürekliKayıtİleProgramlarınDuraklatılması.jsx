@@ -6,14 +6,14 @@ import { Box } from "@mui/material";
 export default function ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Zaman Kaydırma Ve Sürekli Kayıt İle Programların Duraklatılması</p>
+      <p>Ana sayfa / USB Kayıt / Zaman Kaydırma Ve Sürekli Kayıt İle Programların Duraklatılması</p>
       <Box className="container">
         <h1>Zaman Kaydırma Ve Sürekli Kayıt İle Programların Duraklatılması</h1>
-        <p classname="text">
+        <p>
           İzlediğiniz bir programı duraklatabilirsiniz. Örneğin bir film seyrederken telefon çaldı, filmi durdurup hiçbir şey kaçırmadan kaldığınız
           yerden devam edin. Son sahne görüntüsü durdurulur ve zaman kaydırma harici veri ortamına kaydedilir.
         </p>
-        <p classname="text">
+        <p>
           Sürekli kayıt özelliği ile TV o an izlemekte olduğunuz kanalı harici veri ortamında oluşturduğunuz zaman kaydırma belleği kadar kaydeder. 
           Böylece izlemekte olduğunuz kanalda geriye doğru gidebilirsiniz.
         </p>

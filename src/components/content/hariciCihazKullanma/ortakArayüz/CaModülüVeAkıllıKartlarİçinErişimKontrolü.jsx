@@ -8,7 +8,7 @@ import back from "../../../../assets/images/icons/back.png";
 export default function CaModülüVeAkıllıKartlarİçinErişimKontrolü() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz) / CA Modülü ve Akıllı Kartlar için Erişim Kontrolü</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz) / CA Modülü ve Akıllı Kartlar için Erişim Kontrolü</p>
       <Box className="container">
         <h1>CA Modülü ve Akıllı Kartlar için Erişim Kontrolü</h1>
         <ol>

@@ -7,7 +7,7 @@ import { ol } from "./Aksesuarlar_";
 export default function PilAtıkları() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Aksesuarlar </p>
+      <p>Ana sayfa / Aksesuarlar </p>
       <Box className="container">
         <h1>Aksesuarlar</h1>
         <p>

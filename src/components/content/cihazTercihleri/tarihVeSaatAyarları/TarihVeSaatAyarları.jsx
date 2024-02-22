@@ -19,7 +19,7 @@ export default function TarihVeSaatAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Tarih ve Saat Ayarları</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Tarih ve Saat Ayarları</p>
       <Box className="container">
         <h1>Tarih ve Saat Ayarları</h1>
         <p>

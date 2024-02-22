@@ -1,40 +1,41 @@
 import React from "react";
 import "../style.css";
-import { Box } from "@mui/material";
+import { Box, Table, TableCell, TableRow } from "@mui/material";
+import paketin_içindekiler from "../../../assets/images/in-page-images/paketin_içindekiler.png"
 
 export default function Paketinİçindekiler() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ürününüz / Paketin İçindekiler</p>
+      <p>Ana sayfa / Ürününüz / Paketin İçindekiler</p>
       <Box className="container">
         <h1>Paketin İçindekiler</h1>
-        <h2>img gelcek</h2>
-        <table>
-          <tr class="row">
-            <td class="column-sm">1</td>
-            <td class="column-l">Televizyon.</td>
-            <td class="column-sm">2</td>
-            <td class="column-l">Uzaktan kumanda</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">3</td>
-            <td class="column-l">Ayak</td>
-            <td class="column-sm">4</td>
-            <td class="column-l">Uzaktan kumanda için pil</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">5</td>
-            <td class="column-l">Ayak için vidalar ve montaj talimatları</td>
-            <td class="column-sm">6</td>
-            <td class="column-l">Kolay kullanım kılavuzu</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm">7</td>
-            <td class="column-l">Şebeke kablosu</td>
-            <td class="column-sm"></td>
-            <td class="column-l"></td>
-          </tr>
-          </table>
+        <img src={paketin_içindekiler} alt="Paketin İçindekiler" className="in-page-img" />
+        <Table>
+          <TableRow >
+            <TableCell class="column-sm table-cell">1</TableCell>
+            <TableCell class="table-cell">Televizyon.</TableCell>
+            <TableCell class="column-sm table-cell">2</TableCell>
+            <TableCell class="table-cell">Uzaktan kumanda</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">3</TableCell>
+            <TableCell class="table-cell">Ayak</TableCell>
+            <TableCell class="column-sm table-cell">4</TableCell>
+            <TableCell class="table-cell">Uzaktan kumanda için pil</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">5</TableCell>
+            <TableCell class="table-cell">Ayak için vidalar ve montaj talimatları</TableCell>
+            <TableCell class="column-sm table-cell">6</TableCell>
+            <TableCell class="table-cell">Kolay kullanım kılavuzu</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="column-sm table-cell">7</TableCell>
+            <TableCell class="table-cell">Şebeke kablosu</TableCell>
+            <TableCell class="column-sm table-cell"></TableCell>
+            <TableCell class="table-cell"></TableCell>
+          </TableRow>
+          </Table>
       </Box>
     </Box>
   );

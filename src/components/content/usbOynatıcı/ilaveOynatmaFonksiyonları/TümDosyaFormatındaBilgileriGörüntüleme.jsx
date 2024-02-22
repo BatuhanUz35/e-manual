@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function TümDosyaFormatındaBilgileriGörüntüleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Tüm Dosya Formatında Bilgileri Görüntüleme
       </p>
       <Box className="container">

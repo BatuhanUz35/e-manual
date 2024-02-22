@@ -287,6 +287,22 @@ import GizliBirKablosuzAğaBağlantı from "../content/ağKurulumu/kablosuzAğAy
 import DetaylıKanalAyarları from "../content/detaylıKanalAyarları/DetaylıKanalAyarları";
 import TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması from "../content/detaylıKanalAyarları/TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması";
 import TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması from "../content/detaylıKanalAyarları/TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması";
+import DijitalUyduKanallarıİçinAntenAyarlarıVeDiseqcİleKanallarınOtomatikAranması from "../content/detaylıKanalAyarları/DijitalUyduKanallarıİçinAntenAyarlarıVeDiseqcİleKanallarınOtomatikAranması";
+import DijitalUyduKanallarıİçinAntenAyarlarıVeTekKanalYönlendiriciSistemiİleKanallarınOtomatikAranması from "../content/detaylıKanalAyarları/DijitalUyduKanallarıİçinAntenAyarlarıVeTekKanalYönlendiriciSistemiİleKanallarınOtomatikAranması";
+import UyduGüncellemesiİleYeniİlaveOlanDijitalKanallarınAranması from "../content/detaylıKanalAyarları/UyduGüncellemesiİleYeniİlaveOlanDijitalKanallarınAranması";
+import MotorluAntenAyarları from "../content/detaylıKanalAyarları/MotorluAntenAyarları";
+import KabloBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması from "../content/detaylıKanalAyarları/KabloBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması";
+import KabloBağlantılıDijitalTelevizyonKanallarınınManuelAranması from "../content/detaylıKanalAyarları/KabloBağlantılıDijitalTelevizyonKanallarınınManuelAranması";
+import AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAyarlanması from "../content/detaylıKanalAyarları/AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAyarlanması";
+import AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakGüncellenmesi from "../content/detaylıKanalAyarları/AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakGüncellenmesi";
+import AntenBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAyarlanması from "../content/detaylıKanalAyarları/AntenBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAyarlanması";
+import AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakAyarlanması from "../content/detaylıKanalAyarları/AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakAyarlanması";
+import AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakGüncellenmesi from "../content/detaylıKanalAyarları/AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakGüncellenmesi";
+import AntenBağlantılıAnalogTelevizyonKanallarınınManuelOlarakAyarlanması  from "../content/detaylıKanalAyarları/AntenBağlantılıAnalogTelevizyonKanallarınınManuelOlarakAyarlanması";
+import EkBilgiler from "../content/EkBilgiler";
+import Sözlük from "../content/Sözlük";
+import SorunGiderme from "../content/SorunGiderme";
+import MüşteriMemnuniyetiPolitikası from "../content/MüşteriMemnuniyetiPolitikası";
 
 export const routes = [
   { 
@@ -1445,5 +1461,69 @@ export const routes = [
   {
     path: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-aranması",
     element: TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-diseqc-ile-kanalların-otomatik-aranması",
+    element: DijitalUyduKanallarıİçinAntenAyarlarıVeDiseqcİleKanallarınOtomatikAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-tek-kanal-yönlendirici-sistemi-ile-kanalların-otomatik-aranması",
+    element: DijitalUyduKanallarıİçinAntenAyarlarıVeTekKanalYönlendiriciSistemiİleKanallarınOtomatikAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/uydu-güncellemesi-ile-yeni-ilave-olan-dijital-kanalların-aranması",
+    element: UyduGüncellemesiİleYeniİlaveOlanDijitalKanallarınAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/motorlu-anten-ayarları",
+    element: MotorluAntenAyarları
+  },
+  {
+    path: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
+    element: KabloBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-manuel-aranması",
+    element: KabloBağlantılıDijitalTelevizyonKanallarınınManuelAranması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-ayarlanması",
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAyarlanması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakGüncellenmesi
+  },
+  {
+    path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-ayarlanması",
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAyarlanması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-ayarlanması",
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakAyarlanması
+  },
+  {
+    path: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakGüncellenmesi
+  },
+  {
+    path: "detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-manuel-olarak-ayarlanması",
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınManuelOlarakAyarlanması
+  },
+  {
+    path: "/ek-bilgiler",
+    element: EkBilgiler
+  },
+  {
+    path: "/sözlük",
+    element: Sözlük
+  },
+  {
+    path: "/sorun-giderme",
+    element: SorunGiderme
+  },
+  {
+    path: "/müşteri-memnuniyeti-politikası",
+    element: MüşteriMemnuniyetiPolitikası
   },
 ]

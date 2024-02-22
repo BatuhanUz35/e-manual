@@ -16,10 +16,10 @@ export default function Oynatma() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Oynatma</p>
+      <p>Ana sayfa / USB Kayıt / Oynatma</p>
       <Box className="container">
         <h1>Oynatma</h1>
-        <p classname="text">Kaydedilen programların tamamı harici veri ortamında saklanır. Harici veri ortamndaki arşivi <b>Kaydedilenler Listesi</b> menüsünden görüntüleyebilirsiniz.</p>
+        <p>Kaydedilen programların tamamı harici veri ortamında saklanır. Harici veri ortamndaki arşivi <b>Kaydedilenler Listesi</b> menüsünden görüntüleyebilirsiniz.</p>
         <h2>Ek bilgiler</h2>
         {links.map((link) => {
           return ( 

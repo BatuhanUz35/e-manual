@@ -6,7 +6,7 @@ import { ol1, ol2 } from "./MağazaModuAyarları_";
 export default function MağazaModuAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Mağaza Modu Ayarları
       </p>
       <Box className="container">

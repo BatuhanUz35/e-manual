@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function SesVerileri() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Oynatıcı / Dosya Formatları / Ses Verileri</p>
+      <p>Ana sayfa / USB Oynatıcı / Dosya Formatları / Ses Verileri</p>
       <Box className="container">
         <h1>Ses Verileri</h1>
         {texts.map((text) => {

@@ -19,7 +19,7 @@ export default function ZamanlayıcıAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Zamanlayıcı Ayarları</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Zamanlayıcı Ayarları</p>
       <Box className="container">
         <h1>Zamanlayıcı Ayarları</h1>
         <p>

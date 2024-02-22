@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import "../../style.css"
-import direction from "../../../../assets/images/icons/direction.png"
+import channel_direction from "../../../../assets/images/icons/channel_direction.png"
 import down from "../../../../assets/images/icons/down.png"
 import right from "../../../../assets/images/icons/right.png"
 import left from "../../../../assets/images/icons/left.png"
@@ -10,7 +10,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 export const ol = [
   <Box>
-    Elektronik program rehberini açmak için <img src={direction} alt="Yön tuşu" className="inline-icon" /> düğmesine dik eksende basın.
+    Elektronik program rehberini açmak için <img src={channel_direction} alt="Kanal Yön tuşu" className="inline-icon" /> düğmesine dik eksende basın.
   </Box>,
   <Box>
     Kayıt zamanlayıcısı eklemek istediğiniz kanalı <img src={down} alt="Yukarı" className="inline-icon rotate-180 sm" />/<img src={down} alt="Aşağı" className="inline-icon sm" /> düğmesiyle seçin.

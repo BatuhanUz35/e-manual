@@ -16,7 +16,7 @@ export default function DetaylıKanalAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Detaylı Kanal Ayarları</p>
+      <p>Ana sayfa / Detaylı Kanal Ayarları</p>
       <Box className="container">
         <h1>Detaylı Kanal Ayarları</h1>
         <h2>Ek bilgiler</h2>

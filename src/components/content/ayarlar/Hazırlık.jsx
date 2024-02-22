@@ -6,23 +6,23 @@ import { Box } from "@mui/material";
 export default function TuşTakımı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ayarlar / Hazırlık</p>
+      <p>Ana sayfa / Ayarlar / Hazırlık</p>
       <Box className="container">
         <h1>Hazırlık</h1>
-        <p classname="text">
+        <p>
           Televizyonda, temel ayarlamaları yaparak adım adım size yardımcı olmak zere bir
           "kurulum yardımcısı" bulunmaktadır.
         </p>
-        <p classname="text">
+        <p>
           Kullanıcı, ekran diyalog penceresini kullanarak karmaşık gibi görünen ayarlamaları ve veri
           girişlerini bastiçe ve herkes tarafından anlaşılacak şekilde yapabilir.
         </p>
-        <p classname="text">
+        <p>
           Sayfalar ve diyalog öğeleri ekranda görünür, burada da ileriki ve muhtemel işlem
           adımları tanımlanır.
         </p>
         <h2>Ev ağına bağlanma ayarları</h2>
-        <p classname="text">Ev ağı bağlantısına bağlı olarak televizyonunuzu ev ağına bağlayınız:</p>
+        <p>Ev ağı bağlantısına bağlı olarak televizyonunuzu ev ağına bağlayınız:</p>
         <ul>
           <li>
             bir LAN bağlantısı ile veya
@@ -32,15 +32,15 @@ export default function TuşTakımı() {
           </li>
         </ul>
         <h2>Televizyon kanallarının ayarlanması</h2>
-        <p classname="text">
+        <p>
           Bağlı olan anten türüne bağlı olarak hangi televizyon kanallarını aramak
           istedeğinize karar verebilirsiniz.
         </p>
         <h2>DVB-S dijital uydu kanalları</h2>
-        <p classname="text">
+        <p>
           Dijital televizyon kanallarını ayarlar.
         </p>
-        <p classname="text">
+        <p>
           Bu arama için iki seçeneğiniz vardır:
         </p>
         <ol>
@@ -54,11 +54,11 @@ export default function TuşTakımı() {
           </li>
         </ol>
         <h2>DVB-C dijital kablolu kanallar</h2>
-        <p classname="text">Dijital kablolu televizyon kanallarının ayarlanması için bakınız sayfa 21</p>
+        <p>Dijital kablolu televizyon kanallarının ayarlanması için bakınız sayfa 21</p>
         <h2>DVB-T dijital karasal kanallar</h2>
-        <p classname="text">Dijital karasal televizyon kanallarının ayarlanması için bakınız sayfa 21</p>
+        <p>Dijital karasal televizyon kanallarının ayarlanması için bakınız sayfa 21</p>
         <h2>Not:</h2>
-        <p classname="text">
+        <p>
           Dijital televizyon kanal ayarları hakkında daha fazla bilgi için Detaylı Kanal Ayarları
           bölümüne bakın.
         </p>

@@ -3,6 +3,7 @@ import zero from "../../../assets/images/icons/zero.png"
 import one from "../../../assets/images/icons/one.png"
 import right from "../../../assets/images/icons/right.png"
 import left from "../../../assets/images/icons/left.png"
+import channel_direction from "../../../assets/images/icons/channel_direction.png"
 import { Box } from "@mui/material"
 
 export const ol1 = [
@@ -15,7 +16,7 @@ export const ol1 = [
     {" "} düğmeleri ile seçebilirsiniz.
   </Box>,
   <Box>
-    Bir sayfa geri veya ileri gitmek için <b>img gelcek</b> düğmesine basın.
+    Bir sayfa geri veya ileri gitmek için <img src={channel_direction} alt="Kanal Yön Tuşu" className="inline-icon" /> düğmesine basın.
   </Box>,
   <Box>
     Teleteks modundan çıkmak için <img src={txt} alt="TXT" className="inline-icon" /> düğmesine basın.

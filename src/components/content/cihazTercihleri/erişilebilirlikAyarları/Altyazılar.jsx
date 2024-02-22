@@ -6,7 +6,7 @@ import { ol } from "./Altyazılar_";
 export default function Altyazılar() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları / Altyazılar
       </p>
       <Box className="container">

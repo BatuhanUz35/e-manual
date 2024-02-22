@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function SistemGüncellemesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Hakkında / Sistem Güncellemesi</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Hakkında / Sistem Güncellemesi</p>
       <Box className="container">
         <h1>Sistem Güncellemesi</h1>
         <ol>

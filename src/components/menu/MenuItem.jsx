@@ -85,6 +85,7 @@ const MenuItem = () => {
           dispatch(focusItemAction(focused_item - 1));
         }
         else if (active_l2_subcategory && // from main category to level 2
+          document.getElementById(active_l2_subcategory+1) &&
           active_l2_subcategory - active_l2_subcategory % 10000 === focused_item - 10000 &&
           active_l2_subcategory === findL1Subcategory(active_l1_subcategory).id &&
           document.getElementById(focused_item - 10000)){
@@ -93,6 +94,7 @@ const MenuItem = () => {
         }
         else if (active_l2_subcategory && // from level 1 to level 2
           active_l2_subcategory === focused_item - 100 &&
+          
           document.getElementById(focused_item - 100)){
           const lastItem = (findL2Subcategory(active_l2_subcategory))
           dispatch(focusItemAction(lastItem.id));

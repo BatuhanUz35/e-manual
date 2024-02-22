@@ -5,11 +5,20 @@ import LinkIcon from "@mui/icons-material/Link";
 import { Link } from "react-router-dom";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Box } from "@mui/material";
+import { links } from "./TeleteksDilSeçimi_";
+import { useDispatch } from "react-redux";
+import {
+  select_item,
+  focus_item,
+  activate_l1_subcategory,
+  activate_l2_subcategory,
+} from "../../../../redux/menuSlice";
 
 export default function TeleteksDilSeçimi() {
+  const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Teleteks Dil Seçimi</p>
+      <p>Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Teleteks Dil Seçimi</p>
       <Box className="container">
         <h1>Teleteks Dil Seçimi</h1>
         <ol>
@@ -23,18 +32,33 @@ export default function TeleteksDilSeçimi() {
           </li>
         </ol>
         <h2>Ek bilgiler</h2>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili" className="link">
-            Dijital Teleteks Dili
-          </Link>
-        </Box>
-        <Box className="link-container">
-          <LinkIcon />
-          <Link to="/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/sayfa-deşifre-etme-dili" className="link">
-            Sayfa Deşifre Etme Dili
-          </Link>
-        </Box>
+        {links.map((link) => {
+          return (
+            <Box className="link-container">
+              <LinkIcon />
+              <Link
+                to={link.url}
+                className="link"
+                onClick={() => {
+                  dispatch(select_item(link.focus_item));
+                  dispatch(
+                    activate_l1_subcategory(
+                      link.focus_item - (link.focus_item % 10000)
+                    )
+                  );
+                  dispatch(
+                    activate_l2_subcategory(
+                      link.focus_item - (link.focus_item % 100)
+                    )
+                  );
+                  dispatch(focus_item(link.focus_item));
+                }}
+              >
+                {link.title}
+              </Link>
+            </Box>
+          );
+        })}
       </Box>
     </Box>
   );

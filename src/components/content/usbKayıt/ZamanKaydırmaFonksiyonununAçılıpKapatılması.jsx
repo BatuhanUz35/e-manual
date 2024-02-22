@@ -6,10 +6,10 @@ import { Box } from "@mui/material";
 export default function ZamanKaydırmaFonksiyonununAçılıpKapatılması() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Zaman Kaydırma Fonksiyonunun Açılıp Kapatılması</p>
+      <p>Ana sayfa / USB Kayıt / Zaman Kaydırma Fonksiyonunun Açılıp Kapatılması</p>
       <Box className="container">
         <h1>Zaman Kaydırma Fonksiyonunun Açılıp Kapatılması</h1>
-        <p classname="text">Bu özellik ile zaman kaydırmayı kapatabilir veya açabilirsiniz.</p>
+        <p>Bu özellik ile zaman kaydırmayı kapatabilir veya açabilirsiniz.</p>
         <ol>
         {ol.map((li) => {
           return (

@@ -16,7 +16,7 @@ export default function CihazTercihleri() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri</p>
+      <p>Ana sayfa / Cihaz Tercihleri</p>
       <Box className="container">
         <h1>Cihaz Tercihleri</h1>
         <p>Bu menüde Erişilebilirlik ayarlarını yönetebilirsiniz.</p>

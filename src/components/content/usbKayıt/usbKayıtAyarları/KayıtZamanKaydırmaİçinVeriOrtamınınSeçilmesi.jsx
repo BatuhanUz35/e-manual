@@ -7,10 +7,10 @@ import { Box } from "@mui/material";
 export default function KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / USB Kayıt Ayarları / Kayıt - Zaman Kaydırma İçin Veri Ortamının Seçilmesi</p>
+      <p>Ana sayfa / USB Kayıt / USB Kayıt Ayarları / Kayıt - Zaman Kaydırma İçin Veri Ortamının Seçilmesi</p>
       <Box className="container">
         <h1>Kayıt - Zaman Kaydırma İçin Veri Ortamının Seçilmesi</h1>
-        <p classname="text">Televizyona birden fazla harici veri ortamı takılmış ise farklı veri ortamlarını kayıt - zaman kaydırma için ayarlayabilir
+        <p>Televizyona birden fazla harici veri ortamı takılmış ise farklı veri ortamlarını kayıt - zaman kaydırma için ayarlayabilir
           veya her iki kaydı tek bir veri ortamına atayabilirsiniz.
         </p>
         <ol>

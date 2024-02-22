@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function HdmiKaynağınınSeçilmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / HDMI Kaynağının Seçilmesi</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / HDMI Kaynağının Seçilmesi</p>
       <Box className="container">
         <h1>HDMI Kaynağının Seçilmesi</h1>
         <p>

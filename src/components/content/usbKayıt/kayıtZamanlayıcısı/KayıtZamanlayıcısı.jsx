@@ -16,7 +16,7 @@ export default function KayıtZamanlayıcısı() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı</p>
+      <p>Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı</p>
       <Box className="container">
         <h1>Kayıt Zamanlayıcısı</h1>
         <h2>Ek bilgiler</h2>

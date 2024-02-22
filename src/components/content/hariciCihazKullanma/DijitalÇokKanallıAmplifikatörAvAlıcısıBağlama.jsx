@@ -6,7 +6,7 @@ import { ol } from "./DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama_";
 export default function DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Harici Cihaz Kullanma / Dijital Çok kanallı Amplifikatör - AV Alıcısı Bağlama
       </p>
       <Box className="container">

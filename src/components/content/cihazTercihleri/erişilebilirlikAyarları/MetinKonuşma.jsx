@@ -6,7 +6,7 @@ import { ol } from "./MetinKonuşma_";
 export default function MetinKonuşma() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Erişilebilirlik Ayarları / Metin - Konuşma
       </p>
       <Box className="container">

@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Bilgileri Manuel Girerek Kayıt Zamanlayıcı Eklenmesi</p>
+      <p>Ana sayfa / USB Kayıt / Kayıt Zamanlayıcısı / Bilgileri Manuel Girerek Kayıt Zamanlayıcı Eklenmesi</p>
       <Box className="container">
         <h1>Bilgileri Manuel Girerek Kayıt Zamanlayıcı Eklenmesi</h1>
         <ol>

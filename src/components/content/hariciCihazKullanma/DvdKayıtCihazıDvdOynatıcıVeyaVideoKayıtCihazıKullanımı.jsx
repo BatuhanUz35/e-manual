@@ -6,7 +6,7 @@ import { ol } from "./DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullan�
 export default function DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Harici Cihaz Kullanma / DVD Kayıt Cihazı, DVD Oynatıcı, veya Video Kayıt Cihazı Kullanımı
       </p>
       <Box className="container">

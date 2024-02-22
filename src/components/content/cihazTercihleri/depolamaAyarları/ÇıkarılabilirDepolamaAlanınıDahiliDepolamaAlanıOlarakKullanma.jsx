@@ -6,7 +6,7 @@ import { ol1, önemli, ol2 } from "./ÇıkarılabilirDepolamaAlanınıDahiliDepo
 export default function ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Depolama Ayarları / Çıkarılabilir Depolama Alanını Dahili Depolama Alanı Olarak Kullanma
       </p>
       <Box className="container">

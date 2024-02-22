@@ -6,6 +6,7 @@ import right from "../../../../assets/images/icons/right.png"
 import settings from "../../../../assets/images/icons/settings.png"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Circle } from "@mui/icons-material";
+import ana_ekran_menüsü from "../../../../assets/images/in-page-images/ana_ekran_menüsü.png"
 
 export const ol = [
   <Box>
@@ -22,12 +23,12 @@ export const ol = [
   <Box>
     <img src={down} alt="Aşağı" className="inline-icon sm"/> düğmesiyle <b>Ana Ekran</b>'ı seçip <Circle className="inline-icon button"/> düğmesine basın.
     <Box className="flex-container padding-1">
-      <ArrowForwardIcon className="inline-icon xs" />
+      <ArrowForwardIcon className="inline-icon xs start" />
       <Box>
         <b>Ana Ekran</b> menüsü görüntülenir.
+        <img src={ana_ekran_menüsü} alt="Ana Ekran Menüsü" />
       </Box>  
     </Box>
-    <h2>img gelcek</h2>
   </Box>,
 ]
 

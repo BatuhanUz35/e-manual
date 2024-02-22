@@ -8,7 +8,7 @@ import back from "../../../../assets/images/icons/back.png";
 export default function MevcutKlavyeAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Klavye Ayarları / Mevcut Klavye Ayarları
       </p>
       <Box className="container">

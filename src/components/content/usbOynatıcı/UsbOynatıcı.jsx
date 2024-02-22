@@ -16,7 +16,7 @@ export default function UsbOynatıcı() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Oynatıcı</p>
+      <p>Ana sayfa / USB Oynatıcı</p>
       <Box className="container">
         <h1>USB Oynatıcı</h1>
         <h2>Ek bilgiler</h2>

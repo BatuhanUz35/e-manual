@@ -6,7 +6,7 @@ import { ol } from "./GoogleAsistanAyarları_";
 export default function GoogleAsistanAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Google Asistan Ayarları
       </p>
       <Box className="container">

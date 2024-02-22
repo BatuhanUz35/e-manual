@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 export default function ArkaKapakİşaretler() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Cihazın Arka Kapağında
         Bulunabilecek İşaretler ile İlgili Bilgiler
       </p>

@@ -7,7 +7,7 @@ import ca_modülü_takma from "../../../../assets/images/in-page-images/ca_modü
 export default function CaModülünüTakma() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz) / CA Modülünü Takma</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz) / CA Modülünü Takma</p>
       <Box className="container">
         <h1>CA Modülünü Takma</h1>
         <h2>Önemli:</h2>

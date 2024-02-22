@@ -6,7 +6,7 @@ import { ol } from "./GboardAyarları_";
 export default function GboardAyarları() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Klavye Ayarları / Gboard Ayarları
       </p>
       <Box className="container">

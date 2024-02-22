@@ -16,7 +16,7 @@ export default function UsbKayıt() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt</p>
+      <p>Ana sayfa / USB Kayıt</p>
       <Box className="container">
         <h1>USB Kayıt</h1>
         <h2>Ek bilgiler</h2>

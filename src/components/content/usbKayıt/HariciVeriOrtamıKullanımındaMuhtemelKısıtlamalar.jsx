@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</p>
+      <p>Ana sayfa / USB Kayıt / Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</p>
       <Box className="container">
         <h1>Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar</h1>
         <ul>

@@ -6,6 +6,7 @@ import down from "../../../../assets/images/icons/down.png"
 import { Circle } from "@mui/icons-material"
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Box } from "@mui/material"
+import hbbtv_ayarları_menüsü from "../../../../assets/images/in-page-images/hbbtv_ayarları_menüsü.png"
 
 export const ol = [
   <Box>
@@ -19,10 +20,11 @@ export const ol = [
   <Box>
     <img src={down} alt="Yukarı" className="inline-icon rotate-180 sm" />/<img src={down} alt="Yukarı" className="inline-icon sm" /> düğmesiyle <b>HBBTV Ayarları</b>'nı
     seçip <Circle className="inline-icon button" /> düğmesine basın.
-    <Box>
-      <ArrowForwardIcon className="inline-icon xs" />
+    <Box className="flex-container padding-1">
+      <ArrowForwardIcon className="inline-icon xs start" /><Box>
       <b>HBBTV Ayarları</b> menüsü görüntülenir.
-      <h2>img gelcek</h2>
+      <img src={hbbtv_ayarları_menüsü} alt="HBBTV Ayarları Menüsü" />
+      </Box>
     </Box>
   </Box>
 

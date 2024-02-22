@@ -6,7 +6,7 @@ import { ol } from "./YenidenBaşlatma_";
 export default function YenidenBaşlatma() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Yeniden Başlatma
       </p>
       <Box className="container">

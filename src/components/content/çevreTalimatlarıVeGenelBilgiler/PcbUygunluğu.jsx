@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function PcbUygunluğu() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Çevre Talimatları ve Genel Bilgiler / PCB Uygunluğu ile İlgili Bilgiler
       </p>
       <Box className="container">

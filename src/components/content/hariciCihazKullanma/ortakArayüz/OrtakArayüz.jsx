@@ -16,7 +16,7 @@ export default function OrtakArayüz() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz)</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CI (Ortak Arayüz)</p>
       <Box className="container">
         <h1>CI (Ortak Arayüz)</h1>
         <h2>Ek bilgiler</h2>

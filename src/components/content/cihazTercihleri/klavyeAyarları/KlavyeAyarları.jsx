@@ -19,7 +19,7 @@ export default function KlavyeAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Klavye Ayarları</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Klavye Ayarları</p>
       <Box className="container">
         <h1>Klavye Ayarları</h1>
         <p>

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function OynatmaÇalmaTemelFonksiyonlar() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / Oynatma - Çalma Temel Fonksiyonlar
       </p>
       <Box className="container">

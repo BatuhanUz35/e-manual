@@ -6,12 +6,12 @@ import { Box } from "@mui/material";
 export default function İzlemeTercihi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları / İzleme Tercihi</p>
+      <p>Ana sayfa / HBBTV / HBBTV Ayarları / İzleme Tercihi</p>
       <Box className="container">
         <h1>İzleme Tercihi</h1>
         {texts.map((text) => {
           return ( 
-            <p classname="text">{text}</p>
+            <p>{text}</p>
           )})}
           <ol>
           {ol.map((li) => {

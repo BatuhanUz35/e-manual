@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function TopTekstVeyaFlofTekstModu() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Teleteks / TOP Tekst veya FLOF Tekst Modu</p>
+      <p>Ana sayfa / Teleteks / TOP Tekst veya FLOF Tekst Modu</p>
       <Box className="container">
         <h1>TOP Tekst veya FLOF Tekst Modu</h1>
         <ol>

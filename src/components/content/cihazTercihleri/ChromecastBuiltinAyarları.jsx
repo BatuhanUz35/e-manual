@@ -18,7 +18,7 @@ export default function ChromecastBuiltinAyarları() {
   const focused_item = useSelector((state) => state.menu.focused_item);
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Chromecast Built-in Ayarları
       </p>
       <Box className="container">

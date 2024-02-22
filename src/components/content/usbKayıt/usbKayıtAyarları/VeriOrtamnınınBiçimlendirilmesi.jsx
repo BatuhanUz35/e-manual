@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function VeriOrtamınınBiçimlendirilmesi() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / USB Kayıt Ayarları / Veri Ortamının Biçimlendirilmesi</p>
+      <p>Ana sayfa / USB Kayıt / USB Kayıt Ayarları / Veri Ortamının Biçimlendirilmesi</p>
       <Box className="container">
         <h1>Veri Ortamının Biçimlendirilmesi</h1>
         <h2>Önemli</h2>

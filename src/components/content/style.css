@@ -56,15 +56,16 @@
   align-items: center;
 }
 
-table{
+.table {
   border-collapse: collapse;
-  width: 100%;
 }
 
-td {
+.table-cell {
   border: 1px solid gray;
   padding: 15px;
   text-align: left;
+  font-size: 1rem;
+  vertical-align: top;
 }
 
 .column-sm {
@@ -124,9 +125,9 @@ li {
 
 .in-page-img {
   display: block;
-  width: 50%;
-  min-width: 25rem;
-  padding-bottom: 1rem;
+  max-width: 50%;
+  min-width: 5rem;
+  max-height: 70vh;
 }
 
 .inline-icon {
@@ -149,4 +150,18 @@ img {
 
 .padding-1 {
   padding: 0.25rem 1rem;
+}
+
+.width_50 {
+  width: 50%;
+}
+
+.start {
+  align-self: flex-start;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.padding-10 {
+  padding: 0 10%;
 }

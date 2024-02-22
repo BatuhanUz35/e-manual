@@ -10,7 +10,7 @@ export const texts = [
 
 export const ol = [
   <Box>
-    <img src={down} alt="yukarı" className="inline-icon rotate-180 sm"/>/<img src={down} alt="aşağı" className="inline-icon sm"/> düğmesiyle
+    <img src={down} alt="Yukarı" className="inline-icon rotate-180 sm"/>/<img src={down} alt="Aşağı" className="inline-icon sm"/> düğmesiyle
     <b> İzleme Sitelerini Engelle</b>'yi seçip <Circle className="inline-icon button" /> <b>Açık</b> veya <b>Kapalı</b> konumu seçin.
   </Box>,
   <Box>

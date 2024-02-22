@@ -16,7 +16,7 @@ export default function AğKurulumu() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu</p>
+      <p>Ana sayfa / Ağ Kurulumu</p>
       <Box className="container">
         <h1>Ağ Kurulumu</h1>
         <p>Android TV özelliklerini kullanabilmek için kablolu ya da kablosuz internet bağlantısı gereklidir.</p>

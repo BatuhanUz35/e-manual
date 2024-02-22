@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function GooglePlayStoredanUygulamaYükleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Android TV / Google Play Store'dan Uygulama Yükleme
       </p>
       <Box className="container">

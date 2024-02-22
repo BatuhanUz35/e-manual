@@ -21,11 +21,11 @@ export const ol2 = [
   <Box>
     <img src={start} alt="Başla/Duraklat" className="inline-icon" /> düğmesine basın.
     <Box className="flex-container padding-1">
-    <ArrowForwardIcon className="inline-icon xs"/><Box><b>Disk Kurulumu</b> menüsü görüntülenir.</Box>
+    <ArrowForwardIcon className="inline-icon xs start"/><Box><b>Disk Kurulumu</b> menüsü görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
-    <img src={down} alt="aşağı" className="inline-icon sm"/> düğmesiyle <b>Manuel</b> öğesini seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
+    <img src={down} alt="Aşağı" className="inline-icon sm"/> düğmesiyle <b>Manuel</b> öğesini seçip <Circle className="inline-icon button"/> düğmesiyle onaylayın.
   </Box>,
   <Box>
     Veri ortamını biçimlendirmek için <b>Biçimlendir</b>'i veya biçimlendirmeden devam etmek için <b>Atla</b>'y seçip <Circle className="inline-icon button"/> düğmesine basın.
@@ -45,14 +45,14 @@ export const ol3 = [
   <Box>
     Biçimlendirme uyarı mesajı görüntülenir. <b>Biçimlendir</b>'i seçip <Circle className="inline-icon button"/> düğmesine basın.
     <Box className="flex-container padding-1">
-    <ArrowForwardIcon className="inline-icon xs"/><Box>Biçimlendirme ilerlemesi ekranda görüntülenir.</Box>
+    <ArrowForwardIcon className="inline-icon xs start"/><Box>Biçimlendirme ilerlemesi ekranda görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>
     Biçimlendirme tamamlandığında veri ortamının boyutuna göre zaman kaydırma için ayırmak istediğiniz boyutu <img src={down} alt="Yukarı" className="inline-icon rotate-180 sm"/>/<img src={down} alt="Aşağı" className="inline-icon sm"/> 
     {" "} düğmesiyle seçip <Circle className="inline-icon button"/> düğmesine basın.
     <Box className="flex-container padding-1">
-    <ArrowForwardIcon className="inline-icon xs"/><Box>Veri ortamı manuel olarak yapılandırılıp <b>Disk Kurulumu Tamamlandı</b> mesajı görüntülenir.</Box>
+    <ArrowForwardIcon className="inline-icon xs start"/><Box>Veri ortamı manuel olarak yapılandırılıp <b>Disk Kurulumu Tamamlandı</b> mesajı görüntülenir.</Box>
     </Box>
   </Box>,
   <Box>

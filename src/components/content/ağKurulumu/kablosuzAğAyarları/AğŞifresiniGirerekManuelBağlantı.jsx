@@ -7,7 +7,7 @@ import { Circle } from "@mui/icons-material";
 export default function AğŞifresiniGirerekManuelBağlantı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Ayarları / Ağ Şifresini Girerek Manuel Bağlantı</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablosuz Ağ Ayarları / Ağ Şifresini Girerek Manuel Bağlantı</p>
       <Box className="container">
         <h1>Ağ Şifresini Girerek Manuel Bağlantı</h1>
         <p>

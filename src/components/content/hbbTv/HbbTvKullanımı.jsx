@@ -6,11 +6,11 @@ import { Box } from "@mui/material";
 export default function HbbTvKullanımı() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / HBBTV / HbbTV'nin Kullanımı</p>
+      <p>Ana sayfa / HBBTV / HbbTV'nin Kullanımı</p>
       <Box className="container">
         <h1>HbbTV'nin Kullanımı</h1>
         {texts.map((text) => {
-          return <p classname="text">{text}</p>;
+          return <p>{text}</p>;
         })}
         <h2>Not:</h2>
         <ul>

@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function İleriGeriGörüntüOynatma() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Oynatma / İleri - Geri Görüntü Oynatma</p>
+      <p>Ana sayfa / USB Kayıt / Oynatma / İleri - Geri Görüntü Oynatma</p>
       <Box className="container">
         <h1>İleri / Geri Görüntü Arama</h1>
         <ol>

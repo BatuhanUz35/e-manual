@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export default function DiğerBilgileriGörüntüleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Hakkında / Diğer Bilgileri Görüntüleme
       </p>
       <Box className="container">

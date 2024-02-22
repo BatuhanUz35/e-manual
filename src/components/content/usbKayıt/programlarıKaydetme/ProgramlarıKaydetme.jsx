@@ -16,14 +16,14 @@ export default function ProgramlarıKaydetme() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / USB Kayıt / Programları Kaydetme</p>
+      <p>Ana sayfa / USB Kayıt / Programları Kaydetme</p>
       <Box className="container">
         <h1>Programları Kaydetme</h1>
-        <p classname="text">
+        <p>
           Bir televizyon kanalını kaydedebilirsiniz. Kayıt verileri harici veri
           ortamında saklanır ve bu kayıtlar televizyon aracılığıyla yönetilir.
         </p>
-        <p classname="text">
+        <p>
           Minimum 1 dakikalık kayıt süresi için 44 MB ila 110 MB'lık hafıza
           gereklidir.
         </p>

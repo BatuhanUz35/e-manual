@@ -6,7 +6,7 @@ import { ol } from "./EngellenmişBirHariciKaynağıİzleme_";
 export default function EngellenmişBirHariciKaynağıİzleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Ebeveyn Ayarları / Engellenmiş Bir Harici Kaynağı İzleme
       </p>
       <Box className="container">

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function VideoDosyalarındaİstenilenSüreyeGitme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Tekrarlama Fonksiyonu
       </p>
       <Box className="container">

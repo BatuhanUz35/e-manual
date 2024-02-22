@@ -16,7 +16,7 @@ export default function HbbTvAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları</p>
+      <p>Ana sayfa / HBBTV / HBBTV Ayarları</p>
       <Box className="container">
         <h1>HBBTV Ayarları</h1>
         <ol>

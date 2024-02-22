@@ -19,7 +19,7 @@ export default function Hakkında() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Cihaz Tercihleri / Hakkında</p>
+      <p>Ana sayfa / Cihaz Tercihleri / Hakkında</p>
       <Box className="container">
         <h1>Hakkında</h1>
         <p>

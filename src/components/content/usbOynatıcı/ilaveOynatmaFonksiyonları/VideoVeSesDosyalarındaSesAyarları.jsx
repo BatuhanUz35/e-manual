@@ -16,7 +16,7 @@ export default function VideoVeSesDosyalarındaSesAyarları() {
 
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Video Ve Ses Dosyalarında Ses Ayarları
       </p>
       <Box className="container">

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function CihazKimliğiniSıfırlama() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / HBBTV / HBBTV Ayarları / Cihaz Kimliğini Sıfırlama</p>
+      <p>Ana sayfa / HBBTV / HBBTV Ayarları / Cihaz Kimliğini Sıfırlama</p>
       <Box className="container">
         <h1>Cihaz Kimliğini Sıfırlama</h1>
         <ol>

@@ -16,7 +16,7 @@ export default function HariciCihazKullanma() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma</p>
       <Box className="container">
         <h1>Harici Cihaz Kullanma</h1>
         <h2>Ek bilgiler</h2>

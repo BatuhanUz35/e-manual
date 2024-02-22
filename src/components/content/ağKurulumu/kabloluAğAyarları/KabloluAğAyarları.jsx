@@ -16,7 +16,7 @@ export default function KabloluAğAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları</p>
+      <p>Ana sayfa / Ağ Kurulumu / Kablolu Ağ Ayarları</p>
       <Box className="container">
         <h1>Kablolu Ağ Ayaralrı</h1>
         <p>Kablolu ağ ayarlarını yapmak için iki yol vardır.</p>

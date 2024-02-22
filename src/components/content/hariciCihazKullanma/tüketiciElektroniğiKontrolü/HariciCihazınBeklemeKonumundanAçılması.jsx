@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function TüketiciElektroniğiKontrolü() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / Harici Cihazın Bekleme Konumundan Açılması</p>
+      <p>Ana sayfa / Harici Cihaz Kullanma / CEC (Tüketici Elektroniği Kontrolü) / Harici Cihazın Bekleme Konumundan Açılması</p>
       <Box className="container">
         <h1>Harici Cihazın Bekleme Konumundan Açılması</h1>
         <p>

@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 export default function ŞartlarKoşullarVeGizlilik() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV / Şartlar, Koşullar ve Gizlilik</p>
+      <p>Ana sayfa / Android TV / Şartlar, Koşullar ve Gizlilik</p>
       <Box className="container">
         <h1>Şartlar, Koşullar ve Gizlilik</h1>
         {texts.map((text) => {

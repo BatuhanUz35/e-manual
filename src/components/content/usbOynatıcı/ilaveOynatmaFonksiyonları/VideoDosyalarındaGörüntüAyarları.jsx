@@ -16,7 +16,7 @@ export default function VideoDosyalarındaGörüntüAyarları() {
 
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / USB Oynatıcı / İlave Oynatma Fonksiyonları / Video Dosyalarında Görüntü Ayarları
       </p>
       <Box className="container">

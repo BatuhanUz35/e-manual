@@ -4,17 +4,17 @@ import caution from "../../assets/images/safety/Caution-Icon.png"
 import info from "../../assets/images/icons/info.png"
 import elektrik from "../../assets/images/safety/voltage_voltage_new.png"
 import guide from "../../assets/images/icons/guide.png"
-import { Box } from "@mui/material";
+import { Box, Table, TableCell, TableRow } from "@mui/material";
 
 export default function kılavuz() {
  
   return (
-    <Box className="page" onScroll={console.log(document.body.scrollTop)}>
-      <p classname="text">Ana sayfa / Lütfen önce bu kılavuzu okuyun!</p>
+    <Box className="page">
+      <p>Ana sayfa / Lütfen önce bu kılavuzu okuyun!</p>
       <Box className="container">
         <h1>Lütfen önce bu kılavuzu okuyun!</h1>
-        <p classname="text">Değerli Müşterimiz,</p>
-        <p classname="text">
+        <p>Değerli Müşterimiz,</p>
+        <p>
           Bu ürünü tercih ettiğniz için teşekkür ederiz. Yüksek kalite ve
           teknoloji ile üretilmiş olan ürününüzün size en iyi verimi sunmasını
           istiyoruz. Bunun için, bu kılavuzun tamamını ve verilen diğer
@@ -23,11 +23,11 @@ export default function kılavuz() {
           kılavuzunu da birlikte verin. Kullanma kılavuzunda belirtilen tüm
           bilgi ve uyarıları dikkate alarak talimatlara uyun.
         </p>
-        <p classname="text">
+        <p>
           Bu kullanma kılavuzunun başka modeller için de geçerli olabileceğini
           unutmayın.
         </p>
-        <p classname="text">
+        <p>
           Kullanma kılavuzu birden fazla model içeriyorsa, modeller arasındaki
           farklar kılavuzda açık bir şekilde belirtilmiştir.
         </p>
@@ -35,24 +35,24 @@ export default function kılavuz() {
         <h4>
           Kullanma kılavuzunda ve ürün üzerinde şu semboller yer almaktadır:
         </h4>
-        <table>
-          <tr class="row">
-            <td class="column-sm"><img src={caution} alt="Caution" className="icon"/></td>
-            <td class="column-l">Ölüm veya yaralanmalarda sonuçlanabilecek tehlike.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm"><img src={info} alt="Info" className="icon"/></td>
-            <td class="column-l">Önemli bilgiler veya kullanımla igili faydalı ipuçları.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm"><img src={elektrik} alt="Electric" className="icon"/></td>
-            <td class="column-l">Elektrik çarpmasına karşı uyarı.</td>
-          </tr>
-          <tr class="row">
-            <td class="column-sm"><img src={guide} alt="kılavuz" className="icon"/></td>
-            <td class="column-l">Kullanma kılavuzunu okuyun.</td>
-          </tr>
-        </table>
+        <Table>
+          <TableRow>
+            <TableCell class="table-cell column-sm"><img src={caution} alt="Caution" className="icon"/></TableCell>
+            <TableCell class="table-cell">Ölüm veya yaralanmalarda sonuçlanabilecek tehlike.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="table-cell column-sm"><img src={info} alt="Info" className="icon"/></TableCell>
+            <TableCell class="table-cell">Önemli bilgiler veya kullanımla igili faydalı ipuçları.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="table-cell column-sm"><img src={elektrik} alt="Electric" className="icon"/></TableCell>
+            <TableCell class="table-cell">Elektrik çarpmasına karşı uyarı.</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell class="table-cell column-sm"><img src={guide} alt="kılavuz" className="icon"/></TableCell>
+            <TableCell class="table-cell">Kullanma kılavuzunu okuyun.</TableCell>
+          </TableRow>
+        </Table>
       </Box>
     </Box>
   );

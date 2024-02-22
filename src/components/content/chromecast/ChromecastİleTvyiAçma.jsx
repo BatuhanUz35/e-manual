@@ -8,7 +8,7 @@ import back from "../../../assets/images/icons/back.png";
 export default function ChromecastİleTvyiAçma() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Chromecast Built-in™ / Chromecast ile TV'yi Açma
       </p>
       <Box className="container">

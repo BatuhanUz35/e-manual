@@ -17,7 +17,7 @@ export default function HomeMenüsüAyarları() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV / Home Menüsü Ayarları</p>
+      <p>Ana sayfa / Android TV / Home Menüsü Ayarları</p>
       <Box className="container">
         <h1>Home Menüsü Ayarları</h1>
         <ol>

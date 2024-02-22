@@ -17,7 +17,7 @@ export default function FabrikaAyarlarınaSıfırlama() {
   const focused_item = useSelector((state) => state.menu.focused_item);
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Cihaz Tercihleri / Hakkında / Fabrika Ayarlarına Sıfırlama
       </p>
       <Box className="container">

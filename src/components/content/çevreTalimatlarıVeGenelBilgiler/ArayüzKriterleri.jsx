@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 export default function ArayüzKriterleri() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Çevre Talimatları ve Genel Bilgiler / Arayüz Kriterleri ile İlgili Bilgiler
       </p>
       <Box className="container">

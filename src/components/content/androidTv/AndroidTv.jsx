@@ -16,7 +16,7 @@ export default function AndroidTv() {
   const dispatch = useDispatch();
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Android TV</p>
+      <p>Ana sayfa / Android TV</p>
       <Box className="container">
         <h1>Android TV</h1>
         <h2>Ek bilgiler</h2>

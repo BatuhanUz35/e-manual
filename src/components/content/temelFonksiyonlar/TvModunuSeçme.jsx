@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 export default function SesAyarları() {
   return (
     <Box className="page">
-      <p classname="text">Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Açma ve Kapatma</p>
+      <p>Ana sayfa / Televizyonun Çalıştırılması Temel Fonksiyonlar / Açma ve Kapatma</p>
       <Box className="container">
         <h1>Açma ve Kapatma</h1>
         <ol>

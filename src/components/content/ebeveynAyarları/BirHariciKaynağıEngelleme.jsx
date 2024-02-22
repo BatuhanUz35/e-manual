@@ -6,7 +6,7 @@ import { ol } from "./BirHariciKaynağıEngelleme_";
 export default function BirHariciKaynağıEngelleme() {
   return (
     <Box className="page">
-      <p classname="text">
+      <p>
         Ana sayfa / Ebeveyn Ayarları / Bir Harici Kaynağı Engelleme
       </p>
       <Box className="container">
