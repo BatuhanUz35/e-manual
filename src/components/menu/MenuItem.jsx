@@ -23,53 +23,64 @@ const MenuItem = () => {
   const focused_item = useSelector((state) => state.menu.focused_item);
   const dispatch = useDispatch();
 
-  const focusItemAction = (itemId) => {
+  // To handle awaiting dispatch before any other action
+  const focusItemAction = (itemId) => { 
     return async (dispatch) => {
       await dispatch(focus_item(itemId));
       document.getElementById(itemId).focus();
     };
   };
 
+  // It is used to find the last item of opened level 2 subcategory
   const findL2Subcategory = (id) => {
-    const mainCategory = MenuItems.find(item => item.id === id - id % 10000);
-    const l1SubCategory = mainCategory.subcategory.find(item => item.id === id - id % 100);
-    const lastItem = l1SubCategory.subcategory[l1SubCategory.subcategory.length - 1];
+    const mainCategory = MenuItems?.find(item => item.id === id - id % 10000);
+    const l1SubCategory = mainCategory?.subcategory.find(item => item.id === id - id % 100);
+    const lastItem = l1SubCategory?.subcategory[l1SubCategory.subcategory.length - 1];
     return lastItem;
   };
 
+  // Used to find the last item of opened level 1 subcategory
   const findL1Subcategory = (id) => {
     const mainCategory = MenuItems.find(item => item.id === id - id % 10000);
     const lastItem = mainCategory.subcategory[mainCategory.subcategory.length - 1];
     return lastItem;
   };
 
+  // Handles direction key buttons
   function handleKeyDown(event) {
     switch (event.key) {
+      // Goes to displayed page
       case "ArrowRight":
         dispatch(focusItemAction(999));
         break;
+      // Go down functions
       case "ArrowDown":
         event.preventDefault();
+        // From level 2 item to level 2 item inside the same level 2 subcategory
         if(active_l2_subcategory !== null &&
           (focused_item % 1000 - focused_item % 100) === active_l2_subcategory % 1000 &&
           document.getElementById(focused_item + 1) !== null){
             dispatch(focusItemAction(focused_item + 1));
           }
+        // From level 2 item to level 1 item when focused on the last item of a level 2 subcategory
         else if (active_l1_subcategory !== null && focused_item % 100 !== 0 &&
             focused_item.toString()[0] === active_l1_subcategory.toString()[0] &&
             document.getElementById(focused_item - focused_item %100 + 100) !== null){
             dispatch(focusItemAction(focused_item - focused_item %100 + 100));
           }
+        // From level 1 item to level 1 item
         else if (active_l1_subcategory !== null &&
           focused_item - focused_item %10000 === active_l1_subcategory &&
           document.getElementById(focused_item + 100) !== null){
           dispatch(focusItemAction(focused_item + 100));
           }
+        // From level 1 item to main category item when focused on the last item of a level 1 subcategory
         else if (active_l1_subcategory !== null &&
           focused_item - focused_item %10000 === active_l1_subcategory &&
           document.getElementById(focused_item + 100) === null){
             dispatch(focusItemAction(Math.round(focused_item/10000) * 10000 + 10000));
           }  
+        // From level main category item to main category item
         else if (document.getElementById((Math.round(focused_item/1000)*1000) + 10000) !== null) {
           dispatch(focusItemAction(focused_item + 10000));
         }
@@ -77,14 +88,17 @@ const MenuItem = () => {
         break;
       case "ArrowUp":
         event.preventDefault();
+        // If at the first main category item go to menu button
         if(focused_item === 0){
-          dispatch(focusItemAction(9999)); // If on top go to menu button
+          dispatch(focusItemAction(9999)); 
         }
-        else if (active_l2_subcategory && // Inside of level 2 and from level 2 to 1
-          focused_item % 100 !== 0 && document.getElementById(focused_item - 1) !== null){
+        // Inside of level 2 subcategory and from level 2 subcategory item to level 1 subcategory item
+        else if (active_l2_subcategory && 
+          focused_item % 100 !== 0 && document.getElementById(focused_item - 1)){
           dispatch(focusItemAction(focused_item - 1));
         }
-        else if (active_l2_subcategory && // from main category to level 2
+        // From main category item to level 2 subcategory item
+        else if (active_l2_subcategory && 
           document.getElementById(active_l2_subcategory+1) &&
           active_l2_subcategory - active_l2_subcategory % 10000 === focused_item - 10000 &&
           active_l2_subcategory === findL1Subcategory(active_l1_subcategory).id &&
@@ -92,26 +106,28 @@ const MenuItem = () => {
           const lastItem = (findL2Subcategory(active_l2_subcategory))
           dispatch(focusItemAction(lastItem.id));
         }
-        else if (active_l2_subcategory && // from level 1 to level 2
+        // From level 1 subcategory item to level 2 subcategory item
+        else if (active_l2_subcategory && 
           active_l2_subcategory === focused_item - 100 &&
-          
-          document.getElementById(focused_item - 100)){
+          document.getElementById(focused_item - 100 + 1)){
           const lastItem = (findL2Subcategory(active_l2_subcategory))
           dispatch(focusItemAction(lastItem.id));
         } 
-        else if (active_l1_subcategory && // from main to level 1
+        // From main category item to level 1 subcategory item
+        else if (active_l1_subcategory && 
           active_l1_subcategory === focused_item - 10000 &&
           document.getElementById(focused_item - 10000)){
           const lastItem = (findL1Subcategory(active_l1_subcategory))
           dispatch(focusItemAction(lastItem.id));
         }
-       
-        else if (active_l1_subcategory  && // level 1 to level 1 and to main
+        // Level 1 subcategory item to level 1 subcategory item or to main category item
+        else if (active_l1_subcategory  && 
           focused_item.toString()[0] === active_l1_subcategory.toString()[0] &&
           document.getElementById(focused_item - 100)){
           dispatch(focusItemAction(focused_item - 100));
         }
-        else if (document.getElementById(focused_item - 10000)) { // from main to main
+        // From main category item to main category item
+        else if (document.getElementById(focused_item - 10000)) { 
           dispatch(focusItemAction(focused_item - 10000));
         }
         console.log(focused_item)

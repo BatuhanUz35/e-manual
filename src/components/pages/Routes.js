@@ -303,1227 +303,1842 @@ import EkBilgiler from "../content/EkBilgiler";
 import Sözlük from "../content/Sözlük";
 import SorunGiderme from "../content/SorunGiderme";
 import MüşteriMemnuniyetiPolitikası from "../content/MüşteriMemnuniyetiPolitikası";
+import Results from "../searchbar/Results";
 
 export const routes = [
   { 
     path: "/",
     element: Anasayfa,
+    title: "Ana Sayfa",
+    focus_item: 0,
   },
   { 
     path: "/kılavuz",
     element: Kılavuz,
-    id: "1"
+    title: "Lütfen önce bu kılavuzu okuyun!",
+    focus_item: 10000
   },
   { 
     path: "/güvenlik-talimatları",
-    element: GüvenlikTalimatları
+    element: GüvenlikTalimatları,
+    title: "Güvenlik Talimatları",
+    focus_item: 20000,
   },
   { 
     path: "/güvenlik-talimatları/kullanım-amacı",
-    element: KullanımAmacı
+    element: KullanımAmacı,
+    title: "Kullanım Amacı",
+    focus_item: 20100
   },
   { 
     path: "/güvenlik-talimatları/elektrik-güvenliği",
-    element: ElektrikGüvenliği
+    element: ElektrikGüvenliği,
+    title: "Elektrik Güvenliği",
+    focus_item: 20200
   },
   { 
     path: "/güvenlik-talimatları/yangın-güvenliği",
-    element: YangınGüvenliği
+    element: YangınGüvenliği,
+    title: "Yangın Güvenliği",
+    focus_item: 20300
   },
   { 
     path: "/güvenlik-talimatları/taşıma-güvenliği",
-    element: TaşımaGüvenliği
+    element: TaşımaGüvenliği,
+    title: "Taşıma Güvenliği",
+    focus_item: 20400
   },
   { 
     path: "/güvenlik-talimatları/kurulum-güvenliği",
-    element: KurulumGüvenliği
+    element: KurulumGüvenliği,
+    title: "Kurulum Güvenliği",
+    focus_item: 20500
   },
   { 
     path: "/güvenlik-talimatları/çocuk-savunmasız-kişi-ve-evcil-hayvan-güvenliği",
-    element: ÇocukSavunmasızKişiVeEvcilHayvanGüvenliği
+    element: ÇocukSavunmasızKişiVeEvcilHayvanGüvenliği,
+    title: "Çocuk, Savunmasız Kişi ve Evcil Hayvan Güvenliği",
+    focus_item: 20600
   },
   { 
     path: "/güvenlik-talimatları/bakım-ve-temizlik-güvenliği",
-    element: BakımVeTemizlikGüvenliği
+    element: BakımVeTemizlikGüvenliği,
+    title: "Bakım ve Temizlik Güvenliği",
+    focus_item: 20700
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler",
-    element: ÇevreTalimatlarıVeGenelBilgiler
+    element: ÇevreTalimatlarıVeGenelBilgiler,
+    title: "Çevre Talimatları ve Genel Bilgiler",
+    focus_item: 30000,
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/yönetmelik-ve-atık",
-    element: YönetmelikVeAtık
+    element: YönetmelikVeAtık,
+    title: "AEEE Yönetmeliğine Uyum ve Atık Ürünün Elden Çıkarılması",
+    focus_item: 30100
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/pil-atıkları",
-    element: PilAtıkları
+    element: PilAtıkları,
+    title: "Pil Atıkları ile İlgili Bilgiler",
+    focus_item: 30200
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/ambalaj-imha",
-    element: Ambalajİmha
+    element: Ambalajİmha,
+    title: "Ambalajın İmha Edilmesi ile İlgili Bilgiler",
+    focus_item: 30300
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/pcb-uygunluğu",
-    element: PcbUygunluğu
+    element: PcbUygunluğu,
+    title: "PCB Uygunluğu ile İlgili Bilgiler",
+    focus_item: 30400
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/arayüz-kriterleri",
-    element: ArayüzKriterleri
+    element: ArayüzKriterleri,
+    title: "Arayüz Kriterleri ile İlgili Bilgiler",
+    focus_item: 30500
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/enerji-tasarrufu",
-    element: EnerjiTasarrufu
+    element: EnerjiTasarrufu,
+    title: "Enerji Tasarrufu ile İlgili Bilgiler",
+    focus_item: 30600
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/durağan-resimler",
-    element: DurağanResimler
+    element: DurağanResimler,
+    title: "Durağan Resimler ile İlgili Bilgiler",
+    focus_item: 30700
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/yazılım-güncelleme",
-    element: YazılımGüncelleme
+    element: YazılımGüncelleme,
+    title: "Yazılım Güncellemesi ile İlgili Bilgiler",
+    focus_item: 30800
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/elektromanyetik-gürültü",
-    element: ElektromanyetikGürültü
+    element: ElektromanyetikGürültü,
+    title: "Elektromanyetik Gürültü ile İlgili Bilgiler",
+    focus_item: 30900
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/ab-direktifleri",
-    element: ABDirektifleri
+    element: ABDirektifleri,
+    title: "AB Direktifleri",
+    focus_item: 31000
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/türkiyedeki-müşteriler",
-    element: TürkiyedekiMüşteriler
+    element: TürkiyedekiMüşteriler,
+    title: "Türkiye'deki Müşteriler İçin Not",
+    focus_item: 31100
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/arka-kapak-işaretler",
-    element: ArkaKapakİşaretler
+    element: ArkaKapakİşaretler,
+    title: "Cihazın Arka Kapağında Bulunabilecek İşaretler ile İlgili Bilgiler",
+    focus_item: 31200
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/lisanslar",
-    element: Lisanslar
+    element: Lisanslar,
+    title: "Lisanslar ile İlgili Bilgiler",
+    focus_item: 31300
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-1",
-    element: KablosuzLan1
+    element: KablosuzLan1,
+    title: "Kablosuz LAN Modülü Spesifikasyonu",
+    focus_item: 31400
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-lan-2",
-    element: KablosuzLan2
+    element: KablosuzLan2,
+    title: "Kablosuz LAN Modülü Spesifikasyonu",
+    focus_item: 31500
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/bluetooth",
-    element: Bluetooth
+    element: Bluetooth,
+    title: "Bluetooth(*) Modülü Spesifikasyonu",
+    focus_item: 31600
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/yetkili-satıcılar",
-    element: YetkiliSatıcılar
+    element: YetkiliSatıcılar,
+    title: "Yetkili Satıcılar İçin Servis Bilgileri",
+    focus_item: 31700
   },
   { 
     path: "/çevre-talimatları-ve-genel-bilgiler/kablosuz-wlan",
-    element: KablosuzWlan
+    element: KablosuzWlan,
+    title: "Kablosuz (WLAN) Bağlantı İçin Notlar",
+    focus_item: 31800
   },
   { 
     path: "/ürün",
-    element: Ürün
+    element: Ürün,
+    title: "Ürününüz",
+    focus_item: 40000,
   },
   { 
     path: "/ürün/paketin-içindekiler",
-    element: Paketinİçindekiler
+    element: Paketinİçindekiler,
+    title: "Paketin İçindekiler",
+    focus_item: 40100
   },
   { 
     path: "/ürün/kurulum-veya-asma",
-    element: KurulumVeyaAsma
+    element: KurulumVeyaAsma,
+    title: "Kurulum veya Asma",
+    focus_item: 40200,
   },
   { 
     path: "/ürün/kurulum-veya-asma/ayaklı-kurulum",
-    element: AyaklıKurulum
+    element: AyaklıKurulum,
+    title: "Ayaklı Kurulum",
+    focus_item: 40201
   },
   { 
     path: "/ürün/kurulum-veya-asma/vesa-montaj",
-    element: VesaMontaj
+    element: VesaMontaj,
+    title: "VESA Montaj Kiti ile Montaj Hazırlığı",
+    focus_item: 40202
   },
   { 
     path: "/ürün/uzaktan-kumanda-pil",
-    element: UzaktanKumandaPil
+    element: UzaktanKumandaPil,
+    title: "Uzaktan Kumandaya Pillerin Takılması",
+    focus_item: 40300
   },
   { 
     path: "/ürün/ürün-tanıtımı",
-    element: ÜrünTanıtımı
+    element: ÜrünTanıtımı,
+    title: "Ürün Tanıtımı",
+    focus_item: 40400,
   },
   { 
     path: "/ürün/tuş-takımı",
-    element: TuşTakımı
+    element: TuşTakımı,
+    title: "Tuş Takımı",
+    focus_item: 40500,
   },
   { 
     path: "/ürün/tuş-takımı/bekleme-konumu-açılma",
-    element: BeklemeKonumuAçılma
+    element: BeklemeKonumuAçılma,
+    title: "Cihazın Bekleme Konumundan Açılması",
+    focus_item: 40501
   },
   { 
     path: "/ürün/tuş-takımı/bekleme-konumuna-alma",
-    element: BeklemeKonumunaAlma
+    element: BeklemeKonumunaAlma,
+    title: "Cihazın Bekleme Konumuna Alınması",
+    focus_item: 40502
   },
   { 
     path: "/ürün/tuş-takımı/uyku-konumu",
-    element: UykuKonumu
+    element: UykuKonumu,
+    title: "Cihazın Uyku Konumuna Alınması ve Açılması",
+    focus_item: 40503
   },
   { 
     path: "/ürün/anten-ve-elektrik-kablosu",
-    element: AntenVeElektrikKablosu
+    element: AntenVeElektrikKablosu,
+    title: "Anten ve Elektrik Kablosunu Bağlama",
+    focus_item: 40600,
   },
   { 
     path: "/ürün/anten-ve-elektrik-kablosu/dvbs-anten-bağlantısı",
-    element: DvbsAntenBağlantısı
+    element: DvbsAntenBağlantısı,
+    title: "DVB-S Uydu Anten Bağlantısı",
+    focus_item: 40601
   },
   { 
     path: "/ürün/anten-ve-elektrik-kablosu/dvbt-dvbc-ve-analog-anten-bağlantısı",
-    element: DvbtDvbcVeAnalogAntenBağlantısı
+    element: DvbtDvbcVeAnalogAntenBağlantısı,
+    title: "DVB-T, DVB-C ve Analog Anten Bağlantısı",
+    focus_item: 40602
   },
   { 
     path: "/ürün/anten-ve-elektrik-kablosu/elektrik-bağlantısı",
-    element: ElektrikBağlantısı
+    element: ElektrikBağlantısı,
+    title: "Elektrik Bağlantısı",
+    focus_item: 40603
   },
   { 
     path: "/ürün/uzaktan-kumanda" ,
-    element: UzaktanKumanda
+    element: UzaktanKumanda,
+    title: "Uzaktan Kumanda",
+    focus_item: 40700
   },
   { 
     path: "/ayarlar" ,
-    element: Ayarlar
+    element: Ayarlar,
+    title: "Ayarlar",
+    focus_item: 50000,
   },
   { 
     path: "/ayarlar/hazırlık" ,
-    element: Hazırlık
+    element: Hazırlık,
+    title: "Hazırlık",
+    focus_item: 50100,
   },
   { 
     path: "/ayarlar/kurulum" ,
-    element: Kurulum
+    element: Kurulum,
+    title: "İlk Kurulum ve Televizyonu Ayarlama",
+    focus_item: 50200,
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme" ,
-    element: DijitalKanallarıDüzenleme
+    element: DijitalKanallarıDüzenleme,
+    title: "Dijital Kanalları Düzenleme",
+    focus_item: 50300,
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-düzenleyici" ,
-    element: KanalDüzenleyici
+    element: KanalDüzenleyici,
+    title: "Kanal Düzenleyici Uygulamasını Başlatma",
+    focus_item: 50301
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/yayın-kaynağı-seçimi" ,
-    element: YayınKaynağıSeçimi
+    element: YayınKaynağıSeçimi,
+    title: "Yayın Kaynağı Seçimi",
+    focus_item: 50302
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/favori-listesi-oluşturma" ,
-    element: FavoriListesiOluşturma
-  },
-  { 
-    path: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-yeri-değiştirme" ,
-    element: FavoriListesindeKanalYeriDeğiştirme
+    element: FavoriListesiOluşturma,
+    title: "Favori Listesi Oluşturma",
+    focus_item: 50303
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-taşıma" ,
-    element: FavoriListesindeKanalTaşıma
+    element: FavoriListesindeKanalTaşıma,
+    title: "Favori Listesinde Kanal Taşıma",
+    focus_item: 50304
+  },
+  { 
+    path: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinde-kanal-yeri-değiştirme" ,
+    element: FavoriListesindeKanalYeriDeğiştirme,
+    title: "Favori Listesinde Kanal Yeri Değiştirme",
+    focus_item: 50305
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/favori-listesinden-kanal-silme" ,
-    element: FavoriListesindenKanalSilme
+    element: FavoriListesindenKanalSilme,
+    title: "Favori Listesinden Kanal Silme",
+    focus_item: 50306
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-taşıma" ,
-    element: KanalTaşıma
+    element: KanalTaşıma,
+    title: "Kanal Taşıma",
+    focus_item: 50307
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-yerini-değiştirme" ,
-    element: KanalYeriniDeğiştirme
+    element: KanalYeriniDeğiştirme,
+    title: "Kanal Yerini Değiştirme",
+    focus_item: 50308
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-silme" ,
-    element: KanalSilme
+    element: KanalSilme,
+    title: "Kanal Silme",
+    focus_item: 50309
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-listesini-silme" ,
-    element: KanalListesiniSilme
+    element: KanalListesiniSilme,
+    title: "Kanal Listesini Silme",
+    focus_item: 50310
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-düzenleme" ,
-    element: KanalDüzenleme
+    element: KanalDüzenleme,
+    title: "Kanal Düzenleme",
+    focus_item: 50311
   },
   { 
     path: "/ayarlar/dijital-kanalları-düzenleme/kanal-atlatma" ,
-    element: KanalAtlatma
+    element: KanalAtlatma,
+    title: "Kanal Atlatma",
+    focus_item: 50312
   },
   { 
     path: "/ayarlar/görüntü-ayarları" ,
-    element: GörüntüAyarları
+    element: GörüntüAyarları,
+    title: "Görüntü Ayarları",
+    focus_item: 50400,
   },
   { 
     path: "/ayarlar/görüntü-ayarları/arttırılmış-görüntü-ayarları" ,
-    element: ArttırılmışGörüntüAyarları
+    element: ArttırılmışGörüntüAyarları,
+    title: "Arttırılmış Görüntü Ayarları",
+    focus_item: 50401
   },
   { 
     path: "/ayarlar/görüntü-ayarları/görüntü-ayarlarını-fabrika-ayarlarına-döndürme" ,
-    element: GörüntüAyarlarınıFabrikaAyarlarınaDöndürme
+    element: GörüntüAyarlarınıFabrikaAyarlarınaDöndürme,
+    title: "Görüntü Ayarlarını Fabrika Ayarlarına Döndürme",
+    focus_item: 50402
   },
   { 
     path: "/ayarlar/ses-ayarları",
-    element: SesAyarları
+    element: SesAyarları,
+    title: "Ses Ayarları",
+    focus_item: 50500,
   },
   { 
     path: "/ayarlar/ses-ayarları/sistem-sesleri",
-    element: SistemSesleri
+    element: SistemSesleri,
+    title: "Sistem Sesleri",
+    focus_item: 50501
   },
   { 
     path: "/ayarlar/ses-ayarları/balans",
-    element: Balans
+    element: Balans,
+    title: "Balans",
+    focus_item: 50502
   },
   { 
     path: "/ayarlar/ses-ayarları/bas",
-    element: Bas
+    element: Bas,
+    title: "Bas",
+    focus_item: 50503
   },
   { 
     path: "/ayarlar/ses-ayarları/tiz",
-    element: Tiz
+    element: Tiz,
+    title: "Tiz",
+    focus_item: 50504
   },
   { 
     path: "/ayarlar/ses-ayarları/surround-ses",
-    element: SurroundSes
+    element: SurroundSes,
+    title: "Surround Ses",
+    focus_item: 50505
   },
   { 
     path: "/ayarlar/ses-ayarları/ekolayzer",
-    element: Ekolayzer
+    element: Ekolayzer,
+    title: "Ekolayzer",
+    focus_item: 50506
   },
   { 
     path: "/ayarlar/ses-ayarları/hoparlör-gecikmesi",
-    element: HoparlörGecikmesi
+    element: HoparlörGecikmesi,
+    title: "Hoparlör Gecikmesi",
+    focus_item: 50507
   },
   { 
     path: "/ayarlar/ses-ayarları/earc",
-    element: Earc
+    element: Earc,
+    title: "eARC",
+    focus_item: 50508
   },
   { 
     path: "/ayarlar/ses-ayarları/dijital-giriş",
-    element: DijitalGiriş
+    element: DijitalGiriş,
+    title: "Dijital Giriş",
+    focus_item: 50509
   },
   { 
     path: "/ayarlar/ses-ayarları/dijital-çıkış",
-    element: DijitalÇıkış
+    element: DijitalÇıkış,
+    title: "Dijital Çıkış",
+    focus_item: 50510
   },
   { 
     path: "/ayarlar/ses-ayarları/spdif-gecikmesi",
-    element: SpdifGecikmesi
+    element: SpdifGecikmesi,
+    title: "SPDIF Gecikmesi",
+    focus_item: 50511
   },
   { 
     path: "/ayarlar/ses-ayarları/dijital-çıkış-gecikmesi",
-    element: DijitalÇıkışGecikmesi
+    element: DijitalÇıkışGecikmesi,
+    title: "Dijital Çıkış Gecikmesi",
+    focus_item: 50512
   },
   { 
     path: "/ayarlar/ses-ayarları/otomatik-ses",
-    element: OtomatikSes
+    element: OtomatikSes,
+    title: "Otomatik Ses",
+    focus_item: 50513
   },
   { 
     path: "/ayarlar/ses-ayarları/downmix-modu",
-    element: DownmixModu
+    element: DownmixModu,
+    title: "Downmix Modu",
+    focus_item: 50514
   },
   { 
     path: "/ayarlar/ses-ayarları/dts-drc",
-    element: DtsDrc
+    element: DtsDrc,
+    title: "DTS DRC",
+    focus_item: 50515
   },
   { 
     path: "/ayarlar/ses-ayarları/ses-ayarlarını-fabrika-ayarlarına-döndürme",
-    element: SesAyarlarınıFabrikaAyarlarınaDöndürme
+    element: SesAyarlarınıFabrikaAyarlarınaDöndürme,
+    title: "Ses Ayarlarını Fabrika Ayarlarına Döndürme",
+    focus_item: 50516
   },
   { 
     path: "/temel-fonksiyonlar",
-    element: TemelFonksiyonlar
+    element: TemelFonksiyonlar,
+    title: "Televizyonun Çalıştırılması Temel Fonksiyonlar",
+    focus_item: 60000,
   },
   { 
     path: "/temel-fonksiyonlar/açma-ve-kapatma",
-    element: AçmaVeKapatma
+    element: AçmaVeKapatma,
+    title: "Açma ve Kapatma",
+    focus_item: 60100
   },
   { 
     path: "/temel-fonksiyonlar/tv-modunu-seçme",
-    element: TvModunuSeçme
+    element: TvModunuSeçme,
+    title: "TV Modunu Seçme",
+    focus_item: 60200
   },
   { 
     path: "/temel-fonksiyonlar/sinyal-kaynağı-ve-anten-tipini-seçme",
-    element: SinyalKaynağıVeAntenTipiniSeçme
+    element: SinyalKaynağıVeAntenTipiniSeçme,
+    title: "Sinyal Kaynağı ve Anten Tipini Seçme",
+    focus_item: 60300
   },
   { 
     path: "/temel-fonksiyonlar/kanalları-seçme",
-    element: KanallarıSeçme
+    element: KanallarıSeçme,
+    title: "Kanalları Seçme",
+    focus_item: 60400
   },
   { 
     path: "/temel-fonksiyonlar/ses-seviyesini-ayarlama",
-    element: SesSeviyesiniAyarlama
+    element: SesSeviyesiniAyarlama,
+    title: "Ses Seviyesini Ayarlama",
+    focus_item: 60500
   },
   { 
     path: "/temel-fonksiyonlar/sesi-kapatma",
-    element: SesiKapatma
+    element: SesiKapatma,
+    title: "Sesi Kapatma (Mute)",
+    focus_item: 60600
   },
   { 
     path: "/temel-fonksiyonlar/ses-stili",
-    element: SesStili
+    element: SesStili,
+    title: "Ses Stili",
+    focus_item: 60700
   },
   { 
     path: "/temel-fonksiyonlar/resim-modu",
-    element: ResimModu
+    element: ResimModu,
+    title: "Resim Modu",
+    focus_item: 60800
   },
   { 
     path: "/temel-fonksiyonlar/görüntü-formatını-değiştirme",
-    element: GörüntüFormatınıDeğiştirme
+    element: GörüntüFormatınıDeğiştirme,
+    title: "Görüntü Formatını Değiştirme",
+    focus_item: 60900
   },
   { 
     path: "/temel-fonksiyonlar/güç-ayarları",
-    element: GüçAyarları
+    element: GüçAyarları,
+    title: "Güç Ayarları",
+    focus_item: 61000,
   },
   { 
     path: "/temel-fonksiyonlar/güç-ayarları/uyku-zamanlayıcısı",
-    element: UykuZamanlayıcısı
+    element: UykuZamanlayıcısı,
+    title: "Uyku Zamanlayıcısı",
+    focus_item: 61001
   },
   { 
     path: "/temel-fonksiyonlar/güç-ayarları/kapanma-zamanlayıcısı",
-    element: KapanmaZamanlayıcısı
+    element: KapanmaZamanlayıcısı,
+    title: "Kapanma Zamanlayıcısı",
+    focus_item: 61002
+    
   },
   { 
     path: "/temel-fonksiyonlar/güç-ayarları/görüntüyü-kapatma",
-    element: GörüntüyüKapatma
+    element: GörüntüyüKapatma,
+    title: "Görüntüyü Kapatma",
+    focus_item: 61003
   },
   { 
     path: "/temel-fonksiyonlar/güç-ayarları/sinyal-olmadığında-otomatik-kapanma",
-    element: SinyalOlmadığındaOtomatikKapanma
+    element: SinyalOlmadığındaOtomatikKapanma,
+    title: "Sinyal Olmadığında Otomatik Kapanma",
+    focus_item: 61004
   },
   { 
     path: "/temel-fonksiyonlar/elektronik-tv-rehberi",
-    element: ElektronikTvRehberi
+    element: ElektronikTvRehberi,
+    title: "Elektronik TV Rehberi",
+    focus_item: 61100
   },
   { 
     path: "/gelişmiş-fonksiyonlar" ,
-    element: GelişmişFonksiyonlar
+    element: GelişmişFonksiyonlar,
+    title: "Televizyonun Çalıştırılması Gelişmiş Fonksiyonlar",
+    focus_item: 70000,
   },
   { 
     path: "/gelişmiş-fonksiyonlar/ses-dilinin-değiştirilmesi" ,
-    element: SesDilininDeğiştirilmesi
+    element: SesDilininDeğiştirilmesi,
+    title: "Ses Dilinin Değiştirilmesi",
+    focus_item: 70100
   },
   { 
     path: "/gelişmiş-fonksiyonlar/ses-dili" ,
-    element: SesDili
+    element: SesDili,
+    title: "Ses Dili",
+    focus_item: 70200
   },
   { 
     path: "/gelişmiş-fonksiyonlar/mavi-ekran" ,
-    element: MaviEkran
+    element: MaviEkran,
+    title: "Mavi Ekran",
+    focus_item: 70300
   },
   { 
     path: "/gelişmiş-fonksiyonlar/varsayılan-kanal" ,
-    element: VarsayılanKanal
+    element: VarsayılanKanal,
+    title: "Varsayılan Kanal",
+    focus_item: 70400
   },
   { 
     path: "/gelişmiş-fonksiyonlar/etkileşim-kanalı" ,
-    element: EtkileşimKanalı
+    element: EtkileşimKanalı,
+    title: "Etkileşim Kanalı",
+    focus_item: 70500
   },
   { 
     path: "/gelişmiş-fonksiyonlar/mheg-pin-koruması" ,
-    element: MhegPinKoruması
+    element: MhegPinKoruması,
+    title: "MHEG PIN Koruması",
+    focus_item: 70600
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar" ,
-    element: Altyazılar
+    element: Altyazılar,
+    title: "Altyazılar",
+    focus_item: 70700,
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar/analog-altyazı" ,
-    element: AnalogAltyazı
+    element: AnalogAltyazı,
+    title: "Analog Altyazı",
+    focus_item: 70701
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı" ,
-    element: DijitalAltyazı
+    element: DijitalAltyazı,
+    title: "Dijital Altyazı",
+    focus_item: 70702
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar/dijital-altyazı-dili" ,
-    element: DijitalAltyazıDili
+    element: DijitalAltyazıDili,
+    title: "Dijital Altyazı Dili",
+    focus_item: 70703
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar/ikinci-dijital-altyazı-dili" ,
-    element: İkinciDijitalAltyazıDili
+    element: İkinciDijitalAltyazıDili,
+    title: "İkinci Dijital Altyazı Dili",
+    focus_item: 70704
   },
   { 
     path: "/gelişmiş-fonksiyonlar/altyazılar/altyazı-türü" ,
-    element: AltyazıTürü
+    element: AltyazıTürü,
+    title: "Altyazı Türü",
+    focus_item: 70705
   },
   { 
     path: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi" ,
-    element: TeleteksDilSeçimi
+    element: TeleteksDilSeçimi,
+    title: "Teleteks Dil Seçimi",
+    focus_item: 70800,
   },
   { 
     path: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/dijital-teleteks-dili" ,
-    element: DijitalTeleteksDili
+    element: DijitalTeleteksDili,
+    title: "Dijital Teletesk Dili",
+    focus_item: 70801
   },
   { 
     path: "/gelişmiş-fonksiyonlar/teleteks-dil-seçimi/sayfa-deşifre-etme-dili" ,
-    element: SayfaDeşifreEtmeDili
+    element: SayfaDeşifreEtmeDili,
+    title: "Sayfa Deşifre Etme dili",
+    focus_item: 70802
   },
   { 
     path: "/gelişmiş-fonksiyonlar/biss-anahtarı" ,
-    element: BissAnahtarı
+    element: BissAnahtarı,
+    title: "BISS Anahtarı",
+    focus_item: 70900
   },
   { 
     path: "/gelişmiş-fonksiyonlar/tkgs-ayarları" ,
-    element: TkgsAyarları
+    element: TkgsAyarları,
+    title: "TKGS Ayarları",
+    focus_item: 71000,
   },
   { 
     path: "/gelişmiş-fonksiyonlar/tkgs-ayarları/çalışma-şekli" ,
-    element: ÇalışmaŞekli
+    element: ÇalışmaŞekli,
+    title: "Çalışma Şekli",
+    focus_item: 71001
   },
   { 
     path: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tkgs-konum-listesi" ,
-    element: TkgsKonumListesi
+    element: TkgsKonumListesi,
+    title: "TKGS Konum Listesi",
+    focus_item: 71002
   },
   { 
     path: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tablo-versiyonu-sıfırlama" ,
-    element: TabloVersiyonunuSıfırlama
+    element: TabloVersiyonunuSıfırlama,
+    title: "Tablo Versiyonu Sıfırlama",
+    focus_item: 71003
   },
   { 
     path: "/gelişmiş-fonksiyonlar/tkgs-ayarları/tercih-edilen-liste" ,
-    element: TercihEdilenListe
+    element: TercihEdilenListe,
+    title: "Tercih Edilen Liste",
+    focus_item: 71004
   },
   { 
     path: "/gelişmiş-fonksiyonlar/sinyal-bilgileri" ,
-    element: SinyalBilgileri
+    element: SinyalBilgileri,
+    title: "Sinyal Bilgileri",
+    focus_item: 71100
   },
   { 
     path: "/hbbtv" ,
-    element: HbbTv
+    element: HbbTv,
+    title: "HBBTV",
+    focus_item: 80000,
   },
   { 
     path: "/hbbtv/hbbtv-nedir" ,
-    element: HbbTvNedir
+    element: HbbTvNedir,
+    title: "HbbTV Nedir?",
+    focus_item: 80100
   },
   { 
     path: "/hbbtv/hbbtv-kullanımı" ,
-    element: HbbTvKullanımı
+    element: HbbTvKullanımı,
+    title: "HbbTV'nin Kullanımı",
+    focus_item: 80200
   },
   { 
     path: "/hbbtv/video-dizinleri-için-ek-fonksiyonlar" ,
-    element: VideoDizinleri
+    element: VideoDizinleri,
+    title: "Video Dizinleri İçin Ek Fonksiyonlar",
+    focus_item: 80300
   },
   { 
     path: "/hbbtv/hbbtv-ayarları" ,
-    element: HbbTvAyarları
+    element: HbbTvAyarları,
+    title: "HBBTV Ayarları",
+    focus_item: 80400,
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/hbbtv-desteği" ,
-    element: HbbTvDesteği
+    element: HbbTvDesteği,
+    title: "HBBTV Desteği",
+    focus_item: 80401
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/izleme-tercihi" ,
-    element: İzlemeTercihi
+    element: İzlemeTercihi,
+    title: "İzleme Tercihi",
+    focus_item: 80402
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/çerez-ayarları" ,
-    element: ÇerezAyarları
+    element: ÇerezAyarları,
+    title: "Çerez Ayarları",
+    focus_item: 80403
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/kalıcı-depolama" ,
-    element: KalıcıDepolama
+    element: KalıcıDepolama,
+    title: "Kalıcı Depolama",
+    focus_item: 80404
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/izleme-sitelerini-engelle" ,
-    element: İzlemeSiteleriniEngelle
+    element: İzlemeSiteleriniEngelle,
+    title: "İzleme Sitelerini Engelle",
+    focus_item: 80405
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/cihaz-kimliği" ,
-    element: CihazKimliği
+    element: CihazKimliği,
+    title: "Cihaz Kimliği",
+    focus_item: 80406
   },
   { 
     path: "/hbbtv/hbbtv-ayarları/cihaz-kimliğini-sıfırlama" ,
-    element: CihazKimliğiniSıfırlama
+    element: CihazKimliğiniSıfırlama,
+    title: "Cihaz Kimliğini Sıfırlama",
+    focus_item: 80407
   },
   { 
     path: "/teleteks" ,
-    element: Teleteks
+    element: Teleteks,
+    title: "Teleteks",
+    focus_item: 90000,
   },
   { 
     path: "/teleteks/top-tekst-veya-flof-tekst-modu" ,
-    element: TopTekstVeyaFlofTekstModu
+    element: TopTekstVeyaFlofTekstModu,
+    title: "TOP Tekst veya FLOF Tekst Modu",
+    focus_item: 90100
   },
   { 
     path: "/teleteks/normal-tekst-modu" ,
-    element: NormalTextModu
+    element: NormalTextModu,
+    title: "Normal Tekst Modu",
+    focus_item: 90200
   },
   { 
     path: "/usb-kayıt" ,
-    element: UsbKayıt
+    element: UsbKayıt,
+    title: "USB Kayıt",
+    focus_item: 100000,
   },
   {
     path: "/usb-kayıt/televizyon-programlarının-kaydedilmesi-ve-oynatılmasıyla-ilgili-bilgiler",
-    element: TelevizyonProgramlarınınKaydedilmesiVeOynatılması
+    element: TelevizyonProgramlarınınKaydedilmesiVeOynatılması,
+    title: "Televizyon Programlarının Kaydedilmesi ve Oynatılmasıyla İlgili Bilgiler",
+    focus_item: 100100
   },
   {
     path: "/usb-kayıt/harici-veri-ortamı-kullanımında-muhtemel-kısıtlamalar",
-    element: HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar
+    element: HariciVeriOrtamıKullanımındaMuhtemelKısıtlamalar,
+    title: "Harici Veri Ortamı Kullanımında Muhtemel Kısıtlamalar",
+    focus_item: 100200
   },    
   {
     path: "/usb-kayıt/harici-veri-ortamının-bağlanması",
-    element: HariciVeriOrtamınınBağlanması
+    element: HariciVeriOrtamınınBağlanması,
+    title: "Harici Veri Ortamının Bağlanması",
+    focus_item: 100300
   },   
   {
     path: "/usb-kayıt/usb-kayıt-ayarları",
-    element: UsbKayıtAyarları
+    element: UsbKayıtAyarları,
+    title: "USB Kayıt Ayarları",
+    focus_item: 100400,
   },     
   {
     path: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamının-biçimlendirilmesi",
-    element: VeriOrtamınınBiçimlendirilmesi
+    element: VeriOrtamınınBiçimlendirilmesi,
+    title: "Veri Ortamının Biçimlendirilmesi",
+    focus_item: 100401
   },     
   {
     path: "/usb-kayıt/usb-kayıt-ayarları/kayıt-zaman-kaydırma-için-veri-ortamın-seçilmesi",
-    element: KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi
+    element: KayıtZamanKaydırmaİçinVeriOrtamınınSeçilmesi,
+    title: "Kayıt / Zaman Kaydırma için Veri Ortamnın Seçilmesi",
+    focus_item: 100402
   },    
   {
     path: "/usb-kayıt/usb-kayıt-ayarları/veri-ortamı-testi",
-    element: VeriOrtamıTesti
+    element: VeriOrtamıTesti,
+    title: "Veri Ortamı Testi",
+    focus_item: 100403
   },  
   {
     path: "/usb-kayıt/zaman-kaydırma-fonksiyonunun-açılıp-kapatılması",
-    element: ZamanKaydırmaFonksiyonununAçılıpKapatılması
+    element: ZamanKaydırmaFonksiyonununAçılıpKapatılması,
+    title: "Zaman Kaydırma Fonksiyonunun Açılıp / Kapatılması",
+    focus_item: 100500
   },  
   {
     path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu",
-    element: ZamanKaydırmaDiskKurulumu
+    element: ZamanKaydırmaDiskKurulumu,
+    title: "Zaman Kaydırma Disk Kurulumu",
+    focus_item: 100600,
   },  
   {
     path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/otomatik-kurulum",
-    element: OtomatikKurulum
+    element: OtomatikKurulum,
+    title: "Otomatik Kurulum",
+    focus_item: 100601
   },  
   {
     path: "/usb-kayıt/zaman-kaydırma-disk-kurulumu/manuel-kurulum",
-    element: ManuelKurulum
+    element: ManuelKurulum,
+    title: "Manuel Kurulum",
+    focus_item: 100602
   },  
   {
     path: "/usb-kayıt/zaman-kaydırma-ve-sürekli-kayıt-ile-programların-duraklatılması",
-    element: ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması
+    element: ZamanKaydırmaVeSürekliKayıtİleProgramlarınDuraklatılması,
+    title: "Zaman Kaydırma ve Sürekli Kayıt ile Programların Duraklatılması",
+    focus_item: 100700
   },  
   {
     path: "/usb-kayıt/programları-kaydetme",
-    element: ProgramlarıKaydetme
+    element: ProgramlarıKaydetme,
+    title: "Programları Kaydetme",
+    focus_item: 100800,
   },  
   {
     path: "/usb-kayıt/programları-kaydetme/kayıt-sırasında-televizyonun-bekleme-konumuna-alınması",
-    element: KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması
+    element: KayıtSırasındaTelevizyonunBeklemeKonumunaAlınması,
+    title: "Kayıt Sırasında Televizyonun Bekleme Konumuna Alınması",
+    focus_item: 100801
   },  
   {
     path: "/usb-kayıt/programları-kaydetme/kanal-listesinden-bir-programı-kaydetme",
-    element: KanalListesindenBirProgramıKaydetme
+    element: KanalListesindenBirProgramıKaydetme,
+    title: "Kanal Listesinden Bir Programı Kaydetme",
+    focus_item: 100802
   },  
   {
     path: "/usb-kayıt/kayıt-zamanlayıcısı",
-    element: KayıtZamanlayıcısı
+    element: KayıtZamanlayıcısı,
+    title: "Kayıt Zamanlayıcısı",
+    focus_item: 100900,
   },  
   {
     path: "/usb-kayıt/programları-kayıt-zamanlayıcısı/elektronik-program-rehberi-kullan-kayıt-zamanlayıcı-eklenmesi",
-    element: ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi
+    element: ElektronikProgramRehberiKullanarakKayıtZamanlayıcıEklenmesi,
+    title: "Elektronik Program Rehberi Kullanarak Kayıt Zamanlayıcı Eklenmesi",
+    focus_item: 100901
   },  
   {
     path: "/usb-kayıt/kayıt-zamanlayıcısı/bilgileri-manuel-girerek-kayıt-zamanlayıcı-eklenmmesi",
-    element: BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi
+    element: BilgileriManuelGirerekKayıtZamanlayıcıEklenmesi,
+    title: "Bilgileri Manuel Girerek Kayıt Zamanlayıcı Eklenmesi",
+    focus_item: 100902
   },  
   {
     path: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-düzenlenmesi",
-    element: KayıtZamanlayıcısınınDüzenlenmesi
+    element: KayıtZamanlayıcısınınDüzenlenmesi,
+    title: "Kayıt Zamanlayıcısının Düzenlenmesi",
+    focus_item: 100903
   },  
   {
     path: "/usb-kayıt/kayıt-zamanlayıcısı/kayıt-zamanlayıcısının-silinmesi",
-    element: KayıtZamanlayıcısınınSilinmes
+    element: KayıtZamanlayıcısınınSilinmes,
+    title: "Kayıt Zamanlayıcısının Silinmesi",
+    focus_item: 100904
   },  
   {
     path: "/usb-kayıt/oynatma",
-    element: Oynatma
+    element: Oynatma,
+    title: "Oynatma",
+    focus_item: 101000,
   },  
   {
     path: "/usb-kayıt/oynatma/kayıtlı-dosyalar-listesinden-bir-kayıt-oynatma",
-    element: KayıtlıDosyalarListesindenBirKayıtOynatma
+    element: KayıtlıDosyalarListesindenBirKayıtOynatma,
+    title: "Kayıtlı Dosyalar Listesinden Bir Kayıt Oynatma",
+    focus_item: 101001
   },  
   {
     path: "/usb-kayıt/oynatma/ileri-geri-görüntü-arama",
-    element: İleriGeriGörüntüArama
+    element: İleriGeriGörüntüArama,
+    title: "İleri / Geri Görüntü Arama",
+    focus_item: 101002
   },  
   {
     path: "/usb-kayıt/kaydedilenler-listesinden-kaydedilmiş-yayınların-silinmesi",
-    element: KaydedilenlerListesindenKaydedilmişYayınlarınSilinmesi
+    element: KaydedilenlerListesindenKaydedilmişYayınlarınSilinmesi,
+    title: "Kaydedilenler Listesinden Kaydedilmiş Yayınların Silinmesi",
+    focus_item: 101100
   },  
   {
     path: "/usb-oynatıcı",
-    element: UsbOynatıcı
+    element: UsbOynatıcı,
+    title: "USB Oynatıcı",
+    focus_item: 110000,
   },  
   {
     path: "/usb-oynatıcı/dosya-formatları",
-    element: DosyaFormatları
+    element: DosyaFormatları,
+    title: "Dosya Formatları",
+    focus_item: 110100,
   },  
   {
     path: "/usb-oynatıcı/dosya-formatları/video-verileri",
-    element: VideoVerileri
+    element: VideoVerileri,
+    title: "Video Verileri",
+    focus_item: 110101
   },  
   {
     path: "/usb-oynatıcı/dosya-formatları/ses-verileri",
-    element: SesVerileri
+    element: SesVerileri,
+    title: "Ses Verileri",
+    focus_item: 110102
   },  
   {
     path: "/usb-oynatıcı/dosya-formatları/görüntü-verileri",
-    element: GörüntüVerileri
+    element: GörüntüVerileri,
+    title: "Görüntü Verileri",
+    focus_item: 110103
   },  
   {
     path: "/usb-oynatıcı/harici-veri-ortamının-bağlanması",
-    element: HariciVeriOrtamınınBağlanması_2
+    element: HariciVeriOrtamınınBağlanması_2,
+    title: "Harici Veri Ortamının Bağlanması",
+    focus_item: 110200
   },  
   {
     path: "/usb-oynatıcı/harici-veri-ortamının-çıkartılması",
-    element: HariciVeriOrtamınınÇıkarılması_2
+    element: HariciVeriOrtamınınÇıkarılması_2,
+    title: "Harici Veri Ortamının Çıkartılması",
+    focus_item: 110300
   },  
   {
     path: "/usb-oynatıcı/multi-medya-player-menüsü",
-    element: MultiMedyaPlayerMenüsü
+    element: MultiMedyaPlayerMenüsü,
+    title: "Multi Medya Player Menüsü",
+    focus_item: 110400
   },  
   {
     path: "/usb-oynatıcı/oynatma-çalma-temel-fonksiyonlar",
-    element: OynatmaÇalmaTemelFonksiyonlar
+    element: OynatmaÇalmaTemelFonksiyonlar,
+    title: "Oynatma/Çalma Temel Fonksiyonlar",
+    focus_item: 110500
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları",
-    element: İlaveOynatmaFonksiyonları
+    element: İlaveOynatmaFonksiyonları,
+    title: "İlave Oynatma Fonksiyonları",
+    focus_item: 110600,
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/tüm-dosya-formatında-bilgileri-görüntüleme",
-    element: TümDosyaFormatındaBilgileriGörüntüleme
+    element: TümDosyaFormatındaBilgileriGörüntüleme,
+    title: "Tüm Dosya Formatında Bilgileri Görüntüleme",
+    focus_item: 110601
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ileri-geri-görüntü-arama",
-    element: İleriGeriGörüntüArama_2
+    element: İleriGeriGörüntüArama_2,
+    title: "İleri / Geri görüntü Arama",
+    focus_item: 110602
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-dosyalarında-istenilen-süreye-gitme",
-    element: VideoDosyalarındaİstenilenSüreyeGitme
+    element: VideoDosyalarındaİstenilenSüreyeGitme,
+    title: "Video Dosyalarında İstenilen Süreye Gitme",
+    focus_item: 110603
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/tekrarlama-fonksiyonu",
-    element: TekrarlamaFonksiyonu
+    element: TekrarlamaFonksiyonu,
+    title: "Tekrarlama Fonksiyonu",
+    focus_item: 110604
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-dosyalarında-görüntü-ayarları",
-    element: VideoDosyalarındaGörüntüAyarları
+    element: VideoDosyalarındaGörüntüAyarları,
+    title: "Video Dosyalarında Görüntü Ayarı",
+    focus_item: 110605
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/video-ve-ses-dosyalarında-ses-ayarları",
-    element: VideoVeSesDosyalarındaSesAyarları
+    element: VideoVeSesDosyalarındaSesAyarları,
+    title: "Video ve Ses Dosyalarında Ses Ayarları",
+    focus_item: 110606
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ses-dosyalarını-karışık-çalma",
-    element: SesDosyalarınıKarışıkÇalma
+    element: SesDosyalarınıKarışıkÇalma,
+    title: "Ses Dosyalarını Karışık Çalma",
+    focus_item: 110607
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/ses-dosyalarını-ekran-kapalı-çalma",
-    element: SesDosyalarınıEkranKapalıÇalma
+    element: SesDosyalarınıEkranKapalıÇalma,
+    title: "Ses Dosyalarını Ekran Kapalı Çalma",
+    focus_item: 110608
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/resim-görüntüsünü-döndürme",
-    element: ResimGörüntüsünüDöndürme
+    element: ResimGörüntüsünüDöndürme,
+    title: "Resim Görüntüsünü Dönüdrme",
+    focus_item: 110609
   },  
   {
     path: "/usb-oynatıcı/ilave-oynatma-fonksiyonları/resim-görüntüsünü-büyütme",
-    element: ResimGörüntüsünüBüyütme
+    element: ResimGörüntüsünüBüyütme,
+    title: "Resim Görüntüsünü Büyütme (Zoom)",
+    focus_item: 110610
   },  
   {
     path: "/android-tv",
-    element: AndroidTv
+    element: AndroidTv,
+    title: "Android TV",
+    focus_item: 120000,
   },  
   {
     path: "/android-tv/şartlar-koşullar-ve-gizlilik",
-    element: ŞartlarKoşullarVeGizlilik
+    element: ŞartlarKoşullarVeGizlilik,
+    title: "Şartlar, Koşullar Ve Gizlilik",
+    focus_item: 120100
   },  
   {
     path: "/android-tv/google-hesabıyla-oturum-açma",
-    element: GoogleHesabıylaOturumAçma
+    element: GoogleHesabıylaOturumAçma,
+    title: "Google Hesabıyla Oturum Açma",
+    focus_item: 120200
   },  
   {
     path: "/android-tv/home-menü",
-    element: HomeMenü
+    element: HomeMenü,
+    title: "Home Menü (Ana Ekran)",
+    focus_item: 120300
   },  
   {
     path: "/android-tv/home-menüsünü-açma",
-    element: HomeMenüsünüAçma
+    element: HomeMenüsünüAçma,
+    title: "Home Menüsünü Açma",
+    focus_item: 120400
   },  
   {
     path: "/android-tv/home-menüsü-ayarları",
-    element: HomeMenüsüAyarları
+    element: HomeMenüsüAyarları,
+    title: "Home Menüsü Ayarları",
+    focus_item: 120500,
   },  
   {
     path: "/android-tv/home-menüsü-ayarları/home-menüsünde-kanalları-özelleştirme",
-    element: HomeMenüsündeKanallarıÖzelleştirme
+    element: HomeMenüsündeKanallarıÖzelleştirme,
+    title: "Home Menüsünde Kanalları Özelleştirme",
+    focus_item: 120501
   },  
   {
     path: "/android-tv/home-menüsü-ayarları/home-menüsü-kanallarında-video-ses-ön-izlemesi",
-    element: HomeMenüsüKanallarındaVideoSesÖnİzlemesi
+    element: HomeMenüsüKanallarındaVideoSesÖnİzlemesi,
+    title: "Home Menüsü Kanallarında Video / Ses Ön İzlemesi",
+    focus_item: 120502
   },  
   {
     path: "/android-tv/home-menüsü-ayarları/home-menü-uygulamalar-sekmesindeki-uygulamaların-sıralanması",
-    element: HomeMenüUygulamalarSekmesindekiUygulamalarınSıralanması
+    element: HomeMenüUygulamalarSekmesindekiUygulamalarınSıralanması,
+    title: "Home Menü Uygulamalar Sekmesindeki Uygulamaların Sıralanması",
+    focus_item: 120503
   },  
   {
     path: "/android-tv/home-menüsü-ayarları/home-menü-oyunlar-sekmesindeki-uygulamaların-sıralanması",
-    element: HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması
+    element: HomeMenüOyunlarSekmesindekiUygulamalarınSıralanması,
+    title: "Home Menü Oyunlar Sekmesindeki Uygulamaların Sıralanması",
+    focus_item: 120504
   },
   {
     path: "/android-tv/home-menüsü-ayarları/home-menü-açık-kaynak-lisansları",
-    element: HomeMenüAçıkKaynakLisansları
+    element: HomeMenüAçıkKaynakLisansları,
+    title: "Home Menü Açık Kaynak Lisansları",
+    focus_item: 120505
   },
   {
     path: "/android-tv/google-play-storedan-uygulama-yükleme",
-    element: GooglePlayStoredanUygulamaYükleme
+    element: GooglePlayStoredanUygulamaYükleme,
+    title: "Google Play Store'dan Uygulama Yükleme",
+    focus_item: 120600
   },
   {
     path: "/android-tv/yüklü-bir-uygulamanın-başlatılması",
-    element: YüklüBirUygulamanınBaşlatılması
+    element: YüklüBirUygulamanınBaşlatılması,
+    title: "Yüklü Bir Uygulamanın Başlatılması",
+    focus_item: 120700
   },
   {
     path: "/android-tv/home-menüsü-uygulamalar-sekmesine-favori-uygulamaların-eklenmesi",
-    element: HomeMenüsüUygulamalarSekmesineFavoriUygulamalarınEklenmesi
+    element: HomeMenüsüUygulamalarSekmesineFavoriUygulamalarınEklenmesi,
+    title: "Home Menüsü Uygulamalar Sekmesine Favori Uygulamaların Eklenmesi",
+    focus_item: 120800
   },
   {
     path: "/android-tv/home-menüsü-uygulamalar-sekmesinden-favori-uygulamaların-kaldırılması",
-    element: HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması
+    element: HomeMenüsüUygulamalarSekmesindenFavoriUygulamalarınKaldırılması,
+    title: "Home Menüsü Uygulamalar Sekmesinden Favori Uygulamaların Kaldırılması",
+    focus_item: 120900
   },
   {
     path: "/android-tv/uygulamalar-sekmesindeki-uygulamaların-sıralanması",
-    element: UygulamalarSekmesindekiUygulamalarınSıralanması
+    element: UygulamalarSekmesindekiUygulamalarınSıralanması,
+    title: "Uygulamalar Sekmesindeki Uygulamaların Sıralanması",
+    focus_item: 121000
   },
   {
     path: "/android-tv/uygulama-ayarları",
-    element: UygulamaAyarları
+    element: UygulamaAyarları,
+    title: "Uygulama Ayarları",
+    focus_item: 121100,
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulamaların-kaldırılması",
-    element: UygulamalarınKaldırılması
+    element: UygulamalarınKaldırılması,
+    title: "Uygulamaların Kaldırılması",
+    focus_item: 121101
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulamaların-zorla-durdurulması",
-    element: UygulamalarınZorlaDurdurulması
+    element: UygulamalarınZorlaDurdurulması,
+    title: "Uygulamaların Zorla Durdurulması",
+    focus_item: 121102
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-verilerini-temizleme",
-    element: UygulamaVerileriniTemizleme
+    element: UygulamaVerileriniTemizleme,
+    title: "Uygulama Verilerini Temzileme",
+    focus_item: 121103
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-önbelleğinin-temizlenmesi",
-    element: UygulamaÖnBelleğininTemizlenmesi
+    element: UygulamaÖnBelleğininTemizlenmesi,
+    title: "Uygulama Önbelleğinin Temizlenmesi",
+    focus_item: 121104
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-varsayılan-ayarları",
-    element: UygulamaVarsayılanAyarları
+    element: UygulamaVarsayılanAyarları,
+    title: "Uygulama Varsayılan Ayarları",
+    focus_item: 121105
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-bildirimleri",
-    element: UygulamaBildirimleri
+    element: UygulamaBildirimleri,
+    title: "Uygulama Bildirimleri",
+    focus_item: 121106
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-izinleri",
-    element: Uygulamaİzinleri
+    element: Uygulamaİzinleri,
+    title: "Uygulama İzinleri",
+    focus_item: 121107
   },
   {
     path: "/android-tv/uygulama-ayarları/özel-uygulama-erişimi",
-    element: ÖzelUygulamaErişimi
+    element: ÖzelUygulamaErişimi,
+    title: "Özel Uygulama Erişimi",
+    focus_item: 121108
   },
   {
     path: "/android-tv/uygulama-ayarları/uygulama-güvenlik-ve-kısıtlamaları",
-    element: UygulamaGüvenlikVeKısıtlamaları
+    element: UygulamaGüvenlikVeKısıtlamaları,
+    title: "Uygulama Güvenlik ve Kısıtlamaları",
+    focus_item: 121109
   },
   {
     path: "/chromecast-built-in",
-    element: Chromecast
+    element: Chromecast,
+    title: "Chromecast Built-in™",
+    focus_item: 130000,
   },
   {
     path: "/chromecast-built-in/chromecast-ile-tvyi-açma",
-    element: ChromecastİleTvyiAçma
+    element: ChromecastİleTvyiAçma,
+    title: "Chromecast ile TV'yi Açma",
+    focus_item: 130100
   },
   {
     path: "/chromecast-built-in/chromecasti-android-veya-ios-mobil-cihazda-kullanma",
-    element: ChromecastiAndroidVeyaIosMobilCihazdaKullanma
+    element: ChromecastiAndroidVeyaIosMobilCihazdaKullanma,
+    title: "Chromecast'i Android veya İOS Mobil Cihazda Kullanma",
+    focus_item: 130200
   },
   {
     path: "/chromecast-built-in/pc-ile-chrome-tarayıcı-sekmesini-tvnizde-yayınlama",
-    element: PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama
+    element: PcİleChromeTarayıcıSekmesiniTvnizdeYayınlama,
+    title: "PC ile Chrome Tarayıcı Sekmesini TV'nizde Yayınlama",
+    focus_item: 130300
   },
   {
     path: "/chromecast-built-in/bilgisayar-ekranını-tvde-yayınlama",
-    element: BilgisayarEkranınıTvdeYayınlama
+    element: BilgisayarEkranınıTvdeYayınlama,
+    title: "Bilgisayar Ekranını TV'de Yayınlama",
+    focus_item: 130400
   },
   {
     path: "/chromecast-built-in/bilgisayardan-müzik-veya-video-dosyalarını-tvde-yayınlama",
-    element: BilgisayardanMüzikVeyaVideoDosyalarınıTvdeYayınlama
+    element: BilgisayardanMüzikVeyaVideoDosyalarınıTvdeYayınlama,
+    title: "Bilgisayardan Müzik Veya Video Dosyalarını TV'de Yayınlama",
+    focus_item: 130500
   },
   {
     path: "/cihaz-tercihleri",
-    element: CihazTercihleri
+    element: CihazTercihleri,
+    title: "Cihaz Tercihleri",
+    focus_item: 140000,
   },
   {
     path: "/cihaz-tercihleri/hakkında",
-    element: Hakkında
+    element: Hakkında,
+    title: "Hakkında",
+    focus_item: 140100,
   },
   {
     path: "/cihaz-tercihleri/hakkında/sistem-güncellemesi",
-    element: SistemGüncellemesi
+    element: SistemGüncellemesi,
+    title: "Sistem Güncellemesi",
+    focus_item: 140101,
   },
   {
     path: "/cihaz-tercihleri/hakkında/cihaz-adı-değiştirme",
-    element: CihazAdıDeğiştirme
+    element: CihazAdıDeğiştirme,
+    title: "Cihaz Adı Değiştirme",
+    focus_item: 140102,
   },
   {
     path: "/cihaz-tercihleri/hakkında/fabrika-ayarlarına-sıfırlama",
-    element: FabrikaAyarlarınaSıfırlama
+    element: FabrikaAyarlarınaSıfırlama,
+    title: "Fabrika Ayarlarına Sıfırlama",
+    focus_item: 140103,
   },
   {
     path: "/cihaz-tercihleri/hakkında/durum-bilgisi-görüntüleme",
-    element: DurumBilgisiGörüntüleme
+    element: DurumBilgisiGörüntüleme,
+    title: "Durum Bilgisi Görüntüleme",
+    focus_item: 140104,
   },
   {
     path: "/cihaz-tercihleri/hakkında/yasal-bilgileri-görüntüleme",
-    element: YasalBilgileriGörüntüleme
+    element: YasalBilgileriGörüntüleme,
+    title: "Yasal Bilgileri Görüntüleme",
+    focus_item: 140105,
   },
   {
     path: "/cihaz-tercihleri/hakkında/diğer-bilgileri-görüntüleme",
-    element: DiğerBilgileriGörüntüleme
+    element: DiğerBilgileriGörüntüleme,
+    title: "Diğer Bilgileri Görüntüleme",
+    focus_item: 140106,
   },
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları",
-    element: TarihVeSaatAyarları
+    element: TarihVeSaatAyarları,
+    title: "Tarih ve Saat Ayarları",
+    focus_item: 140200,
   },
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/otomatik-tarih-ve-saat-ayarı",
-    element: OtomatikTarihVeSaatAyarı
+    element: OtomatikTarihVeSaatAyarı,
+    title: "Otomatik Tarih ve Saat Ayarı",
+    focus_item: 140201,
   },
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/manuel-tarih-ve-saat-ayarı",
-    element: ManuelTarihVeSaatAyarı
+    element: ManuelTarihVeSaatAyarı,
+    title: "Manuel Tarih ve Saat Ayarı",
+    focus_item: 140202,
   },
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/saat-dilimini-ayarlama",
-    element: SaatDiliminiAyarlama
+    element: SaatDiliminiAyarlama,
+    title: "Saat Dilimini Ayarlama",
+    focus_item: 140203,
   },
   {
     path: "/cihaz-tercihleri/tarih-ve-saat-ayarları/saat-biçimini-ayarlama",
-    element: SaatBiçiminiAyarlama
+    element: SaatBiçiminiAyarlama,
+    title: "Saat Biçimini Ayarlama",
+    focus_item: 140204,
   },
   {
     path: "/cihaz-tercihleri/zamanlayıcı-ayarları",
-    element: ZamanlayıcıAyarları
+    element: ZamanlayıcıAyarları,
+    title: "Zamanlayıcı Ayarları",
+    focus_item: 140300,
   },
   {
     path: "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-açılma-zamanlayıcısı",
-    element: OtomatikAçılmaZamanlayıcısı
+    element: OtomatikAçılmaZamanlayıcısı,
+    title: "Otomatik Açılma Zamanlayıcısı",
+    focus_item: 140301,
   },
   {
     path: "/cihaz-tercihleri/zamanlayıcı-ayarları/otomatik-kapanma-zamanlayıcısı",
-    element: OtomatikKapanmaZamanlayıcısı
+    element: OtomatikKapanmaZamanlayıcısı,
+    title: "Otomatik Kapanma Zamanlayıcısı",
+    focus_item: 140302,
   },
   {
     path: "/cihaz-tercihleri/dil-ayarları",
-    element: DilAyarları
+    element: DilAyarları,
+    title: "Dil Ayarları",
+    focus_item: 140400
   },
   {
     path: "/cihaz-tercihleri/klavye-ayarları",
-    element: KlavyeAyarları
+    element: KlavyeAyarları,
+    title: "Klavye Ayarları",
+    focus_item: 140500,
   },
   {
     path: "/cihaz-tercihleri/klavye-ayarları/mevcut-klavye-ayarları",
-    element: MevcutKlavyeAyarları
+    element: MevcutKlavyeAyarları,
+    title: "Mevcut Klavye Ayarları",
+    focus_item: 140501,
   },
   {
     path: "/cihaz-tercihleri/klavye-ayarları/gboard-ayarları",
-    element: GboardAyarları
+    element: GboardAyarları,
+    title: "Gboard Ayarları",
+    focus_item: 140502,
   },
   {
     path: "/cihaz-tercihleri/klavye-ayarları/klavyeleri-yönet",
-    element: KlavyeleriYönet
+    element: KlavyeleriYönet,
+    title: "Klavyeleri Yönet",
+    focus_item: 140503,
   },
   {
     path: "/cihaz-tercihleri/depolama-ayarları",
-    element: DepolamaAyarları
+    element: DepolamaAyarları,
+    title: "Depolama Ayarları",
+    focus_item: 140600,
   },
   {
     path: "/cihaz-tercihleri/depolama-ayarları/dahili-depolama-alanı",
-    element: DahiliDepolamaAlanı
+    element: DahiliDepolamaAlanı,
+    title: "Dahili Depolama Alanı",
+    focus_item: 140601,
   },
   {
     path: "/cihaz-tercihleri/depolama-ayarları/çıkarılabilir-depolama-alanı",
-    element: ÇıkarılabilirDepolamaAlanı
+    element: ÇıkarılabilirDepolamaAlanı,
+    title: "Çıkarılabilir Depolama Alanı",
+    focus_item: 140602,
   },
   {
     path: "/cihaz-tercihleri/depolama-ayarları/çıkarılabilir-depolama-alanını-dahili-depolama-alanı-olarak-kullanma",
-    element: ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma
+    element: ÇıkarılabilirDepolamaAlanınıDahiliDepolamaAlanıOlarakKullanma,
+    title: "Çıkarılabilir Depolama Alanını Dahili Depolama Alanı Olarak Kullanma",
+    focus_item: 140603,
   },
   {
     path: "/cihaz-tercihleri/mağaza-modu-ayarları",
-    element: MağazaModuAyarları
+    element: MağazaModuAyarları,
+    title: "Mağaza Modu Ayarları",
+    focus_item: 140700
   },
   {
     path: "/cihaz-tercihleri/google-asistan-ayarları",
-    element: GoogleAsistanAyarları
+    element: GoogleAsistanAyarları,
+    title: "Google Asistan Ayarları",
+    focus_item: 140800
   },
   {
     path: "/cihaz-tercihleri/chromecast-built-in-ayarları",
-    element: ChromecastBuiltinAyarları
+    element: ChromecastBuiltinAyarları,
+    title: "Chromecast Built-in Ayarları",
+    focus_item: 140900
   },
   {
     path: "/cihaz-tercihleri/ekran-koruyucu-ayarları",
-    element: EkranKoruyucuAyarları
+    element: EkranKoruyucuAyarları,
+    title: "Ekran Koruyucu Ayarları",
+    focus_item: 141000
   },
   {
     path: "/cihaz-tercihleri/enerji-tasarrufu-ayarları",
-    element: EnerjiTasarrufuAyarları
+    element: EnerjiTasarrufuAyarları,
+    title: "Enerji Tasarrufu Ayarları",
+    focus_item: 141100
   },
   {
     path: "/cihaz-tercihleri/konum-ayarları",
-    element: KonumAyarları
+    element: KonumAyarları,
+    title: "Konum Ayarları",
+    focus_item: 141200
   },
   {
     path: "/cihaz-tercihleri/kullanım-ve-teşhis-ayarları",
-    element: KullanımVeTeşhisAyarları
+    element: KullanımVeTeşhisAyarları,
+    title: "Kullanım ve Teşhis Ayarları",
+    focus_item: 141300
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları",
-    element: ErişilebilirlikAyarları
+    element: ErişilebilirlikAyarları,
+    title: "Erişilebilirlik Ayarları",
+    focus_item: 141400,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/görme-engelliler-için-sesli-tanımlama",
-    element: GörmeEngellilerİçinSesliTanımlama
+    element: GörmeEngellilerİçinSesliTanımlama,
+    title: "Görme Engelliler için Sesli Tanımlama",
+    focus_item: 141401,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/işitme-engelliler-için-sesli-tanımlama",
-    element: İşitmeEngellilerSeçeneğininEtkinleştirilmesi
+    element: İşitmeEngellilerSeçeneğininEtkinleştirilmesi,
+    title: "İşitme Engelliler Seçeneğinin Etkinleştirilmesi",
+    focus_item: 141402,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/seslendiren-altyazı-desteğinin-etkinleştirilmesi",
-    element: SeslendirenAltyazıDesteğininEtkinleştirilmesi
+    element: SeslendirenAltyazıDesteğininEtkinleştirilmesi,
+    title: "Seslendiren Altyazı Desteğinin Etkinleştirilmesi",
+    focus_item: 141403,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/ac4-diyalog-geliştirme-ayarları",
-    element: Ac4DiyalogGeliştirmeAyarları
+    element: Ac4DiyalogGeliştirmeAyarları,
+    title: "AC4 Diyalog Geliştirme Ayarları",
+    focus_item: 141404,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/altyazılar",
-    element: Altyazılar_Erişilebilirlik
+    element: Altyazılar_Erişilebilirlik,
+    title: "Altyazılar",
+    focus_item: 141405,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/yüksek-kontrastlı-metin",
-    element: YüksekKontrastlıMetin
+    element: YüksekKontrastlıMetin,
+    title: "Yüksek Kontrastlı Metin",
+    focus_item: 141406,
   },
   {
     path: "/cihaz-tercihleri/erişilebilirlik-ayarları/metin-konuşma",
-    element: MetinKonuşma
+    element: MetinKonuşma,
+    title: "Metin - Konuşma",
+    focus_item: 141407,
   },
   {
     path: "/cihaz-tercihleri/yeniden-başlatma",
-    element: YenidenBaşlatma
+    element: YenidenBaşlatma,
+    title: "Yeniden Başlatma",
+    focus_item: 141500
   },
   {
     path: "/aksesuarlar",
-    element: Aksesuarlar
+    element: Aksesuarlar,
+    title: "Aksesuarlar",
+    focus_item: 150000,
   },
   {
     path: "/ebeveyn-ayarları",
-    element: EbeveynAyarları
+    element: EbeveynAyarları,
+    title: "Ebeveyn Ayarları",
+    focus_item: 160000,
   },
   {
     path: "/ebeveyn-ayarları/bir-televizyon-kanalını-engelleme",
-    element: BirTelevizyonaKanalınıEngelleme
+    element: BirTelevizyonaKanalınıEngelleme,
+    title: "Bir Televizyon Kanalını Engelleme",
+    focus_item: 160100,
   },
   {
     path: "/ebeveyn-ayarları/engellenmiş-bir-televizyon-kanalını-izleme",
-    element: EngellenmişBirTelevizyonKanalınıİzleme
+    element: EngellenmişBirTelevizyonKanalınıİzleme,
+    title: "Engellenmiş Bir Televizyon Kanalını İzleme",
+    focus_item: 160200,
   },
   {
     path: "/ebeveyn-ayarları/program-kısıtlamaları",
-    element: ProgramKısıtlamaları
+    element: ProgramKısıtlamaları,
+    title: "Program Kısıtlamaları",
+    focus_item: 160300,
   },
   {
     path: "/ebeveyn-ayarları/bir-harici-kaynağı-engelleme",
-    element: BirHariciKaynağıEngelleme
+    element: BirHariciKaynağıEngelleme,
+    title: "Bir Harici Kaynağı Engelleme",
+    focus_item: 160400,
   },
   {
     path: "/ebeveyn-ayarları/engellenmiş-bir-harici-kaynağı-izleme",
-    element: EngellenmişBirHariciKaynağıİzleme
+    element: EngellenmişBirHariciKaynağıİzleme,
+    title: "Engellenmiş Bir Harici Kaynağı İzleme",
+    focus_item: 160500,
   },
   {
     path: "/ebeveyn-ayarları/pin-kodunu-değiştirme",
-    element: PinKodunuDeğiştirme
+    element: PinKodunuDeğiştirme,
+    title: "PIN Kodunu Değiştirme",
+    focus_item: 160600,
   },
   {
     path: "/harici-cihaz-kullanma",
-    element: HariciCihazKullanma
+    element: HariciCihazKullanma,
+    title: "Harici Cihaz Kullanma",
+    focus_item: 170000,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü",
-    element: TüketiciElektroniğiKontrolü
+    element: TüketiciElektroniğiKontrolü,
+    title: "CEC (Tüketici Elektroniği Kontrolü)",
+    focus_item: 170100,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumundan-açılması",
-    element: HariciCihazınBeklemeKonumundanAçılması
+    element: HariciCihazınBeklemeKonumundanAçılması,
+    title: "Harici Cihazın Bekleme Konumundan Açılması",
+    focus_item: 170101,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-kaynağının-seçilmesi",
-    element: HdmiKaynağınınSeçilmesi
+    element: HdmiKaynağınınSeçilmesi,
+    title: "HDMI Kaynağının Seçilmesi",
+    focus_item: 170102,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/menü-dilinin-seçilmesi",
-    element: MenüDilininSeçilmesi
+    element: MenüDilininSeçilmesi,
+    title: "Menü Dilinin Seçilmesi",
+    focus_item: 170103,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/harici-cihazın-bekleme-konumuna-alınması",
-    element: HariciCihazınBeklemeKonumunaAlınması
+    element: HariciCihazınBeklemeKonumunaAlınması,
+    title: "Harici Cihazın Bekleme Konumuna Alınması",
+    focus_item: 170104,
   },
   {
     path: "/harici-cihaz-kullanma/tüketici-elektroniği-kontrolü/hdmi-cec-cihaz-kontrolünü-etkinleştirme",
-    element: HdmiCecCihazKontrolününEtkinleştirilmesi
+    element: HdmiCecCihazKontrolününEtkinleştirilmesi,
+    title: "HDMI CEC Cihaz Kontrolünü Etkinleştirme",
+    focus_item: 170105,
   },
   {
     path: "/harici-cihaz-kullanma/bağlantı-seçenekleri",
-    element: BağlantıSeçenekleri
+    element: BağlantıSeçenekleri,
+    title: "Bağlantı Seçenekleri",
+    focus_item: 170200,
   },
   {
     path: "/harici-cihaz-kullanma/dijital-ses-ve-görüntü-sinyaliyle-harici-cihaz-bağlama",
-    element: DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama
+    element: DijitalSesVeGörüntüSinyaliyleHariciCihazBağlama,
+    title: "Dijital Ses ve Görüntü Sinyaliyle Harici Cihaz Bağlama",
+    focus_item: 170300,
   },
   {
     path: "/harici-cihaz-kullanma/dvd-kayıt-cihazı-dvd-oynatıcı-veya-video-kayıt-cihazı-kullanımı",
-    element: DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı
+    element: DvdKayıtCihazıDvdOynatıcıVeyaVideoKayıtCihazıKullanımı,
+    title: "DVD Kayıt Cihazı, DVD Oynatıcı, veya Video Kayıt Cihazı Kullanımı",
+    focus_item: 170400,
   },
   {
     path: "/harici-cihaz-kullanma/dijital-çok-kanallı-amplifikatör-av-alıcısı-bağlama",
-    element: DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama
+    element: DijitalÇokKanallıAmplifikatörAvAlıcısıBağlama,
+    title: "Dijital Çok kanallı Amplifikatör / AV Alıcısı Bağlama",
+    focus_item: 170500,
   },
   {
     path: "/harici-cihaz-kullanma/ortak-arayüz",
-    element: OrtakArayüz
+    element: OrtakArayüz,
+    title: "CI (Ortak Arayüz)",
+    focus_item: 170600,
   },
   {
     path: "/harici-cihaz-kullanma/ortak-arayüz/ortak-arayüz-nedir",
-    element: OrtakArayüzNedir
+    element: OrtakArayüzNedir,
+    title: "Ortak Arayüz Nedir?",
+    focus_item: 170601,
   },
   {
     path: "/harici-cihaz-kullanma/ortak-arayüz/ca-modülünü-takma",
-    element: CaModülünüTakma
+    element: CaModülünüTakma,
+    title: "CA Modülünü Takma",
+    focus_item: 170602,
   },
   {
     path: "/harici-cihaz-kullanma/ortak-arayüz/ca-modülü-ve-akıllı-kartlar-için-erişim-kontrolü",
-    element: CaModülüVeAkıllıKartlarİçinErişimKontrolü
+    element: CaModülüVeAkıllıKartlarİçinErişimKontrolü,
+    title: "CA Modülü ve Akıllı Kartlar için Erişim Kontrolü",
+    focus_item: 170603,
   },
   {
     path: "/ağ-kurulumu",
-    element: AğKurulumu
+    element: AğKurulumu,
+    title: "Ağ Kurulumu",
+    focus_item: 180000,
   },
   {
     path: "/ağ-kurulumu/kablolu-ağ-bağlantısı",
-    element: KabloluAğBağlantısı
+    element: KabloluAğBağlantısı,
+    title: "Kablolu Ağ Bağlantısı",
+    focus_item: 180100,
   },
   {
     path: "/ağ-kurulumu/kablolu-ağ-ayarları",
-    element: KabloluAğAyarları
+    element: KabloluAğAyarları,
+    title: "Kablolu Ağ Ayarları",
+    focus_item: 180200,
   },
   {
     path: "/ağ-kurulumu/kablolu-ağ-ayarları/otomatik-bağlantı",
-    element: OtomatikBağlantı
+    element: OtomatikBağlantı,
+    title: "Otomatik Bağlantı",
+    focus_item: 180201,
   },
   {
     path: "/ağ-kurulumu/kablolu-ağ-ayarları/manuel-bağlantı",
-    element: ManuelBağlantı
+    element: ManuelBağlantı,
+    title: "Manuel Bağlantı",
+    focus_item: 180202,
   },
   {
     path: "/ağ-kurulumu/kablosuz-ağ-bağlantısı",
-    element: KablosuzAğBağlantısı
+    element: KablosuzAğBağlantısı,
+    title: "Kablosuz Ağ Bağlantısı",
+    focus_item: 180300,
   },
   {
     path: "/ağ-kurulumu/kablosuz-ağ-ayarları",
-    element: KablosuzAğAyarları
+    element: KablosuzAğAyarları,
+    title: "Kablosuz Ağ Ayarları",
+    focus_item: 180400,
   },
   {
     path: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-otomatik-bağlantı",
-    element: AğŞifresiniGirerekOtomatikBağlantı
+    element: AğŞifresiniGirerekOtomatikBağlantı,
+    title: "Ağ Şifresini Girerek Otomatik Bağlantı",
+    focus_item: 180401,
   },
   {
     path: "/ağ-kurulumu/kablosuz-ağ-ayarları/ağ-şifresini-girerek-manuel-bağlantı",
-    element: AğŞifresiniGirerekManuelBağlantı
+    element: AğŞifresiniGirerekManuelBağlantı,
+    title: "Ağ Şifresini Girerek Manuel Bağlantı",
+    focus_item: 180402,
   },
   {
     path: "/ağ-kurulumu/kablosuz-ağ-ayarları/gizli-bir-kablosuz-ağa-bağlantı",
-    element: GizliBirKablosuzAğaBağlantı
+    element: GizliBirKablosuzAğaBağlantı,
+    title: "Gizli Bir Kablosuz Ağa Bağlantı",
+    focus_item: 180403,
   },
   {
     path: "/detaylı-kanal-ayarları",
-    element: DetaylıKanalAyarları
+    element: DetaylıKanalAyarları,
+    title: "Detaylı Kanal Ayarları",
+    focus_item: 190000,
   },
   {
     path: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
-    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması
+    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması,
+    title: "Tek Uydu Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Aranması",
+    focus_item: 190100,
   },
   {
     path: "/detaylı-kanal-ayarları/tek-uydu-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-aranması",
-    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması
+    element: TekUyduBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAranması,
+    title: "Tek Uydu Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Aranması",
+    focus_item: 190200,
   },
   {
     path: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-diseqc-ile-kanalların-otomatik-aranması",
-    element: DijitalUyduKanallarıİçinAntenAyarlarıVeDiseqcİleKanallarınOtomatikAranması
+    element: DijitalUyduKanallarıİçinAntenAyarlarıVeDiseqcİleKanallarınOtomatikAranması,
+    title: "Dijital Uydu Kanalları için Anten Ayarları ve DiSEqC 1.0/1.1 ile Kanalların Otomatik Aranması",
+    focus_item: 190300,
   },
   {
     path: "/detaylı-kanal-ayarları/dijital-uydu-kanalları-için-anten-ayarları-ve-tek-kanal-yönlendirici-sistemi-ile-kanalların-otomatik-aranması",
-    element: DijitalUyduKanallarıİçinAntenAyarlarıVeTekKanalYönlendiriciSistemiİleKanallarınOtomatikAranması
+    element: DijitalUyduKanallarıİçinAntenAyarlarıVeTekKanalYönlendiriciSistemiİleKanallarınOtomatikAranması,
+    title: "Dijital Uydu Kanalları için Anten Ayarları ve Tek Kanal Yönlendirici (SCR) Sistemi ile Kanalların Otomatik Aranması",
+    focus_item: 190400,
   },
   {
     path: "/detaylı-kanal-ayarları/uydu-güncellemesi-ile-yeni-ilave-olan-dijital-kanalların-aranması",
-    element: UyduGüncellemesiİleYeniİlaveOlanDijitalKanallarınAranması
+    element: UyduGüncellemesiİleYeniİlaveOlanDijitalKanallarınAranması,
+    title: "Uydu Güncellemesi ile Yeni İlave Olan Dijital Kanalların Aranması",
+    focus_item: 190500,
   },
   {
     path: "/detaylı-kanal-ayarları/motorlu-anten-ayarları",
-    element: MotorluAntenAyarları
+    element: MotorluAntenAyarları,
+    title: "Motorlu Anten Ayarları",
+    focus_item: 190600,
   },
   {
     path: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-aranması",
-    element: KabloBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması
+    element: KabloBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAranması,
+    title: "Kablo Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Aranması",
+    focus_item: 190700,
   },
   {
     path: "/detaylı-kanal-ayarları/kablo-bağlantılı-dijital-televizyon-kanallarının-manuel-aranması",
-    element: KabloBağlantılıDijitalTelevizyonKanallarınınManuelAranması
+    element: KabloBağlantılıDijitalTelevizyonKanallarınınManuelAranması,
+    title: "Kablo Bağlantılı Dijital Televizyon Kanallarının Manuel Aranması",
+    focus_item: 190800,
   },
   {
     path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-ayarlanması",
-    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAyarlanması
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakAyarlanması,
+    title: "Anten Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Ayarlanması",
+    focus_item: 190900,
   },
   {
     path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
-    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakGüncellenmesi
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınOtomatikOlarakGüncellenmesi,
+    title: "Anten Bağlantılı Dijital Televizyon Kanallarının Otomatik Olarak Güncellenmesi",
+    focus_item: 191000,
   },
   {
     path: "/detaylı-kanal-ayarları/anten-bağlantılı-dijital-televizyon-kanallarının-manuel-olarak-ayarlanması",
-    element: AntenBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAyarlanması
+    element: AntenBağlantılıDijitalTelevizyonKanallarınınManuelOlarakAyarlanması,
+    title: "Anten Bağlantılı Dijital Televizyon Kanallarının Manuel Olarak Ayarlanması",
+    focus_item: 191100,
   },
   {
     path: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-ayarlanması",
-    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakAyarlanması
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakAyarlanması,
+    title: "Anten Bağlantılı Analog Televizyon Kanallarının Otomatik Olarak Ayarlanması",
+    focus_item: 191200,
   },
   {
     path: "/detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-otomatik-olarak-güncellenmesi",
-    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakGüncellenmesi
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınOtomatikOlarakGüncellenmesi,
+    title: "Anten Bağlantılı Analog Televizyon Kanallarının Otomatik Olarak Güncellenmesi",
+    focus_item: 191300,
   },
   {
     path: "detaylı-kanal-ayarları/anten-bağlantılı-analog-televizyon-kanallarının-manuel-olarak-ayarlanması",
-    element: AntenBağlantılıAnalogTelevizyonKanallarınınManuelOlarakAyarlanması
+    element: AntenBağlantılıAnalogTelevizyonKanallarınınManuelOlarakAyarlanması,
+    title: "Anten Bağlantılı Analog Televizyon Kanallarının Manuel Olarak Ayarlanması",
+    focus_item: 191400,
   },
   {
     path: "/ek-bilgiler",
-    element: EkBilgiler
+    element: EkBilgiler,
+    title: "Ek bilgiler",
+    focus_item: 200000,
   },
   {
     path: "/sözlük",
-    element: Sözlük
+    element: Sözlük,
+    title: "Sözlük",
+    focus_item: 210000,
   },
   {
     path: "/sorun-giderme",
-    element: SorunGiderme
+    element: SorunGiderme,
+    title: "Sorun Giderme",
+    focus_item: 220000
   },
   {
     path: "/müşteri-memnuniyeti-politikası",
-    element: MüşteriMemnuniyetiPolitikası
+    element: MüşteriMemnuniyetiPolitikası,
+    title: "Müşteri Memnuniyeti Politikası",
+    focus_item: 230000
+  },
+  {
+    path: "/ara",
+    element: Results
   },
 ]

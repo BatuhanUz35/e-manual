@@ -11,7 +11,7 @@ export default function Anasayfa() {
       <Box className="container">
         <h1 variant="h1">Televizyon </h1>
         <h1>B55 C 985 B</h1>
-        <img src={tv} alt="tv"></img>
+        <img src={tv} alt="tv" className="in-page-img"></img>
       </Box>
     </Box>
   );

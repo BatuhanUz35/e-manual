@@ -18,8 +18,15 @@ const Page = () => {
     switch (event.key) {
       case "ArrowLeft":
         event.preventDefault();
-        dispatch(focus_item(selected_item_id));
-        document.getElementById(selected_item_id).focus(); // Go back to selected item in sidemenu which is being displayed
+        // Go back to selected item in sidemenu which is being displayed
+        if(selected_item_id){
+          dispatch(focus_item(selected_item_id));
+          document.getElementById(selected_item_id).focus();
+        }
+        // If no element is selected go to main page item
+        else {
+          dispatch(focus_item(0));
+        }
         break;
       default:
         break;
@@ -53,7 +60,6 @@ const Page = () => {
       tabindex="0"
     >
       <Routes>
-        
         {routes.map((route) => {
           return <Route path={route.path} element={<route.element />} />;
         })}

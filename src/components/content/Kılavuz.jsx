@@ -6,7 +6,7 @@ import elektrik from "../../assets/images/safety/voltage_voltage_new.png"
 import guide from "../../assets/images/icons/guide.png"
 import { Box, Table, TableCell, TableRow } from "@mui/material";
 
-export default function kılavuz() {
+export default function Kılavuz() {
  
   return (
     <Box className="page">

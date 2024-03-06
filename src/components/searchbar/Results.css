@@ -1,0 +1,18 @@
+.search-info {
+  font-size: 1.25rem;
+}
+
+.result {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(25, 105, 205);
+}
+
+.result:focus {
+  outline: none;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
